@@ -99,8 +99,34 @@
 }
 
 .section-heading {
-  margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.info-tiles {
+  margin: .75rem auto;
+  padding: 0 .75rem;
+}
+
+.button.is-primary.is-alt {
+  background: linear-gradient(to bottom, #0072ff, #00c6ff);
+  font-weight: 700;
+  font-size: 14px;
+  height: 3rem;
+  line-height: 2.8;
+  margin-bottom: 1rem;
+}
+.post {
+  margin: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #E6EAEE;
+}
+.post:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.forum-list li {
+  margin-bottom: .5rem;
 }
 
 
