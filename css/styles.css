@@ -1,3 +1,14 @@
+a:focus, button:focus, input:focus, textarea:focus, select:focus {
+  outline: 2px solid #ff3860 !important;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.button.is-info {
+  background-color: #0377C4;
+}
 .hero-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://unsplash.it/1200/900?random") no-repeat center center fixed;
@@ -134,4 +145,24 @@
   .navbar-menu {
     background-color: #888;
   }
+}
+
+.visuallyhidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.visuallyhidden:focus {
+  height: auto;
+  width: auto;
+  clip: auto;
 }
