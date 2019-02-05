@@ -16,7 +16,7 @@
 
     <div class="hero hero-bg is-fullheight">
       <div class="hero-head">
-        <div class="navbar">
+        <nav aria-label="main navigation" class="navbar">
           <div class="container">
             <div class="navbar-brand">
               <a class="navbar-item has-text-white" href="#">
@@ -69,13 +69,13 @@
               </div>
             </div>
           </div>
-        </div>
+        </nav>
       </div>
 
       <div class="hero-body">
         <div class="container has-text-centered">
           <div class="column is-6 is-offset-3">
-            <div class="title has-text-white">Engineering the Future</div>
+            <h1 class="title has-text-white is-1 title">Epam systems</h1>
             <div class="subtitle has-text-white">
               $this is the best software platform for running an internet business. We handle billions of dollars every year for forward-thinking businesses around the world.
             </div>
@@ -105,16 +105,17 @@
   </header>
 
   <main id="main">
-    <section aria-label="breadcrumb trail" class="container breadcrumbs-tail">
-      <nav class="breadcrumbs">
-        <ol>
-          <li><a href="http://www.ebay.com">Home</a></li>
-          <li><a href="http://www.ebay.com">Second page</a></li>
-          <li><a href="http://www.ebay.com">Third page</a></li>
-          <li><span>Current page</span></li>
-        </ol>
-      </nav>
-    </section>
+    <section class="container breadcrumbs-tail">
+        <h2 class="visuallyhidden">Breadcrumb</h2>
+        <nav aria-label="Breadcrumb" class="breadcrumbs">
+          <ol>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Second page</a></li>
+            <li><a href="#">Third page</a></li>
+            <li><span>Current page</span></li>
+          </ol>
+        </nav>
+    </section>  
 
     <section class="section" id="about" aria-labelledby="about-us-region">
       <div class="section-heading has-text-centered">
@@ -133,11 +134,10 @@
       <div class="columns has-same-height is-gapless">
         <div class="column">
           <div class="card">
-            <div class="card-content">
-              <div class="title is-4">Profile</div>
-  
+            <div class="card-content">  
               <div class="content">
                 <table class="table-profile">
+                  <caption class="title is-4 table-caption">Profile</caption>
                   <tr>
                     <th colspan="1"></th>
                     <th colspan="2"></th>
@@ -348,7 +348,7 @@
       <div class="hero is-info">
         <div class="hero-body">
           <div class="container">
-            <h2 class="title" id="list-of-topics">List of topics</h2>
+            <h2 class="title is-2" id="list-of-topics">List of topics</h2>
             <div class="subtitle">We are always in touch we the outside world</div>
           </div>
         </div>
@@ -383,7 +383,7 @@
       </div>
 
       <div class="tab-content container">
-        <div class="tab-pane" id="pane-1" class="level">
+        <section aria-label="Pictures" class="tab-pane" id="pane-1" class="level">
           <div class="container">
             <div class="columns features">
               <div class="column is-4">
@@ -437,9 +437,9 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="tab-pane" id="pane-3">
+        <section aria-label="Team" class="tab-pane" id="pane-3">
           <div class="columns medias">
             <div class="column">
               <div class="media">
@@ -498,9 +498,9 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="tab-pane" id="pane-4">
+        <section aria-label="Video" class="tab-pane" id="pane-4">
           <div class="columns is-centered">
             <div class="column is-three-quarters">
               <div class="title has-text-centered">Inspired video</div>
@@ -509,9 +509,9 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="tab-pane is-active" id="pane-2">
+        <section aria-label="Article" class="tab-pane is-active" id="pane-2">
           <div class="content">
             <div class="is-1 title">Hello World</div>
             <p>Lorem ipsum<sup><a class="link-among-text" href="#">[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
@@ -601,10 +601,9 @@
             <div class="is-6 title">Sixth level</div>
             <p>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.</p>
           </div>
-        </div>
+        </section>
       </div>
     </section>
-
 
     <section aria-labelledby="tours" class="section has-background-grey-lighter">
       <div class="container has-text-centered">
@@ -621,7 +620,7 @@
               </div>
               <p class="title">New York</p>
               <p class="subtitle">Fri 27 Nov 2016</p>
-              <a class="button" href="#">Buy Tickets</a>
+              <a href="#">Buy Tickets</a>
             </div>
           </div>
           <div class="tile is-parent">
@@ -631,7 +630,7 @@
               </div>
               <p class="title">Los Angeles</p>
               <p class="subtitle">Fri 27 Nov 2016</p>
-              <a class="button" href="#">Buy Tickets</a>
+              <a href="#">Buy Tickets</a>
             </div>
           </div>
           <div class="tile is-parent">
@@ -641,7 +640,7 @@
               </div>
               <p class="title">Mexico</p>
               <p class="subtitle">Fri 27 Nov 2016</p>
-              <a class="button" href="#">Buy Tickets</a>
+              <a href="#">Buy Tickets</a>
             </div>
           </div>
         </div>
@@ -654,7 +653,7 @@
               </div>
               <p class="title">Paris</p>
               <p class="subtitle">Fri 27 Nov 2016</p>
-              <a class="button" href="#">Buy Tickets</a>
+              <a href="#">Buy Tickets</a>
             </div>
           </div>
           <div class="tile is-parent">
@@ -664,7 +663,7 @@
               </div>
               <p class="title">Tokio</p>
               <p class="subtitle">Fri 27 Nov 2016</p>
-              <a class="button" href="#">Buy Tickets</a>
+              <a href="#">Buy Tickets</a>
             </div>
           </div>
           <div class="tile is-parent">
@@ -674,7 +673,7 @@
               </div>
               <p class="title">London</p>
               <p class="subtitle">Fri 27 Nov 2016</p>
-              <a class="button" href="#">Buy Tickets</a>
+              <a href="#">Buy Tickets</a>
             </div>
           </div>
         </div>
@@ -925,16 +924,16 @@
       </div>
     </section>
 
-    <div class="section">
+    <section aria-labelledby="forum" class="section">
       <div class="container">
         <div class="section-heading has-text-centered">
-          <div class="title is-2">Forum</div>
+          <h2 class="title is-2" id="forum">Forum</h2>
           <div class="subtitle is-5">Discuss any topic with no leaving this page</div>
         </div>
 
         <div class="columns">
-          <div class="column is-3">
-            <a class="button is-primary is-block is-alt is-large" href="#">New Post</a>
+          <aside aria-label="Forum menu" class="column is-3">
+            <button type="button" class="button is-primary is-block is-alt is-large" href="#">New Post</button>
             <div class="menu">
               <ul class="menu-list forum-list">
                 <li><span class="tag is-primary is-medium">Dashboard</span></li>
@@ -946,7 +945,7 @@
                 <li><span class="tag is-medium ">Question</span></li>
               </ul>
             </div>
-          </div>
+          </aside>
           <div class="column is-9">
             <div class="box content">
               <div class="post">
@@ -1084,12 +1083,12 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="section has-background-light">
+    <section aria-labelledby="contact-us" class="section has-background-light">
       <div class="container">
         <div class="section-heading has-text-centered">
-          <div class="title is-2">Contact us</div>
+          <h2 class="title is-2" id="contuct-us">Contact us</h2>
           <div class="subtitle is-5">Don't hesitate, ask anything</div>
         </div>
 
@@ -1184,9 +1183,10 @@
           </div>
         </form>
       </div>
-    </div>
+    </section>
 
-    <div class="section">
+    <section aria-labelledby="advantages" class="section">
+      <h2 id="advantages" class="visuallyhidden">Advantages</h2>
       <div class="container">
         <div class="columns is-multiline">
           <div class="column is-one-third">

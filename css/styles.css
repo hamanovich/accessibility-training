@@ -235,10 +235,15 @@ a, .hero.is-info .tabs.is-boxed li.is-active a  {
 #skip-to-link {
   display: none;
 }
+
 fieldset {
-  border:0;
+  border: 0;
 }
 
 .link-among-text {
   text-decoration: underline;
+}
+
+.table-caption {
+  text-align: start;
 }
