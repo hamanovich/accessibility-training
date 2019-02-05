@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,24 +10,27 @@
 </head>
 
 <body>
-  <a href="#main" class="visuallyhidden">Skip navigation</a>
-  <div class="hero hero-bg is-fullheight">
-    <div class="hero-head">
-      <div class="navbar">
-        <div class="container">
-          <div class="navbar-brand">
-            <a class="navbar-item has-text-white" href="#">
-              <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" style="width: 100%;" alt="">
-            </a>
-            <span class="navbar-burger burger" data-target="navbarMenu">
+  <header>
+
+    <a href="#main" class="visuallyhidden skip-to">Skip to main</a>
+
+    <div class="hero hero-bg is-fullheight">
+      <div class="hero-head">
+        <div class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item has-text-white" href="#">
+                <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" style="width: 100%;" alt="Epam systems">
+              </a>
+              <span class="navbar-burger burger" data-target="navbarMenu">
               <span></span>
               <span></span>
               <span></span>
             </span>
-          </div>
+            </div>
 
-          <div id="navbarMenu" class="navbar-menu">
-            <div class="navbar-end">
+            <div id="navbarMenu" class="navbar-menu">
+              <div class="navbar-end">
               <span class="navbar-item">
                 <a class="button is-white is-outlined" href="#">
                   <span class="icon">
@@ -36,7 +39,7 @@
                   <span>Home</span>
                 </a>
               </span>
-              <span class="navbar-item">
+                <span class="navbar-item">
                 <a class="button is-white is-outlined" href="#">
                   <span class="icon">
                     <i class="fab fa-superpowers"></i>
@@ -44,7 +47,7 @@
                   <span>Examples</span>
                 </a>
               </span>
-              <span class="navbar-item">
+                <span class="navbar-item">
                 <a class="button is-white is-outlined" href="#">
                   <span class="icon">
                     <i class="fa fa-book"></i>
@@ -52,57 +55,75 @@
                   <span>Documentation</span>
                 </a>
               </span>
-              <span class="navbar-item">
+                <span class="navbar-item">
                 <a class="button is-white is-outlined" href="#">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
                   <span>View Source</span>
+                  <span class="icon">
+                    <i class="fa fa-external-link-alt"></i>
+                  </span>
                 </a>
               </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <div class="column is-6 is-offset-3">
-          <div class="title has-text-white">Engineering the Future</div>
-          <div class="subtitle has-text-white">
-            $this is the best software platform for running an internet business. We handle billions of dollars every year for forward-thinking businesses around the world.
-          </div>
-          <div class="box">
-            <div class="field is-grouped">
-              <p class="control is-expanded">
-                <input class="input">
-              </p>
-              <p class="control">
-                <a class="button is-info" href="#">Notify Me</a>
-              </p>
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="column is-6 is-offset-3">
+            <div class="title has-text-white">Engineering the Future</div>
+            <div class="subtitle has-text-white">
+              $this is the best software platform for running an internet business. We handle billions of dollars every year for forward-thinking businesses around the world.
+            </div>
+            <div class="box">
+              <form>
+                <div class="field is-grouped">
+                  <label class="visuallyhidden" for="email-address" style="">Email</label>
+                  <p class="control is-expanded">
+                    <input id="email-address" class="input">
+                  </p>
+                  <p class="control">
+                    <button class="button is-info">Notify Me</button>
+                  </p>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="box cta">
-      <div class="has-text-centered">
-        <span class="tag is-primary">New</span> Headless CMS improves customer experience and offers greater flexibility
+      <div class="box cta">
+        <div class="has-text-centered">
+          <span class="tag is-primary">New</span> Headless CMS improves customer experience and offers greater flexibility
+        </div>
       </div>
     </div>
-  </div>
+  </header>
 
   <main id="main">
+    <section aria-label="breadcrumb trail" class="container breadcrumbs-tail">
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="http://www.ebay.com">Home</a></li>
+          <li><a href="http://www.ebay.com">Second page</a></li>
+          <li><a href="http://www.ebay.com">Third page</a></li>
+          <li><span>Current page</span></li>
+        </ol>
+      </nav>
+    </section>
+
     <section class="section" id="about" aria-labelledby="about-us-region">
       <div class="section-heading has-text-centered">
         <h2 class="title is-2" id="about-us-region">About Us</h2>
         <div class="subtitle is-5">We of all trades, master of "some"</div>
         <div class="container">
-          <p>Web developers with more than <b>4 years</b> of well-rounded experience with a degree in the
+          <p>Web developers with more than <storng>4 years</storng> of well-rounded experience with a degree in the
             field of
-            <b>Computer Science</b>, extensive knowledge of modern Web techniques and love for <b>Coffee</b>.
+            <strong>Computer Science</strong>, extensive knowledge of modern Web techniques and love for <strong>Coffee</strong>.
             Looking for an opportunity to work and upgrade, as well as being involved in an organization that
             believes
             in gaining a competitive edge and giving back to the community.</p>
@@ -137,17 +158,17 @@
               </div>
               <br>
               <div class="buttons has-addons is-centered">
-                <a class="button is-link" href="#">
-                  <span class="icon">
-                    <i class="fab fa-github"></i>
-                  </span>
+                <a class="is-link" href="#">
                   <span>Github</span>
-                </a>
-                <a class="button is-link" href="#">
                   <span class="icon">
-                    <i class="fab fa-linkedin"></i>
+                    <i class="fa fa-external-link-alt"></i>
                   </span>
+                </a>
+                <a class="is-link" href="#">
                   <span>LinkedIn</span>
+                  <span class="icon">
+                    <i class="fa fa-external-link-alt"></i>
+                  </span>
                 </a>
               </div>
             </div>
@@ -158,7 +179,7 @@
           <div class="card">
             <div class="card-image">
               <div class="image">
-                <img src="https://source.unsplash.com/300x300/?sig=22"div>
+                <img src="https://images.unsplash.com/photo-1549144237-66cfecc6b2d5?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=300&h=300&fit=crop&ixid=eyJhcHBfaWQiOjF9" alt="Modern office building inside">
               </div>
             </div>
           </div>
@@ -266,13 +287,13 @@
       </div>
     </section>
   
-    <section class="hero has-background-grey-light">
+    <section class="hero has-background-grey-light" aria-labelledby="key-features">
       <div class="container features">
         <div class="section-heading has-text-centered">
-          <div class="title is-2">Three key features</div>
+          <h2 class="title is-2" id="key-features">Three key features</h2>
           <div class="subtitle is-5">We don't hide what we do</div>
         </div>
-  
+
         <div class="columns">
           <div class="column is-4">
             <div class="card is-shady">
@@ -288,7 +309,7 @@
               </div>
             </div>
           </div>
-  
+
           <div class="column is-4">
             <div class="card is-shady">
               <div class="card-image has-text-centered">
@@ -304,7 +325,7 @@
               </div>
             </div>
           </div>
-  
+
           <div class="column is-4">
             <div class="card is-shady">
               <div class="card-image has-text-centered">
@@ -323,11 +344,11 @@
       </div>
     </section>
 
-    <section>
+    <section aria-labelledby="list-of-topics">
       <div class="hero is-info">
         <div class="hero-body">
           <div class="container">
-            <div class="title">List of topics</div>
+            <h2 class="title" id="list-of-topics">List of topics</h2>
             <div class="subtitle">We are always in touch we the outside world</div>
           </div>
         </div>
@@ -360,7 +381,7 @@
           </ul>
         </div>
       </div>
-    
+
       <div class="tab-content container">
         <div class="tab-pane" id="pane-1" class="level">
           <div class="container">
@@ -369,7 +390,7 @@
                 <div class="card">
                   <div class="card-image">
                     <div class="image is-4by3">
-                      <img src="https://source.unsplash.com/random/?sig=1" class="modal-button" data-target="modal-image1">
+                      <img src="https://images.unsplash.com/photo-1547559903-e06ee33dea41?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9" class="modal-button" data-target="modal-image1" alt="Yellow chairs">
                     </div>
                   </div>
                   <div class="card-content">
@@ -385,7 +406,7 @@
                 <div class="card">
                   <div class="card-image">
                     <div class="image is-4by3">
-                      <img src="https://source.unsplash.com/random/?sig=2">
+                      <img src="https://images.unsplash.com/photo-1549054746-8e06636823a4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9" alt="Sunset landscape">
                     </div>
                   </div>
                   <div class="card-content">
@@ -402,7 +423,7 @@
                 <div class="card">
                   <div class="card-image">
                     <div class="image is-4by3">
-                      <img src="https://source.unsplash.com/random/?sig=3" class="modal-button" data-target="modal-image2">
+                      <img src="https://images.unsplash.com/photo-1547307074-e5775be2bb23?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9" class="modal-button" data-target="modal-image2" alt="A man on a snowy field">
                     </div>
                   </div>
                   <div class="card-content">
@@ -417,7 +438,7 @@
             </div>
           </div>
         </div>
-    
+
         <div class="tab-pane" id="pane-3">
           <div class="columns medias">
             <div class="column">
@@ -428,7 +449,7 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <a href="#"><b>Dominic Ipsum</b></a>
+                      <a class="link-among-text" href="#"><b>Dominic Ipsum</b></a>
                       <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
                     </p>
                   </div>
@@ -441,7 +462,7 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <a href="#"><b>Cassie Ipsum</b></a>
+                      <a class="link-among-text" href="#"><b>Cassie Ipsum</b></a>
                       <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
                     </p>
                   </div>
@@ -456,7 +477,7 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <a href="#"><b>Avery Ipsum</b></a>
+                      <a class="link-among-text" href="#"><b>Avery Ipsum</b></a>
                       <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
                     </p>
                   </div>
@@ -469,7 +490,7 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <a href="#"><b>io Ipsum</b></a>
+                      <a class="link-among-text" href="#"><b>io Ipsum</b></a>
                       <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
                     </p>
                   </div>
@@ -478,7 +499,7 @@
             </div>
           </div>
         </div>
-    
+
         <div class="tab-pane" id="pane-4">
           <div class="columns is-centered">
             <div class="column is-three-quarters">
@@ -489,11 +510,11 @@
             </div>
           </div>
         </div>
-    
+
         <div class="tab-pane is-active" id="pane-2">
           <div class="content">
             <div class="is-1 title">Hello World</div>
-            <p>Lorem ipsum<sup><a href="#">[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
+            <p>Lorem ipsum<sup><a class="link-among-text" href="#">[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
             <div class="is-2 title">Second level</div>
             <p>Curabitur accumsan turpis pharetra <b>augue tincidunt</b> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
             <ul>
@@ -503,7 +524,7 @@
               <li>Ut non enim metus.</li>
             </ul>
             <div class="is-3 title">Third level</div>
-            <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a>non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
+            <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a class="link-among-text" href="#">non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
             <ol>
               <li>Donec blandit a lorem id convallis.</li>
               <li>Cras gravida arcu at diam gravida gravida.</li>
@@ -534,7 +555,7 @@
                     &lt;title&gt;Hello World&lt;/title&gt;
                     &lt;/head&gt;
                     &lt;body&gt;
-                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Donec viverra nec nulla vitae mollis.&lt;/p&gt;
                     &lt;/body&gt;
                 &lt;/html&gt;
@@ -570,9 +591,9 @@
             <div class="is-5 title">Fifth level</div>
             <p>Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt ligula. Vestibulum at nunc elit. Praesent aliquet ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel nisi sodales, a eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.</p>
             <figure>
-              <img src="https://source.unsplash.com/random/256x256/?sig=10">
-              <img src="https://source.unsplash.com/random/256x256/?sig=11">
-              <img src="https://source.unsplash.com/random/256x256/?sig=12">
+              <img src="https://images.unsplash.com/photo-1546774925-9d67934b7ca1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=256&h=256&fit=crop&ixid=eyJhcHBfaWQiOjF9" alt="Mountain landscape">
+              <img src="https://images.unsplash.com/photo-1549094637-802ea01555a0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=256&h=256&fit=crop&ixid=eyJhcHBfaWQiOjF9" alt="Surfer catches the wave at sunset">
+              <img src="https://images.unsplash.com/photo-1546856365-f5ef32b9ffab?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=256&h=256&fit=crop&ixid=eyJhcHBfaWQiOjF9" alt="Skyscrapers">
               <figcaption>
                 Figure 1: Some beautiful placeholders
               </figcaption>
@@ -583,20 +604,20 @@
         </div>
       </div>
     </section>
-  
-  
-    <div class="section has-background-grey-lighter">
+
+
+    <section aria-labelledby="tours" class="section has-background-grey-lighter">
       <div class="container has-text-centered">
           <div class="section-heading has-text-centered">
-            <div class="title is-2">Tours</div>
+            <h2 class="title is-2" id="tours">Tours</h2>
             <div class="subtitle is-5">Outcoming dates for the best options</div>
           </div>
-  
+
         <div class="tile is-ancestor">
           <div class="tile is-parent">
             <div class="tile is-child box">
               <div class="image">
-                <img src="https://source.unsplash.com/random/256x170/?sig=100">
+                <img src="https://source.unsplash.com/random/256x170/?sig=100" alt="New York landscape">
               </div>
               <p class="title">New York</p>
               <p class="subtitle">Fri 27 Nov 2016</p>
@@ -606,7 +627,7 @@
           <div class="tile is-parent">
             <div class="tile is-child box">
               <div class="image">
-                <img src="https://source.unsplash.com/random/256x170/?sig=101">
+                <img src="https://source.unsplash.com/random/256x170/?sig=101" alt="Los Angeles landscape">
               </div>
               <p class="title">Los Angeles</p>
               <p class="subtitle">Fri 27 Nov 2016</p>
@@ -616,7 +637,7 @@
           <div class="tile is-parent">
             <div class="tile is-child box">
               <div class="image">
-                <img src="https://source.unsplash.com/random/256x170/?sig=102">
+                <img src="https://source.unsplash.com/random/256x170/?sig=102" alt="Mexico landscape">
               </div>
               <p class="title">Mexico</p>
               <p class="subtitle">Fri 27 Nov 2016</p>
@@ -624,12 +645,12 @@
             </div>
           </div>
         </div>
-  
+
         <div class="tile is-ancestor">
           <div class="tile is-parent">
             <div class="tile is-child box">
               <div class="image">
-                <img src="https://source.unsplash.com/random/256x170/?sig=103">
+                <img src="https://source.unsplash.com/random/256x170/?sig=103" alt="Paris landscape">
               </div>
               <p class="title">Paris</p>
               <p class="subtitle">Fri 27 Nov 2016</p>
@@ -639,7 +660,7 @@
           <div class="tile is-parent">
             <div class="tile is-child box">
               <div class="image">
-                <img src="https://source.unsplash.com/random/256x170/?sig=104">
+                <img src="https://source.unsplash.com/random/256x170/?sig=104" alt="Tokio landscape">
               </div>
               <p class="title">Tokio</p>
               <p class="subtitle">Fri 27 Nov 2016</p>
@@ -649,7 +670,7 @@
           <div class="tile is-parent">
             <div class="tile is-child box">
               <div class="image">
-                <img src="https://source.unsplash.com/random/256x170/?sig=105">
+                <img src="https://source.unsplash.com/random/256x170/?sig=105" alt="London landscape">
               </div>
               <p class="title">London</p>
               <p class="subtitle">Fri 27 Nov 2016</p>
@@ -658,11 +679,11 @@
           </div>
         </div>
       </div>
-    </div>
-  
-    <div class="section">
+    </section>
+
+    <section aria-labelledby="services" class="section">
       <div class="section-heading has-text-centered">
-        <div class="title is-2">Services</div>
+        <h2 class="title is-2" id="services">Services</h2>
         <div class="subtitle is-5">What can I do for you?</div>
       </div>
       <div class="container">
@@ -685,7 +706,7 @@
             </a>
           </div>
         </div>
-  
+
         <div class="columns">
           <div class="column">
             <a class="box" href="#">
@@ -706,15 +727,15 @@
           </div>
         </div>
       </div>
-    </div>
-  
-    <div class="section has-background-grey-lighter">
+    </section>
+
+    <section aria-labelledby="portfolio" class="section has-background-grey-lighter">
       <div class="container">
         <div class="section-heading has-text-centered">
-          <div class="title is-2">Portfolio</div>
+          <h2 class="title is-2" id="portfolio">Portfolio</h2>
           <div class="subtitle is-5">Our latest works</div>
         </div>
-  
+
         <div class="container portfolio-container">
           <div class="columns">
             <div class="column is-4">
@@ -733,12 +754,17 @@
                 </div>
                 <div class="card-content">
                   <div class="image">
-                    <img src="https://source.unsplash.com/random/300x200/?sig=201">
+                    <img src="https://images.unsplash.com/photo-1548413976-492b671eb54a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=300&h=200&fit=crop&ixid=eyJhcHBfaWQiOjF9" alt="Snow-covered spruce">
                   </div>
                 </div>
                 <div class="card-footer">
                   <a class="card-footer-item" href="#">Preview</a>
-                  <a class="card-footer-item" href="#">Source Code</a>
+                  <a class="card-footer-item" href="#">
+                    <span>Source Code</span>
+                    <span class="icon">
+                      <i class="fa fa-external-link-alt"></i>
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -758,12 +784,17 @@
                 </div>
                 <div class="card-content">
                   <div class="image">
-                    <img src="https://source.unsplash.com/random/300x200/?sig=202">
+                    <img src="https://images.unsplash.com/photo-1546946204-0abf891bf4af?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=300&h=200&fit=crop&ixid=eyJhcHBfaWQiOjF9" alt="Forest path">
                   </div>
                 </div>
                 <div class="card-footer">
                   <a class="card-footer-item" href="#">Preview</a>
-                  <a class="card-footer-item" href="#">Source Code</a>
+                  <a class="card-footer-item" href="#">
+                    <span>Source Code</span>
+                    <span class="icon">
+                      <i class="fa fa-external-link-alt"></i>
+                    </span>
+                  </a>
                   </div>
               </div>
             </div>
@@ -783,12 +814,17 @@
                 </div>
                 <div class="card-content">
                   <div class="image">
-                    <img src="https://source.unsplash.com/random/300x200/?sig=203">
+                    <img src="https://images.unsplash.com/photo-1548440611-9653e2714614?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=300&h=200&fit=crop&ixid=eyJhcHBfaWQiOjF9" alt="Fireworks">
                   </div>
                 </div>
                 <div class="card-footer">
                   <a class="card-footer-item" href="#">Preview</a>
-                  <a class="card-footer-item" href="#">Source Code</a>
+                  <a class="card-footer-item" href="#">
+                    <span>Source Code</span>
+                    <span class="icon">
+                      <i class="fa fa-external-link-alt"></i>
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -810,12 +846,17 @@
                 </div>
                 <div class="card-content">
                   <div class="image">
-                    <img src="https://source.unsplash.com/random/300x200/?sig=204">
+                    <img src="https://images.unsplash.com/photo-1548761428-882eecfc4f51?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=300&h=200&fit=crop&ixid=eyJhcHBfaWQiOjF9" alt="Neon signboard of cafe">
                   </div>
                 </div>
                 <div class="card-footer">
                   <a class="card-footer-item" href="#">Preview</a>
-                  <a class="card-footer-item" href="#">Source Code</a>
+                  <a class="card-footer-item" href="#">
+                    <span>Source Code</span>
+                    <span class="icon">
+                      <i class="fa fa-external-link-alt"></i>
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -835,12 +876,17 @@
                 </div>
                 <div class="card-content">
                   <div class="image">
-                    <img src="https://source.unsplash.com/random/300x200/?sig=205">
+                    <img src="https://images.unsplash.com/photo-1548620848-d375c7919ea2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=300&h=200&fit=crop&ixid=eyJhcHBfaWQiOjF9" alt="Black cat under the covers">
                   </div>
                 </div>
                 <div class="card-footer">
                   <a class="card-footer-item" href="#">Preview</a>
-                  <a class="card-footer-item" href="#">Source Code</a>
+                  <a class="card-footer-item" href="#">
+                    <span>Source Code</span>
+                    <span class="icon">
+                      <i class="fa fa-external-link-alt"></i>
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -860,28 +906,32 @@
                 </div>
                 <div class="card-content">
                   <div class="image">
-                    <img src="https://source.unsplash.com/random/300x200/?sig=206">
+                    <img src="https://images.unsplash.com/photo-1549091320-35a3d52bc928?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=300&h=200&fit=crop&ixid=eyJhcHBfaWQiOjF9" alt="Mountain valley landscape">
                   </div>
                 </div>
                 <div class="card-footer">
                   <a class="card-footer-item" href="#">Preview</a>
-                  <a class="card-footer-item" href="#">Source Code</a>
+                  <a class="card-footer-item" href="#">
+                    <span>Source Code</span>
+                    <span class="icon">
+                      <i class="fa fa-external-link-alt"></i>
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      </div>
-    </div>
-  
+    </section>
+
     <div class="section">
       <div class="container">
         <div class="section-heading has-text-centered">
           <div class="title is-2">Forum</div>
           <div class="subtitle is-5">Discuss any topic with no leaving this page</div>
         </div>
-  
+
         <div class="columns">
           <div class="column is-3">
             <a class="button is-primary is-block is-alt is-large" href="#">New Post</a>
@@ -904,13 +954,13 @@
                 <div class="media">
                   <div class="media-left">
                     <p class="image is-32x32">
-                      <img src="https://source.unsplash.com/random/64x64/?sig=300">
+                      <img src="https://source.unsplash.com/random/64x64/?sig=300" alt="Jssmith avatar">
                     </p>
                   </div>
                   <div class="media-content">
                     <div class="content">
                       <p>
-                        <a href="#">@jsmith</a> replied 34 minutes ago &nbsp;
+                        <a class="link-among-text" href="#">@jsmith</a> replied 34 minutes ago &nbsp;
                         <span class="tag">Question</span>
                       </p>
                     </div>
@@ -920,19 +970,19 @@
                   </div>
                 </div>
               </div>
-  
+
               <div class="post">
                 <h4>How can I make a button go full width?</h4>
                 <div class="media">
                   <div class="media-left">
                     <p class="image is-32x32">
-                      <img src="https://source.unsplash.com/random/64x64/?sig=301">
+                      <img src="https://source.unsplash.com/random/64x64/?sig=301" alt="Red avatar">
                     </p>
                   </div>
                   <div class="media-content">
                     <div class="content">
                       <p>
-                        <a href="#">@red</a> replied 40 minutes ago &nbsp;
+                        <a class="link-among-text" href="#">@red</a> replied 40 minutes ago &nbsp;
                         <span class="tag">Question</span>
                       </p>
                     </div>
@@ -942,19 +992,19 @@
                   </div>
                 </div>
               </div>
-  
+
               <div class="post">
                 <h4>TypeError: Data must be a string or a buffer when trying touse tabs</h4>
                 <div class="media">
                   <div class="media-left">
                     <p class="image is-32x32">
-                      <img src="https://source.unsplash.com/random/64x64/?sig=302">
+                      <img src="https://source.unsplash.com/random/64x64/?sig=302" alt="Jssmith avatar">
                     </p>
                   </div>
                   <div class="media-content">
                     <div class="content">
                       <p>
-                        <a href="#">@jsmith</a> replied 53 minutes ago &nbsp;
+                        <a class="link-among-text" href="#">@jsmith</a> replied 53 minutes ago &nbsp;
                         <span class="tag">Question</span>
                       </p>
                     </div>
@@ -964,19 +1014,19 @@
                   </div>
                 </div>
               </div>
-  
+
               <div class="post">
                 <h4>How to vertically center elements?</h4>
                 <div class="media">
                   <div class="media-left">
                     <p class="image is-32x32">
-                      <img src="https://source.unsplash.com/random/64x64/?sig=303">
+                      <img src="https://source.unsplash.com/random/64x64/?sig=303" alt="Brown avatar">
                     </p>
                   </div>
                   <div class="media-content">
                     <div class="content">
                       <p>
-                        <a href="#">@brown</a> replied 3 hours ago &nbsp;
+                        <a class="link-among-text" href="#">@brown</a> replied 3 hours ago &nbsp;
                         <span class="tag">Question</span>
                       </p>
                     </div>
@@ -986,19 +1036,19 @@
                   </div>
                 </div>
               </div>
-  
+
               <div class="post">
                 <h4>I'm trying to use hamburger menu on css, but it doesn't work. What is wrong?</h4>
                 <div class="media">
                   <div class="media-left">
                     <p class="image is-32x32">
-                      <img src="https://source.unsplash.com/random/64x64/?sig=304">
+                      <img src="https://source.unsplash.com/random/64x64/?sig=304" alt="Hamburgler avatar">
                     </p>
                   </div>
                   <div class="media-content">
                     <div class="content">
                       <p>
-                        <a href="#">@hamburgler</a> replied 5 hours ago &nbsp;
+                        <a class="link-among-text" href="#">@hamburgler</a> replied 5 hours ago &nbsp;
                         <span class="tag">Question</span>
                       </p>
                     </div>
@@ -1008,19 +1058,19 @@
                   </div>
                 </div>
               </div>
-  
+
               <div class="post">
                 <h4>How to make tiles wrap with CSS?</h4>
                 <div class="media">
                   <div class="media-left">
                     <p class="image is-32x32">
-                      <img src="https://source.unsplash.com/random/64x64/?sig=305">
+                      <img src="https://source.unsplash.com/random/64x64/?sig=305" alt="Rapper avatar">
                     </p>
                   </div>
                   <div class="media-content">
                     <div class="content">
                       <p>
-                        <a href="#">@rapper</a> replied 3 hours ago &nbsp;
+                        <a class="link-among-text" href="#">@rapper</a> replied 3 hours ago &nbsp;
                         <span class="tag">Question</span>
                       </p>
                     </div>
@@ -1035,14 +1085,14 @@
         </div>
       </div>
     </div>
-  
+
     <div class="section has-background-light">
       <div class="container">
         <div class="section-heading has-text-centered">
           <div class="title is-2">Contact us</div>
           <div class="subtitle is-5">Don't hesitate, ask anything</div>
         </div>
-  
+
         <form class="column is-half is-offset-one-quarter box">
           <div class="field">
             <label class="label" for="name">Name</label>
@@ -1050,11 +1100,11 @@
               <input class="input" type="text" placeholder="Text input" id="name">
             </div>
           </div>
-  
+
           <div class="field">
-            <label class="label">Username</label>
+            <label class="label" for="username">Username</label>
             <div class="control has-icons-left has-icons-right">
-              <input class="input is-success" type="text">
+              <input class="input is-success" type="text" id="username">
               <span class="icon is-small is-left">
                 <i class="fas fa-user"></i>
               </span>
@@ -1064,11 +1114,11 @@
             </div>
             <p class="help is-success">This username is available</p>
           </div>
-  
+
           <div class="field">
-            <label class="label">Email</label>
+            <label class="label" for="email">Email</label>
             <div class="control has-icons-left has-icons-right">
-              <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+              <input class="input is-danger" type="email" placeholder="Email input" value="hello@" id="email">
               <span class="icon is-small is-left">
                 <i class="fas fa-envelope"></i>
               </span>
@@ -1078,60 +1128,64 @@
             </div>
             <p class="help is-danger">This email is invalid</p>
           </div>
-  
+
           <div class="field">
-            <label class="label">Subject</label>
+            <label class="label" for="subject">Subject</label>
             <div class="control">
               <div class="select">
-                <select>
+                <select id="subject">
                   <option>Select dropdown</option>
                   <option>With options</option>
                 </select>
               </div>
             </div>
           </div>
-  
+
           <div class="field">
-            <label class="label">Message</label>
+            <label class="label" for="message">Message</label>
             <div class="control">
-              <textarea class="textarea" placeholder="Textarea"></textarea>
+              <textarea class="textarea" placeholder="Textarea" id="message"></textarea>
             </div>
           </div>
-  
+
           <div class="field">
             <div class="control">
               <label class="checkbox">
                 <input type="checkbox">
-                I agree to the <a href="#">terms and conditions</a>
+                I agree to the <a class="link-among-text" href="#">terms and conditions</a>
               </label>
             </div>
           </div>
-  
+
           <div class="field">
             <div class="control">
-              <label class="radio">
-                <input type="radio" name="question">
-                Yes
-              </label>
-              <label class="radio">
-                <input type="radio" name="question">
-                No
-              </label>
+              <fieldset>
+                <legend class="visuallyhidden" style="border-color: transparent">do you agree to the callback</legend>
+                <label class="radio">
+                  <input type="radio" name="question">
+                  Yes
+                </label>
+                <label class="radio">
+                  <input type="radio" name="question">
+                  No
+                </label>
+              </fieldset>
+
             </div>
           </div>
-  
+
           <div class="field is-grouped">
             <div class="control">
               <button class="button is-link">Submit</button>
             </div>
             <div class="control">
-              <button class="button is-text">Cancel</button>
+              <button type="reset" class="button is-danger">Cancel</button>
             </div>
           </div>
         </form>
       </div>
     </div>
-  
+
     <div class="section">
       <div class="container">
         <div class="columns is-multiline">
@@ -1289,65 +1343,65 @@
               <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
               <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
             </div>
-            <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</p>
+            <p>The source code is licensed <a class="link-among-text" href="http://opensource.org/licenses/mit-license.php">MIT</a>.</p>
           </div>
         </div>
       </div>
-    
-      <div id="modal-card" class="modal modal-fx-3dSlit">
-        <div class="modal-background"></div>
-        <div class="modal-content is-tiny">
-          <div class="card">
-            <div class="card-image">
-              <div class="image is-4by3">
-                <img src="https://source.unsplash.com/random/?sig=2">
-              </div>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <div class="image is-48x48">
-                    <img src="http://www.radfaces.com/images/avatars/linda-barret.jpg">
-                  </div>
-                </div>
-                <div class="media-content">
-                  <div class="title is-4">Jane Doe</div>
-                  <div class="subtitle is-6">@jane_doe</div>
-                </div>
-              </div>
-              <div class="content">
-                Laum Ipsum junkah potatoes bookin' it. Moosetown rig up I'm tellin' you way up north bookin' it can't get theyah from heeyah native bean suppah whawf Powrtland Museum of Aht, back woods hawsun around the pit mummah Yessah, mummah muckle riyht on'ta her
-                Bean's dinnahbucket bub geez bud sumpin' fierce ayuhpawt Bangah naw, Powrtland Museum of Aht down cellah sumpin' fierce hoppa bub If you can't stand the wintah you don't deserve the summah slower than molasses going uphill in January.
-                Sgn'wahl shoggor hrii uaaah R'lyeh uh'e k'yarnak Hastur hupadgh li'hee, hai f'nilgh'ri nilgh'ri n'ghftor ngftaghu vulgtlagln h'hrii throd Nyarlathotep lloig, naflsll'ha nnnsll'ha athg y-ebunma goka chtenff ehyeog cehye. Zhro y'hah
-                nogoth phlegeth stell'bsna orr'e ph'Hastur gnaiih throd, uln ya lw'nafh mg nar'luh li'hee wgah'n, sgn'wahl mg nakadishtu chlirgh hupadgh tharanak h'gnaiih.
-                <a href="#">@testio</a>.
-                <a href="#">#css</a>
-                <a href="#">#responsive</a>
-                <br>
-                <time datetime="2018-02-02">12:45 AM - 20 June 2018</time>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="modal-close is-large"></button>
-      </div>
-    
-      <div id="modal-image1" class="modal modal-fx-3dSlit">
-        <div class="modal-background"></div>
-        <div class="modal-content is-huge is-image">
-          <img src="https://source.unsplash.com/random/?sig=1">
-        </div>
-        <button class="modal-close is-large"></button>
-      </div>
-    
-      <div id="modal-image2" class="modal modal-fx-superScaled">
-        <div class="modal-background"></div>
-        <div class="modal-content  is-image">
-          <img src="https://source.unsplash.com/random/?sig=3">
-        </div>
-        <button class="modal-close is-large"></button>
-      </div>  
   </footer>
+
+  <div id="modal-card" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <div class="card">
+        <div class="card-image">
+          <div class="image is-4by3">
+            <img src="https://images.unsplash.com/photo-1546813541-c5f0abf71bc1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9" alt="Tree crowns">
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <div class="image is-48x48">
+                <img src="http://www.radfaces.com/images/avatars/linda-barret.jpg" alt="Jane Doe avatar">
+              </div>
+            </div>
+            <div class="media-content">
+              <div class="title is-4">Jane Doe</div>
+              <div class="subtitle is-6">@jane_doe</div>
+            </div>
+          </div>
+          <div class="content">
+            Laum Ipsum junkah potatoes bookin' it. Moosetown rig up I'm tellin' you way up north bookin' it can't get theyah from heeyah native bean suppah whawf Powrtland Museum of Aht, back woods hawsun around the pit mummah Yessah, mummah muckle riyht on'ta her
+            Bean's dinnahbucket bub geez bud sumpin' fierce ayuhpawt Bangah naw, Powrtland Museum of Aht down cellah sumpin' fierce hoppa bub If you can't stand the wintah you don't deserve the summah slower than molasses going uphill in January.
+            Sgn'wahl shoggor hrii uaaah R'lyeh uh'e k'yarnak Hastur hupadgh li'hee, hai f'nilgh'ri nilgh'ri n'ghftor ngftaghu vulgtlagln h'hrii throd Nyarlathotep lloig, naflsll'ha nnnsll'ha athg y-ebunma goka chtenff ehyeog cehye. Zhro y'hah
+            nogoth phlegeth stell'bsna orr'e ph'Hastur gnaiih throd, uln ya lw'nafh mg nar'luh li'hee wgah'n, sgn'wahl mg nakadishtu chlirgh hupadgh tharanak h'gnaiih.
+            <a class="link-among-text" href="#">@testio</a>.
+            <a class="link-among-text" href="#">#css</a>
+            <a class="link-among-text" href="#">#responsive</a>
+            <br>
+            <time datetime="2018-02-02">12:45 AM - 20 June 2018</time>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="modal-close is-large"></button>
+  </div>
+
+  <div id="modal-image1" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-huge is-image">
+      <img src="https://images.unsplash.com/photo-1547559903-e06ee33dea41?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9" alt="Yellow chairs">
+    </div>
+    <button class="modal-close is-large"></button>
+  </div>
+
+  <div id="modal-image2" class="modal modal-fx-superScaled">
+    <div class="modal-background"></div>
+    <div class="modal-content  is-image">
+      <img src="https://images.unsplash.com/photo-1547307074-e5775be2bb23?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9" alt="A man on a snowy field">
+    </div>
+    <button class="modal-close is-large"></button>
+  </div>
 
   <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
   <script async src="js/custom.js"></script>

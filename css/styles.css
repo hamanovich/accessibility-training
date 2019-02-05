@@ -1,19 +1,57 @@
-a:focus, button:focus, input:focus, textarea:focus, select:focus {
-  outline: 2px solid #ff3860 !important;
+a:focus, button:focus, input:focus,
+textarea:focus, select:focus, .button:focus, .input:focus,
+a.box:focus, .input.is-success:focus, .input.is-danger:focus,
+.select select:focus, .textarea:focus {
+  outline: 2px solid #EA002F;
+  border-color: transparent;
+  box-shadow: none;
 }
 
-a:hover {
-  text-decoration: underline;
+.button.is-info, .hero.is-info {
+  background-color: #2569DA;
 }
 
-.button.is-info {
-  background-color: #0377C4;
+.tag:not(body).is-primary {
+  background-color: #048673;
 }
+
+a, .hero.is-info .tabs.is-boxed li.is-active a  {
+  color: #2569DA;
+}
+.hero.is-info .subtitle{
+  color: #FFFFFF;
+}
+
+.has-text-grey-light {
+  color: #757575 !important;
+}
+
+.has-background-grey-light {
+  background-color: #B9B9B9 !important;
+}
+
+.tag:not(body).is-danger {
+  background-color: #EA002F;
+}
+
+.help.is-danger {
+  color: #EA002F;
+}
+
+.tag:not(body).is-success {
+  background-color: #15863D;
+}
+
+.help.is-success {
+  color: #15863D;
+}
+
 .hero-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://unsplash.it/1200/900?random") no-repeat center center fixed;
   background-size: cover;
 }
+
 
 .tabs {
   margin-bottom: -1px !important;
@@ -147,6 +185,12 @@ a:hover {
   }
 }
 
+.skip-to {
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+}
+
 .visuallyhidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -155,14 +199,46 @@ a:hover {
   overflow: hidden;
   padding: 0;
   border: 0;
-  background-color: white;
-  color: black;
-  padding: 5px;
-  border-radius: 4px;
 }
 
-.visuallyhidden:focus {
+.skip-to:focus {
   height: auto;
   width: auto;
   clip: auto;
+}
+
+.is-active-skip-link {
+  height: auto;
+  width: auto;
+  clip: auto;
+}
+.breadcrumbs-tail {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.breadcrumbs li {
+  display: inline;
+}
+
+.breadcrumbs ol {
+  display: inline;
+  list-style-type: none;
+}
+
+.breadcrumbs li::after {
+  content: '>';
+}
+
+.breadcrumbs li:last-child::after {
+  content: '';
+}
+#skip-to-link {
+  display: none;
+}
+fieldset {
+  border:0;
+}
+
+.link-among-text {
+  text-decoration: underline;
 }
