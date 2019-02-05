@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale-1.0, user-scalable=5">
   <title>Web Accessibility 2019 Q1 BY</title>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css'>
   <link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.0.10/css/all.css'>
@@ -10,57 +11,50 @@
 </head>
 
 <body>
-  <div class="hero hero-bg is-fullheight">
+  <header class="hero hero-bg is-fullheight">
+    <a href="#main-content" class="skip-navigation visually-hidden" tabindex="0">Skip navigation</a>
     <div class="hero-head">
       <div class="navbar">
         <div class="container">
           <div class="navbar-brand">
-            <a class="navbar-item has-text-white">
-              <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" style="width: 100%;">
+            <a class="navbar-item has-text-white" tabindex="0">
+              <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" alt="logo" style="width: 100%;">
             </a>
-            <span class="navbar-burger burger" data-target="navbarMenu">
+            <button class="navbar-burger burger" data-target="navbarMenu">
               <span></span>
               <span></span>
               <span></span>
-            </span>
+            </button>
           </div>
 
-          <div id="navbarMenu" class="navbar-menu">
-            <div class="navbar-end">
-              <span class="navbar-item">
-                <a class="button is-white is-outlined">
-                  <span class="icon">
-                    <i class="fa fa-home"></i>
-                  </span>
+          <nav id="navbarMenu" class="navbar-menu" aria-label="Main navigation">
+            <ul class="navbar-end">
+              <li class="navbar-item">
+                <a class="button is-white is-outlined" tabindex="0">
+                  <span class="icon fa fa-home"></span>
                   <span>Home</span>
                 </a>
-              </span>
-              <span class="navbar-item">
-                <a class="button is-white is-outlined">
-                  <span class="icon">
-                    <i class="fab fa-superpowers"></i>
-                  </span>
+              </li>
+              <li class="navbar-item">
+                <a class="button is-white is-outlined" tabindex="0">
+                  <span class="icon fab fa-superpowers"></span>
                   <span>Examples</span>
                 </a>
-              </span>
-              <span class="navbar-item">
-                <a class="button is-white is-outlined">
-                  <span class="icon">
-                    <i class="fa fa-book"></i>
-                  </span>
+              </li>
+              <li class="navbar-item">
+                <a class="button is-white is-outlined" tabindex="0">
+                  <span class="icon fa fa-book"></span>
                   <span>Documentation</span>
                 </a>
-              </span>
-              <span class="navbar-item">
-                <a class="button is-white is-outlined">
-                  <span class="icon">
-                    <i class="fab fa-github"></i>
-                  </span>
+              </li>
+              <li class="navbar-item">
+                <a class="button is-white is-outlined" tabindex="0">
+                  <span class="icon fa-github"></span>
                   <span>View Source</span>
                 </a>
-              </span>
-            </div>
-          </div>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
@@ -68,17 +62,18 @@
     <div class="hero-body">
       <div class="container has-text-centered">
         <div class="column is-6 is-offset-3">
-          <div class="title has-text-white">Engineering the Future</div>
+          <h1 class="title has-text-white">Engineering the Future</h1>
           <div class="subtitle has-text-white">
             $this is the best software platform for running an internet business. We handle billions of dollars every year for forward-thinking businesses around the world.
           </div>
           <div class="box">
             <div class="field is-grouped">
               <p class="control is-expanded">
-                <input class="input">
+                <label class="visually-hidden email-label" for="email">Enter your Email</label>
+                <input class="input email-input" type="email" name="email" id="email">
               </p>
               <p class="control">
-                <a class="button is-info">Notify Me</a>
+                <button class="button is-info">Notify Me</button>
               </p>
             </div>
           </div>
@@ -91,141 +86,138 @@
         <span class="tag is-primary">New</span> Headless CMS improves customer experience and offers greater flexibility
       </div>
     </div>
-  </div>
+  </header>
 
-  <div class="section" id="about">
-    <div class="section-heading has-text-centered">
-      <div class="title is-2">About Us</div>
-      <div class="subtitle is-5">We of all trades, master of "some"</div>
-      <div class="container">
-        <p>Web developers with more than <b>4 years</b> of well-rounded experience with a degree in the
-          field of
-          <b>Computer Science</b>, extensive knowledge of modern Web techniques and love for <b>Coffee</b>.
-          Looking for an opportunity to work and upgrade, as well as being involved in an organization that
-          believes
-          in gaining a competitive edge and giving back to the community.</p>
+  <main id="main-content">
+    <div class="section" id="about">
+      <div class="section-heading has-text-centered">
+        <h2 class="title is-2">About Us</h2>
+        <div class="subtitle is-5">We of all trades, master of "some"</div>
+        <div class="container">
+          <p>Web developers with more than <strong>4 years</strong> of well-rounded experience with a degree in the
+            field of
+            <strong>Computer Science</strong>, extensive knowledge of modern Web techniques and love for <strong>Coffee</strong>.
+            Looking for an opportunity to work and upgrade, as well as being involved in an organization that
+            believes
+            in gaining a competitive edge and giving back to the community.</p>
+        </div>
+      </div>
+
+      <div class="columns has-same-height is-gapless">
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <h3 class="title is-4">Profile</h3>
+
+              <div class="content">
+                <table class="table-profile">
+                  <tr>
+                    <td>Address:</td>
+                    <td>Guru's Lab</td>
+                  </tr>
+                  <tr>
+                    <td>Phone:</td>
+                    <td><a href="tel:0123-456789">0123-456789</a></td>
+                  </tr>
+                  <tr>
+                    <td>Email:</td>
+                    <td><a href="mailto:minion@despicable.me">minion@despicable.me</a></td>
+                  </tr>
+                </table>
+              </div>
+              <br>
+              <div class="buttons has-addons is-centered">
+                <button class="button is-link">Github</button>
+                <button class="button is-link">LinkedIn</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <div class="image">
+                <img src="https://source.unsplash.com/random/300x300/?sig=22" alt="Portfolio image">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="card-content skills-content">
+              <div class="title is-4">Skills</div>
+              <div class="content">
+                <div class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>JavaScript:</strong>
+                        <br>
+                        <progress class="progress is-primary" value="90" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Vue.js:</strong>
+                        <br>
+                        <progress class="progress is-primary" value="90" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Node.js:</strong>
+                        <br>
+                        <progress class="progress is-primary" value="75" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>HTML5/CSS3</strong>
+                        <br>
+                        <progress class="progress is-primary" value="95" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Databases</strong>
+                        <br>
+                        <progress class="progress is-primary" value="66" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="columns has-same-height is-gapless">
-      <div class="column">
-        <div class="card">
-          <div class="card-content">
-            <div class="title is-4">Profile</div>
-
-            <div class="content">
-              <table class="table-profile">
-                <tr>
-                  <th colspan="1"></th>
-                  <th colspan="2"></th>
-                </tr>
-                <tr>
-                  <td>Address:</td>
-                  <td>Guru's Lab</td>
-                </tr>
-                <tr>
-                  <td>Phone:</td>
-                  <td><a>0123-456789</a></td>
-                </tr>
-                <tr>
-                  <td>Email:</td>
-                  <td><a>minion@despicable.me</a></td>
-                </tr>
-              </table>
-            </div>
-            <br>
-            <div class="buttons has-addons is-centered">
-              <a class="button is-link">Github</a>
-              <a class="button is-link">LinkedIn</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <div class="card-image">
-            <div class="image">
-              <img src="https://source.unsplash.com/random/300x300/?sig=22"div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <div class="card-content skills-content">
-            <div class="title is-4">Skills</div>
-            <div class="content">
-              <div class="media">
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <b>JavaScript:</b>
-                      <br>
-                      <progress class="progress is-primary" value="90" max="100"></progress>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="media">
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <b>Vue.js:</b>
-                      <br>
-                      <progress class="progress is-primary" value="90" max="100"></progress>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="media">
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <b>Node.js:</b>
-                      <br>
-                      <progress class="progress is-primary" value="75" max="100"></progress>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="media">
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <b>HTML5/CSS3</b>
-                      <br>
-                      <progress class="progress is-primary" value="95" max="100"></progress>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="media">
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <b>Databases</b>
-                      <br>
-                      <progress class="progress is-primary" value="66" max="100"></progress>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="has-background-danger">
-    <div class="info-tiles container">
-      <div class="tile is-ancestor has-text-centered">
+    <div class="has-background-danger">
+      <div class="info-tiles container">
+        <div class="tile is-ancestor has-text-centered">
           <div class="tile is-parent">
             <div class="tile is-child box">
               <p class="title">439k</p>
@@ -250,1032 +242,1015 @@
               <p class="subtitle">Exceptions</p>
             </div>
           </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="hero has-background-grey-light">
-    <div class="container features">
-      <div class="section-heading has-text-centered">
-        <div class="title is-2">Three key features</div>
-        <div class="subtitle is-5">We don't hide what we do</div>
-      </div>
-
-      <div class="columns">
-        <div class="column is-4">
-          <div class="card is-shady">
-            <div class="card-image has-text-centered">
-              <i class="fa fa-paw"></i>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <div>Tristique senectus et netus et.</div>
-                <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-                <p><a>Learn more</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="column is-4">
-          <div class="card is-shady">
-            <div class="card-image has-text-centered">
-              <i class="fab fa-empire"></i>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <div>Tempor orci dapibus ultrices in.</div>
-                <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
-                  sed risus.</p>
-                <p><a>Learn more</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="column is-4">
-          <div class="card is-shady">
-            <div class="card-image has-text-centered">
-              <i class="fab fa-apple"></i>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <div> Leo integer malesuada nunc vel risus. </div>
-                <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                <p><a>Learn more</a></p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="hero is-info">
-    <div class="hero-body">
-      <div class="container">
-        <div class="title">List of topics</div>
-        <div class="subtitle">We are always in touch we the outside world</div>
-      </div>
-    </div>
-    <div class="tabs is-boxed is-centered main-menu" id="nav">
-      <ul>
-        <li data-target="pane-1" id="1">
-          <a>
-            <span class="icon is-small"><i class="fa fa-image"></i></span>
-            <span>Pictures</span>
-          </a>
-        </li>
-        <li data-target="pane-2" id="2" class="is-active">
-          <a>
-            <span class="icon is-small"><i class="fab fa-empire"></i></span>
-            <span>Article</span>
-          </a>
-        </li>
-        <li data-target="pane-3" id="3">
-          <a>
-            <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
-            <span>Team</span>
-          </a>
-        </li>
-        <li data-target="pane-4" id="4">
-          <a>
-            <span class="icon is-small"><i class="fa fa-film"></i></span>
-            <span>Video</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
+    <section class="hero has-background-grey-lighter" aria-label="Key features">
+      <div class="container features">
+        <div class="section-heading has-text-centered">
+          <h2 class="title is-2">Three key features</h2>
+          <div class="subtitle is-5">We don't hide what we do</div>
+        </div>
 
-  <div class="tab-content container">
-    <div class="tab-pane" id="pane-1" class="level">
-      <div class="container">
-        <div class="columns features">
+        <div class="columns">
           <div class="column is-4">
-            <div class="card">
-              <div class="card-image">
-                <div class="image is-4by3">
-                  <img src="https://source.unsplash.com/random/?sig=1" class="modal-button" data-target="modal-image1">
-                </div>
+            <div class="card is-shady">
+              <div class="card-image has-text-centered">
+                <span class="fa fa-paw"></span>
               </div>
               <div class="card-content">
                 <div class="content">
-                  <div>Click on image above</div>
+                  <div>Tristique senectus et netus et.</div>
                   <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-                  <span class="button is-link modal-button" data-target="modal-image1">Image modal</span>
+                  <p><a href="#" tabindex="0">Learn more</a></p>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="column is-4">
-            <div class="card">
-              <div class="card-image">
-                <div class="image is-4by3">
-                  <img src="https://source.unsplash.com/random/?sig=2">
-                </div>
+            <div class="card is-shady">
+              <div class="card-image has-text-centered">
+                <span class="fab fa-empire"></span>
               </div>
               <div class="card-content">
                 <div class="content">
                   <div>Tempor orci dapibus ultrices in.</div>
                   <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
                     sed risus.</p>
-                  <span class="button is-link modal-button" data-target="modal-card">Modal Card</span>
+                  <p><a href="#" tabindex="0">Learn more</a></p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="column is-4 modal-button" data-target="modal-image">
-            <div class="card">
-              <div class="card-image">
-                <div class="image is-4by3">
-                  <img src="https://source.unsplash.com/random/?sig=3" class="modal-button" data-target="modal-image2">
-                </div>
+
+          <div class="column is-4">
+            <div class="card is-shady">
+              <div class="card-image has-text-centered">
+                <span class="fab fa-apple"></span>
               </div>
               <div class="card-content">
                 <div class="content">
-                  <div>Click anywhere on card</div>
+                  <div> Leo integer malesuada nunc vel risus. </div>
                   <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                  <span class="button is-link modal-button" data-target="modal-image2">Image modal</span>
+                  <p><a href="#" tabindex="0">Learn more</a></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="tab-pane" id="pane-3">
-      <div class="columns medias">
-        <div class="column">
-          <div class="media">
-            <div class="media-left">
-              <i class="fab fa-github-square fa-4x"></i>
-            </div>
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  <a><b>Dominic Ipsum</b></a>
-                  <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="media">
-            <div class="media-left">
-              <i class="fab fa-empire fa-4x"></i>
-            </div>
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  <a><b>Cassie Ipsum</b></a>
-                  <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="media">
-            <div class="media-left">
-              <i class="fab fa-ravelry fa-4x"></i>
-            </div>
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  <a><b>Avery Ipsum</b></a>
-                  <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="media">
-            <div class="media-left">
-              <i class="fab fa-github-alt fa-4x"></i>
-            </div>
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  <a><b>io Ipsum</b></a>
-                  <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                </p>
-              </div>
-            </div>
-          </div>
+    <section class="hero is-info" id="topics-list" aria-label="List of topics">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title">List of topics</h2>
+          <div class="subtitle">We are always in touch we the outside world</div>
         </div>
       </div>
-    </div>
-
-    <div class="tab-pane" id="pane-4">
-      <div class="columns is-centered">
-        <div class="column is-three-quarters">
-          <div class="title has-text-centered">Inspired video</div>
-          <div class="embed-container image">
-            <iframe src="https://player.vimeo.com/video/261794608" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="tab-pane is-active" id="pane-2">
-      <div class="content">
-        <div class="is-1 title">Hello World</div>
-        <p>Lorem ipsum<sup><a>[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
-        <div class="is-2 title">Second level</div>
-        <p>Curabitur accumsan turpis pharetra <b>augue tincidunt</b> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
+      <nav class="tabs is-boxed is-centered main-menu" id="nav" aria-label="Tab navigation">
         <ul>
-          <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
-          <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
-          <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
-          <li>Ut non enim metus.</li>
+          <li data-target="pane-1" id="1">
+            <a href="#pane-1" tabindex="0">
+              <span class="icon is-small fa fa-image"></span>
+              <span>Pictures</span>
+            </a>
+          </li>
+          <li data-target="pane-2" id="2" class="is-active">
+            <a href="#pane-2" tabindex="0">
+              <span class="icon is-small fab fa-empire"></span>
+              <span>Article</span>
+            </a>
+          </li>
+          <li data-target="pane-3" id="3">
+            <a href="#pane-3" tabindex="0">
+              <span class="icon is-small fab fa-superpowers"></span>
+              <span>Team</span>
+            </a>
+          </li>
+          <li data-target="pane-4" id="4">
+            <a href="#pane-4" tabindex="0">
+              <span class="icon is-small fa fa-film"></span>
+              <span>Video</span>
+            </a>
+          </li>
         </ul>
-        <div class="is-3 title">Third level</div>
-        <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a>non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
-        <ol>
-          <li>Donec blandit a lorem id convallis.</li>
-          <li>Cras gravida arcu at diam gravida gravida.</li>
-          <li>Integer in volutpat libero.</li>
-          <li>Donec a diam tellus.</li>
-          <li>Aenean nec tortor orci.</li>
-          <li>Quisque aliquam cursus urna, non bibendum massa viverra eget.</li>
-          <li>Vivamus maximus ultricies pulvinar.</li>
-        </ol>
-        <blockquote>Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut blandit est tellus sit amet turpis.</blockquote>
-        <p>Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et <em>justo sodales</em> elementum. Maecenas ultrices lacus quis neque consectetur, et lobortis nisi molestie.</p>
-        <p>Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis vulputate risus in luctus. Maecenas vestibulum interdum commodo.</p>
-        <dl>
-          <dt>Web</dt>
-          <dd>The part of the Internet that contains websites and web pages</dd>
-          <dt>HTML</dt>
-          <dd>A markup language for creating web pages</dd>
-          <dt>CSS</dt>
-          <dd>A technology to make HTML look better</dd>
-        </dl>
-        <p>Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.</p>
-        <div class="is-4 title">Fourth level</div>
-        <p>Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac. Mauris euismod metus a tellus laoreet, at elementum ex efficitur.</p>
-        <pre>
+      </nav>
+    </section>
+
+    <div class="tab-content container">
+      <div class="tab-pane" id="pane-1">
+        <div class="container">
+          <div class="columns features">
+            <div class="column is-4">
+              <div class="card">
+                <div class="card-image">
+                  <div class="image is-4by3">
+                    <img src="https://source.unsplash.com/random/?sig=1" alt="Modal image" class="modal-button" data-target="modal-image1">
+                  </div>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    <div>Click on image above</div>
+                    <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
+                    <button class="button is-link modal-button" data-target="modal-image1">Image modal</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-4">
+              <div class="card">
+                <div class="card-image">
+                  <div class="image is-4by3">
+                    <img src="https://source.unsplash.com/random/?sig=2" alt="Card image">
+                  </div>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    <div>Tempor orci dapibus ultrices in.</div>
+                    <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
+                      sed risus.</p>
+                    <button class="button is-link modal-button" data-target="modal-card">Modal Card</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-4 modal-button" data-target="modal-image">
+              <div class="card">
+                <div class="card-image">
+                  <div class="image is-4by3">
+                    <img src="https://source.unsplash.com/random/?sig=3" alt="Modal image 2" class="modal-button" data-target="modal-image2">
+                  </div>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    <div>Click anywhere on card</div>
+                    <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                    <button class="button is-link modal-button" data-target="modal-image2">Image modal</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="pane-3">
+        <div class="columns medias">
+          <div class="column">
+            <div class="media">
+              <div class="media-left">
+                <span class="fab fa-github-square fa-4x"></span>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <a href="#" tabindex="0"><strong>Dominic Ipsum</strong></a>
+                    <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-left">
+                <span class="fab fa-empire fa-4x"></span>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <a href="#" tabindex="0"><strong>Cassie Ipsum</strong></a>
+                    <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="media">
+              <div class="media-left">
+                <span class="fab fa-ravelry fa-4x"></span>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <a href="#" tabindex="0"><strong>Avery Ipsum</strong></a>
+                    <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-left">
+                <span class="fab fa-github-alt fa-4x"></span>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <a href="#" tabindex="0"><strong>io Ipsum</strong></a>
+                    <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="pane-4">
+        <a href="#tours" class="skip-video visually-hidden" tabindex="0">Skip video</a>
+        <div class="columns is-centered">
+          <div class="column is-three-quarters">
+            <h3 class="title has-text-centered">Inspired video</h3>
+            <div class="embed-container image">
+              <iframe src="https://player.vimeo.com/video/261794608" allowFullScreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane is-active" id="pane-2">
+        <div class="content">
+          <div class="is-1 title">Hello World</div>
+          <p>Lorem ipsum<sup><a>[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
+          <div class="is-2 title">Second level</div>
+          <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
+          <ul>
+            <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
+            <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
+            <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
+            <li>Ut non enim metus.</li>
+          </ul>
+          <div class="is-3 title">Third level</div>
+          <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a>non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
+          <ol>
+            <li>Donec blandit a lorem id convallis.</li>
+            <li>Cras gravida arcu at diam gravida gravida.</li>
+            <li>Integer in volutpat libero.</li>
+            <li>Donec a diam tellus.</li>
+            <li>Aenean nec tortor orci.</li>
+            <li>Quisque aliquam cursus urna, non bibendum massa viverra eget.</li>
+            <li>Vivamus maximus ultricies pulvinar.</li>
+          </ol>
+          <blockquote>Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut blandit est tellus sit amet turpis.</blockquote>
+          <p>Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et <em>justo sodales</em> elementum. Maecenas ultrices lacus quis neque consectetur, et lobortis nisi molestie.</p>
+          <p>Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis vulputate risus in luctus. Maecenas vestibulum interdum commodo.</p>
+          <dl>
+            <dt>Web</dt>
+            <dd>The part of the Internet that contains websites and web pages</dd>
+            <dt>HTML</dt>
+            <dd>A markup language for creating web pages</dd>
+            <dt>CSS</dt>
+            <dd>A technology to make HTML look better</dd>
+          </dl>
+          <p>Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.</p>
+          <div class="is-4 title">Fourth level</div>
+          <p>Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac. Mauris euismod metus a tellus laoreet, at elementum ex efficitur.</p>
+          <pre>
             &lt;!DOCTYPE html&gt;
             &lt;html&gt;
                 &lt;head&gt;
                 &lt;title&gt;Hello World&lt;/title&gt;
                 &lt;/head&gt;
                 &lt;body&gt;
-                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Donec viverra nec nulla vitae mollis.&lt;/p&gt;
                 &lt;/body&gt;
             &lt;/html&gt;
             </pre>
-        <p>Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.</p>
-        <table>
-          <tr>
-            <th>One</th>
-            <th>Two</th>
-          </tr>
-          <tr>
-            <td>Three</td>
-            <td>Four</td>
-          </tr>
-          <tr>
-            <td>Five</td>
-            <td>Six</td>
-          </tr>
-          <tr>
-            <td>Seven</td>
-            <td>Eight</td>
-          </tr>
-          <tr>
-            <td>Nine</td>
-            <td>Ten</td>
-          </tr>
-          <tr>
-            <td>Eleven</td>
-            <td>Twelve</td>
-          </tr>
-        </table>
-        <p>Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus laoreet metus, at cursus leo est vel tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae ultricies ex sodales quis. Aliquam eu nibh in libero accumsan pulvinar. Nullam nec nisl placerat, pretium metus vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam pharetra varius metus non pellentesque.</p>
-        <div class="is-5 title">Fifth level</div>
-        <p>Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt ligula. Vestibulum at nunc elit. Praesent aliquet ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel nisi sodales, a eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.</p>
-        <figure>
-          <img src="https://source.unsplash.com/random/256x256/?sig=10">
-          <img src="https://source.unsplash.com/random/256x256/?sig=11">
-          <img src="https://source.unsplash.com/random/256x256/?sig=12">
-          <figcaption>
-            Figure 1: Some beautiful placeholders
-          </figcaption>
-        </figure>
-        <div class="is-6 title">Sixth level</div>
-        <p>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.</p>
+          <p>Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.</p>
+          <table>
+            <tr>
+              <th>One</th>
+              <th>Two</th>
+            </tr>
+            <tr>
+              <td>Three</td>
+              <td>Four</td>
+            </tr>
+            <tr>
+              <td>Five</td>
+              <td>Six</td>
+            </tr>
+            <tr>
+              <td>Seven</td>
+              <td>Eight</td>
+            </tr>
+            <tr>
+              <td>Nine</td>
+              <td>Ten</td>
+            </tr>
+            <tr>
+              <td>Eleven</td>
+              <td>Twelve</td>
+            </tr>
+          </table>
+          <p>Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus laoreet metus, at cursus leo est vel tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae ultricies ex sodales quis. Aliquam eu nibh in libero accumsan pulvinar. Nullam nec nisl placerat, pretium metus vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam pharetra varius metus non pellentesque.</p>
+          <div class="is-5 title">Fifth level</div>
+          <p>Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt ligula. Vestibulum at nunc elit. Praesent aliquet ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel nisi sodales, a eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.</p>
+          <figure>
+            <img src="https://source.unsplash.com/random/256x256/?sig=10" alt="article image">
+            <img src="https://source.unsplash.com/random/256x256/?sig=11" alt="article image 2">
+            <img src="https://source.unsplash.com/random/256x256/?sig=12" alt="article image 3">
+            <figcaption>
+              Figure 1: Some beautiful placeholders
+            </figcaption>
+          </figure>
+          <div class="is-6 title">Sixth level</div>
+          <p>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="section has-background-grey-lighter">
-    <div class="container has-text-centered">
+    <section class="section has-background-grey-lighter" id="tours" aria-label="List of tours">
+      <div class="container has-text-centered">
         <div class="section-heading has-text-centered">
-          <div class="title is-2">Tours</div>
+          <h2 class="title is-2">Tours</h2>
           <div class="subtitle is-5">Outcoming dates for the best options</div>
         </div>
 
-      <div class="tile is-ancestor">
-        <div class="tile is-parent">
-          <div class="tile is-child box">
-            <div class="image">
-              <img src="https://source.unsplash.com/random/256x170/?sig=100">
-            </div>
-            <p class="title">New York</p>
-            <p class="subtitle">Fri 27 Nov 2016</p>
-            <a class="button">Buy Tickets</a>
-          </div>
-        </div>
-        <div class="tile is-parent">
-          <div class="tile is-child box">
-            <div class="image">
-              <img src="https://source.unsplash.com/random/256x170/?sig=101">
-            </div>
-            <p class="title">Los Angeles</p>
-            <p class="subtitle">Fri 27 Nov 2016</p>
-            <a class="button">Buy Tickets</a>
-          </div>
-        </div>
-        <div class="tile is-parent">
-          <div class="tile is-child box">
-            <div class="image">
-              <img src="https://source.unsplash.com/random/256x170/?sig=102">
-            </div>
-            <p class="title">Mexico</p>
-            <p class="subtitle">Fri 27 Nov 2016</p>
-            <a class="button">Buy Tickets</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="tile is-ancestor">
-        <div class="tile is-parent">
-          <div class="tile is-child box">
-            <div class="image">
-              <img src="https://source.unsplash.com/random/256x170/?sig=103">
-            </div>
-            <p class="title">Paris</p>
-            <p class="subtitle">Fri 27 Nov 2016</p>
-            <a class="button">Buy Tickets</a>
-          </div>
-        </div>
-        <div class="tile is-parent">
-          <div class="tile is-child box">
-            <div class="image">
-              <img src="https://source.unsplash.com/random/256x170/?sig=104">
-            </div>
-            <p class="title">Tokio</p>
-            <p class="subtitle">Fri 27 Nov 2016</p>
-            <a class="button">Buy Tickets</a>
-          </div>
-        </div>
-        <div class="tile is-parent">
-          <div class="tile is-child box">
-            <div class="image">
-              <img src="https://source.unsplash.com/random/256x170/?sig=105">
-            </div>
-            <p class="title">London</p>
-            <p class="subtitle">Fri 27 Nov 2016</p>
-            <a class="button">Buy Tickets</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="section-heading has-text-centered">
-      <div class="title is-2">Services</div>
-      <div class="subtitle is-5">What can I do for you?</div>
-    </div>
-    <div class="container">
-      <div class="columns">
-        <div class="column">
-          <a class="box">
-            <div class="content">
-              <div class="title is-5">Front End Web Development</div>
-              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
-              Vue.js.
-            </div>
-          </a>
-        </div>
-        <div class="column">
-          <a class="box">
-            <div class="content">
-              <div class="title is-5">Back End Web Development</div>
-              Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="columns">
-        <div class="column">
-          <a class="box">
-            <div class="content">
-              <div class="title is-5">Front End Web Development</div>
-              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
-              Vue.js.
-            </div>
-          </a>
-        </div>
-        <div class="column">
-          <a class="box">
-            <div class="content">
-              <div class="title is-5">Back End Web Development</div>
-              Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section has-background-grey-lighter">
-    <div class="container">
-      <div class="section-heading has-text-centered">
-        <div class="title is-2">Portfolio</div>
-        <div class="subtitle is-5">Our latest works</div>
-      </div>
-
-      <div class="container portfolio-container">
-        <div class="columns">
-          <div class="column is-4">
-            <div class="card">
-              <div class="card-header">
-                <p class="card-header-title">
-                  <span>Admin <small>(Light)</small></span>
-                  <span class="is-pulled-right">
-                    <a>
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-danger">WIP</span>
-                  </span>
-                </p>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <div class="tile is-child box">
+              <div class="image">
+                <img src="https://source.unsplash.com/random/256x170/?sig=100" alt="New York">
               </div>
-              <div class="card-content">
-                <div class="image">
-                  <img src="https://source.unsplash.com/random/300x200/?sig=201">
+              <h3 class="title">New York</h3>
+              <p class="subtitle">Fri 27 Nov 2016</p>
+              <button class="button">Buy Tickets</button>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile is-child box">
+              <div class="image">
+                <img src="https://source.unsplash.com/random/256x170/?sig=101" alt="Los Angeles">
+              </div>
+              <h3 class="title">Los Angeles</h3>
+              <p class="subtitle">Fri 27 Nov 2016</p>
+              <button class="button">Buy Tickets</button>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile is-child box">
+              <div class="image">
+                <img src="https://source.unsplash.com/random/256x170/?sig=102" alt="Mexico">
+              </div>
+              <h3 class="title">Mexico</h3>
+              <p class="subtitle">Fri 27 Nov 2016</p>
+              <button class="button">Buy Tickets</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <div class="tile is-child box">
+              <div class="image">
+                <img src="https://source.unsplash.com/random/256x170/?sig=103" alt="Paris">
+              </div>
+              <h3 class="title">Paris</h3>
+              <p class="subtitle">Fri 27 Nov 2016</p>
+              <button class="button">Buy Tickets</button>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile is-child box">
+              <div class="image">
+                <img src="https://source.unsplash.com/random/256x170/?sig=104" alt="Tokio">
+              </div>
+              <h3 class="title">Tokio</h3>
+              <p class="subtitle">Fri 27 Nov 2016</p>
+              <button class="button">Buy Tickets</button>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile is-child box">
+              <div class="image">
+                <img src="https://source.unsplash.com/random/256x170/?sig=105" alt="London">
+              </div>
+              <h3 class="title">London</h3>
+              <p class="subtitle">Fri 27 Nov 2016</p>
+              <button class="button">Buy Tickets</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Services">
+      <div class="section-heading has-text-centered">
+        <h2 class="title is-2">Services</h2>
+        <div class="subtitle is-5">What can I do for you?</div>
+      </div>
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <a href="#" tabindex="0" class="box">
+              <div class="content">
+                <div class="title is-5">Front End Web Development</div>
+                Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
+                Vue.js.
+              </div>
+            </a>
+          </div>
+          <div class="column">
+            <a href="#" tabindex="0" class="box">
+              <div class="content">
+                <div class="title is-5">Back End Web Development</div>
+                Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column">
+            <a href="#" tabindex="0" class="box">
+              <div class="content">
+                <div class="title is-5">Front End Web Development</div>
+                Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
+                Vue.js.
+              </div>
+            </a>
+          </div>
+          <div class="column">
+            <a href="#"  tabindex="0" class="box">
+              <div class="content">
+                <div class="title is-5">Back End Web Development</div>
+                Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section has-background-grey-lighter" aria-label="Portfolio">
+      <div class="container">
+        <div class="section-heading has-text-centered">
+          <h2 class="title is-2">Portfolio</h2>
+          <div class="subtitle is-5">Our latest works</div>
+        </div>
+
+        <div class="container portfolio-container">
+          <div class="columns">
+            <div class="column is-4">
+              <div class="card">
+                <div class="card-header">
+                  <p class="card-header-title">
+                    <span>Admin <small>(Light)</small></span>
+                    <span class="is-pulled-right">
+                      <a href="#" tabindex="0">
+                        <span class="tag is-default">v0.7.2</span>
+                      </a>
+                      <span class="tag is-default">Desktop</span>
+                      <span class="tag is-danger">WIP</span>
+                    </span>
+                  </p>
+                </div>
+                <div class="card-content">
+                  <div class="image">
+                    <img src="https://source.unsplash.com/random/300x200/?sig=201" alt="portfolio image">
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" tabindex="0" class="card-footer-item">Preview</a>
+                  <a href="#" tabindex="0" class="card-footer-item">Source Code</a>
                 </div>
               </div>
-              <div class="card-footer">
-                <a class="card-footer-item">Preview</a>
-                <a class="card-footer-item">Source Code</a>
-              </div>
             </div>
-          </div>
-          <div class="column is-4">
-            <div class="card">
-              <div class="card-header">
-                <p class="card-header-title">
-                  <span>Cards</span>
-                  <span class="is-pulled-right">
-                    <a>
+            <div class="column is-4">
+              <div class="card">
+                <div class="card-header">
+                  <p class="card-header-title">
+                    <span>Cards</span>
+                    <span class="is-pulled-right">
+                    <a href="#" tabindex="0">
                       <span class="tag is-default">v0.7.2</span>
                     </a>
                     <span class="tag is-default">Desktop</span>
                     <span class="tag is-default">?</span>
                   </span>
-                </p>
-              </div>
-              <div class="card-content">
-                <div class="image">
-                  <img src="https://source.unsplash.com/random/300x200/?sig=202">
+                  </p>
+                </div>
+                <div class="card-content">
+                  <div class="image">
+                    <img src="https://source.unsplash.com/random/300x200/?sig=202" alt="portfolio image 2">
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" tabindex="0" class="card-footer-item">Preview</a>
+                  <a href="#" tabindex="0" class="card-footer-item">Source Code</a>
                 </div>
               </div>
-              <div class="card-footer">
-                <a class="card-footer-item">Preview</a>
-                <a class="card-footer-item">Source Code</a>
-                </div>
             </div>
-          </div>
-          <div class="column is-4">
-            <div class="card">
-              <div class="card-header">
-                <p class="card-header-title">
-                  <span>Forum</span>
-                  <span class="is-pulled-right">
-                    <a>
+            <div class="column is-4">
+              <div class="card">
+                <div class="card-header">
+                  <p class="card-header-title">
+                    <span>Forum</span>
+                    <span class="is-pulled-right">
+                    <a href="#" tabindex="0">
                       <span class="tag is-default">v0.7.2</span>
                     </a>
                     <span class="tag is-default">Desktop</span>
                     <span class="tag is-default">Mobile</span>
                   </span>
-                </p>
-              </div>
-              <div class="card-content">
-                <div class="image">
-                  <img src="https://source.unsplash.com/random/300x200/?sig=203">
+                  </p>
+                </div>
+                <div class="card-content">
+                  <div class="image">
+                    <img src="https://source.unsplash.com/random/300x200/?sig=203" alt="portfolio image 3">
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" tabindex="0" class="card-footer-item">Preview</a>
+                  <a href="#" tabindex="0" class="card-footer-item">Source Code</a>
                 </div>
               </div>
-              <div class="card-footer">
-                <a class="card-footer-item">Preview</a>
-                <a class="card-footer-item">Source Code</a>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column is-4">
+              <div class="card">
+                <div class="card-header">
+                  <p class="card-header-title">
+                    <span>InstaAlbum</span>
+                    <span class="is-pulled-right">
+                    <a href="#" tabindex="0">
+                      <span class="tag is-default">v0.7.2</span>
+                    </a>
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-default">Mobile</span>
+                  </span>
+                  </p>
+                </div>
+                <div class="card-content">
+                  <div class="image">
+                    <img src="https://source.unsplash.com/random/300x200/?sig=204" alt="portfolio image 4">
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" tabindex="0" class="card-footer-item">Preview</a>
+                  <a href="#" tabindex="0" class="card-footer-item">Source Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="column is-4">
+              <div class="card">
+                <div class="card-header">
+                  <p class="card-header-title">
+                    <span>Landing</span>
+                    <span class="is-pulled-right">
+                    <a href="#" tabindex="0">
+                      <span class="tag is-default">v0.7.2</span>
+                    </a>
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-default">Mobile</span>
+                  </span>
+                  </p>
+                </div>
+                <div class="card-content">
+                  <div class="image">
+                    <img src="https://source.unsplash.com/random/300x200/?sig=205" alt="portfolio image 5">
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" tabindex="0" class="card-footer-item">Preview</a>
+                  <a href="#" tabindex="0" class="card-footer-item">Source Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="column is-4">
+              <div class="card">
+                <div class="card-header">
+                  <p class="card-header-title">
+                    <span>Marketing</span>
+                    <span class="is-pulled-right">
+                    <a href="#" tabindex="0">
+                      <span class="tag is-default">v0.7.2</span>
+                    </a>
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-default">Mobile</span>
+                  </span>
+                  </p>
+                </div>
+                <div class="card-content">
+                  <div class="image">
+                    <img src="https://source.unsplash.com/random/300x200/?sig=206" alt="portfolio image 6">
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" tabindex="0" class="card-footer-item">Preview</a>
+                  <a href="#" tabindex="0" class="card-footer-item">Source Code</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Forum">
+      <div class="container">
+        <div class="section-heading has-text-centered">
+          <h2 class="title is-2">Forum</h2>
+          <div class="subtitle is-5">Discuss any topic with no leaving this page</div>
+        </div>
+
         <div class="columns">
-          <div class="column is-4">
-            <div class="card">
-              <div class="card-header">
-                <p class="card-header-title">
-                  <span>InstaAlbum</span>
-                  <span class="is-pulled-right">
-                    <a>
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-default">Mobile</span>
-                  </span>
-                </p>
-              </div>
-              <div class="card-content">
-                <div class="image">
-                  <img src="https://source.unsplash.com/random/300x200/?sig=204">
-                </div>
-              </div>
-              <div class="card-footer">
-                <a class="card-footer-item">Preview</a>
-                <a class="card-footer-item">Source Code</a>
-              </div>
-            </div>
-          </div>
-          <div class="column is-4">
-            <div class="card">
-              <div class="card-header">
-                <p class="card-header-title">
-                  <span>Landing</span>
-                  <span class="is-pulled-right">
-                    <a>
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-default">Mobile</span>
-                  </span>
-                </p>
-              </div>
-              <div class="card-content">
-                <div class="image">
-                  <img src="https://source.unsplash.com/random/300x200/?sig=205">
-                </div>
-              </div>
-              <div class="card-footer">
-                <a class="card-footer-item">Preview</a>
-                <a class="card-footer-item">Source Code</a>
-              </div>
-            </div>
-          </div>
-          <div class="column is-4">
-            <div class="card">
-              <div class="card-header">
-                <p class="card-header-title">
-                  <span>Marketing</span>
-                  <span class="is-pulled-right">
-                    <a>
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-default">Mobile</span>
-                  </span>
-                </p>
-              </div>
-              <div class="card-content">
-                <div class="image">
-                  <img src="https://source.unsplash.com/random/300x200/?sig=206">
-                </div>
-              </div>
-              <div class="card-footer">
-                <a class="card-footer-item">Preview</a>
-                <a class="card-footer-item">Source Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="container">
-      <div class="section-heading has-text-centered">
-        <div class="title is-2">Forum</div>
-        <div class="subtitle is-5">Discuss any topic with no leaving this page</div>
-      </div>
-
-      <div class="columns">
-        <div class="column is-3">
-          <a class="button is-primary is-block is-alt is-large">New Post</a>
-          <div class="menu">
-            <ul class="menu-list forum-list">
-              <li><span class="tag is-primary is-medium">Dashboard</span></li>
-              <li><span class="tag is-link is-medium">Customers</span></li>
-              <li><span class="tag is-light is-danger is-medium">Authentication</span></li>
-              <li><span class="tag is-dark is-medium">Payments</span></li>
-              <li><span class="tag is-success is-medium">Transfers</span></li>
-              <li><span class="tag is-warning is-medium">Balance</span></li>
-              <li><span class="tag is-medium ">Question</span></li>
-            </ul>
-          </div>
-        </div>
-        <div class="column is-9">
-          <div class="box content">
-            <div class="post">
-              <h4>How do you center a button in a box?</h4>
-              <div class="media">
-                <div class="media-left">
-                  <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=300">
-                  </p>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <a>@jsmith</a> replied 34 minutes ago &nbsp;
-                      <span class="tag">Question</span>
+          <aside class="column is-3">
+            <button class="button is-primary is-block is-alt is-large">New Post</button>
+            <nav class="menu" aria-label="Section left menu">
+              <ul class="menu-list forum-list">
+                <li><button class="tag is-primary is-medium">Dashboard</button></li>
+                <li><button class="tag is-link is-medium">Customers</button></li>
+                <li><button class="tag is-light is-danger is-medium">Authentication</button></li>
+                <li><button class="tag is-dark is-medium">Payments</button></li>
+                <li><button class="tag is-success is-medium">Transfers</button></li>
+                <li><button class="tag is-warning is-medium">Balance</button></li>
+                <li><button class="tag is-medium ">Question</button></li>
+              </ul>
+            </nav>
+          </aside>
+          <div class="column is-9">
+            <div class="box content">
+              <div class="post">
+                <h4>How do you center a button in a box?</h4>
+                <div class="media">
+                  <div class="media-left">
+                    <p class="image is-32x32">
+                      <img src="https://source.unsplash.com/random/64x64/?sig=300" alt="avatar">
                     </p>
                   </div>
-                </div>
-                <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 1</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="post">
-              <h4>How can I make a button go full width?</h4>
-              <div class="media">
-                <div class="media-left">
-                  <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=301">
-                  </p>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <a>@red</a> replied 40 minutes ago &nbsp;
-                      <span class="tag">Question</span>
-                    </p>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <a href="#" tabindex="0">@jsmith</a> replied 34 minutes ago &nbsp;
+                        <a href="#" tabindex="0" class="tag">Question</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="media-right">
+                    <span class="has-text-grey-dark fa fa-comments"> 1</span>
                   </div>
                 </div>
-                <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 0</span>
-                </div>
               </div>
-            </div>
 
-            <div class="post">
-              <h4>TypeError: Data must be a string or a buffer when trying touse tabs</h4>
-              <div class="media">
-                <div class="media-left">
-                  <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=302">
-                  </p>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <a>@jsmith</a> replied 53 minutes ago &nbsp;
-                      <span class="tag">Question</span>
+              <div class="post">
+                <h4>How can I make a button go full width?</h4>
+                <div class="media">
+                  <div class="media-left">
+                    <p class="image is-32x32">
+                      <img src="https://source.unsplash.com/random/64x64/?sig=301" alt="avatar 2">
                     </p>
                   </div>
-                </div>
-                <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 13</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="post">
-              <h4>How to vertically center elements?</h4>
-              <div class="media">
-                <div class="media-left">
-                  <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=303">
-                  </p>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <a>@brown</a> replied 3 hours ago &nbsp;
-                      <span class="tag">Question</span>
-                    </p>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <a href="#" tabindex="0">@red</a> replied 40 minutes ago &nbsp;
+                        <a href="#" tabindex="0" class="tag">Question</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="media-right">
+                    <span class="has-text-grey-dark fa fa-comments"> 0</span>
                   </div>
                 </div>
-                <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
-                </div>
               </div>
-            </div>
 
-            <div class="post">
-              <h4>I'm trying to use hamburger menu on css, but it doesn't work. What is wrong?</h4>
-              <div class="media">
-                <div class="media-left">
-                  <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=304">
-                  </p>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <a>@hamburgler</a> replied 5 hours ago &nbsp;
-                      <span class="tag">Question</span>
+              <div class="post">
+                <h4>TypeError: Data must be a string or a buffer when trying touse tabs</h4>
+                <div class="media">
+                  <div class="media-left">
+                    <p class="image is-32x32">
+                      <img src="https://source.unsplash.com/random/64x64/?sig=302" alt="avatar 3">
                     </p>
                   </div>
-                </div>
-                <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="post">
-              <h4>How to make tiles wrap with CSS?</h4>
-              <div class="media">
-                <div class="media-left">
-                  <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=305">
-                  </p>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <a>@rapper</a> replied 3 hours ago &nbsp;
-                      <span class="tag">Question</span>
-                    </p>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <a href="#" tabindex="0">@jsmith</a> replied 53 minutes ago &nbsp;
+                        <a href="#" tabindex="0" class="tag">Question</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="media-right">
+                    <span class="has-text-grey-dark fa fa-comments"> 13</span>
                   </div>
                 </div>
-                <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+              </div>
+
+              <div class="post">
+                <h4>How to vertically center elements?</h4>
+                <div class="media">
+                  <div class="media-left">
+                    <p class="image is-32x32">
+                      <img src="https://source.unsplash.com/random/64x64/?sig=303" alt="avatar 4">
+                    </p>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <a href="#" tabindex="0">@brown</a> replied 3 hours ago &nbsp;
+                        <a href="#" tabindex="0" class="tag">Question</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="media-right">
+                    <span class="has-text-grey-dark fa fa-comments"> 2</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="post">
+                <h4>I'm trying to use hamburger menu on css, but it doesn't work. What is wrong?</h4>
+                <div class="media">
+                  <div class="media-left">
+                    <p class="image is-32x32">
+                      <img src="https://source.unsplash.com/random/64x64/?sig=304" alt="avatar 5">
+                    </p>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <a href="#" tabindex="0">@hamburgler</a> replied 5 hours ago &nbsp;
+                        <a href="#" tabindex="0" class="tag">Question</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="media-right">
+                    <span class="has-text-grey-dark fa fa-comments"> 2</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="post">
+                <h4>How to make tiles wrap with CSS?</h4>
+                <div class="media">
+                  <div class="media-left">
+                    <p class="image is-32x32">
+                      <img src="https://source.unsplash.com/random/64x64/?sig=305" alt="avatar 6">
+                    </p>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <a href="#" tabindex="0">@rapper</a> replied 3 hours ago &nbsp;
+                        <a href="#" tabindex="0" class="tag">Question</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="media-right">
+                    <span class="has-text-grey-dark fa fa-comments"> 2</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="section has-background-light">
-    <div class="container">
-      <div class="section-heading has-text-centered">
-        <div class="title is-2">Contact us</div>
-        <div class="subtitle is-5">Don't hesitate, ask anything</div>
-      </div>
-
-      <form class="column is-half is-offset-one-quarter box">
-        <div class="field">
-          <label class="label">Name</label>
-          <div class="control">
-            <input class="input" type="text" placeholder="Text input">
-          </div>
+    <section class="section has-background-light" aria-label="Contacts">
+      <div class="container">
+        <div class="section-heading has-text-centered">
+          <h2 class="title is-2">Contact us</h2>
+          <div class="subtitle is-5">Don't hesitate, ask anything</div>
         </div>
 
-        <div class="field">
-          <label class="label">Username</label>
-          <div class="control has-icons-left has-icons-right">
-            <input class="input is-success" type="text">
-            <span class="icon is-small is-left">
-              <i class="fas fa-user"></i>
+        <form class="column is-half is-offset-one-quarter box">
+          <div class="field">
+            <label for="name" class="label">Name</label>
+            <div class="control">
+              <input class="input" id="name" name="name" type="text" placeholder="Text input">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="username" class="label">Username</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-success" id="username" name="username" type="text">
+              <span class="icon is-small is-left fas fa-user">
             </span>
-            <span class="icon is-small is-right">
-              <i class="fas fa-check"></i>
+              <span class="icon is-small is-right fas fa-check">
             </span>
+            </div>
+            <p class="help is-success">This username is available</p>
           </div>
-          <p class="help is-success">This username is available</p>
-        </div>
 
-        <div class="field">
-          <label class="label">Email</label>
-          <div class="control has-icons-left has-icons-right">
-            <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
-            <span class="icon is-small is-left">
-              <i class="fas fa-envelope"></i>
+          <div class="field">
+            <label for="contact-email" class="label">Email</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-danger" id="contact-email" name="contact-email" type="email" placeholder="Email input" value="hello@">
+              <span class="icon is-small is-left fas fa-envelope">
             </span>
-            <span class="icon is-small is-right">
-              <i class="fas fa-exclamation-triangle"></i>
+              <span class="icon is-small is-right fas fa-exclamation-triangle">
             </span>
-          </div>
-          <p class="help is-danger">This email is invalid</p>
-        </div>
-
-        <div class="field">
-          <label class="label">Subject</label>
-          <div class="control">
-            <div class="select">
-              <select>
-                <option>Select dropdown</option>
-                <option>With options</option>
-              </select>
             </div>
+            <p class="help is-danger">This email is invalid</p>
           </div>
-        </div>
 
-        <div class="field">
-          <label class="label">Message</label>
-          <div class="control">
-            <textarea class="textarea" placeholder="Textarea"></textarea>
-          </div>
-        </div>
-
-        <div class="field">
-          <div class="control">
-            <label class="checkbox">
-              <input type="checkbox">
-              I agree to the <a>terms and conditions</a>
-            </label>
-          </div>
-        </div>
-
-        <div class="field">
-          <div class="control">
-            <label class="radio">
-              <input type="radio" name="question">
-              Yes
-            </label>
-            <label class="radio">
-              <input type="radio" name="question">
-              No
-            </label>
-          </div>
-        </div>
-
-        <div class="field is-grouped">
-          <div class="control">
-            <button class="button is-link">Submit</button>
-          </div>
-          <div class="control">
-            <button class="button is-text">Cancel</button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="container">
-      <div class="columns is-multiline">
-        <div class="column is-one-third">
-          <div class="notification media has-background-white">
-            <div class="media-left">
-              <span class="icon">
-                <i class="has-text-warning fas fa-columns fa-lg"></i>
-              </span>
-            </div>
-            <div class="media-content">
-              <div class="content">
-                <div class="title is-size-4">Columns</div>
-                <p class="is-size-5 subtitle">
-                  The power of <b>Flexbox</b> in a simple interface
-                </p>
+          <div class="field">
+            <label for="subject" class="label">Subject</label>
+            <div class="control">
+              <div class="select">
+                <select id="subject" name="subject">
+                  <option>Select dropdown</option>
+                  <option>With options</option>
+                </select>
               </div>
             </div>
           </div>
-        </div>
-        <div class="column is-one-third">
-          <div class="notification has-background-white media">
-            <div class="media-left">
-              <span class="icon has-text-info">
-                <i class="fab fa-lg fa-wpforms"></i>
-              </span>
+
+          <div class="field">
+            <label for="contact-message" class="label">Message</label>
+            <div class="control">
+              <textarea id="contact-message" name="contact-message" class="textarea" placeholder="Textarea"></textarea>
             </div>
-            <div class="media-content">
-              <div class="content">
-                <div class="title is-size-4">Form</div>
-                <p class="is-size-5 subtitle">
-                  The indispensable <b>form controls</b>, designed for maximum clarity
-                </p>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox">
+                I agree to the <a href="#" tabindex="0">terms and conditions</a>
+              </label>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <input type="radio" id="question-yes" name="question-yes">
+              <label for="question-yes" class="radio">Yes</label>
+              <input type="radio" id="question-no" name="question-no">
+              <label for="question-no" class="radio">No</label>
+            </div>
+          </div>
+
+          <div class="field is-grouped">
+            <div class="control">
+              <button type="submit" class="button is-link">Submit</button>
+            </div>
+            <div class="control">
+              <button type="reset" class="button is-text">Cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Framework advantages">
+      <h2 class="visually-hidden">Framework advantages</h2>
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column is-one-third">
+            <div class="notification media has-background-white">
+              <div class="media-left">
+                <span class="icon has-text-warning fas fa-columns fa-lg"></span>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <h3 class="title is-size-4">Columns</h3>
+                  <p class="is-size-5 subtitle">
+                    The power of <strong>Flexbox</strong> in a simple interface
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="column is-one-third">
-          <div class="notification has-background-white media">
-            <div class="media-left">
-              <span class="icon has-text-danger">
-                <i class="fas fa-lg fa-cubes"></i>
-              </span>
-            </div>
-            <div class="media-content">
-              <div class="content">
-                <h1 class="title is-size-4">Components</h1>
-                <p class="is-size-5 subtitle">
-                  Advanced multi-part components with lots of possibilities
-                </p>
+          <div class="column is-one-third">
+            <div class="notification has-background-white media">
+              <div class="media-left">
+                <span class="icon has-text-info fab fa-lg fa-wpforms"></span>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <h3 class="title is-size-4">Form</h3>
+                  <p class="is-size-5 subtitle">
+                    The indispensable <strong>form controls</strong>, designed for maximum clarity
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="column is-one-third">
-          <div class="notification has-background-white media">
-            <div class="media-left">
-              <span class="icon has-text-grey">
-                <i class="fas fa-lg fa-cogs"></i>
-              </span>
-            </div>
-            <div class="media-content">
-              <div class="content">
-                <div class="title is-size-4">Modifiers</div>
-                <p class="is-size-5 subtitle">
-                  An <b>easy-to-read</b> naming system designed for humans
-                </p>
+          <div class="column is-one-third">
+            <div class="notification has-background-white media">
+              <div class="media-left">
+                <span class="icon has-text-danger fas fa-lg fa-cubes"></span>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <h3 class="title is-size-4">Components</h3>
+                  <p class="is-size-5 subtitle">
+                    Advanced multi-part components with lots of possibilities
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="column is-one-third">
-          <div class="notification has-background-white media">
-            <div class="media-left">
-              <span class="icon has-text-primary">
-                <i class="fas fa-lg fa-warehouse"></i>
-              </span>
-            </div>
-            <div class="media-content">
-              <div class="content">
-                <div class="title is-size-4">Layout</div>
-                <p class="is-size-5 subtitle">
-                  Design the <b>structure</b> of your webpage with these CSS classes
-                </p>
+          <div class="column is-one-third">
+            <div class="notification has-background-white media">
+              <div class="media-left">
+                <span class="icon has-text-grey fas fa-lg fa-cogs"></span>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <h3 class="title is-size-4">Modifiers</h3>
+                  <p class="is-size-5 subtitle">
+                    An <strong>easy-to-read</strong> naming system designed for humans
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="column is-one-third">
-          <div class="notification has-background-white media">
-            <div class="media-left">
-              <span class="icon has-text-danger">
-                <i class="fas fa-lg fa-cube"></i>
-              </span>
+          <div class="column is-one-third">
+            <div class="notification has-background-white media">
+              <div class="media-left">
+                <span class="icon has-text-primary fas fa-lg fa-warehouse"></span>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <h3 class="title is-size-4">Layout</h3>
+                  <p class="is-size-5 subtitle">
+                    Design the <strong>structure</strong> of your webpage with these CSS classes
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="media-content">
-              <div class="content">
-                <div class="title is-size-4">Elements</div>
-                <p class="is-size-5 subtitle">
-                  Essential interface elements that only require a <b>single CSS class</b>
-                </p>
+          </div>
+          <div class="column is-one-third">
+            <div class="notification has-background-white media">
+              <div class="media-left">
+                <span class="icon has-text-danger fas fa-lg fa-cube"></span>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <h3 class="title is-size-4">Elements</h3>
+                  <p class="is-size-5 subtitle">
+                    Essential interface elements that only require a <strong>single CSS class</strong>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 
-  <div class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="columns">
+        <h2 class="visually-hidden">Usefull links</h2>
         <div class="column is-3 is-offset-2">
-          <div class="is-3 title"><b>Lessons</b></div>
+          <h3 class="is-3 title"><strong>Lessons</strong></h3>
           <ul>
-            <li><a>Lorem ipsum dolor sit amet</a></li>
-            <li><a>Vestibulum errato isse</a></li>
-            <li><a>Lorem ipsum dolor sit amet</a></li>
-            <li><a>Aisia caisia</a></li>
-            <li><a>Murphy's law</a></li>
-            <li><a>Flimsy Lavenrock</a></li>
-            <li><a>Maven Mousie Lavender</a></li>
+            <li><a href="#" tabindex="0">Lorem ipsum dolor sit amet</a></li>
+            <li><a href="#" tabindex="0">Vestibulum errato isse</a></li>
+            <li><a href="#" tabindex="0">Lorem ipsum dolor sit amet</a></li>
+            <li><a href="#" tabindex="0">Aisia caisia</a></li>
+            <li><a href="#" tabindex="0">Murphy's law</a></li>
+            <li><a href="#" tabindex="0">Flimsy Lavenrock</a></li>
+            <li><a href="#" tabindex="0">Maven Mousie Lavender</a></li>
           </ul>
         </div>
         <div class="column is-3">
-          <div class="is-3 title"><b>News</b></div>
+          <h3 class="is-3 title"><strong>News</strong></h3>
           <ul>
-            <li><a>Labore et dolore magna aliqua</a></li>
-            <li><a>Kanban airis sum eschelor</a></li>
-            <li><a>Modular modern free</a></li>
-            <li><a>The king of clubs</a></li>
-            <li><a>The Discovery Dissipation</a></li>
-            <li><a>Course Correction</a></li>
-            <li><a>Better Angels</a></li>
+            <li><a href="#" tabindex="0">Labore et dolore magna aliqua</a></li>
+            <li><a href="#" tabindex="0">Kanban airis sum eschelor</a></li>
+            <li><a href="#" tabindex="0">Modular modern free</a></li>
+            <li><a href="#" tabindex="0">The king of clubs</a></li>
+            <li><a href="#" tabindex="0">The Discovery Dissipation</a></li>
+            <li><a href="#" tabindex="0">Course Correction</a></li>
+            <li><a href="#" tabindex="0">Better Angels</a></li>
           </ul>
         </div>
         <div class="column is-4">
-          <div class="is-3 title"><b>Help</b></div>
+          <h3 class="is-3 title"><strong>Help</strong></h3>
           <ul>
-            <li><a>Objects in space</a></li>
-            <li><a>Playing cards with coyote</a></li>
-            <li><a>Goodbye Yellow Brick Road</a></li>
-            <li><a>The Garden of Forking Paths</a></li>
-            <li><a>Future Shock</a></li>
+            <li><a href="#" tabindex="0">Objects in space</a></li>
+            <li><a href="#" tabindex="0">Playing cards with coyote</a></li>
+            <li><a href="#" tabindex="0">Goodbye Yellow Brick Road</a></li>
+            <li><a href="#" tabindex="0">The Garden of Forking Paths</a></li>
+            <li><a href="#" tabindex="0">Future Shock</a></li>
           </ul>
         </div>
       </div>
 
       <div class="content has-text-centered">
         <div class="soc">
-          <a><i class="fab fa-github-alt fa-2x"></i></a>
-          <a><i class="fab fa-youtube fa-2x"></i></a>
-          <a><i class="fab fa-facebook fa-2x"></i></a>
-          <a><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#" tabindex="0"><span class="fab fa-github-alt fa-2x"></span></a>
+          <a href="#" tabindex="0"><span class="fab fa-youtube fa-2x"></span></a>
+          <a href="#" tabindex="0"><span class="fab fa-facebook fa-2x"></span></a>
+          <a href="#" tabindex="0"><span class="fab fa-twitter fa-2x"></span></a>
         </div>
-        <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</p>
+        <p>The source code is licensed <a tabindex="0" href="http://opensource.org/licenses/mit-license.php">MIT</a>.</p>
       </div>
     </div>
-  </div>
+  </footer>
 
   <div id="modal-card" class="modal modal-fx-3dSlit">
     <div class="modal-background"></div>
@@ -1283,14 +1258,14 @@
       <div class="card">
         <div class="card-image">
           <div class="image is-4by3">
-            <img src="https://source.unsplash.com/random/?sig=2">
+            <img src="https://source.unsplash.com/random/?sig=2" alt="Modal card image">
           </div>
         </div>
         <div class="card-content">
           <div class="media">
             <div class="media-left">
               <div class="image is-48x48">
-                <img src="http://www.radfaces.com/images/avatars/linda-barret.jpg">
+                <img src="http://www.radfaces.com/images/avatars/linda-barret.jpg" alt="Modal card image 2">
               </div>
             </div>
             <div class="media-content">
@@ -1303,32 +1278,32 @@
             Bean's dinnahbucket bub geez bud sumpin' fierce ayuhpawt Bangah naw, Powrtland Museum of Aht down cellah sumpin' fierce hoppa bub If you can't stand the wintah you don't deserve the summah slower than molasses going uphill in January.
             Sgn'wahl shoggor hrii uaaah R'lyeh uh'e k'yarnak Hastur hupadgh li'hee, hai f'nilgh'ri nilgh'ri n'ghftor ngftaghu vulgtlagln h'hrii throd Nyarlathotep lloig, naflsll'ha nnnsll'ha athg y-ebunma goka chtenff ehyeog cehye. Zhro y'hah
             nogoth phlegeth stell'bsna orr'e ph'Hastur gnaiih throd, uln ya lw'nafh mg nar'luh li'hee wgah'n, sgn'wahl mg nakadishtu chlirgh hupadgh tharanak h'gnaiih.
-            <a>@testio</a>.
-            <a>#css</a>
-            <a>#responsive</a>
+            <a href="#" tabindex="0">@testio</a>.
+            <a href="#" tabindex="0">#css</a>
+            <a href="#" tabindex="0">#responsive</a>
             <br>
             <time datetime="2018-02-02">12:45 AM - 20 June 2018</time>
           </div>
         </div>
       </div>
     </div>
-    <button class="modal-close is-large"></button>
+    <button class="modal-close is-large" tabindex="0"></button>
   </div>
 
   <div id="modal-image1" class="modal modal-fx-3dSlit">
     <div class="modal-background"></div>
     <div class="modal-content is-huge is-image">
-      <img src="https://source.unsplash.com/random/?sig=1">
+      <img src="https://source.unsplash.com/random/?sig=1" alt="Modal image">
     </div>
-    <button class="modal-close is-large"></button>
+    <button class="modal-close is-large" tabindex="0"></button>
   </div>
 
   <div id="modal-image2" class="modal modal-fx-superScaled">
     <div class="modal-background"></div>
-    <div class="modal-content  is-image">
-      <img src="https://source.unsplash.com/random/?sig=3">
+    <div class="modal-content is-image">
+      <img src="https://source.unsplash.com/random/?sig=3" alt="Modal image 2">
     </div>
-    <button class="modal-close is-large"></button>
+    <button class="modal-close is-large" tabindex="1"></button>
   </div>
 
   <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>

@@ -1,3 +1,21 @@
+.visually-hidden {
+  position: absolute;
+  color: white;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+}
+.visually-hidden:focus {
+  height: auto;
+  width: auto;
+  clip: auto;
+}
+.skip-video {
+  color: black;
+}
 .hero-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://unsplash.it/1200/900?random") no-repeat center center fixed;
@@ -114,6 +132,7 @@
   height: 3rem;
   line-height: 2.8;
   margin-bottom: 1rem;
+  width: 100%;
 }
 .post {
   margin: 1rem;
@@ -128,7 +147,59 @@
 .forum-list li {
   margin-bottom: .5rem;
 }
-
+.navbar-burger {
+  background: transparent;
+  border: 0;
+  color: white;
+}
+a {
+  color: #2c6dd6;
+}
+a.tag {
+  display: inline-flex;
+}
+a.tag:hover {
+  text-decoration: none;
+}
+.icon {
+  display: flex;
+}
+.button.is-info,
+.hero.is-info {
+  background-color: #176bee;
+}
+.hero.is-info .subtitle {
+  color: white;
+}
+.hero.is-info .tabs.is-boxed li.is-active a,
+.hero.is-info .tabs.is-boxed li.is-active a:hover,
+.hero.is-info .tabs.is-toggle li.is-active a,
+.hero.is-info .tabs.is-toggle li.is-active a:hover {
+  color: #176bee;
+}
+.tag:not(body).is-primary {
+  background-color: #208476;
+}
+a.tag:not(body).is-primary:hover,
+a.tag:not(body).is-danger:hover {
+  background-color: #f5f5f5;
+}
+.tag:not(body).is-danger {
+  background-color: #d41d42;
+}
+.help.is-danger {
+  color: #d41d42;
+}
+.tag:not(body).is-success {
+  background-color: #01802e;
+}
+.help.is-success {
+  color: #01802e;
+}
+.input.is-success,
+.textarea.is-success {
+  border-color: #01802e;
+}
 
 @media screen and (max-width: 1087px) {
   .navbar-menu {
