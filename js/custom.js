@@ -1,9 +1,16 @@
 (function() {
   var burger = document.querySelector(".burger");
   var menu = document.querySelector("#" + burger.dataset.target);
+  var btnTranscription = document.querySelector(".btn-transcription");
+  var transcription = document.querySelector("#transcription-text");
+
   burger.addEventListener("click", function() {
     burger.classList.toggle("is-active");
     menu.classList.toggle("is-active");
+  });
+
+  btnTranscription.addEventListener("click", function() {
+    transcription.classList.toggle("is-active-transcription");
   });
 })();
 

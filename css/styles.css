@@ -247,3 +247,14 @@ fieldset {
 .table-caption {
   text-align: start;
 }
+
+.btn-transcription {
+  margin-top: 15px; 
+}
+
+.transcription {
+  display: none;
+}
+.is-active-transcription {
+  display: block;
+}
