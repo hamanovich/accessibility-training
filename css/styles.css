@@ -8,18 +8,37 @@
   margin-bottom: -1px !important;
   position: relative;
 }
+
 .tab-content {
   padding: 2rem;
 }
+
 .tab-pane {
   display: none;
 }
+
 .tab-pane.is-active {
   display: block;
   position: relative;
 }
+
 .is-active {
   display: initial;
+}
+
+.tabs button {
+  background-color: #fff;
+  border-bottom-color: transparent;
+  border-color: #fff;
+  border-radius: 4px 4px 0 0;
+  border: 1px solid transparent;
+  color: #0B5A8E;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  margin-bottom: -1px;
+  padding: 8px 16px;
+  vertical-align: top;
 }
 
 .cent {
@@ -41,6 +60,7 @@
   overflow: hidden;
   max-width: 100%;
 }
+
 .embed-container iframe,
 .embed-container object,
 .embed-container embed {
@@ -67,7 +87,7 @@
   font-size: 8rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  color: #209cee;
+  color: #0B5A8E;
 }
 
 .is-shady {
@@ -80,6 +100,7 @@
   position: relative;
   transition: all 0.2s ease-in-out;
 }
+
 .is-shady:hover {
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.19);
 }
@@ -90,7 +111,7 @@
   overflow: hidden;
 }
 
-.skills-content .media + .media {
+.skills-content .media+.media {
   margin-top: .5rem;
 }
 
@@ -115,11 +136,13 @@
   line-height: 2.8;
   margin-bottom: 1rem;
 }
+
 .post {
   margin: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #E6EAEE;
 }
+
 .post:last-child {
   padding-bottom: 0;
   border-bottom: none;
@@ -175,4 +198,91 @@ li {
   width: 40px;
   height: 40px;
   background-size: contain;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: 0 !important;
+  box-shadow: 0 0 2px 2px #fff, 0 0 3px 3px #000 !important;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+}
+
+.visually-hidden:focus {
+  height: auto;
+  width: auto;
+  clip: auto;
+  padding: 5px;
+  background-color: #ad0404;
+  border-bottom-right-radius: 5px;
+}
+
+a.visually-hidden:focus {
+  color: #fff;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0
+}
+
+.button.is-info,
+.hero.is-info {
+  background-color: #0B5A8E;
+}
+
+a {
+  color: #0B5A8E;
+}
+
+main a:hover,
+footer a:hover {
+  text-decoration: underline;
+}
+
+a[target="_blank"]::after {
+  font-family: "Font Awesome 5 Free";
+  content: "※";
+  margin-left: 3px;
+}
+
+.subtitle {
+  color: #292929;
+}
+
+.tag:not(body).is-danger {
+  background-color: #B30024;
+}
+
+.help.is-danger {
+  color: #B30024;
+}
+
+.help.is-success {
+  color: #0A4D24;
+}
+
+.no-border {
+  border: none;
 }
