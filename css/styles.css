@@ -8,6 +8,10 @@
   margin-bottom: -1px !important;
   position: relative;
 }
+.tab {
+  background: none;
+  border: none;
+}
 .tab-content {
   padding: 2rem;
 }
@@ -80,10 +84,10 @@
   position: relative;
   transition: all 0.2s ease-in-out;
 }
+.is-shady:focus,
 .is-shady:hover {
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.19);
 }
-
 
 .has-same-height .card {
   height: 350px;
@@ -91,7 +95,7 @@
 }
 
 .skills-content .media + .media {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .skills-content .progress {
@@ -103,8 +107,8 @@
 }
 
 .info-tiles {
-  margin: .75rem auto;
-  padding: 0 .75rem;
+  margin: 0.75rem auto;
+  padding: 0 0.75rem;
 }
 
 .button.is-primary.is-alt {
@@ -118,7 +122,7 @@
 .post {
   margin: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #E6EAEE;
+  border-bottom: 1px solid #e6eaee;
 }
 .post:last-child {
   padding-bottom: 0;
@@ -126,9 +130,8 @@
 }
 
 .forum-list li {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
-
 
 @media screen and (max-width: 1087px) {
   .navbar-menu {
@@ -175,4 +178,22 @@ li {
   width: 40px;
   height: 40px;
   background-size: contain;
+}
+
+.list-unstyled {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-inline li {
+  display: inline-block;
+}
+
+*:focus {
+  border: 2px solid orange !important;
+}
+
+button {
+  border: 0;
+  background: node;
 }
