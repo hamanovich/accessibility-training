@@ -242,6 +242,7 @@ fieldset {
 button.is-danger,
 .tag.is-danger {
   background-color: #bf2a48 !important;
+  color: #fff !important;
 }
 
 .is-danger {
@@ -256,6 +257,7 @@ button.is-primary,
 button.is-success,
 .tag.is-success {
   background-color: #147536 !important;
+  color: #fff !important;
 }
 
 .is-success {
