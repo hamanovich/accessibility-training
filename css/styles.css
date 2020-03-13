@@ -189,6 +189,38 @@ li {
   display: inline-block;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+.visually-hidden:focus {
+  height: auto;
+  width: auto;
+  clip: auto;
+}
+
+.skip-link {
+  color: yellow;
+  padding: 8px;
+}
+
+.breadcrumbs {
+  margin-top: 16px;
+}
+
+.breadcrumbs li:not(:last-child):after {
+  content: "/";
+  margin: 0 8px;
+}
+
 *:focus {
   border: 2px solid orange !important;
 }
@@ -196,4 +228,9 @@ li {
 button {
   border: 0;
   background: node;
+}
+
+fieldset {
+  margin-bottom: 10px;
+  padding: 4px 8px;
 }

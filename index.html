@@ -17,6 +17,9 @@
   </head>
 
   <body>
+    <a href="#maincontent" class="visually-hidden skip-link" tabindex="1">
+      Skip to main content
+    </a>
     <div class="hero hero-bg is-fullheight">
       <header class="hero-head">
         <div class="navbar">
@@ -34,32 +37,32 @@
               <ul class="navbar-end list-unstyled list-inline">
                 <li class="navbar-item">
                   <a href="#" class="button is-white is-outlined">
-                    <span class="icon">
-                      <i class="fa fa-home"></i>
+                    <span class="icon" aria-hidden="true">
+                      <span class="fa fa-home"></span>
                     </span>
                     <span>Home</span>
                   </a>
                 </li>
                 <li class="navbar-item">
                   <a href="#" class="button is-white is-outlined">
-                    <span class="icon">
-                      <i class="fab fa-superpowers"></i>
+                    <span class="icon" aria-hidden="true">
+                      <span class="fab fa-superpowers"></span>
                     </span>
                     <span>Examples</span>
                   </a>
                 </li>
                 <li class="navbar-item">
                   <a href="#" class="button is-white is-outlined">
-                    <span class="icon">
-                      <i class="fa fa-book"></i>
+                    <span class="icon" aria-hidden="true">
+                      <span class="fa fa-book"></span>
                     </span>
                     <span>Documentation</span>
                   </a>
                 </li>
                 <li class="navbar-item">
                   <a href="#" class="button is-white is-outlined">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
+                    <span class="icon" aria-hidden="true">
+                      <span class="fab fa-github"></span>
                     </span>
                     <span>View Source</span>
                   </a>
@@ -81,7 +84,11 @@
             </div>
             <div class="box">
               <div class="field is-grouped">
-                <input class="input control is-expanded" />
+                <input
+                  class="input control is-expanded"
+                  type="email"
+                  aria-label="Insert your email to get notifications"
+                />
                 <button class="button control is-info">Notify Me</button>
               </div>
             </div>
@@ -89,7 +96,15 @@
         </div>
       </section>
     </div>
-    <main>
+    <main id="maincontent">
+      <nav aria-label="breadcrumbs" class="breadcrumbs container">
+        <ol class="list-unstyled list-inline">
+          <li><a href="https://www.epam.com/">EPAM Homepage</a></li>
+          <li>
+            <a href="#" aria-current="page">Accessibility training</a>
+          </li>
+        </ol>
+      </nav>
       <div class="section" id="about">
         <section class="section-heading has-text-centered">
           <h2 class="title is-2">About Us</h2>
@@ -207,9 +222,12 @@
             maximus est porta condimentum in eu justo. Nulla id iaculis sapien.
           </p>
           <table>
+            <caption>
+              Cool table
+            </caption>
             <tr>
-              <td>Header</td>
-              <td>Header</td>
+              <th scope="col">Header</th>
+              <th scope="col">Header</th>
             </tr>
             <tr>
               <td>cell</td>
@@ -292,8 +310,8 @@
           <div class="columns">
             <div class="column is-4">
               <div class="card is-shady">
-                <div class="card-image has-text-centered">
-                  <i class="fa fa-paw"></i>
+                <div class="card-image has-text-centered" aria-hidden="true">
+                  <span class="fa fa-paw"></span>
                 </div>
                 <div class="card-content">
                   <div class="content">
@@ -313,7 +331,7 @@
             <div class="column is-4">
               <div class="card is-shady">
                 <div class="card-image has-text-centered">
-                  <i class="fab fa-empire"></i>
+                  <span class="fab fa-empire" aria-hidden="true"></span>
                 </div>
                 <div class="card-content">
                   <div class="content">
@@ -334,7 +352,7 @@
             <div class="column is-4">
               <div class="card is-shady">
                 <div class="card-image has-text-centered">
-                  <i class="fab fa-apple"></i>
+                  <span class="fab fa-apple" aria-hidden="true"></span>
                 </div>
                 <div class="card-content">
                   <div class="content">
@@ -367,21 +385,25 @@
           <ul>
             <li data-target="pane-1" id="1" class="is-active">
               <a href="#">
-                <span class="icon is-small"><i class="fa fa-image"></i></span>
+                <span class="icon is-small" aria-hidden="true">
+                  <span class="fa fa-image"></span>
+                </span>
                 <span>Pictures</span>
               </a>
             </li>
             <li data-target="pane-3" id="3">
               <a href="#">
-                <span class="icon is-small"
-                  ><i class="fab fa-superpowers"></i
-                ></span>
+                <span class="icon is-small" aria-hidden="true">
+                  <span class="fab fa-superpowers"></span>
+                </span>
                 <span>Team</span>
               </a>
             </li>
             <li data-target="pane-4" id="4">
               <a href="#">
-                <span class="icon is-small"><i class="fa fa-film"></i></span>
+                <span class="icon is-small" aria-hidden="true">
+                  <span class="fa fa-film"></span>
+                </span>
                 <span>Video</span>
               </a>
             </li>
@@ -493,8 +515,8 @@
           <div class="columns medias">
             <div class="column">
               <div class="media">
-                <div class="media-left">
-                  <i class="fab fa-github-square fa-4x"></i>
+                <div class="media-left" aria-hidden="true">
+                  <span class="fab fa-github-square fa-4x"></span>
                 </div>
                 <div class="media-content">
                   <div class="content">
@@ -509,8 +531,8 @@
                 </div>
               </div>
               <div class="media">
-                <div class="media-left">
-                  <i class="fab fa-empire fa-4x"></i>
+                <div class="media-left" aria-hidden="true">
+                  <span class="fab fa-empire fa-4x"></span>
                 </div>
                 <div class="media-content">
                   <div class="content">
@@ -527,8 +549,8 @@
             </div>
             <div class="column">
               <div class="media">
-                <div class="media-left">
-                  <i class="fab fa-ravelry fa-4x"></i>
+                <div class="media-left" aria-hidden="true">
+                  <span class="fab fa-ravelry fa-4x"></span>
                 </div>
                 <div class="media-content">
                   <div class="content">
@@ -543,8 +565,8 @@
                 </div>
               </div>
               <div class="media">
-                <div class="media-left">
-                  <i class="fab fa-github-alt fa-4x"></i>
+                <div class="media-left" aria-hidden="true">
+                  <span class="fab fa-github-alt fa-4x"></span>
                 </div>
                 <div class="media-content">
                   <div class="content">
@@ -960,9 +982,10 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"
-                        ><i class="fa fa-comments"></i> 1</span
-                      >
+                      <span class="has-text-grey-light">
+                        <span class="fa fa-comments" aria-hidden="true"></span>
+                        1
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -987,9 +1010,10 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"
-                        ><i class="fa fa-comments"></i> 0</span
-                      >
+                      <span class="has-text-grey-light">
+                        <span class="fa fa-comments" aria-hidden="true"></span>
+                        0
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -1017,9 +1041,10 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"
-                        ><i class="fa fa-comments"></i> 13</span
-                      >
+                      <span class="has-text-grey-light">
+                        <span class="fa fa-comments" aria-hidden="true"></span>
+                        13
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -1044,9 +1069,10 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"
-                        ><i class="fa fa-comments"></i> 2</span
-                      >
+                      <span class="has-text-grey-light">
+                        <span class="fa fa-comments" aria-hidden="true"></span>
+                        2
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -1074,9 +1100,10 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"
-                        ><i class="fa fa-comments"></i> 2</span
-                      >
+                      <span class="has-text-grey-light">
+                        <span class="fa fa-comments" aria-hidden="true"></span>
+                        2
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -1101,9 +1128,10 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"
-                        ><i class="fa fa-comments"></i> 2</span
-                      >
+                      <span class="has-text-grey-light">
+                        <span class="fa fa-comments" aria-hidden="true"></span>
+                        2
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -1133,47 +1161,52 @@
             </div>
 
             <div class="field">
-              <label>
+              <label for="username-input">
                 <span class="label">Username</span>
-                <div class="control has-icons-left has-icons-right">
-                  <input class="input is-success" type="text" />
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-user"></i>
-                  </span>
-                  <span class="icon is-small is-right">
-                    <i class="fas fa-check"></i>
-                  </span>
-                </div>
               </label>
+              <div class="control has-icons-left has-icons-right">
+                <input
+                  class="input is-success"
+                  type="text"
+                  id="username-input"
+                />
+                <span class="icon is-small is-left" aria-hidden="true">
+                  <span class="fas fa-user"></span>
+                </span>
+                <span class="icon is-small is-right" aria-hidden="true">
+                  <span class="fas fa-check"></span>
+                </span>
+              </div>
               <p class="help is-success">This username is available</p>
             </div>
 
             <div class="field">
-              <label>
+              <label for="email-input">
                 <span class="label">Email</span>
-                <div class="control has-icons-left has-icons-right">
-                  <input
-                    class="input is-danger"
-                    type="email"
-                    placeholder="Email input"
-                    value="hello@"
-                  />
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                  <span class="icon is-small is-right">
-                    <i class="fas fa-exclamation-triangle"></i>
-                  </span>
-                </div>
               </label>
+              <div class="control has-icons-left has-icons-right">
+                <input
+                  class="input is-danger"
+                  type="email"
+                  placeholder="Email input"
+                  value="hello@"
+                  id="email-input"
+                />
+                <span class="icon is-small is-left" aria-hidden="true">
+                  <span class="fas fa-envelope"></span>
+                </span>
+                <span class="icon is-small is-right" aria-hidden="true">
+                  <span class="fas fa-exclamation-triangle"></span>
+                </span>
+              </div>
               <p class="help is-danger">This email is invalid</p>
             </div>
 
             <div class="field">
-              <label class="label">Subject</label>
+              <label class="label" for="select-input">Subject</label>
               <div class="control">
                 <div class="select">
-                  <select>
+                  <select id="select-input">
                     <option>Select dropdown</option>
                     <option>With options</option>
                   </select>
@@ -1200,18 +1233,21 @@
               </div>
             </div>
 
-            <div class="field">
-              <div class="control">
-                <label class="radio">
-                  <input type="radio" name="question" />
-                  Yes
-                </label>
-                <label class="radio">
-                  <input type="radio" name="question" />
-                  No
-                </label>
+            <fieldset>
+              <legend>Set of radio buttons</legend>
+              <div class="field">
+                <div class="control">
+                  <label class="radio">
+                    <input type="radio" name="question" value="yes" />
+                    Yes
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="question" value="no" />
+                    No
+                  </label>
+                </div>
               </div>
-            </div>
+            </fieldset>
 
             <div class="field is-grouped">
               <div class="control">
@@ -1376,14 +1412,30 @@
 
         <div class="content has-text-centered">
           <div class="soc">
-            <a href="#"><i class="fab fa-github-alt fa-2x"></i></a>
-            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
-            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#" aria-label="GitHub">
+              <span class="fab fa-github-alt fa-2x" aria-hidden="true"></span>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <span class="fab fa-youtube fa-2x" aria-hidden="true"></span>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <span class="fab fa-facebook fa-2x" aria-hidden="true"></span>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <span class="fab fa-twitter fa-2x" aria-hidden="true"></span>
+            </a>
           </div>
           <p>
             The source code is licensed
-            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+            <a
+              href="http://opensource.org/licenses/mit-license.php"
+              target="_blank"
+            >
+              MIT
+              <span class="fas fa-external-link-alt" aria-hidden="true"></span>
+              <span class="visually-hidden">opens in a new window or tab</span>
+            </a>
+            .
           </p>
         </div>
       </div>
