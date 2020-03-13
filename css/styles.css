@@ -236,22 +236,22 @@ fieldset {
 }
 
 .background-grey-light {
-  background-color: #f5f5f5;
+  background-color: #f5f5f5 !important;
 }
 
 button.is-danger,
 .tag.is-danger {
-  background-color: #bf2a48;
+  background-color: #bf2a48 !important;
 }
 
 button.is-primary,
 .tag.is-primary {
-  background-color: #008a75;
+  background-color: #008a75 !important;
 }
 
 button.is-success,
 .tag.is-success {
-  background-color: #147536;
+  background-color: #147536 !important;
 }
 
 button.is-info,
