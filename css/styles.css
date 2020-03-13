@@ -1,3 +1,33 @@
+:root {
+  --main-color: #2d37c2;
+}
+.has-background-grey-light {
+  background-color: #dedede!important;
+}
+.has-text-grey-light {
+  color: #585858!important;
+}
+.tag:not(body).is-primary {
+  background-color: #006d26;
+}
+.tag:not(body).is-success {
+  background-color: #50775e;
+}
+.tag:not(body).is-danger {
+    background-color: #a00020;
+}
+.help.is-danger {
+  color: #a00020;
+}
+.input.is-danger, .textarea.is-danger {
+    border-color: #a00020;
+}
+.help.is-success {
+  color: #50775e;
+}
+.input.is-success, .textarea.is-success {
+    border-color: #50775e;
+}
 :focus {
   outline: 2px solid #dc7632;
 }
@@ -205,4 +235,33 @@ li {
   height: auto;
   width: auto;
   clip: auto;
+}
+
+.tab-fix {
+  outline-offset: -3px;
+}
+
+.fieldset-fix {
+  border: none;
+}
+
+a, a.link-fix, li.is-active, .features .fa, .features .fab {
+  color: var(--main-color);
+}
+
+.soc a, .hero.is-info .tabs.is-boxed li.is-active a, .hero.is-info .tabs.is-boxed li.is-active a:hover, .hero.is-info .tabs.is-toggle li.is-active a, .hero.is-info .tabs.is-toggle li.is-active a:hover {
+  color: var(--main-color);
+}
+
+.button.is-link,
+.button.is-info,
+.hero.is-info 
+{
+  background-color: var(--main-color);
+}
+
+a.link-fix:hover,
+a.link-fix:focus,
+a.link-fix:active {
+  text-decoration: underline;
 }
