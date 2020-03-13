@@ -244,14 +244,22 @@ button.is-danger,
   background-color: #bf2a48 !important;
 }
 
+.is-danger {
+  color: #bf2a48 !important;
+}
+
 button.is-primary,
 .tag.is-primary {
-  background-color: #008a75 !important;
+  background-color: #01705f !important;
 }
 
 button.is-success,
 .tag.is-success {
   background-color: #147536 !important;
+}
+
+.is-success {
+  color: #147536 !important;
 }
 
 button.is-info,
@@ -262,4 +270,12 @@ button.is-info,
 
 a {
   color: #0033bf;
+}
+
+.text-grey-light {
+  color: #7a7a7a;
+}
+
+.tabs li.is-active a {
+  color: #1b70a8 !important;
 }
