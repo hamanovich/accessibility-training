@@ -222,7 +222,11 @@ li {
 }
 
 *:focus {
-  border: 2px solid orange !important;
+  outline: 2px solid orange !important;
+}
+
+.tab:focus {
+  outline-offset: -2px;
 }
 
 button {
@@ -278,6 +282,13 @@ a {
   color: #7a7a7a;
 }
 
-.tabs li.is-active a {
-  color: #1b70a8 !important;
+.tabs li:not(.is-active) button {
+  color: #fff !important;
+}
+
+.tabs li.is-active button {
+  background-color: #fff;
+  color: #1b70a8;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
