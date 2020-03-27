@@ -1306,7 +1306,9 @@
                   <span class="fas fa-exclamation-triangle"></span>
                 </span>
               </div>
-              <p class="help is-danger" role="alert">This email is invalid</p>
+              <p class="help is-danger" role="alert" aria-atomic="true">
+                This email is invalid
+              </p>
             </div>
 
             <div class="field">
@@ -1479,7 +1481,10 @@
   </div> -->
 
       <div class="log">
-        <p role="log" aria-live="polite" aria-relevant="text">You've been on this page for <span id="minutesCounter">0</span> minutes</p>
+        <p role="log" aria-live="polite" aria-relevant="text" aria-atomic="true">
+          You've been on this page for
+          <span id="minutesCounter">0</span> minutes
+        </p>
       </div>
     </main>
 
