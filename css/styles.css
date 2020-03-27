@@ -8,6 +8,10 @@
   margin-bottom: -1px !important;
   position: relative;
 }
+.tab {
+  background: none;
+  border: none;
+}
 .tab-content {
   padding: 2rem;
 }
@@ -80,10 +84,10 @@
   position: relative;
   transition: all 0.2s ease-in-out;
 }
+.is-shady:focus,
 .is-shady:hover {
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.19);
 }
-
 
 .has-same-height .card {
   height: 350px;
@@ -91,7 +95,7 @@
 }
 
 .skills-content .media + .media {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .skills-content .progress {
@@ -103,8 +107,8 @@
 }
 
 .info-tiles {
-  margin: .75rem auto;
-  padding: 0 .75rem;
+  margin: 0.75rem auto;
+  padding: 0 0.75rem;
 }
 
 .button.is-primary.is-alt {
@@ -118,7 +122,7 @@
 .post {
   margin: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #E6EAEE;
+  border-bottom: 1px solid #e6eaee;
 }
 .post:last-child {
   padding-bottom: 0;
@@ -126,9 +130,8 @@
 }
 
 .forum-list li {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
-
 
 @media screen and (max-width: 1087px) {
   .navbar-menu {
@@ -175,4 +178,117 @@ li {
   width: 40px;
   height: 40px;
   background-size: contain;
+}
+
+.list-unstyled {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-inline li {
+  display: inline-block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+.visually-hidden:focus {
+  height: auto;
+  width: auto;
+  clip: auto;
+}
+
+.skip-link {
+  color: yellow;
+  padding: 8px;
+}
+
+.breadcrumbs {
+  margin-top: 16px;
+}
+
+.breadcrumbs li:not(:last-child):after {
+  content: "/";
+  margin: 0 8px;
+}
+
+*:focus {
+  outline: 2px solid orange !important;
+}
+
+.tab:focus {
+  outline-offset: -2px;
+}
+
+button {
+  border: 0;
+  background: node;
+}
+
+fieldset {
+  margin-bottom: 10px;
+  padding: 4px 8px;
+}
+
+.background-grey-light {
+  background-color: #f5f5f5 !important;
+}
+
+button.is-danger,
+.tag.is-danger {
+  background-color: #bf2a48 !important;
+  color: #fff !important;
+}
+
+.is-danger {
+  color: #bf2a48 !important;
+}
+
+button.is-primary,
+.tag.is-primary {
+  background-color: #01705f !important;
+}
+
+button.is-success,
+.tag.is-success {
+  background-color: #147536 !important;
+  color: #fff !important;
+}
+
+.is-success {
+  color: #147536 !important;
+}
+
+button.is-info,
+.hero.is-info,
+.tag.is-info {
+  background-color: #1b70a8 !important;
+}
+
+a {
+  color: #0033bf;
+}
+
+.text-grey-light {
+  color: #7a7a7a;
+}
+
+.tabs li:not(.is-active) button {
+  color: #fff !important;
+}
+
+.tabs li.is-active button {
+  background-color: #fff;
+  color: #1b70a8;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
