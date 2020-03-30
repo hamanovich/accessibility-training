@@ -280,6 +280,7 @@ a {
 
 main a {
   text-decoration: underline;
+  text-decoration-color: inherit;
 }
 
 .text-grey-light {

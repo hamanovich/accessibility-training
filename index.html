@@ -698,10 +698,10 @@
         </div>
       </div>
 
-      <div class="section background-grey-light">
+      <section class="section background-grey-light" aria-labelledby="eventsHeading">
         <div class="container has-text-centered">
           <div class="section-heading has-text-centered">
-            <div class="title is-2">Upcoming events</div>
+            <h2 class="title is-2" id="eventsHeading">Upcoming events</h2>
             <div class="subtitle is-5">
               Outcoming dates for the best options
             </div>
@@ -779,7 +779,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <div class="section">
         <div class="section-heading has-text-centered">
@@ -840,10 +840,12 @@
           <div class="container portfolio-container">
             <div class="columns">
               <div class="column is-4">
-                <div class="card">
+                <div class="card" aria-labelledby="adminCardTitle">
                   <div class="card-header">
                     <p class="card-header-title">
-                      <span>Admin <small>(Light)</small></span>
+                      <span id="adminCardTitle"
+                        >Admin <small>(Light)</small></span
+                      >
                       <span class="is-pulled-right">
                         <a href="#">
                           <span class="tag is-default">v0.7.2</span>
@@ -867,10 +869,10 @@
                 </div>
               </div>
               <div class="column is-4">
-                <div class="card">
+                <div class="card" aria-labelledby="cardsCardTitle">
                   <div class="card-header">
                     <p class="card-header-title">
-                      <span>Cards</span>
+                      <span id="cardsCardTitle">Cards</span>
                       <span class="is-pulled-right">
                         <a href="#">
                           <span class="tag is-default">v0.7.2</span>
@@ -894,10 +896,10 @@
                 </div>
               </div>
               <div class="column is-4">
-                <div class="card">
+                <div class="card" aria-labelledby="forumCardTitle">
                   <div class="card-header">
                     <p class="card-header-title">
-                      <span>Forum</span>
+                      <span id="forumCardTitle">Forum</span>
                       <span class="is-pulled-right">
                         <a href="#">
                           <span class="tag is-default">v0.7.2</span>
@@ -925,10 +927,10 @@
             </div>
             <div class="columns">
               <div class="column is-4">
-                <div class="card">
+                <div class="card" aria-labelledby="instaCardTitle">
                   <div class="card-header">
                     <p class="card-header-title">
-                      <span>InstaAlbum</span>
+                      <span id="instaCardTitle">InstaAlbum</span>
                       <span class="is-pulled-right">
                         <a href="#">
                           <span class="tag is-default">v0.7.2</span>
@@ -954,10 +956,10 @@
                 </div>
               </div>
               <div class="column is-4">
-                <div class="card">
+                <div class="card" aria-labelledby="landingCardTitle">
                   <div class="card-header">
                     <p class="card-header-title">
-                      <span>Landing</span>
+                      <span id="landingCardTitle">Landing</span>
                       <span class="is-pulled-right">
                         <a href="#">
                           <span class="tag is-default">v0.7.2</span>
@@ -983,10 +985,10 @@
                 </div>
               </div>
               <div class="column is-4">
-                <div class="card">
+                <div class="card" aria-labelledby="marketingCardTitle">
                   <div class="card-header">
                     <p class="card-header-title">
-                      <span>Marketing</span>
+                      <span id="marketingCardTitle">Marketing</span>
                       <span class="is-pulled-right">
                         <a href="#">
                           <span class="tag is-default">v0.7.2</span>
@@ -1480,11 +1482,9 @@
     </div>
   </div> -->
 
-      <div class="log">
-        <p role="log" aria-live="polite" aria-relevant="text" aria-atomic="true">
-          You've been on this page for
-          <span id="minutesCounter">0</span> minutes
-        </p>
+      <div class="log" role="log" aria-live="polite">
+        You've been on this page for
+        <strong id="minutesCounter">0</strong> minutes
       </div>
     </main>
 
