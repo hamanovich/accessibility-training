@@ -1,3 +1,7 @@
+(function() {
+  const interval = setInterval(updateMinutesCounter, 60000);
+})();
+
 document.querySelectorAll("#nav li").forEach(function(navEl) {
   navEl.onclick = function() {
     toggleTab(this.id, this.dataset.target);
@@ -26,4 +30,9 @@ function toggleTab(selectedNav, targetId) {
       tab.style.display = "none";
     }
   });
+}
+
+function updateMinutesCounter() {
+  const counter = document.getElementById("minutesCounter");
+  counter.innerText = +counter.innerText + 1;
 }

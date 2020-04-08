@@ -278,8 +278,13 @@ a {
   color: #0033bf;
 }
 
+main a {
+  text-decoration: underline;
+  text-decoration-color: inherit;
+}
+
 .text-grey-light {
-  color: #7a7a7a;
+  color: #505050;
 }
 
 .tabs li:not(.is-active) button {
@@ -291,4 +296,27 @@ a {
   color: #1b70a8;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+.hamburger-menu__btn {
+  background: transparent;
+  color: white;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contactsLink {
+  margin: 0 24px;
+}
+
+.log {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background: #cfffc0;
+  border: 1px solid #8bad84;
 }
