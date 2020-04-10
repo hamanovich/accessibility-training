@@ -12,6 +12,8 @@ const keys = {
   delete: 46,
   enter: 13,
   space: 32,
+  escape: 27,
+  tab: 9,
 };
 
 const direction = {
@@ -32,11 +34,11 @@ tabs.forEach(function (navEl, index) {
   };
 
   navEl.addEventListener("keydown", (e) => {
-    handleKeyboardBtnPressed(e, index);
+    handleKeyboardBtnPressedOnTab(e, index);
   });
 });
 
-function handleKeyboardBtnPressed(e, index) {
+function handleKeyboardBtnPressedOnTab(e, index) {
   event.preventDefault();
 
   const key = e.keyCode;
@@ -112,4 +114,78 @@ function updateMinutesCounter() {
 
 function getTabFromEl(el) {
   return el.getElementsByClassName("tab")[0];
+}
+
+const navMenuBtn = document.getElementById("navMenuBtn");
+const navMenu = document.getElementById("navMenu");
+const navMenuItems = document.querySelectorAll('#navMenu [role="menuitem"]');
+const navBarItems = document.querySelectorAll(
+  '#navbarMenu .navbar-item .button[role="menuitem"]'
+);
+let navMenuBtnInd;
+navBarItems.forEach((item, index) => {
+  if (item.id === "navMenuBtn") {
+    navMenuBtnInd = index;
+  }
+});
+
+let isNavMenuOpened = false;
+
+navMenuBtn.addEventListener("click", () => {
+  toggleNavMenu();
+});
+
+navMenuItems.forEach((item, index) => {
+  item.addEventListener("keydown", (e) => {
+    handleKeyboardBtnPressedOnMenuItem(e, index);
+  });
+});
+
+function toggleNavMenu() {
+  const newNavMenuState = !isNavMenuOpened;
+  navMenuBtn.setAttribute("aria-expanded", newNavMenuState);
+  navMenu.toggleAttribute("hidden");
+
+  if (newNavMenuState) {
+    navMenuItems[0].focus();
+  }
+
+  isNavMenuOpened = newNavMenuState;
+}
+
+function handleKeyboardBtnPressedOnMenuItem(e, index) {
+  event.preventDefault();
+
+  const key = e.keyCode;
+
+  switch (key) {
+    case keys.up:
+    case keys.down:
+      if (direction[key]) {
+        let newIndex = index + direction[key];
+
+        if (!navMenuItems[newIndex]) {
+          newIndex = newIndex < 0 ? tabs.length - 1 : 0;
+        }
+
+        const newMenuItem = navMenuItems[newIndex];
+
+        newMenuItem.focus();
+      }
+      break;
+    case keys.space:
+    case keys.enter:
+      navMenuItems[index].click();
+      break;
+    case keys.escape:
+      toggleNavMenu();
+      navMenuBtn.focus();
+      break;
+    case keys.tab:
+      toggleNavMenu();
+      navBarItems[navMenuBtnInd + 1].focus();
+      break;
+    default:
+      break;
+  }
 }

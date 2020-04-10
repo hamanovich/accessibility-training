@@ -39,33 +39,91 @@
               aria-label="Main navigation"
               aria-owns="contactsLink"
             >
-              <ul class="navbar-end list-unstyled list-inline">
-                <li class="navbar-item">
-                  <a href="#" class="button is-white is-outlined">
+              <ul
+                class="navbar-end list-unstyled list-inline"
+                role="menubar"
+                aria-label="Main navigation"
+              >
+                <li class="navbar-item" role="none">
+                  <a
+                    href="#"
+                    class="button is-white is-outlined"
+                    role="menuitem"
+                  >
                     <span class="icon" aria-hidden="true">
                       <span class="fa fa-home"></span>
                     </span>
                     <span>Home</span>
                   </a>
                 </li>
-                <li class="navbar-item">
-                  <a href="#" class="button is-white is-outlined">
+                <li class="navbar-item nav-menu" role="none">
+                  <button
+                    class="button is-white is-outlined nav-menu-control-btn"
+                    id="navMenuBtn"
+                    role="menuitem"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
                     <span class="icon" aria-hidden="true">
                       <span class="fab fa-superpowers"></span>
                     </span>
-                    <span>Examples</span>
-                  </a>
+                    <span id="navMenuLabel">Administration</span>
+                    <span class="icon" aria-hidden="true">
+                      <span class="fas fa-chevron-down"></span>
+                    </span>
+                  </button>
+                  <ul
+                    role="menu"
+                    aria-labelledby="navMenuLabel"
+                    id="navMenu"
+                    hidden
+                  >
+                    <li role="none">
+                      <a role="menuitem" href="#Administration" tabindex="-1">
+                        Administration
+                      </a>
+                    </li>
+                    <li role="none">
+                      <a role="menuitem" href="#Settings" tabindex="-1">
+                        Team Settings
+                      </a>
+                    </li>
+                    <li role="none">
+                      <a role="menuitem" href="#Manage" tabindex="-1">
+                        Manage Your Team
+                      </a>
+                    </li>
+                    <li role="none">
+                      <a role="menuitem" href="#Invitations" tabindex="-1">
+                        Invitations
+                      </a>
+                    </li>
+                    <li role="separator"></li>
+                    <li role="none">
+                      <a role="menuitem" href="#Authentication" tabindex="-1">
+                        Authentication
+                      </a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="navbar-item">
-                  <a href="#" class="button is-white is-outlined">
+                <li class="navbar-item" role="none">
+                  <a
+                    href="#"
+                    class="button is-white is-outlined"
+                    role="menuitem"
+                  >
                     <span class="icon" aria-hidden="true">
                       <span class="fa fa-book"></span>
                     </span>
                     <span>Documentation</span>
                   </a>
                 </li>
-                <li class="navbar-item">
-                  <a href="#" class="button is-white is-outlined">
+                <li class="navbar-item" role="none">
+                  <a
+                    href="#"
+                    class="button is-white is-outlined"
+                    role="menuitem"
+                  >
                     <span class="icon" aria-hidden="true">
                       <span class="fab fa-github"></span>
                     </span>
@@ -81,66 +139,6 @@
               </span>
               <span>Contacts</span>
             </a>
-
-            <div class="hamburger-menu">
-              <button
-                id="menubutton"
-                aria-haspopup="true"
-                aria-controls="menu2"
-                aria-label="Open hamburger menu"
-                class="hamburger-menu__btn"
-              >
-                <span class="icon" aria-hidden="true">
-                  <span class="fas fa-bars"></span>
-                </span>
-              </button>
-              <nav aria-label="hamburger-menu" hidden>
-                <ul id="menu2" role="menu" aria-labelledby="menubutton">
-                  <li role="none">
-                    <a role="menuitem" href="https://www.w3.org/">
-                      W3C Home Page
-                    </a>
-                  </li>
-                  <li role="none">
-                    <a
-                      role="menuitem"
-                      href="https://www.w3.org/standards/webdesign/accessibility"
-                    >
-                      W3C Web Accessibility Initiative
-                    </a>
-                  </li>
-                  <li role="none">
-                    <a role="menuitem" href="https://www.w3.org/TR/wai-aria/">
-                      Accessible Rich Internet Application Specification
-                    </a>
-                  </li>
-                  <li role="none">
-                    <a
-                      role="menuitem"
-                      href="https://www.w3.org/TR/wai-aria-practices/"
-                    >
-                      WAI-ARIA Authoring Practices
-                    </a>
-                  </li>
-                  <li role="none">
-                    <a
-                      role="menuitem"
-                      href="https://www.w3.org/TR/wai-aria-implementation/"
-                    >
-                      WAI-ARIA Implementation Guide
-                    </a>
-                  </li>
-                  <li role="none">
-                    <a
-                      role="menuitem"
-                      href="https://www.w3.org/TR/accname-aam-1.1/"
-                    >
-                      Accessible Name and Description
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
           </div>
         </div>
       </div>

@@ -320,3 +320,21 @@ main a {
   background: #cfffc0;
   border: 1px solid #8bad84;
 }
+
+.nav-menu {
+  position: relative;
+}
+
+.nav-menu ul {
+  position: absolute;
+  background: white;
+  padding: 1rem 1.5rem;
+  min-width: 150px;
+}
+
+li[role="separator"] {
+  height: 1px;
+  width: 100%;
+  margin: 1rem 0;
+  background: gray;
+}
