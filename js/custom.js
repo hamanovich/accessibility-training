@@ -129,10 +129,19 @@ navBarItems.forEach((item, index) => {
   }
 });
 
-let isNavMenuOpened = false;
-
-navMenuBtn.addEventListener("click", () => {
+navMenuBtn.addEventListener("click", (e) => {
+  e.preventDefault();
   toggleNavMenu();
+});
+
+navMenuBtn.addEventListener("keydown", (e) => {
+  e.preventDefault();
+  const key = e.keyCode;
+
+  if (key === keys.space || key === keys.enter) {
+    toggleNavMenu();
+    navMenuItems[0].focus();
+  }
 });
 
 navMenuItems.forEach((item, index) => {
@@ -142,7 +151,7 @@ navMenuItems.forEach((item, index) => {
 });
 
 function toggleNavMenu() {
-  const newNavMenuState = !isNavMenuOpened;
+  const newNavMenuState = !navMenu.hidden;
   navMenuBtn.setAttribute("aria-expanded", newNavMenuState);
   navMenu.toggleAttribute("hidden");
 
@@ -187,5 +196,10 @@ function handleKeyboardBtnPressedOnMenuItem(e, index) {
       break;
     default:
       break;
+  }
+
+  if (e.shiftKey && key === keys.tab) {
+    toggleNavMenu();
+    navBarItems[navMenuBtnInd - 1].focus();
   }
 }
