@@ -478,29 +478,38 @@
           </div>
         </div>
         <div class="tabs is-boxed is-centered main-menu" id="nav">
-          <ul role="tablist">
-            <li data-target="pane-1" id="1" class="is-active">
+          <ul
+            role="tablist"
+            aria-labelledby="topicsHeading"
+            aria-orientation="horizontal"
+          >
+            <li
+              data-target="pane-1"
+              id="1"
+              class="is-active"
+              role="presentation"
+            >
               <button class="tab button" role="tab" aria-selected="true">
                 <span class="icon is-small" aria-hidden="true">
                   <span class="fa fa-image"></span>
                 </span>
-                <span>Pictures</span>
+                <span id="picturesTab">Pictures</span>
               </button>
             </li>
-            <li data-target="pane-3" id="3">
+            <li data-target="pane-3" id="3" role="presentation">
               <button class="tab button" role="tab" aria-selected="false">
                 <span class="icon is-small" aria-hidden="true">
                   <span class="fab fa-superpowers"></span>
                 </span>
-                <span>Team</span>
+                <span id="teamTab">Team</span>
               </button>
             </li>
-            <li data-target="pane-4" id="4">
+            <li data-target="pane-4" id="4" role="presentation">
               <button class="tab button" role="tab" aria-selected="false">
                 <span class="icon is-small" aria-hidden="true">
                   <span class="fa fa-film"></span>
                 </span>
-                <span>Video</span>
+                <span id="videoTab">Video</span>
               </button>
             </li>
           </ul>
@@ -508,7 +517,13 @@
       </section>
 
       <div class="tab-content container">
-        <div class="tab-pane is-active level" id="pane-1" role="tabpanel">
+        <div
+          class="tab-pane is-active level"
+          id="pane-1"
+          role="tabpanel"
+          tabindex="0"
+          aria-labelledby="picturesTab"
+        >
           <div class="container">
             <div class="columns features">
               <div class="column is-4">
@@ -607,7 +622,13 @@
           </div>
         </div>
 
-        <div class="tab-pane" id="pane-3" role="tabpanel">
+        <div
+          class="tab-pane"
+          id="pane-3"
+          role="tabpanel"
+          tabindex="0"
+          aria-labelledby="teamTab"
+        >
           <div class="columns medias">
             <div class="column">
               <div class="media">
@@ -680,7 +701,13 @@
           </div>
         </div>
 
-        <div class="tab-pane" id="pane-4" role="tabpanel">
+        <div
+          class="tab-pane"
+          id="pane-4"
+          role="tabpanel"
+          tabindex="0"
+          aria-labelledby="videoTab"
+        >
           <div class="columns is-centered">
             <div class="column is-three-quarters">
               <div class="title has-text-centered">Inspired video</div>
@@ -698,7 +725,10 @@
         </div>
       </div>
 
-      <section class="section background-grey-light" aria-labelledby="eventsHeading">
+      <section
+        class="section background-grey-light"
+        aria-labelledby="eventsHeading"
+      >
         <div class="container has-text-centered">
           <div class="section-heading has-text-centered">
             <h2 class="title is-2" id="eventsHeading">Upcoming events</h2>
@@ -1054,7 +1084,7 @@
                   <li>
                     <button class="tag is-warning is-medium">Balance</button>
                   </li>
-                  <li><button class="tag is-medium ">Question</button></li>
+                  <li><button class="tag is-medium">Question</button></li>
                 </ul>
               </div>
             </div>
@@ -1635,7 +1665,7 @@
 
     <div id="modal-image2" class="modal modal-fx-superScaled">
       <div class="modal-background"></div>
-      <div class="modal-content  is-image">
+      <div class="modal-content is-image">
         <img
           src="https://source.unsplash.com/random/?sig=3"
           alt="Pretty photo from unsplash"
