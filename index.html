@@ -249,161 +249,153 @@
     </div>
   </div>
 
-  <div class="hero is-info">
+  <div class="hero is-info" aria-labelledby="hTopics">
     <div class="hero-body">
       <div class="container">
-        <div class="title">List of topics</div>
+        <div class="title" id="hTopics">List of topics</div>
         <div class="subtitle">We are always in touch we the outside world</div>
       </div>
     </div>
-    <div class="tabs is-boxed is-centered main-menu" id="nav">
-      <ul>
-        <li data-target="pane-1" id="1" class="is-active">
-          <a>
-            <span class="icon is-small"><i class="fa fa-image"></i></span>
-            <span>Pictures</span>
-          </a>
-        </li>
-        <li data-target="pane-3" id="3">
-          <a>
-            <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
-            <span>Team</span>
-          </a>
-        </li>
-        <li data-target="pane-4" id="4">
-          <a>
-            <span class="icon is-small"><i class="fa fa-film"></i></span>
-            <span>Video</span>
-          </a>
-        </li>
-      </ul>
+    <div id="navTopics" tabindex="0" class="tabs is-boxed is-centered main-menu" role="tablist" aria-label="Topics" aria-orientation="horizontal">
+      <button data-target="pane-1" data-id="1" tabindex="-1" role="tab" aria-selected="true" id="topicNav1" class="is-active">
+        <span class="icon is-small"><i class="fa fa-image"></i></span>
+        <span>Pictures</span>
+      </button>
+      <button data-target="pane-2" data-id="2" tabindex="-1" role="tab" aria-selected="false" id="topicNav2">
+        <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
+        <span>Team</span>
+      </button>
+      <button data-target="pane-3" data-id="3" tabindex="-1" role="tab" aria-selected="false" id="topicNav3">
+        <span class="icon is-small"><i class="fa fa-film"></i></span>
+        <span>Video</span>
+      </button>
     </div>
   </div>
 
-  <div class="tab-content container">
-    <div class="tab-pane is-active" id="pane-1" class="level">
-      <div class="container">
+  <div id="navTopicsContent" class="tab-content container" aria-label="Topics content">
+    <div class="tab-pane is-active" id="pane-1">
+      <div class="container" tabindex="0" role="tabpanel" aria-labeledby="topicNav1">
         <div class="columns features">
           <div class="column is-4">
-            <div class="card">
-              <div class="card-image">
-                <div class="image is-4by3">
-                  <img src="./img/tab-1.jpg" class="modal-button" data-target="modal-image1">
-                </div>
-              </div>
-              <div class="card-content">
-                <div class="content">
-                  <div>Click on image above</div>
-                  <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-                  <span class="button is-link modal-button" data-target="modal-image1">Image modal</span>
-                </div>
+          <div class="card">
+            <div class="card-image">
+              <div class="image is-4by3">
+                <img src="./img/tab-1.jpg" class="modal-button" data-target="modal-image1" alt="Topics Pictures 1">
               </div>
             </div>
+            <div class="card-content">
+              <div class="content">
+                <div>Click on image above</div>
+                <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
+                <button class="button is-link modal-button" data-target="modal-image1">Image modal</button>
+              </div>
+            </div>
+          </div>
           </div>
           <div class="column is-4">
-            <div class="card">
-              <div class="card-image">
-                <div class="image is-4by3">
-                  <img src="./img/tab-2.jpg">
-                </div>
-              </div>
-              <div class="card-content">
-                <div class="content">
-                  <div>Tempor orci dapibus ultrices in.</div>
-                  <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
-                    sed risus.</p>
-                  <span class="button is-link modal-button" data-target="modal-card">Modal Card</span>
-                </div>
+          <div class="card">
+            <div class="card-image">
+              <div class="image is-4by3">
+                <img src="./img/tab-2.jpg" alt="Topics Pictures 2">
               </div>
             </div>
+            <div class="card-content">
+              <div class="content">
+                <div>Tempor orci dapibus ultrices in.</div>
+                <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
+                sed risus.</p>
+                <button class="button is-link modal-button" data-target="modal-card">Modal Card</button>
+              </div>
+            </div>
+          </div>
           </div>
           <div class="column is-4 modal-button" data-target="modal-image">
-            <div class="card">
-              <div class="card-image">
-                <div class="image is-4by3">
-                  <img src="./img/tab-3.jpg" class="modal-button" data-target="modal-image2">
-                </div>
-              </div>
-              <div class="card-content">
-                <div class="content">
-                  <div>Click anywhere on card</div>
-                  <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                  <span class="button is-link modal-button" data-target="modal-image2">Image modal</span>
-                </div>
+          <div class="card">
+            <div class="card-image">
+              <div class="image is-4by3">
+                <img src="./img/tab-3.jpg" class="modal-button" data-target="modal-image2" alt="Topics Pictures 3">
               </div>
             </div>
+            <div class="card-content">
+              <div class="content">
+                <div>Click anywhere on card</div>
+                <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                <button class="button is-link modal-button" data-target="modal-image2">Image modal</button>
+              </div>
+            </div>
+          </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="tab-pane" id="pane-3">
-      <div class="columns medias">
+    <div class="tab-pane" id="pane-2" hidden>
+      <div class="columns medias" tabindex="0" role="tabpanel" aria-labeledby="topicNav2">
         <div class="column">
           <div class="media">
-            <div class="media-left">
-              <i class="fab fa-github-square fa-4x"></i>
-            </div>
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  <a><b>Dominic Ipsum</b></a>
-                  <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                </p>
-              </div>
+          <div class="media-left">
+            <i class="fab fa-github-square fa-4x"></i>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <a href="#"><b>Dominic Ipsum</b></a>
+                <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+              </p>
             </div>
           </div>
+          </div>
           <div class="media">
-            <div class="media-left">
-              <i class="fab fa-empire fa-4x"></i>
+          <div class="media-left">
+            <i class="fab fa-empire fa-4x"></i>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <a href="#"><b>Cassie Ipsum</b></a>
+                <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+              </p>
             </div>
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  <a><b>Cassie Ipsum</b></a>
-                  <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                </p>
-              </div>
-            </div>
+          </div>
           </div>
         </div>
         <div class="column">
           <div class="media">
-            <div class="media-left">
-              <i class="fab fa-ravelry fa-4x"></i>
-            </div>
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  <a><b>Avery Ipsum</b></a>
-                  <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                </p>
-              </div>
+          <div class="media-left">
+            <i class="fab fa-ravelry fa-4x"></i>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <a href="#"><b>Avery Ipsum</b></a>
+                <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+              </p>
             </div>
           </div>
+          </div>
           <div class="media">
-            <div class="media-left">
-              <i class="fab fa-github-alt fa-4x"></i>
+          <div class="media-left">
+            <i class="fab fa-github-alt fa-4x"></i>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <a href="#"><b>io Ipsum</b></a>
+                <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+              </p>
             </div>
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  <a><b>io Ipsum</b></a>
-                  <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                </p>
-              </div>
-            </div>
+          </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="tab-pane" id="pane-4">
-      <div class="columns is-centered">
+    <div class="tab-pane" id="pane-3" hidden>
+      <div class="columns is-centered" tabindex="0" role="tabpanel" aria-labeledby="topicNav3">
         <div class="column is-three-quarters">
           <div class="title has-text-centered">Inspired video</div>
           <div class="embed-container image">
-            <iframe src="https://player.vimeo.com/video/261794608" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          <iframe src="https://player.vimeo.com/video/261794608" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
           </div>
         </div>
       </div>

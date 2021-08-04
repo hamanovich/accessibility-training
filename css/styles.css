@@ -1,3 +1,45 @@
+*:focus {
+  outline: 2px solid blue !important;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabs.is-boxed button {
+  border: 2px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+
+.tabs button.is-active {
+  background-color: #fff;
+  border-color: #fff;
+  color: #209cee;
+}
+
+.tabs button {
+  align-items: center;
+  border-bottom-color: #dbdbdb;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  color: #fff;
+  background: inherit;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -1px;
+  padding: .7em 1em;
+  font-size: 1em;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.tabs button:focus {
+  outline: none !important;
+  border: 2px solid #000;
+}
+
 .hero-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/accessibility-hero-banner.jpg") no-repeat center center fixed;
