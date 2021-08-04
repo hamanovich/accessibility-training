@@ -1,5 +1,90 @@
+*:focus {
+  outline: 2px solid blue !important;
+}
+
+.external-link::after {
+  content: "\f35d";
+  font-family: Font Awesome\ 5 Free;
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+.visually-hidden {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	overflow: hidden;
+}
+
+.visually-hidden:focus {
+	width: auto;
+	height: auto;
+}
+
+.skip-link {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+	padding: 3px 5px;
+	color: #fff;
+	background-color: red;
+}
+
+.header-breadcrumb {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.is-success {
+    color: #196433 !important;
+    border-color: #196433 !important;
+}
+
+.is-danger {
+    color: #a81432 !important;
+    border-color: #a81432 !important;
+}
+
+.tabs.is-boxed button {
+	border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+
+.tabs li.is-active button {
+	background-color: #fff;
+    border-color: #fff;
+    color: #209cee;
+}
+
+.tabs button {
+    align-items: center;
+    border-bottom-color: #dbdbdb;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    color: #fff;
+	background: inherit;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -1px;
+    padding: .7em 1em;
+	font-size: 1em;
+    vertical-align: top;
+	cursor: pointer;
+}
+
+a {
+	color: #174ba0;
+}
+
 .hero-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../img/accessibility-hero-banner.jpg") no-repeat center center fixed;
   background-size: cover;
 }
@@ -157,6 +242,7 @@ li {
   background-color: #f5f5f5;
   border-left: 5px solid #dbdbdb;
   padding: 1.25em 1.5em;
+  color: #000
 }
 
 .ol-list li {
