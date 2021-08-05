@@ -2,6 +2,70 @@
   outline: 2px solid blue !important;
 }
 
+.navbar-item {
+  align-items: center !important;
+}
+
+.button.is-white.is-outlined {
+  color: #fff !important;
+  background-color: transparent !important;
+}
+
+.button.is-white.is-outlined:hover {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
+.external-link::after {
+  content: "\f35d";
+  font-family: Font Awesome\ 5 Free;
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+.visually-hidden:focus {
+  width: auto;
+  height: auto;
+}
+
+.skip-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  padding: 3px 5px;
+  color: #fff;
+  background-color: red;
+}
+
+.header-breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.is-success {
+  color: #196433 !important;
+  border-color: #196433 !important;
+}
+
+.is-danger {
+  color: #a81432 !important;
+  border-color: #a81432 !important;
+}
+
 .tabs {
   display: flex;
   align-items: center;
@@ -40,40 +104,40 @@
   border: 2px solid #000;
 }
 
-.navbar-item {
-  align-items: center !important;
-}
-
-.button.is-white.is-outlined {
-  color: #fff !important;
-  background-color: transparent !important;
-}
-
-.button.is-white.is-outlined:hover {
-  color: #000 !important;
-  background-color: #fff !important;
+a {
+  color: #174ba0;
 }
 
 .hero-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/accessibility-hero-banner.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/accessibility-hero-banner.jpg") no-repeat center center fixed;
   background-size: cover;
+}
+
+.media {
+  color: #000;
 }
 
 .tabs {
   margin-bottom: -1px !important;
   position: relative;
 }
+
 .tab-content {
   padding: 2rem;
+  background-color: #fff;
+  width: 100%;
+  max-width: 100%;
 }
+
 .tab-pane {
   display: none;
 }
+
 .tab-pane.is-active {
   display: block;
   position: relative;
 }
+
 .is-active {
   display: initial;
 }
@@ -97,9 +161,8 @@
   overflow: hidden;
   max-width: 100%;
 }
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
+
+.embed-container iframe, .embed-container object, .embed-container embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -113,13 +176,11 @@
   border-right: none;
 }
 
-.features,
-.medias {
+.features, .medias {
   padding: 3rem 0;
 }
 
-.features .fa,
-.features .fab {
+.features .fa, .features .fab {
   font-size: 8rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -136,17 +197,17 @@
   position: relative;
   transition: all 0.2s ease-in-out;
 }
+
 .is-shady:hover {
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.19);
 }
-
 
 .has-same-height .card {
   height: 350px;
   overflow: hidden;
 }
 
-.skills-content .media + .media {
+.skills-content .media+.media {
   margin-top: .5rem;
 }
 
@@ -171,11 +232,13 @@
   line-height: 2.8;
   margin-bottom: 1rem;
 }
+
 .post {
   margin: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #E6EAEE;
 }
+
 .post:last-child {
   padding-bottom: 0;
   border-bottom: none;
@@ -184,7 +247,6 @@
 .forum-list li {
   margin-bottom: .5rem;
 }
-
 
 @media screen and (max-width: 1087px) {
   .navbar-menu {
@@ -213,6 +275,7 @@ li {
   background-color: #f5f5f5;
   border-left: 5px solid #dbdbdb;
   padding: 1.25em 1.5em;
+  color: #000
 }
 
 .ol-list li {

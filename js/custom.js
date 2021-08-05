@@ -12,6 +12,13 @@ document.querySelectorAll("#navTopics button").forEach(function(navEl) {
   navEl.onclick = function() {
     toggleTab(this.id, this.dataset.target);
   };
+  navEl.onkeydown = function(e) {
+    var code = e.code;
+
+    if (code === "Tab") {
+      document.querySelectorAll("#navTopicsContent > .is-active > .container")[0].focus();
+    }
+  };
 });
 
 document.querySelectorAll("#navTopics")[0].onkeydown = function(e) {
