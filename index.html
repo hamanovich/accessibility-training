@@ -28,23 +28,41 @@
           <div id="navbarMenu" class="navbar-menu">
             <div class="navbar-end">
               <span class="navbar-item">
-                <a class="button is-white is-outlined">
+                <a id="homeLink" href="#" class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fa fa-home"></i>
                   </span>
                   <span>Home</span>
                 </a>
               </span>
-              <span class="navbar-item">
-                <a class="button is-white is-outlined">
+              <span class="navbar-item has-dropdown">
+                <button class="button is-white is-outlined navbar-link" id="administrationButton" aria-haspopup="menu" aria-expanded="false">
                   <span class="icon">
                     <i class="fab fa-superpowers"></i>
                   </span>
-                  <span>Examples</span>
-                </a>
+                  <span>Administration</span>
+                </button>
+                <div class="navbar-dropdown is-boxed" role="menu" id="administrationMenu" aria-labelledby="administrationButton" hidden>
+                  <a role="none" data-index="1" id="administrationMenu1" tabindex="-1" href="#" class="navbar-item" href="#">
+                    Administration
+                  </a>
+                  <a role="none" data-index="2" id="administrationMenu2" tabindex="-1" href="#" class="navbar-item" href="#">
+                    Team Settings
+                  </a>
+                  <a role="none" data-index="3" id="administrationMenu3" tabindex="-1" href="#" class="navbar-item" href="#">
+                    Manage Your Team
+                  </a>
+                  <a role="none" data-index="4" id="administrationMenu4" tabindex="-1" href="#" class="navbar-item" href="#">
+                    Invitations
+                  </a>
+                  <hr class="navbar-divider">
+                  <a role="none" data-index="5" id="administrationMenu5" tabindex="-1" href="#" class="navbar-item" href="#">
+                    Authentication
+                  </a>
+                </div>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined">
+                <a href="#" id="documentationLink" class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fa fa-book"></i>
                   </span>
@@ -52,7 +70,7 @@
                 </a>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined">
+                <a href="#" class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
@@ -1164,5 +1182,6 @@
 
   <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
   <script async src="js/custom.js"></script>
+  <script async src="js/custom-2.js"></script>
 </body>
 </html>

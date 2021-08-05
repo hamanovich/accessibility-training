@@ -22,37 +22,37 @@ document.querySelectorAll("#navTopics")[0].onkeydown = function(e) {
 
   e.preventDefault();
 
-  if (code === 'Home') {
-	  setTabFocus("topicNav1", "pane-1");
+  if (code === "Home") {
+    setTabFocus("topicNav1", "pane-1");
   }
   
-  if (code === 'End') {
-	  setTabFocus("topicNav" + navElsLength, "pane-" + navElsLength);
+  if (code === "End") {
+    setTabFocus("topicNav" + navElsLength, "pane-" + navElsLength);
   }
   
-  if (code === 'ArrowRight') {
-	  if (activeEl.id === 'navTopics' || activeElDataId === navElsLength) {
-		  setTabFocus("topicNav1");
-	  } else {
-		  setTabFocus("topicNav" + (activeElDataId + 1));
-	  }
+  if (code === "ArrowRight") {
+    if (activeEl.id === "navTopics" || activeElDataId === navElsLength) {
+      setTabFocus("topicNav1");
+    } else {
+      setTabFocus("topicNav" + (activeElDataId + 1));
+    }
   }
   
-  if (code === 'ArrowLeft') {
-	  if (activeEl.id === 'navTopics' || activeElDataId === 1) {
-		  setTabFocus("topicNav" + navElsLength);
-	  } else {
-		  setTabFocus("topicNav" + (activeElDataId - 1));
-	  }
+  if (code === "ArrowLeft") {
+    if (activeEl.id === "navTopics" || activeElDataId === 1) {
+      setTabFocus("topicNav" + navElsLength);
+    } else {
+      setTabFocus("topicNav" + (activeElDataId - 1));
+    }
   }
   
-  if (code === 'Enter' || code === 'Space') {
-	  toggleTab("topicNav" + activeElDataId, "pane-" + activeElDataId);
+  if (code === "Enter" || code === "Space") {
+    toggleTab("topicNav" + activeElDataId, "pane-" + activeElDataId);
   }
 };
 
 function setTabFocus(selectedNav) {
-  var navEl = document.querySelectorAll('#' + selectedNav)[0];
+  var navEl = document.querySelectorAll("#" + selectedNav)[0];
 
   navEl.focus();
 }
