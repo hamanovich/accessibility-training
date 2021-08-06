@@ -1,3 +1,4 @@
+// Burger menu
 (function() {
   var burger = document.querySelector(".burger");
   var menu = document.querySelector("#" + burger.dataset.target);
@@ -8,6 +9,14 @@
   });
 })();
 
+// Live content
+(function() {
+  setInterval(function() {
+    document.getElementById("ariaLiveExample").textContent = new Date();
+  }, 60000);
+})();
+
+// Tabs navigation
 document.querySelectorAll("#navTopics button").forEach(function(navEl) {
   navEl.onclick = function() {
     toggleTab(this.id, this.dataset.target);
