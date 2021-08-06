@@ -254,3 +254,27 @@ input:focus-visible {
 .help.is-success {
   color: #017028 !important;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
+input::placeholder {
+  appearance: none;
+  color: #4a4a4a !important;
+}
+
+input::-moz-placeholder {
+  opacity: 1;
+}
+
+.card-header-title h2 {
+    font-weight: bold;
+}
