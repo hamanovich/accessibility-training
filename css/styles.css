@@ -114,6 +114,10 @@ a {
   border: 1px solid #ccc;
 }
 
+.title {
+  color: #000;
+}
+
 .video {
   display: block;
   margin: 0 auto;
