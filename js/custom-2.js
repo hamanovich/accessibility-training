@@ -1,3 +1,4 @@
+// Header menu button
 document.querySelectorAll("#administrationButton")[0].onclick = function(e) {
   showHideMenu(e);
 };
@@ -23,6 +24,7 @@ document.querySelectorAll("#administrationButton")[0].onkeydown = function(e) {
   }
 };
 
+// Header menu links
 document.querySelectorAll("#administrationMenu a").forEach(function(navEl) {
   navEl.onkeydown = function(e) {
     var button = document.querySelectorAll("#administrationButton")[0];
