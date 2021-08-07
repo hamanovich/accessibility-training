@@ -1,3 +1,13 @@
+*:focus {
+  border-color: unset !important;
+  box-shadow: unset !important;
+  outline: black solid 2px !important;
+}
+
+.button.is-info {
+  background-color: #116fe4 !important;
+}
+
 .hero-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/accessibility-hero-banner.jpg") no-repeat center center fixed;
@@ -108,7 +118,7 @@
 }
 
 .button.is-primary.is-alt {
-  background: linear-gradient(to bottom, #0072ff, #00c6ff);
+  background: #0175E4;
   font-weight: 700;
   font-size: 14px;
   height: 3rem;
