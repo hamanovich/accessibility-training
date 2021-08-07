@@ -13,7 +13,7 @@
 <body>
   <header class="hero hero-bg is-fullheight">
     <div id="skipToMenu" title="Skip To Keyboard Navigation" class="dropMenu">
-      <a tabindex="0" data-wrap="false" class="dropMenu-toggle skipTo onFocus " id="drop4" role="button" href="#" data-target="menu1">
+      <a tabindex="0" data-wrap="false" class="visually-hidden dropMenu-toggle skipTo onFocus " id="drop4" role="button" href="#" data-target="menu1">
         Skip To...
       </a>
       <ul id="menu1" class="dropMenu-menu" role="menu" aria-label="Skip To and Page Outline" style="top:3%; text-align:left">
@@ -108,7 +108,13 @@
       </div>
     </nav>
 
-    <main class="hero-body">
+    <div class="breadcrumbs" aria-label="Navigation breadcrumbs">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="" aria-current="page">This page</a></li>
+      </ul>
+    </div>
+    <div class="hero-body">
       <div class="container has-text-centered">
         <div class="column is-6 is-offset-3">
           <h1 class="title has-text-white">We have web accessibility in mind</h1>
@@ -127,7 +133,7 @@
           </div>
         </div>
       </div>
-    </main>
+    </div>
   </header>
   <main>
     <section class="section" id="about">

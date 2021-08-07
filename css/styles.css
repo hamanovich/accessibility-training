@@ -187,20 +187,10 @@ li {
   background-size: contain;
 }
 
-.dropMenu {
-  position: absolute;
-  height: 0;
-}
-
 .dropMenu .dropMenu-toggle {
   background-color: white;
   color: black;
   font-weight: bold;
-  opacity: 0;
-}
-
-.dropMenu .dropMenu-toggle:focus {
-  opacity: 1;
 }
 
 .dropMenu-menu {
@@ -213,4 +203,42 @@ li {
 
 .open-in-new-window::after {
   content: '>>';
+}
+
+.breadcrumbs {
+  background-color: white;
+  padding: 10px;
+}
+
+.breadcrumbs ul {
+  display: flex;
+}
+
+.breadcrumbs ul a {
+  color: black;
+  font-weight: bold;
+}
+
+.breadcrumbs ul a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs ul a:first-child {
+  margin-right: 10px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+}
+
+.visually-hidden:focus {
+  height: auto;
+  width: auto;
+  clip: auto;
 }

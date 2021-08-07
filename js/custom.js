@@ -22,9 +22,9 @@ document.querySelector('.dropMenu').addEventListener('keydown', (e)=> {
 });
 
 function openSkipToMain (e) {
+  console.log(e, e.target)
   if(e.keyCode === 13 || e.keyCode === 32) {
     e.target.closest('.dropMenu').querySelector('ul').style.display = "block";
-    e.target.closest('.dropMenu').style.height = "auto";
   }
 }
 function toggleTab(selectedNav, targetId) {
