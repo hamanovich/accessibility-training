@@ -12,6 +12,48 @@
 
 <body>
   <header class="hero hero-bg is-fullheight">
+    <div id="skipToMenu" title="Skip To Keyboard Navigation" class="dropMenu">
+      <a tabindex="0" data-wrap="false" class="dropMenu-toggle skipTo onFocus " id="drop4" role="button" href="#" data-target="menu1">
+        Skip To...
+      </a>
+      <ul id="menu1" class="dropMenu-menu" role="menu" aria-label="Skip To and Page Outline" style="top:3%; text-align:left">
+        <li role="presentation" style="list-style:none outside none">
+          <a role="menuitem" href="#about">
+            About us content
+          </a>
+        </li>
+        <li role="presentation" style="list-style:none outside none">
+          <a role="menuitem" href="#nav">
+            List of Topics
+          </a>
+        </li>
+        <li role="presentation" style="list-style:none outside none">
+          <a role="menuitem" href="#events">
+            Upcoming events
+          </a>
+        </li>
+        <li role="presentation" style="list-style:none outside none">
+          <a role="menuitem" href="#services">
+            Services
+          </a>
+        </li>
+        <li role="presentation" style="list-style:none outside none">
+          <a role="menuitem" href="#photos">
+            Photos from past events
+          </a>
+        </li>
+        <li role="presentation" style="list-style:none outside none">
+          <a role="menuitem" href="#forum">
+            Forum content
+          </a>
+        </li>
+        <li role="presentation" style="list-style:none outside none">
+          <a role="menuitem" href="#contacts">
+            Contact us
+          </a>
+        </li>
+        </ul>
+    </div>
     <nav class="hero-head">
       <div class="navbar">
         <div class="container">
@@ -29,36 +71,36 @@
           <div id="navbarMenu" class="navbar-menu">
             <div class="navbar-end">
               <span class="navbar-item">
-                <a class="button is-white is-outlined">
+                <button class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fa fa-home"></i>
                   </span>
                   <span>Home</span>
-                </a>
+                </button>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined">
+                <button class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fab fa-superpowers"></i>
                   </span>
                   <span>Examples</span>
-                </a>
+                </button>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined">
+                <button class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fa fa-book"></i>
                   </span>
                   <span>Documentation</span>
-                </a>
+                </button>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined">
+                <button class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
                   <span>View Source</span>
-                </a>
+                </button>
               </span>
             </div>
           </div>
@@ -79,7 +121,7 @@
                 <input class="input">
               </p>
               <p class="control">
-                <a class="button is-info">Notify Me</a>
+                <button class="button is-info">Notify Me</button>
               </p>
             </div>
           </div>
@@ -152,10 +194,13 @@
             </pre>
         <p>Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.</p>
         <table>
+          <thead>
           <tr>
             <td>Header</td>
             <td>Header</td>
           </tr>
+          </thead>
+          <tbody>
           <tr>
             <td>cell</td>
             <td>cell</td>
@@ -176,6 +221,7 @@
             <td>cell</td>
             <td>cell</td>
           </tr>
+          </tbody>
         </table>
         <p>Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus laoreet metus, at cursus leo est vel tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae ultricies ex sodales quis. Aliquam eu nibh in libero accumsan pulvinar. Nullam nec nisl placerat, pretium metus vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam pharetra varius metus non pellentesque.</p>
         <h5 class="is-5 title">Fifth level</h5>
@@ -296,7 +342,7 @@
                   <div class="content">
                     <div>Click on image above</div>
                     <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-                    <span class="button is-link modal-button" data-target="modal-image1">Image modal</span>
+                    <button class="button is-link modal-button" data-target="modal-image1">Image modal</button>
                   </div>
                 </div>
               </div>
@@ -313,7 +359,7 @@
                     <div>Tempor orci dapibus ultrices in.</div>
                     <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
                       sed risus.</p>
-                    <span class="button is-link modal-button" data-target="modal-card">Modal Card</span>
+                    <button class="button is-link modal-button" data-target="modal-card">Modal Card</button>
                   </div>
                 </div>
               </div>
@@ -329,7 +375,7 @@
                   <div class="content">
                     <div>Click anywhere on card</div>
                     <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                    <span class="button is-link modal-button" data-target="modal-image2">Image modal</span>
+                    <button class="button is-link modal-button" data-target="modal-image2">Image modal</button>
                   </div>
                 </div>
               </div>
@@ -411,7 +457,7 @@
       </div>
     </div>
 
-    <section class="section has-background-grey-lighter">
+    <section class="section has-background-grey-lighter" id="events">
       <div class="container has-text-centered">
           <div class="section-heading has-text-centered">
             <h2 class="title is-2">Upcoming events</h2>
@@ -426,7 +472,7 @@
               </div>
               <p class="title">New York</p>
               <p class="subtitle">Fri 27 Nov 2016</p>
-              <a class="button">Buy Tickets</a>
+              <button class="button">Buy Tickets</button>
             </div>
           </div>
           <div class="tile is-parent">
@@ -436,7 +482,7 @@
               </div>
               <p class="title">Los Angeles</p>
               <p class="subtitle">Fri 27 Nov 2016</p>
-              <a class="button">Buy Tickets</a>
+              <button class="button">Buy Tickets</button>
             </div>
           </div>
           <div class="tile is-parent">
@@ -446,7 +492,7 @@
               </div>
               <p class="title">Mexico</p>
               <p class="subtitle">Fri 27 Nov 2016</p>
-              <a class="button">Buy Tickets</a>
+              <button class="button">Buy Tickets</button>
             </div>
           </div>
         </div>
@@ -459,7 +505,7 @@
               </div>
               <p class="title">Paris</p>
               <p class="subtitle">Fri 27 Nov 2016</p>
-              <a class="button">Buy Tickets</a>
+              <button class="button">Buy Tickets</button>
             </div>
           </div>
           <div class="tile is-parent">
@@ -469,7 +515,7 @@
               </div>
               <p class="title">Minsk</p>
               <p class="subtitle">Fri 27 Nov 2016</p>
-              <a class="button">Buy Tickets</a>
+              <button class="button">Buy Tickets</button>
             </div>
           </div>
           <div class="tile is-parent">
@@ -479,14 +525,14 @@
               </div>
               <p class="title">London</p>
               <p class="subtitle">Fri 27 Nov 2016</p>
-              <a class="button">Buy Tickets</a>
+              <button class="button">Buy Tickets</button>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="services">
       <div class="section-heading has-text-centered">
         <h2 class="title is-2">Services</h2>
         <h5 class="subtitle is-5">What can I do for you?</h5>
@@ -534,7 +580,7 @@
       </div>
     </section>
 
-    <section class="section has-background-grey-lighter">
+    <section class="section has-background-grey-lighter" id="photos">
     <div class="container">
       <div class="section-heading has-text-centered">
         <h2 class="title is-2">Photos from past events</h2>
@@ -699,7 +745,7 @@
     </div>
     </section>
 
-  <section class="section">
+  <section class="section" id="forum">
     <div class="container">
       <div class="section-heading has-text-centered">
         <h2 class="title is-2">Forum</h2>
@@ -708,7 +754,7 @@
 
       <div class="columns">
         <aside class="column is-3">
-          <a class="button is-primary is-block is-alt is-large">New Post</a>
+          <button class="button is-primary is-block is-alt is-large">New Post</button>
           <div class="menu">
             <ul class="menu-list forum-list">
               <li><span class="tag is-primary is-medium">Dashboard</span></li>
@@ -860,7 +906,7 @@
     </div>
   </section>
 
-  <section class="section has-background-light">
+  <section class="section has-background-light" id="contacts">
     <div class="container">
       <div class="section-heading has-text-centered">
         <h2 class="title is-2">Contact us</h2>
@@ -869,16 +915,14 @@
 
       <form class="column is-half is-offset-one-quarter box">
         <div class="field">
-          <label class="label">Name</label>
-          <div class="control">
-            <input class="input" type="text" placeholder="Text input">
-          </div>
+          <label class="label" for="name">Name</label>
+            <input class="input" id="name" type="text" placeholder="Text input">
         </div>
 
         <div class="field">
-          <label class="label">Username</label>
+          <label class="label" for="username">Username</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input is-success" type="text">
+            <input class="input is-success" id="username" type="text">
             <span class="icon is-small is-left">
               <i class="fas fa-user"></i>
             </span>
@@ -890,9 +934,9 @@
         </div>
 
         <div class="field">
-          <label class="label">Email</label>
+          <label class="label" for="email">Email</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+            <input class="input is-danger" id="email" type="email" placeholder="Email input" value="hello@">
             <span class="icon is-small is-left">
               <i class="fas fa-envelope"></i>
             </span>
@@ -904,10 +948,10 @@
         </div>
 
         <div class="field">
-          <label class="label">Subject</label>
+          <label class="label" for="subject">Subject</label>
           <div class="control">
             <div class="select">
-              <select>
+              <select id="subject">
                 <option>Select dropdown</option>
                 <option>With options</option>
               </select>
@@ -916,9 +960,9 @@
         </div>
 
         <div class="field">
-          <label class="label">Message</label>
+          <label class="label" for="message">Message</label>
           <div class="control">
-            <textarea class="textarea" placeholder="Textarea"></textarea>
+            <textarea class="textarea" id="message" placeholder="Textarea"></textarea>
           </div>
         </div>
 
@@ -1112,7 +1156,7 @@
           <a><i class="fab fa-facebook fa-2x"></i></a>
           <a><i class="fab fa-twitter fa-2x"></i></a>
         </div>
-        <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</p>
+        <p>The source code is licensed <a class="open-in-new-window" href="http://opensource.org/licenses/mit-license.php" target="_blank" title="open in new tab">MIT</a>.</p>
       </div>
     </div>
   </footer>

@@ -186,3 +186,31 @@ li {
   height: 40px;
   background-size: contain;
 }
+
+.dropMenu {
+  position: absolute;
+  height: 0;
+}
+
+.dropMenu .dropMenu-toggle {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.dropMenu .dropMenu-toggle:focus {
+  opacity: 1;
+}
+
+.dropMenu-menu {
+  position: relative;
+  display: none;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.open-in-new-window::after {
+  content: '>>';
+}

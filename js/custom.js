@@ -13,6 +13,20 @@ document.querySelectorAll("#nav li").forEach(function(navEl) {
   };
 });
 
+document.querySelector('.dropMenu').addEventListener('keydown', openSkipToMain);
+document.querySelector('.dropMenu').addEventListener('keydown', (e)=> {
+  if(e.keyCode === 27) {
+    e.target.closest('.dropMenu').querySelector('ul').style.display = "none";
+    e.target.closest('.dropMenu').style.height = "0px";
+  }
+});
+
+function openSkipToMain (e) {
+  if(e.keyCode === 13 || e.keyCode === 32) {
+    e.target.closest('.dropMenu').querySelector('ul').style.display = "block";
+    e.target.closest('.dropMenu').style.height = "auto";
+  }
+}
 function toggleTab(selectedNav, targetId) {
   var navEls = document.querySelectorAll("#nav li");
 
