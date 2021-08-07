@@ -7177,6 +7177,14 @@ a.panel-block:hover, label.panel-block:hover {
     flex-shrink: 0
 }
 
+.tab-section {
+    background: white;
+    color: #206cee;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    margin: 0 5px;
+}
+
 .tabs.is-toggle a {
     border-color: #dbdbdb;
     border-style: solid;
