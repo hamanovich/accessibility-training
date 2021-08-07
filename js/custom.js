@@ -8,9 +8,10 @@
 })();
 
 document.querySelectorAll("#nav li").forEach(function(navEl) {
-  navEl.onclick = function() {
-    toggleTab(this.id, this.dataset.target);
-  };
+  navEl.addEventListener('click',function(e) {
+    toggleTab(e.currentTarget.id, e.currentTarget.dataset.target);
+  });
+  navEl.addEventListener('keydown', (e) => toggleTab(e.currentTarget.id, e.currentTarget.dataset.target));
 });
 
 document.querySelector('.dropMenu').addEventListener('keydown', openSkipToMain);
@@ -31,11 +32,20 @@ function toggleTab(selectedNav, targetId) {
   var navEls = document.querySelectorAll("#nav li");
 
   navEls.forEach(function(navEl) {
-    if (navEl.id == selectedNav) {
+    if (navEl.id === selectedNav) {
       navEl.classList.add("is-active");
+      navEl.setAttribute('tabindex', '0')
+      navEl.addEventListener('keydown', (e) => {
+        if(e.keyCode === 39) {
+          console.log(navEls[(parseInt(selectedNav,10) + 1)], (parseInt(selectedNav,10)));
+          navEls[(parseInt(selectedNav,10) + 1)].focus()
+        } else if(e.keyCode === 37) navEls[(parseInt(selectedNav,10) - 1)].focus();
+      })
     } else {
       if (navEl.classList.contains("is-active")) {
         navEl.classList.remove("is-active");
+        navEl.setAttribute('tabindex', '-1')
+
       }
     }
   });
