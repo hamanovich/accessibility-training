@@ -124,7 +124,8 @@
           <div class="box">
             <div class="field is-grouped">
               <p class="control is-expanded">
-                <input class="input">
+                <label class="visually-hidden" for="notify">Would you like to get the latest news?</label>
+                <input id="notify" class="input">
               </p>
               <p class="control">
                 <button class="button is-info">Notify Me</button>
@@ -311,7 +312,7 @@
       </div>
       <div class="tabs is-boxed is-centered main-menu" id="nav">
         <ul>
-          <li data-target="pane-1" id="1" class="is-active">
+          <li data-target="pane-1" id="1" tabindex="0" class="is-active">
             <div class="tab-section">
               <span class="icon is-small"><i class="fa fa-image"></i></span>
               <span>Pictures</span>
@@ -390,7 +391,7 @@
         </div>
       </div>
 
-      <div class="tab-pane" id="pane-3">
+      <div class="tab-pane" id="pane-2">
         <div class="columns medias">
           <div class="column">
             <div class="media">
@@ -451,7 +452,7 @@
         </div>
       </div>
 
-      <div class="tab-pane" id="pane-4">
+      <div class="tab-pane" id="pane-3">
         <div class="columns is-centered">
           <div class="column is-three-quarters">
             <div class="title has-text-centered">Inspired video</div>
