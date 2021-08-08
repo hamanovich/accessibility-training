@@ -13,6 +13,7 @@
 
 <body>
 <header class="hero hero-bg is-fullheight">
+  <a class="visually-hidden" href="#skip-navigation">skip navigation</a>
   <div class="hero-head">
     <div class="navbar">
       <div class="container">
@@ -67,7 +68,7 @@
     </div>
   </div>
 
-  <div class="hero-body">
+  <div id="skip-navigation" class="hero-body">
     <div class="container has-text-centered">
       <form aria-label="subscribe to news letter" class="column is-6 is-offset-3">
         <h1 class="title has-text-white">We have web accessibility in mind</h1>
@@ -93,6 +94,14 @@
 </header>
 
 <main>
+  <nav aria-label="breadcrumbs">
+    <ol class="breadcrumbs">
+      <li><a href="/">Home</a><i class="fas fa-chevron-right"></i></li>
+      <li><a href="/">Breadcrumb one</a><i class="fas fa-chevron-right"></i></li>
+      <li><a href="/">Breadcrumb two</a><i class="fas fa-chevron-right"></i></li>
+      <li><a href="" aria-current="page">Breadcrumb three</a></li>
+    </ol>
+  </nav>
   <header class="section" id="about" aria-labelledby="about-us">
     <div class="section-heading has-text-centered">
       <h1 id="about-us" class="title is-2">About Us</h1>
@@ -111,7 +120,8 @@
 
   <section aria-labelledby="hello-world" class="content container">
     <h1 id="hello-world" class="is-1 title">Hello World</h1>
-    <p>Lorem ipsum<sup><a href="/">[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus
+    <p>Lorem ipsum<sup><a href="/">[1] <span class="visually-hidden">reference to lorem ipsum</span></a></sup> dolor sit
+      amet, consectetur adipiscing elit. Nulla accumsan, metus
       ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui.
       Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
     <h2 class="is-2 title">Second level</h2>
@@ -172,8 +182,8 @@
       vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.</p>
     <table>
       <tr>
-        <td>Header</td>
-        <td>Header</td>
+        <th scope="col">Header</th>
+        <th scope="col">Header</th>
       </tr>
       <tr>
         <td>cell</td>
@@ -240,7 +250,7 @@
                 <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer
                   enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper
                   viverra nam.</p>
-                <p><a href="/">Learn more</a></p>
+                <p><a href="/">Learn more <span class="visually-hidden">about first feature</span></a></p>
               </div>
             </div>
           </div>
@@ -259,7 +269,7 @@
                   odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue.
                   Phasellus vestibulum lorem
                   sed risus.</p>
-                <p><a href="/">Learn more</a></p>
+                <p><a href="/">Learn more <span class="visually-hidden">about second feature</span></a></p>
               </div>
             </div>
           </div>
@@ -276,7 +286,7 @@
                 <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque
                   dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan
                   lacus vel facilisis.</p>
-                <p><a href="/">Learn more</a></p>
+                <p><a href="/">Learn more <span class="visually-hidden">about third feature</span></a></p>
               </div>
             </div>
           </div>
@@ -289,7 +299,7 @@
     <div class="hero-body">
       <div class="container">
         <h1 id="topics" class="title">List of topics</h1>
-        <h2 class="subtitle">We are always in touch we the outside world</h2>
+        <h2 class="subtitle">We are always in touch with the outside world</h2>
       </div>
     </div>
     <div class="tabs is-boxed is-centered main-menu" id="nav">
@@ -477,7 +487,7 @@
             </div>
             <h3 class="title">New York</h3>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a href="/" title="New York">Buy Tickets</a>
+            <a href="/">Buy Tickets <span class="visually-hidden">to new york event. opens in new tab</span></a>
           </div>
         </div>
         <div class="tile is-parent">
@@ -487,7 +497,7 @@
             </div>
             <h3 class="title">Los Angeles</h3>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a href="/">Buy Tickets</a>
+            <a href="/">Buy Tickets <span class="visually-hidden">to los angeles event. opens in new tab</span></a>
           </div>
         </div>
         <div class="tile is-parent">
@@ -497,7 +507,7 @@
             </div>
             <h3 class="title">Mexico</h3>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a href="/">Buy Tickets</a>
+            <a href="/">Buy Tickets <span class="visually-hidden">to mexico event. opens in new tab</span></a>
           </div>
         </div>
       </div>
@@ -510,7 +520,7 @@
             </div>
             <h3 class="title">Paris</h3>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a href="/">Buy Tickets</a>
+            <a href="/">Buy Tickets <span class="visually-hidden">to paris event. opens in new tab</span></a>
           </div>
         </div>
         <div class="tile is-parent">
@@ -520,7 +530,7 @@
             </div>
             <h3 class="title">Minsk</h3>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a href="/">Buy Tickets</a>
+            <a href="/">Buy Tickets <span class="visually-hidden">to minsk. opens in new tab</span></a>
           </div>
         </div>
         <div class="tile is-parent">
@@ -530,7 +540,7 @@
             </div>
             <h3 class="title">London</h3>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a href="/">Buy Tickets</a>
+            <a href="/">Buy Tickets <span class="visually-hidden">to london event. opens in new tab</span></a>
           </div>
         </div>
       </div>
@@ -603,9 +613,7 @@
                 <div class="card-header-title">
                   <h2>Admin <small>(Light)</small></h2>
                   <span class="is-pulled-right">
-                      <a href="/">
-                        <span class="tag is-default">v0.7.2</span>
-                      </a>
+                      <span class="tag is-default">v0.7.2</span>
                       <span class="tag is-default">Desktop</span>
                       <span class="tag is-danger">WIP</span>
                     </span>
@@ -617,8 +625,9 @@
                 </div>
               </div>
               <div class="card-footer">
-                <a href="/" class="card-footer-item">Preview</a>
-                <a href="/" class="card-footer-item">Source Code</a>
+                <a href="https://example.com" class="card-footer-item external">Preview <span class="visually-hidden">for admin light. opens in new tab</span></a>
+                <a href=https://"github.com" class="card-footer-item external">Source Code <span
+                  class="visually-hidden">for admin light. opens in new tab</span></a>
               </div>
             </div>
           </div>
@@ -628,9 +637,7 @@
                 <div class="card-header-title">
                   <h2>Cards</h2>
                   <span class="is-pulled-right">
-                      <a href="/">
-                        <span class="tag is-default">v0.7.2</span>
-                      </a>
+                      <span class="tag is-default">v0.7.2</span>
                       <span class="tag is-default">Desktop</span>
                       <span class="tag is-default">?</span>
                     </span>
@@ -642,8 +649,10 @@
                 </div>
               </div>
               <div class="card-footer">
-                <a href="/" class="card-footer-item">Preview</a>
-                <a href="/" class="card-footer-item">Source Code</a>
+                <a href="https://example.com" class="card-footer-item external">Preview <span
+                  class="visually-hidden">for cards. opens in new tab</span></a>
+                <a href="https://github.com" class="card-footer-item external">Source Code <span
+                  class="visually-hidden">for cards. opens in new tab</span></a>
               </div>
             </div>
           </div>
@@ -653,9 +662,7 @@
                 <div class="card-header-title">
                   <h2>Forum</h2>
                   <span class="is-pulled-right">
-                      <a href="/">
-                        <span class="tag is-default">v0.7.2</span>
-                      </a>
+                      <span class="tag is-default">v0.7.2</span>
                       <span class="tag is-default">Desktop</span>
                       <span class="tag is-default">Mobile</span>
                     </span>
@@ -663,12 +670,14 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-3.jpeg" alt="stage beeing filmed via phone">
+                  <img src="./img/ev-3.jpeg" alt="stage being filmed via phone">
                 </div>
               </div>
               <div class="card-footer">
-                <a href="/" class="card-footer-item">Preview</a>
-                <a href="/" class="card-footer-item">Source Code</a>
+                <a href="https://example.com" class="card-footer-item external">Preview <span
+                  class="visually-hidden">for forum. opens in new tab</span></a>
+                <a href="https://github.com" class="card-footer-item external">Source Code <span
+                  class="visually-hidden">for forum. opens in new tab</span></a>
               </div>
             </div>
           </div>
@@ -680,9 +689,7 @@
                 <div class="card-header-title">
                   <h2>InstaAlbum</h2>
                   <span class="is-pulled-right">
-                      <a href="/">
-                        <span class="tag is-default">v0.7.2</span>
-                      </a>
+                      <span class="tag is-default">v0.7.2</span>
                       <span class="tag is-default">Desktop</span>
                       <span class="tag is-default">Mobile</span>
                     </span>
@@ -694,8 +701,9 @@
                 </div>
               </div>
               <div class="card-footer">
-                <a href="/" class="card-footer-item">Preview</a>
-                <a href="/" class="card-footer-item">Source Code</a>
+                <a href="https://example.com" class="card-footer-item external">Preview <span class="visually-hidden">for insta album. opens in new tab</span></a>
+                <a href="https://github.com" class="card-footer-item external">Source Code <span
+                  class="visually-hidden">for insta album. opens in new tab</span></a>
               </div>
             </div>
           </div>
@@ -705,9 +713,7 @@
                 <div class="card-header-title">
                   <h2>Landing</h2>
                   <span class="is-pulled-right">
-                      <a href="/">
-                        <span class="tag is-default">v0.7.2</span>
-                      </a>
+                      <span class="tag is-default">v0.7.2</span>
                       <span class="tag is-default">Desktop</span>
                       <span class="tag is-default">Mobile</span>
                     </span>
@@ -716,12 +722,14 @@
               <div class="card-content">
                 <div class="image">
                   <img src="./img/ev-5.jpeg"
-                       alt="people dicussing something on stage overlayed with text choosing the appropriate technology">
+                       alt="people discussing something on stage overlaid with text choosing the appropriate technology">
                 </div>
               </div>
               <div class="card-footer">
-                <a href="/" class="card-footer-item">Preview</a>
-                <a href="/" class="card-footer-item">Source Code</a>
+                <a href="https://example.com" class="card-footer-item external">Preview <span
+                  class="visually-hidden">for landing. opens in new tab</span></a>
+                <a href="https://github.com" class="card-footer-item external">Source Code <span
+                  class="visually-hidden">for landing. opens in new tab</span></a>
               </div>
             </div>
           </div>
@@ -731,9 +739,7 @@
                 <div class="card-header-title">
                   <h2>Marketing</h2>
                   <span class="is-pulled-right">
-                      <a href="/">
-                        <span class="tag is-default">v0.7.2</span>
-                      </a>
+                      <span class="tag is-default">v0.7.2</span>
                       <span class="tag is-default">Desktop</span>
                       <span class="tag is-default">Mobile</span>
                     </span>
@@ -745,8 +751,9 @@
                 </div>
               </div>
               <div class="card-footer">
-                <a href="/" class="card-footer-item">Preview</a>
-                <a href="/" class="card-footer-item">Source Code</a>
+                <a href="https://example.com" class="card-footer-item external">Preview <span class="visually-hidden">for marketing. opens in new tab</span></a>
+                <a href="https://github.com" class="card-footer-item external">Source Code <span
+                  class="visually-hidden">for marketing. opens in new tab</span></a>
               </div>
             </div>
           </div>
@@ -1163,12 +1170,17 @@
 
     <div class="content has-text-centered">
       <div class="soc">
-        <a href="/"><i class="fab fa-github-alt fa-2x"></i></a>
-        <a href="/"><i class="fab fa-youtube fa-2x"></i></a>
-        <a href="/"><i class="fab fa-facebook fa-2x"></i></a>
-        <a href="/"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://github.com"><span class="visually-hidden">github. opens in new tab</span><i
+          class="fab fa-github-alt fa-2x"></i></a>
+        <a href="https://youtube.com"><span class="visually-hidden">youtube. opens in new tab</span><i
+          class="fab fa-youtube fa-2x"></i></a>
+        <a href="https://facebook.com"><span class="visually-hidden">facebook. opens in new tab</span><i
+          class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com"><span class="visually-hidden">twitter. opens in new tab</span><i
+          class="fab fa-twitter fa-2x"></i></a>
       </div>
-      <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</p>
+      <p>The source code is licensed <a class="external" href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+      </p>
     </div>
   </div>
 </footer>
