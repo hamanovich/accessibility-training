@@ -3,23 +3,47 @@
 <html lang="en">
 
 <head>
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0, user-scalable=1.0" name="viewport">
   <title>Web Accessibility 2019 Q1 BY</title>
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css'>
-  <link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.0.10/css/all.css'>
-  <link rel="stylesheet prefetch" href="css/styles.css">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css' rel='stylesheet prefetch'>
+  <link href='https://use.fontawesome.com/releases/v5.0.10/css/all.css' rel='stylesheet prefetch'>
+  <link href="css/styles.css" rel="stylesheet prefetch">
 </head>
 
 <body>
 <header class="hero hero-bg is-fullheight">
-  <a class="visually-hidden" href="#skip-navigation">skip navigation</a>
   <div class="hero-head">
     <div class="navbar">
       <div class="container">
         <div class="navbar-brand">
-          <a href="/" class="navbar-item logo-link focus-visible">
-            <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" alt="EPAM logo">
+          <div class="dropdown skip-to-container visually-hidden" id="skip-to-dropdown">
+            <div class="dropdown-trigger">
+              <button
+                tabindex="0"
+                aria-controls="skip-to-menu"
+                aria-expanded="false"
+                aria-haspopup="true"
+                class="button"
+                id="skip-to-button"
+                role="button">
+                skip to
+              </button>
+            </div>
+            <div class="dropdown-menu">
+              <ol aria-label="skip to" class="dropdown-content" id="skip-to-menu" role="menu">
+                <li role="menuitem"><a class="dropdown-item" href="#about-us" tabindex="-1">about us</a></li>
+                <li role="menuitem"><a class="dropdown-item" href="#about-us" tabindex="-1">hello world</a></li>
+                <li role="menuitem"><a class="dropdown-item" href="#topics" tabindex="-1">topics</a></li>
+                <li role="menuitem"><a class="dropdown-item" href="#upcoming-events" tabindex="-1">upcoming events</a>
+                </li>
+                <li role="menuitem"><a class="dropdown-item" href="#services" tabindex="-1">services</a></li>
+                <li role="menuitem"><a class="dropdown-item" href="#photos" tabindex="-1">photos</a></li>
+              </ol>
+            </div>
+          </div>
+          <a class="navbar-item logo-link focus-visible" href="/">
+            <img alt="EPAM logo" src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg">
           </a>
           <button class="navbar-burger burger" data-target="navbarMenu">
             <span></span>
@@ -28,10 +52,10 @@
           </button>
         </div>
 
-        <nav id="navbarMenu" class="navbar-menu">
+        <nav class="navbar-menu" id="navbarMenu">
           <ul class="navbar-end">
             <li class="navbar-item">
-              <a href="/" class="has-text-white">
+              <a class="has-text-white" href="/">
                   <span class="icon">
                     <i class="fa fa-home"></i>
                   </span>
@@ -39,7 +63,7 @@
               </a>
             </li>
             <li class="navbar-item">
-              <a href="/" class="has-text-white">
+              <a class="has-text-white" href="/">
                   <span class="icon">
                     <i class="fab fa-superpowers"></i>
                   </span>
@@ -47,7 +71,7 @@
               </a>
             </li>
             <li class="navbar-item">
-              <a href="/" class="has-text-white">
+              <a class="has-text-white" href="/">
                   <span class="icon">
                     <i class="fa fa-book"></i>
                   </span>
@@ -55,7 +79,7 @@
               </a>
             </li>
             <li class="navbar-item">
-              <a href="/" class="has-text-white">
+              <a class="has-text-white" href="/">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
@@ -68,7 +92,7 @@
     </div>
   </div>
 
-  <div id="skip-navigation" class="hero-body">
+  <div class="hero-body">
     <div class="container has-text-centered">
       <form aria-label="subscribe to news letter" class="column is-6 is-offset-3">
         <h1 class="title has-text-white">We have web accessibility in mind</h1>
@@ -78,13 +102,13 @@
         <div class="box">
           <div class="field is-grouped">
             <p class="control is-expanded">
-              <label for="subscribe-email" class="visually-hidden">
+              <label class="visually-hidden" for="subscribe-email">
                 Email
               </label>
-              <input id="subscribe-email" type="email" placeholder="Enter email" class="input">
+              <input class="input" id="subscribe-email" placeholder="Enter email" type="email">
             </p>
             <p class="control">
-              <button type="submit" class="button is-link">Notify Me</button>
+              <button class="button is-link" type="submit">Notify Me</button>
             </p>
           </div>
         </div>
@@ -99,12 +123,12 @@
       <li><a href="/">Home</a><i class="fas fa-chevron-right"></i></li>
       <li><a href="/">Breadcrumb one</a><i class="fas fa-chevron-right"></i></li>
       <li><a href="/">Breadcrumb two</a><i class="fas fa-chevron-right"></i></li>
-      <li><a href="" aria-current="page">Breadcrumb three</a></li>
+      <li><a aria-current="page" href="">Breadcrumb three</a></li>
     </ol>
   </nav>
-  <header class="section" id="about" aria-labelledby="about-us">
+  <header aria-labelledby="about-us" class="section" id="about">
     <div class="section-heading has-text-centered">
-      <h1 id="about-us" class="title is-2">About Us</h1>
+      <h1 class="title is-2" id="about-us">About Us</h1>
       <h2 class="subtitle is-5">We of all trades, master of "some"</h2>
       <div class="container">
         <p>Web developers with more than <b>4 years</b> of well-rounded experience with a degree in the
@@ -119,7 +143,7 @@
   </header>
 
   <section aria-labelledby="hello-world" class="content container">
-    <h1 id="hello-world" class="is-1 title">Hello World</h1>
+    <h1 class="is-1 title" id="hello-world">Hello World</h1>
     <p>Lorem ipsum<sup><a href="/">[1] <span class="visually-hidden">reference to lorem ipsum</span></a></sup> dolor sit
       amet, consectetur adipiscing elit. Nulla accumsan, metus
       ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui.
@@ -217,9 +241,9 @@
       Praesent aliquet ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel nisi sodales, a
       eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.</p>
     <figure>
-      <img src="./img/photo-1572958731731-2b7fdb0a9818.jpg" alt="forest through a train window">
-      <img src="./img/photo-1574281852611-b2f04c86a520.jpg" alt="black-and-white closeup photo of hands with rings">
-      <img src="./img/photo-1575023615386-1554d895d09d.jpg" alt="christmass decorations on a table">
+      <img alt="forest through a train window" src="./img/photo-1572958731731-2b7fdb0a9818.jpg">
+      <img alt="black-and-white closeup photo of hands with rings" src="./img/photo-1574281852611-b2f04c86a520.jpg">
+      <img alt="christmass decorations on a table" src="./img/photo-1575023615386-1554d895d09d.jpg">
       <figcaption>
         Figure 1: Some beautiful placeholders
       </figcaption>
@@ -234,7 +258,7 @@
   <section aria-labelledby="key-features" class="hero has-background-grey-lighter">
     <div class="container features">
       <div class="section-heading has-text-centered">
-        <h1 id="key-features" class="title is-2">Three key features</h1>
+        <h1 class="title is-2" id="key-features">Three key features</h1>
         <h2 class="subtitle is-5">We don't hide what we do</h2>
       </div>
 
@@ -298,26 +322,26 @@
   <section aria-labelledby="topics" class="hero is-link">
     <div class="hero-body">
       <div class="container">
-        <h1 id="topics" class="title">List of topics</h1>
+        <h1 class="title" id="topics">List of topics</h1>
         <h2 class="subtitle">We are always in touch with the outside world</h2>
       </div>
     </div>
     <div class="tabs is-boxed is-centered main-menu" id="nav">
       <ul>
-        <li data-target="pane-1" id="1" class="is-active">
-          <button type="button" class="tab">
+        <li class="is-active" data-target="pane-1" id="1">
+          <button class="tab" type="button">
             <span class="icon is-small"><i class="fa fa-image"></i></span>
             <span>Pictures</span>
           </button>
         </li>
         <li data-target="pane-3" id="3">
-          <button type="button" class="tab">
+          <button class="tab" type="button">
             <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
             <span>Team</span>
           </button>
         </li>
         <li data-target="pane-4" id="4">
-          <button type="button" class="tab">
+          <button class="tab" type="button">
             <span class="icon is-small"><i class="fa fa-film"></i></span>
             <span>Video</span>
           </button>
@@ -335,8 +359,8 @@
             <div class="card">
               <div class="card-image">
                 <div class="image is-4by3">
-                  <img src="./img/tab-1.jpg" alt="person holding remote control device" class="modal-button"
-                       data-target="modal-image1">
+                  <img alt="person holding remote control device" class="modal-button" data-target="modal-image1"
+                       src="./img/tab-1.jpg">
                 </div>
               </div>
               <div class="card-content">
@@ -356,7 +380,7 @@
             <div class="card">
               <div class="card-image">
                 <div class="image is-4by3">
-                  <img src="./img/tab-2.jpg" alt="bird's eye view of a tropical beach">
+                  <img alt="bird's eye view of a tropical beach" src="./img/tab-2.jpg">
                 </div>
               </div>
               <div class="card-content">
@@ -375,8 +399,8 @@
             <div class="card">
               <div class="card-image">
                 <div class="image is-4by3">
-                  <img src="./img/tab-3.jpg" alt="shore with mountains on the horizon" class="modal-button"
-                       data-target="modal-image2">
+                  <img alt="shore with mountains on the horizon" class="modal-button" data-target="modal-image2"
+                       src="./img/tab-3.jpg">
                 </div>
               </div>
               <div class="card-content">
@@ -464,8 +488,8 @@
         <div class="column is-three-quarters">
           <div class="title has-text-centered">Inspired video</div>
           <div class="embed-container image">
-            <iframe src="https://player.vimeo.com/video/261794608" frameborder="0" webkitAllowFullScreen
-                    mozallowfullscreen allowFullScreen></iframe>
+            <iframe allowFullScreen frameborder="0" mozallowfullscreen
+                    src="https://player.vimeo.com/video/261794608" webkitAllowFullScreen></iframe>
           </div>
         </div>
       </div>
@@ -475,7 +499,7 @@
   <div aria-labelledby="upcoming-events" class="section has-background-grey-lighter">
     <div class="container has-text-centered">
       <div class="section-heading has-text-centered">
-        <h1 id="upcoming-events" class="title is-2">Upcoming events</h1>
+        <h1 class="title is-2" id="upcoming-events">Upcoming events</h1>
         <h2 class="subtitle is-5">Outcoming dates for the best options</h2>
       </div>
 
@@ -483,7 +507,7 @@
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/web-access-summit-eventbrite.jpg" alt="">
+              <img alt="" src="./img/web-access-summit-eventbrite.jpg">
             </div>
             <h3 class="title">New York</h3>
             <p class="subtitle">Fri 27 Nov 2016</p>
@@ -493,7 +517,7 @@
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/access.jpg" alt="">
+              <img alt="" src="./img/access.jpg">
             </div>
             <h3 class="title">Los Angeles</h3>
             <p class="subtitle">Fri 27 Nov 2016</p>
@@ -503,7 +527,7 @@
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/dotcss-2019.jpg" alt="">
+              <img alt="" src="./img/dotcss-2019.jpg">
             </div>
             <h3 class="title">Mexico</h3>
             <p class="subtitle">Fri 27 Nov 2016</p>
@@ -516,7 +540,7 @@
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/images.jpg" alt="">
+              <img alt="" src="./img/images.jpg">
             </div>
             <h3 class="title">Paris</h3>
             <p class="subtitle">Fri 27 Nov 2016</p>
@@ -526,7 +550,7 @@
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/mid_300_33455472_313632022502906_5761920685983137792_n.png" alt="">
+              <img alt="" src="./img/mid_300_33455472_313632022502906_5761920685983137792_n.png">
             </div>
             <h3 class="title">Minsk</h3>
             <p class="subtitle">Fri 27 Nov 2016</p>
@@ -536,7 +560,7 @@
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/access.jpg" alt="">
+              <img alt="" src="./img/access.jpg">
             </div>
             <h3 class="title">London</h3>
             <p class="subtitle">Fri 27 Nov 2016</p>
@@ -549,7 +573,7 @@
 
   <section aria-labelledby="services" class="section">
     <div class="section-heading has-text-centered">
-      <h1 id="services" class="title is-2">Services</h1>
+      <h1 class="title is-2" id="services">Services</h1>
       <h2 class="subtitle is-5">What can I do for you?</h2>
     </div>
     <div class="container">
@@ -602,7 +626,7 @@
   <section aria-labelledby="photos" class="section has-background-grey-lighter">
     <div class="container">
       <div class="section-heading has-text-centered">
-        <h1 id="photos" class="title is-2">Photos from past events</h1>
+        <h1 class="title is-2" id="photos">Photos from past events</h1>
       </div>
 
       <div class="container portfolio-container">
@@ -621,12 +645,12 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-1.jpeg" alt="man on stage in front of a banner with text j s conf family">
+                  <img alt="man on stage in front of a banner with text j s conf family" src="./img/ev-1.jpeg">
                 </div>
               </div>
               <div class="card-footer">
-                <a href="https://example.com" class="card-footer-item external">Preview <span class="visually-hidden">for admin light. opens in new tab</span></a>
-                <a href=https://"github.com" class="card-footer-item external">Source Code <span
+                <a class="card-footer-item external" href="https://example.com">Preview <span class="visually-hidden">for admin light. opens in new tab</span></a>
+                <a class="card-footer-item external" href=https://"github.com">Source Code <span
                   class="visually-hidden">for admin light. opens in new tab</span></a>
               </div>
             </div>
@@ -645,13 +669,13 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-2.jpeg" alt="man working on a laptop inside the crowd">
+                  <img alt="man working on a laptop inside the crowd" src="./img/ev-2.jpeg">
                 </div>
               </div>
               <div class="card-footer">
-                <a href="https://example.com" class="card-footer-item external">Preview <span
+                <a class="card-footer-item external" href="https://example.com">Preview <span
                   class="visually-hidden">for cards. opens in new tab</span></a>
-                <a href="https://github.com" class="card-footer-item external">Source Code <span
+                <a class="card-footer-item external" href="https://github.com">Source Code <span
                   class="visually-hidden">for cards. opens in new tab</span></a>
               </div>
             </div>
@@ -670,13 +694,13 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-3.jpeg" alt="stage being filmed via phone">
+                  <img alt="stage being filmed via phone" src="./img/ev-3.jpeg">
                 </div>
               </div>
               <div class="card-footer">
-                <a href="https://example.com" class="card-footer-item external">Preview <span
+                <a class="card-footer-item external" href="https://example.com">Preview <span
                   class="visually-hidden">for forum. opens in new tab</span></a>
-                <a href="https://github.com" class="card-footer-item external">Source Code <span
+                <a class="card-footer-item external" href="https://github.com">Source Code <span
                   class="visually-hidden">for forum. opens in new tab</span></a>
               </div>
             </div>
@@ -697,12 +721,12 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-4.jpeg" alt="people on stage participating in a discussion">
+                  <img alt="people on stage participating in a discussion" src="./img/ev-4.jpeg">
                 </div>
               </div>
               <div class="card-footer">
-                <a href="https://example.com" class="card-footer-item external">Preview <span class="visually-hidden">for insta album. opens in new tab</span></a>
-                <a href="https://github.com" class="card-footer-item external">Source Code <span
+                <a class="card-footer-item external" href="https://example.com">Preview <span class="visually-hidden">for insta album. opens in new tab</span></a>
+                <a class="card-footer-item external" href="https://github.com">Source Code <span
                   class="visually-hidden">for insta album. opens in new tab</span></a>
               </div>
             </div>
@@ -721,14 +745,14 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-5.jpeg"
-                       alt="people discussing something on stage overlaid with text choosing the appropriate technology">
+                  <img alt="people discussing something on stage overlaid with text choosing the appropriate technology"
+                       src="./img/ev-5.jpeg">
                 </div>
               </div>
               <div class="card-footer">
-                <a href="https://example.com" class="card-footer-item external">Preview <span
+                <a class="card-footer-item external" href="https://example.com">Preview <span
                   class="visually-hidden">for landing. opens in new tab</span></a>
-                <a href="https://github.com" class="card-footer-item external">Source Code <span
+                <a class="card-footer-item external" href="https://github.com">Source Code <span
                   class="visually-hidden">for landing. opens in new tab</span></a>
               </div>
             </div>
@@ -747,12 +771,12 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-6.jpeg" alt="crowd of people raising hands">
+                  <img alt="crowd of people raising hands" src="./img/ev-6.jpeg">
                 </div>
               </div>
               <div class="card-footer">
-                <a href="https://example.com" class="card-footer-item external">Preview <span class="visually-hidden">for marketing. opens in new tab</span></a>
-                <a href="https://github.com" class="card-footer-item external">Source Code <span
+                <a class="card-footer-item external" href="https://example.com">Preview <span class="visually-hidden">for marketing. opens in new tab</span></a>
+                <a class="card-footer-item external" href="https://github.com">Source Code <span
                   class="visually-hidden">for marketing. opens in new tab</span></a>
               </div>
             </div>
@@ -765,7 +789,7 @@
   <section class="section">
     <div class="container">
       <div class="section-heading has-text-centered">
-        <h1 id="forum" class="title is-2">Forum</h1>
+        <h1 class="title is-2" id="forum">Forum</h1>
         <h3 class="subtitle is-5">Discuss any topic with no leaving this page</h3>
       </div>
 
@@ -791,7 +815,7 @@
               <div class="media">
                 <div class="media-left">
                   <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=300" alt="">
+                    <img alt="" src="https://source.unsplash.com/random/64x64/?sig=300">
                   </p>
                 </div>
                 <div class="media-content">
@@ -813,7 +837,7 @@
               <div class="media">
                 <div class="media-left">
                   <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=301" alt="">
+                    <img alt="" src="https://source.unsplash.com/random/64x64/?sig=301">
                   </p>
                 </div>
                 <div class="media-content">
@@ -835,7 +859,7 @@
               <div class="media">
                 <div class="media-left">
                   <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=302" alt="">
+                    <img alt="" src="https://source.unsplash.com/random/64x64/?sig=302">
                   </p>
                 </div>
                 <div class="media-content">
@@ -857,7 +881,7 @@
               <div class="media">
                 <div class="media-left">
                   <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=303" alt="">
+                    <img alt="" src="https://source.unsplash.com/random/64x64/?sig=303">
                   </p>
                 </div>
                 <div class="media-content">
@@ -879,7 +903,7 @@
               <div class="media">
                 <div class="media-left">
                   <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=304" alt="">
+                    <img alt="" src="https://source.unsplash.com/random/64x64/?sig=304">
                   </p>
                 </div>
                 <div class="media-content">
@@ -901,7 +925,7 @@
               <div class="media">
                 <div class="media-left">
                   <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=305" alt="">
+                    <img alt="" src="https://source.unsplash.com/random/64x64/?sig=305">
                   </p>
                 </div>
                 <div class="media-content">
@@ -926,22 +950,22 @@
   <section aria-labelledby="contact-us" class="section has-background-light">
     <div class="container">
       <div class="section-heading has-text-centered">
-        <h1 id="contact-us" class="title is-2">Contact us</h1>
+        <h1 class="title is-2" id="contact-us">Contact us</h1>
         <div class="subtitle is-5">Don't hesitate, ask anything</div>
       </div>
 
       <form aria-labelledby="contact-us" class="column is-half is-offset-one-quarter box">
         <div class="field">
-          <label for="name" class="label">Name</label>
+          <label class="label" for="name">Name</label>
           <div class="control">
-            <input id="name" class="input" type="text" placeholder="Name">
+            <input class="input" id="name" placeholder="Name" type="text">
           </div>
         </div>
 
         <div class="field">
-          <label for="username" class="label">Username</label>
+          <label class="label" for="username">Username</label>
           <div class="control has-icons-left has-icons-right">
-            <input id="username" class="input is-success" type="text">
+            <input class="input is-success" id="username" type="text">
             <span class="icon is-small is-left">
                 <i class="fas fa-user"></i>
               </span>
@@ -953,9 +977,9 @@
         </div>
 
         <div class="field">
-          <label for="email" class="label">Email</label>
+          <label class="label" for="email">Email</label>
           <div class="control has-icons-left has-icons-right">
-            <input id="email" class="input is-danger" type="email" placeholder="Email input" value="hello@">
+            <input class="input is-danger" id="email" placeholder="Email input" type="email" value="hello@">
             <span class="icon is-small is-left">
                 <i class="fas fa-envelope"></i>
               </span>
@@ -967,7 +991,7 @@
         </div>
 
         <div class="field">
-          <label for="subject" class="label">Subject</label>
+          <label class="label" for="subject">Subject</label>
           <div class="control">
             <div class="select">
               <select id="subject">
@@ -979,9 +1003,9 @@
         </div>
 
         <div class="field">
-          <label for="message" class="label">Message</label>
+          <label class="label" for="message">Message</label>
           <div class="control">
-            <textarea id="message" class="textarea" placeholder="Textarea"></textarea>
+            <textarea class="textarea" id="message" placeholder="Textarea"></textarea>
           </div>
         </div>
 
@@ -997,11 +1021,11 @@
         <div class="field">
           <div class="control">
             <label class="radio">
-              <input type="radio" name="question">
+              <input name="question" type="radio">
               Yes
             </label>
             <label class="radio">
-              <input type="radio" name="question">
+              <input name="question" type="radio">
               No
             </label>
           </div>
@@ -1009,10 +1033,10 @@
 
         <div class="field is-grouped">
           <div class="control">
-            <button type="submit" class="button is-link">Submit</button>
+            <button class="button is-link" type="submit">Submit</button>
           </div>
           <div class="control">
-            <button type="reset" class="button is-text">Cancel</button>
+            <button class="button is-text" type="reset">Cancel</button>
           </div>
         </div>
       </form>
@@ -1133,7 +1157,7 @@
   <div class="container">
     <div class="columns">
       <div class="column is-3 is-offset-2">
-        <div class="is-3 title"><b>Lessons</b></div>
+        <h3 class="is-3 title"><b>Lessons</b></h3>
         <ul>
           <li><a href="/">Lorem ipsum dolor sit amet</a></li>
           <li><a href="/">Vestibulum errato isse</a></li>
@@ -1145,7 +1169,7 @@
         </ul>
       </div>
       <div class="column is-3">
-        <div class="is-3 title"><b>News</b></div>
+        <h3 class="is-3 title"><b>News</b></h3>
         <ul>
           <li><a href="/">Labore et dolore magna aliqua</a></li>
           <li><a href="/">Kanban airis sum eschelor</a></li>
@@ -1157,7 +1181,7 @@
         </ul>
       </div>
       <div class="column is-4">
-        <div class="is-3 title"><b>Help</b></div>
+        <h3 class="is-3 title"><b>Help</b></h3>
         <ul>
           <li><a href="/">Objects in space</a></li>
           <li><a href="/">Playing cards with coyote</a></li>
@@ -1185,20 +1209,20 @@
   </div>
 </footer>
 
-<div id="modal-card" class="modal modal-fx-3dSlit">
+<div class="modal modal-fx-3dSlit" id="modal-card">
   <div class="modal-background"></div>
   <div class="modal-content is-tiny">
     <div class="card">
       <div class="card-image">
         <div class="image is-4by3">
-          <img src="https://source.unsplash.com/random/?sig=2" alt="random image">
+          <img alt="random image" src="https://source.unsplash.com/random/?sig=2">
         </div>
       </div>
       <div class="card-content">
         <div class="media">
           <div class="media-left">
             <div class="image is-48x48">
-              <img src="http://www.radfaces.com/images/avatars/linda-barret.jpg" alt="random image">
+              <img alt="random image" src="http://www.radfaces.com/images/avatars/linda-barret.jpg">
             </div>
           </div>
           <div class="media-content">
@@ -1230,24 +1254,25 @@
   <button class="modal-close is-large"></button>
 </div>
 
-<div id="modal-image1" class="modal modal-fx-3dSlit">
+<div class="modal modal-fx-3dSlit" id="modal-image1">
   <div class="modal-background"></div>
   <div class="modal-content is-huge is-image">
-    <img src="https://source.unsplash.com/random/?sig=1" alt="random image">
+    <img alt="random image" src="https://source.unsplash.com/random/?sig=1">
   </div>
   <button class="modal-close is-large"></button>
 </div>
 
-<div id="modal-image2" class="modal modal-fx-superScaled">
+<div class="modal modal-fx-superScaled" id="modal-image2">
   <div class="modal-background"></div>
   <div class="modal-content  is-image">
-    <img src="https://source.unsplash.com/random/?sig=3" alt="random image">
+    <img alt="random image" src="https://source.unsplash.com/random/?sig=3">
   </div>
   <button class="modal-close is-large"></button>
 </div>
 
 <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
 <script async src="js/custom.js"></script>
+<script async src="js/extended-skip-navigation.js"></script>
 </body>
 
 </html>
