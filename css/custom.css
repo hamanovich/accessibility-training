@@ -56,3 +56,7 @@
   width: auto;
   clip: auto;
 }
+
+.button.is-info{
+    background-color: #163a52;
+}

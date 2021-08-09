@@ -145,10 +145,6 @@
   width: 100%;
 }
 
-li {
-  list-style: none;
-}
-
 .hero.is-fullheight {
   min-height: 70vh;
 }
