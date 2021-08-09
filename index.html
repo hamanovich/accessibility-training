@@ -40,6 +40,14 @@
 
             <div id="navbarMenu" class="navbar-menu">
               <div class="navbar-end">
+                <span class="navbar-item visually-hidden">
+                  <a class="button is-white is-outlined" href="#">
+                    <span class="icon">
+                      <i class="fa fa-home"></i>
+                    </span>
+                    <span>Skip to main content</span>
+                  </a>
+                </span>
                 <span class="navbar-item">
                   <a class="button is-white is-outlined" href="#">
                     <span class="icon">
@@ -103,7 +111,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main">
       <section class="section" id="about">
         <div class="section-heading has-text-centered">
           <h2 class="title is-2">About Us</h2>
@@ -124,11 +132,20 @@
         <div class="content container">
           <h1 class="is-1 title">Hello World</h1>
           <p>
-            Lorem ipsum<sup><a href="#">[1]</a></sup> dolor sit amet,
-            consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend
-            gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus.
-            Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel,
-            interdum mattis neque. Sub<sub>script</sub> works as well!
+            Lorem ipsum<sup
+              ><a href="#" target="_blank"
+                >[1]<span class="visually-hidden"
+                  >will open in a new tab</span
+                ></a
+              ></sup
+            >
+            dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus
+            ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum
+            justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio,
+            sollicitudin vel erat vel, interdum mattis neque. Sub<sub
+              >script</sub
+            >
+            works as well!
           </p>
           <h2 class="is-2 title">Second level</h2>
           <p>
@@ -219,8 +236,8 @@
 
           <table>
             <tr>
-              <th>Header</th>
-              <th>Header</th>
+              <th scope="col">Header</th>
+              <th scope="col">Header</th>
             </tr>
             <tr>
               <td>cell</td>
@@ -426,8 +443,9 @@
                       <button
                         class="button is-link modal-button"
                         data-target="modal-image1"
-                        >Image modal</button
                       >
+                        Image modal
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -452,8 +470,9 @@
                       <button
                         class="button is-link modal-button"
                         data-target="modal-card"
-                        >Modal Card</button
                       >
+                        Modal Card
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -482,8 +501,9 @@
                       <button
                         class="button is-link modal-button"
                         data-target="modal-image2"
-                        >Image modal</button
                       >
+                        Image modal
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -1415,7 +1435,10 @@
     <div id="modal-image1" class="modal modal-fx-3dSlit">
       <div class="modal-background"></div>
       <div class="modal-content is-huge is-image">
-        <img src="https://source.unsplash.com/random/?sig=1" alt="random image"/>
+        <img
+          src="https://source.unsplash.com/random/?sig=1"
+          alt="random image"
+        />
       </div>
       <button class="modal-close is-large"></button>
     </div>
@@ -1423,7 +1446,10 @@
     <div id="modal-image2" class="modal modal-fx-superScaled">
       <div class="modal-background"></div>
       <div class="modal-content is-image">
-        <img src="https://source.unsplash.com/random/?sig=3" alt="random image"/>
+        <img
+          src="https://source.unsplash.com/random/?sig=3"
+          alt="random image"
+        />
       </div>
       <button class="modal-close is-large"></button>
     </div>
