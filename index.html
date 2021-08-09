@@ -79,26 +79,27 @@
       </div>
 
       <div class="hero-body">
-        <div class="container has-text-centered">
+        <form class="container has-text-centered">
           <div class="column is-6 is-offset-3">
-            <div class="title has-text-white">
+            <h1 class="title has-text-white">
               We have web accessibility in mind
-            </div>
-            <div class="subtitle has-text-white">
+            </h1>
+            <h2 class="subtitle has-text-white">
               Would you like to get the latest news?
-            </div>
-            <div class="box">
-              <div class="field is-grouped">
-                <p class="control is-expanded">
-                  <input class="input" />
-                </p>
-                <p class="control">
-                  <a href="#" class="button is-info">Notify Me</a>
-                </p>
-              </div>
-            </div>
+            </h2>
+
+            <fieldset class="box field is-grouped">
+              <label class="control is-expanded">
+                <span class="visually-hidden"
+                  >Would you like to get the latest news?</span
+                >
+                <input class="input" />
+              </label>
+
+              <button class="control button is-dark">Notify Me</button>
+            </fieldset>
           </div>
-        </div>
+        </form>
       </div>
     </header>
 
@@ -122,10 +123,10 @@
         <div class="content container">
           <div class="is-1 title">Hello World</div>
           <p>
-            Lorem ipsum<sup><a href="#">[1]</a></sup> dolor sit amet, consectetur
-            adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida,
-            nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut
-            vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel,
+            Lorem ipsum<sup><a href="#">[1]</a></sup> dolor sit amet,
+            consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend
+            gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus.
+            Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel,
             interdum mattis neque. Sub<sub>script</sub> works as well!
           </p>
           <div class="is-2 title">Second level</div>
@@ -152,8 +153,8 @@
           <div class="is-3 title">Third level</div>
           <p>
             Quisque ante lacus, malesuada ac auctor vitae, congue
-            <a href="#">non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla
-            condimentum orci. Fusce eu rutrum tellus.
+            <a href="#">non ante</a>. Phasellus lacus ex, semper ac tortor nec,
+            fringilla condimentum orci. Fusce eu rutrum tellus.
           </p>
           <ol class="ol-list">
             <li>Donec blandit a lorem id convallis.</li>
@@ -877,7 +878,9 @@
 
           <div class="columns">
             <div class="column is-3">
-              <button class="button is-primary is-block is-alt is-large">New Post</button>
+              <button class="button is-primary is-block is-alt is-large">
+                New Post
+              </button>
               <div class="menu">
                 <ul class="menu-list forum-list">
                   <li>
