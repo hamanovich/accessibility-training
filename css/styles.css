@@ -249,16 +249,23 @@ textarea:focus {
   width: 1px;
 }
 
-.skip-link {
-  position: absolute;
+.skip-button {
   height: 0;
   width: 0;
   overflow: hidden;
+  padding: 0;
+  border: 0;
 }
 
-a.skip-link:focus {
+.skip-container {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+}
+
+.skip-button:focus {
   display: block;
-  width: 120px;
+  width: 140px;
   height: fit-content;
   background-color: #FF6685;
   color: #000000;
@@ -279,4 +286,31 @@ a.skip-link:focus {
 
 .breadcrumbs li:first-child::before {
   content: "";
+}
+
+.skip-navigation {
+  display: none;
+}
+
+.skip-navigation li {
+  padding: 5px 10px;
+}
+
+.skip-navigation li a {
+  color: #000;
+}
+
+.button.visible,
+.visible {
+  display: block;
+  width: 150px;
+  height: fit-content;
+  background-color: #fff;
+  color: #000;
+}
+
+.button.visible {
+  border: none;
+  padding: 10px;
+  border-radius: 0;
 }
