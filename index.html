@@ -12,7 +12,21 @@
 
 <body>
   <header class="hero hero-bg is-fullheight">
-    <a href="#about" aria-current="page" class="link skip-link ">Skip to the main content</a>
+    <div class="skip-container">
+      <button class="button skip-button" id="skipLink">Skip to:</button>
+      <nav class="skip-navigation" id="skipButtonMenu">
+        <ul>
+          <li><a href="#about" class="link" aria-current="page">About us</a></li>
+          <li><a href="#features" class="link" aria-current="page">Key features</a></li>
+          <li><a href="#events" class="link" aria-current="page">Upcoming events</a></li>
+          <li><a href="#services" class="link" aria-current="page">Services</a></li>
+          <li><a href="#photos" class="link" aria-current="page">Photos</a></li>
+          <li><a href="#forum" class="link" aria-current="page">Forum</a></li>
+          <li><a href="#contactUs" class="link" aria-current="page">Contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <div class="hero-head">
       <div class="navbar">
         <div class="container">
@@ -196,7 +210,7 @@
       </div>
     </section>
 
-    <section class="hero has-background-grey-light">
+    <section class="hero has-background-grey-light" id="features">
       <div class="container features">
         <div class="section-heading has-text-centered">
           <h2 class="title is-2">Three key features</h2>
@@ -414,7 +428,7 @@
       </div>
     </section>
 
-    <section class="section has-background-grey-lighter">
+    <section class="section has-background-grey-lighter" id="events">
       <div class="container has-text-centered">
           <div class="section-heading has-text-centered">
             <h2 class="title is-2">Upcoming events</h2>
@@ -489,7 +503,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="services">
       <div class="section-heading has-text-centered">
         <h2 class="title is-2">Services</h2>
         <h5 class="subtitle is-5">What can I do for you?</h5>
@@ -537,7 +551,7 @@
       </div>
     </section>
 
-    <section class="section has-background-grey-lighter">
+    <section class="section has-background-grey-lighter" id="photos">
       <div class="container">
         <div class="section-heading has-text-centered">
           <h2 class="title is-2">Photos from past events</h2>
@@ -726,7 +740,7 @@
       </div>
       </section>
 
-    <section class="section">
+    <section class="section" id="forum">
       <div class="container">
         <div class="section-heading has-text-centered">
           <h2 class="title is-2">Forum</h2>
@@ -899,7 +913,7 @@
       </div>
     </section>
 
-    <section class="section has-background-light">
+    <section class="section has-background-light" id="contactUs">
       <div class="container">
         <div class="section-heading has-text-centered">
           <h2 class="title is-2">Contact us</h2>
@@ -1142,6 +1156,21 @@
             <li><a href="#" aria-current="page" class="link">Future Shock</a></li>
           </ul>
         </div>
+      </div>
+
+      <div class="content has-text-centered">
+        <nav aria-label="Breadcrumbs" class="breadcrumbs">
+          <ul>
+            <li><a href="#" class="link" aria-current="page">Home</a></li>
+            <li><a href="#about" class="link" aria-current="page">About us</a></li>
+            <li><a href="#features" class="link" aria-current="page">Key features</a></li>
+            <li><a href="#events" class="link" aria-current="page">Upcoming events</a></li>
+            <li><a href="#services" class="link" aria-current="page">Services</a></li>
+            <li><a href="#photos" class="link" aria-current="page">Photos</a></li>
+            <li><a href="#forum" class="link" aria-current="page">Forum</a></li>
+            <li><a href="#contactUs" class="link" aria-current="page">Contact us</a></li>
+          </ul>
+        </nav>
       </div>
 
       <div class="content has-text-centered">
