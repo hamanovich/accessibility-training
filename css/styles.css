@@ -265,3 +265,18 @@ a.skip-link:focus {
   padding: 10px;
   border-radius: 4px;
 }
+
+.breadcrumbs ul {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.breadcrumbs li::before {
+  content: "|";
+  padding: 0 10px;
+}
+
+.breadcrumbs li:first-child::before {
+  content: "";
+}
