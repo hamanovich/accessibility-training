@@ -176,3 +176,65 @@ li {
   height: 40px;
   background-size: contain;
 }
+
+.menu-list .tag {
+  border-radius: 4px;
+  display: inline-flex;
+}
+
+.logo-link:focus,
+.button:focus,
+.link:focus,
+.select-field:focus,
+.textarea:focus
+.input:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: none !important;
+  outline: 2px solid blue !important;
+}
+
+.button.is-info {
+  color: #000000;
+}
+.has-background-grey-light h5 {
+  color: #242424;
+}
+
+.hero.is-info .title {
+  color: #000000;
+}
+
+.tabs.is-boxed.is-centered.main-menu .is-active span {
+  color: #595959;
+}
+
+.tag.is-danger {
+  background-color: #FF6685 !important;
+  color: #000000 !important;
+}
+
+.tag.is-primary {
+  color: #292929 !important;
+}
+
+.tag.is-success {
+  color: #262626 !important;
+}
+
+.help.is-success {
+  color: #10652E !important;
+}
+
+.help.is-danger {
+  color: #B30024 !important;
+}
+
+.footer .link {
+  color: #1D53AA;
+}
+
+.post .media span.has-text-grey-light {
+  color: #595959 !important;
+}
