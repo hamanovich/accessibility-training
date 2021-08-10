@@ -238,3 +238,13 @@ textarea:focus {
 .post .media span.has-text-grey-light {
   color: #595959 !important;
 }
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
