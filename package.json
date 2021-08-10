@@ -1,0 +1,25 @@
+{
+  "name": "accessibility-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sass/styles.scss",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/styles.scss css/styles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IanaStepanova/accessibility-training.git"
+  },
+  "author": "Iana Stepanova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IanaStepanova/accessibility-training/issues"
+  },
+  "homepage": "https://github.com/IanaStepanova/accessibility-training#readme",
+  "devDependencies": {
+    "bulma": "^0.9.3",
+    "node-sass": "^6.0.1"
+  }
+}
