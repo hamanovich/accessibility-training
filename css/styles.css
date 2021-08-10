@@ -176,3 +176,21 @@ li {
   height: 40px;
   background-size: contain;
 }
+
+.menu-list .tag {
+  border-radius: 4px;
+  display: inline-flex;
+}
+
+.logo-link:focus,
+.button:focus,
+.link:focus,
+.select-field:focus,
+.textarea:focus
+.input:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: none !important;
+  outline: 2px solid blue !important;
+}
