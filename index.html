@@ -58,8 +58,8 @@
       <div class="navbar">
         <div class="container">
           <div class="navbar-brand">
-            <a class="navbar-item logo-link">
-              <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" alt="epam logo white blue">
+            <a href="#" class="navbar-item logo-link">
+              <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" alt="Home Epam">
             </a>
             <span class="navbar-burger burger" data-target="navbarMenu">
               <span></span>
@@ -71,36 +71,36 @@
           <div id="navbarMenu" class="navbar-menu">
             <div class="navbar-end">
               <span class="navbar-item">
-                <button class="button is-white is-outlined">
+                <a href="#" class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fa fa-home"></i>
                   </span>
                   <span>Home</span>
-                </button>
+                </a>
               </span>
               <span class="navbar-item">
-                <button class="button is-white is-outlined">
+                <a href="#" class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fab fa-superpowers"></i>
                   </span>
                   <span>Examples</span>
-                </button>
+                </a>
               </span>
               <span class="navbar-item">
-                <button class="button is-white is-outlined">
+                <a href="#" class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fa fa-book"></i>
                   </span>
                   <span>Documentation</span>
-                </button>
+                </a>
               </span>
               <span class="navbar-item">
-                <button class="button is-white is-outlined">
+                <a href="#" class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
                   <span>View Source</span>
-                </button>
+                </a>
               </span>
             </div>
           </div>
@@ -108,12 +108,12 @@
       </div>
     </nav>
 
-    <div class="breadcrumbs" aria-label="Navigation breadcrumbs">
+    <nav class="breadcrumbs" aria-label="Breadcrumbs">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="" aria-current="page">This page</a></li>
       </ul>
-    </div>
+    </nav>
     <div class="hero-body">
       <div class="container has-text-centered">
         <div class="column is-6 is-offset-3">
@@ -137,10 +137,10 @@
     </div>
   </header>
   <main>
-    <section class="section" id="about">
+    <section class="section" id="about" aria-label="About us">
       <div class="section-heading has-text-centered">
         <h2 class="title is-2">About Us</h2>
-        <h5 class="subtitle is-5">We of all trades, master of "some"</h5>
+        <p class="subtitle is-5">We of all trades, master of "some"</p>
         <div class="container">
           <p>Web developers with more than <b>4 years</b> of well-rounded experience with a degree in the
             field of
@@ -201,6 +201,7 @@
             </pre>
         <p>Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.</p>
         <table>
+          <caption>Table title</caption>
           <thead>
           <tr>
             <td>Header</td>
@@ -246,11 +247,11 @@
       </article>
     </section>
 
-    <section class="hero has-background-grey-light">
+    <section class="hero has-background-grey-light" aria-label="Three key features">
       <div class="container features">
         <div class="section-heading has-text-centered">
           <h2 class="title is-2">Three key features</h2>
-          <h5 class="subtitle is-5">We don't hide what we do</h5>
+          <p class="subtitle is-5">We don't hide what we do</p>
         </div>
 
         <div class="columns">
@@ -464,11 +465,11 @@
       </div>
     </div>
 
-    <section class="section has-background-grey-lighter" id="events">
+    <section class="section has-background-grey-lighter" id="events" aria-label="Upcoming events">
       <div class="container has-text-centered">
           <div class="section-heading has-text-centered">
             <h2 class="title is-2">Upcoming events</h2>
-            <h5 class="subtitle is-5">Outcoming dates for the best options</h5>
+            <p class="subtitle is-5">Outcoming dates for the best options</p>
           </div>
 
         <div class="tile is-ancestor">
@@ -539,10 +540,10 @@
       </div>
     </section>
 
-    <section class="section" id="services">
+    <section class="section" id="services" aria-label="Services">
       <div class="section-heading has-text-centered">
         <h2 class="title is-2">Services</h2>
-        <h5 class="subtitle is-5">What can I do for you?</h5>
+        <p class="subtitle is-5">What can I do for you?</p>
       </div>
       <div class="container">
         <div class="columns">
@@ -751,173 +752,176 @@
       </div>
     </div>
     </section>
+    <div class="common-contairer-with-aside">
+      <aside class="column is-3">
+        <button class="button is-primary is-block is-alt is-large">New Post</button>
+        <div class="menu">
+          <ul class="menu-list forum-list">
+            <li><span class="tag is-primary is-medium">Dashboard</span></li>
+            <li><span class="tag is-link is-medium">Customers</span></li>
+            <li><span class="tag is-light is-danger is-medium">Authentication</span></li>
+            <li><span class="tag is-dark is-medium">Payments</span></li>
+            <li><span class="tag is-success is-medium">Transfers</span></li>
+            <li><span class="tag is-warning is-medium">Balance</span></li>
+            <li><span class="tag is-medium ">Question</span></li>
+          </ul>
+        </div>
+      </aside>
 
-  <section class="section" id="forum">
-    <div class="container">
-      <div class="section-heading has-text-centered">
-        <h2 class="title is-2">Forum</h2>
-        <h5 class="subtitle is-5">Discuss any topic with no leaving this page</h5>
-      </div>
-
-      <div class="columns">
-        <aside class="column is-3">
-          <button class="button is-primary is-block is-alt is-large">New Post</button>
-          <div class="menu">
-            <ul class="menu-list forum-list">
-              <li><span class="tag is-primary is-medium">Dashboard</span></li>
-              <li><span class="tag is-link is-medium">Customers</span></li>
-              <li><span class="tag is-light is-danger is-medium">Authentication</span></li>
-              <li><span class="tag is-dark is-medium">Payments</span></li>
-              <li><span class="tag is-success is-medium">Transfers</span></li>
-              <li><span class="tag is-warning is-medium">Balance</span></li>
-              <li><span class="tag is-medium ">Question</span></li>
-            </ul>
+      <section class="section" id="forum" aria-label="Forum">
+        <div class="container">
+          <div class="section-heading has-text-centered">
+            <h2 class="title is-2">Forum</h2>
+            <p class="subtitle is-5">Discuss any topic with no leaving this page</p>
           </div>
-        </aside>
-        <article class="column is-9">
-          <div class="box content">
-            <div class="post">
-              <h4>How do you center a button in a box?</h4>
-              <div class="media">
-                <div class="media-left">
-                  <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=300">
-                  </p>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <a href="https://www.google.com" target="_blank" class="open-in-new-window" class="open-in-new-window" title="open in new tab">@jsmith</a> replied 34 minutes ago &nbsp;
-                      <span class="tag">Question</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 1</span>
-                </div>
-              </div>
-            </div>
 
-            <div class="post">
-              <h4>How can I make a button go full width?</h4>
-              <div class="media">
-                <div class="media-left">
-                  <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=301">
-                  </p>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <a href="https://www.google.com" target="_blank" class="open-in-new-window" class="open-in-new-window" title="open in new tab">@red</a> replied 40 minutes ago &nbsp;
-                      <span class="tag">Question</span>
-                    </p>
+          <div class="columns">
+            <article class="column is-9">
+              <div class="box content">
+                <div class="post">
+                  <p>How do you center a button in a box?</p>
+                  <div class="media">
+                    <div class="media-left">
+                      <p class="image is-32x32">
+                        <img src="https://source.unsplash.com/random/64x64/?sig=300">
+                      </p>
+                    </div>
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <a href="https://www.google.com" target="_blank" class="open-in-new-window" class="open-in-new-window" title="open in new tab">@jsmith</a> replied 34 minutes ago &nbsp;
+                          <span class="tag">Question</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="media-right">
+                      <span class="has-text-grey-light"><i class="fa fa-comments"></i> 1</span>
+                    </div>
                   </div>
                 </div>
-                <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 0</span>
-                </div>
-              </div>
-            </div>
 
-            <div class="post">
-              <h4>TypeError: Data must be a string or a buffer when trying touse tabs</h4>
-              <div class="media">
-                <div class="media-left">
-                  <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=302">
-                  </p>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <a href="https://www.google.com" target="_blank" class="open-in-new-window" class="open-in-new-window" title="open in new tab">@jsmith</a> replied 53 minutes ago &nbsp;
-                      <span class="tag">Question</span>
-                    </p>
+                <div class="post">
+                  <p>How can I make a button go full width?</p>
+                  <div class="media">
+                    <div class="media-left">
+                      <p class="image is-32x32">
+                        <img src="https://source.unsplash.com/random/64x64/?sig=301">
+                      </p>
+                    </div>
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <a href="https://www.google.com" target="_blank" class="open-in-new-window" class="open-in-new-window" title="open in new tab">@red</a> replied 40 minutes ago &nbsp;
+                          <span class="tag">Question</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="media-right">
+                      <span class="has-text-grey-light"><i class="fa fa-comments"></i> 0</span>
+                    </div>
                   </div>
                 </div>
-                <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 13</span>
-                </div>
-              </div>
-            </div>
 
-            <div class="post">
-              <h4>How to vertically center elements?</h4>
-              <div class="media">
-                <div class="media-left">
-                  <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=303">
-                  </p>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <a href="https://www.google.com" target="_blank" class="open-in-new-window" title="open in new tab">@brown</a> replied 3 hours ago &nbsp;
-                      <span class="tag">Question</span>
-                    </p>
+                <div class="post">
+                  <p>TypeError: Data must be a string or a buffer when trying touse tabs</p>
+                  <div class="media">
+                    <div class="media-left">
+                      <p class="image is-32x32">
+                        <img src="https://source.unsplash.com/random/64x64/?sig=302">
+                      </p>
+                    </div>
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <a href="https://www.google.com" target="_blank" class="open-in-new-window" class="open-in-new-window" title="open in new tab">@jsmith</a> replied 53 minutes ago &nbsp;
+                          <span class="tag">Question</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="media-right">
+                      <span class="has-text-grey-light"><i class="fa fa-comments"></i> 13</span>
+                    </div>
                   </div>
                 </div>
-                <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
-                </div>
-              </div>
-            </div>
 
-            <div class="post">
-              <h4>I'm trying to use hamburger menu on css, but it doesn't work. What is wrong?</h4>
-              <div class="media">
-                <div class="media-left">
-                  <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=304">
-                  </p>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <a href="https://www.google.com" target="_blank" class="open-in-new-window" title="open in new tab">@hamburgler</a> replied 5 hours ago &nbsp;
-                      <span class="tag">Question</span>
-                    </p>
+                <div class="post">
+                  <p>How to vertically center elements?</p>
+                  <div class="media">
+                    <div class="media-left">
+                      <p class="image is-32x32">
+                        <img src="https://source.unsplash.com/random/64x64/?sig=303">
+                      </p>
+                    </div>
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <a href="https://www.google.com" target="_blank" class="open-in-new-window" title="open in new tab">@brown</a> replied 3 hours ago &nbsp;
+                          <span class="tag">Question</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="media-right">
+                      <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                    </div>
                   </div>
                 </div>
-                <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
-                </div>
-              </div>
-            </div>
 
-            <div class="post">
-              <h4>How to make tiles wrap with CSS?</h4>
-              <div class="media">
-                <div class="media-left">
-                  <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=305">
-                  </p>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <a href="https://www.google.com" target="_blank" class="open-in-new-window" title="open in new tab">@rapper</a> replied 3 hours ago &nbsp;
-                      <span class="tag">Question</span>
-                    </p>
+                <div class="post">
+                  <p>I'm trying to use hamburger menu on css, but it doesn't work. What is wrong?</p>
+                  <div class="media">
+                    <div class="media-left">
+                      <p class="image is-32x32">
+                        <img src="https://source.unsplash.com/random/64x64/?sig=304">
+                      </p>
+                    </div>
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <a href="https://www.google.com" target="_blank" class="open-in-new-window" title="open in new tab">@hamburgler</a> replied 5 hours ago &nbsp;
+                          <span class="tag">Question</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="media-right">
+                      <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                    </div>
                   </div>
                 </div>
-                <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+
+                <div class="post">
+                  <p>How to make tiles wrap with CSS?</p>
+                  <div class="media">
+                    <div class="media-left">
+                      <p class="image is-32x32">
+                        <img src="https://source.unsplash.com/random/64x64/?sig=305">
+                      </p>
+                    </div>
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <a href="https://www.google.com" target="_blank" class="open-in-new-window" title="open in new tab">@rapper</a> replied 3 hours ago &nbsp;
+                          <span class="tag">Question</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="media-right">
+                      <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
-        </article>
-      </div>
+        </div>
+      </section>
     </div>
-  </section>
 
-  <section class="section has-background-light" id="contacts">
+
+  <section class="section has-background-light" id="contacts" aria-label="Contact us">
     <div class="container">
       <div class="section-heading has-text-centered">
         <h2 class="title is-2">Contact us</h2>
-        <h5 class="subtitle is-5">Don't hesitate, ask anything</h5>
+        <p class="subtitle is-5">Don't hesitate, ask anything</p>
       </div>
 
       <form class="column is-half is-offset-one-quarter box">
@@ -982,18 +986,15 @@
           </div>
         </div>
 
-        <div class="field">
-          <div class="control">
-            <label class="radio">
-              <input type="radio" name="question">
-              Yes
-            </label>
-            <label class="radio">
-              <input type="radio" name="question">
-              No
-            </label>
-          </div>
-        </div>
+        <fieldset class="field">
+          <legend>Choose the answer</legend>
+
+          <input type="radio" id="yes" name="answer">
+          <label for="yes">Yes</label><br/>
+
+          <input type="radio" id="no" name="answer">
+          <label for="no">No</label><br/>
+        </fieldset>
 
         <div class="field is-grouped">
           <div class="control">

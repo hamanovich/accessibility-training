@@ -210,6 +210,10 @@ li {
   padding: 10px;
 }
 
+.common-contairer-with-aside {
+  display: flex;
+}
+
 .breadcrumbs ul {
   display: flex;
 }

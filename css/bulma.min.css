@@ -1612,7 +1612,7 @@ a.box:active {
 }
 
 .button.is-white.is-outlined {
-    background-color: transparent;
+    background-color: #757575;
     border-color: #fff;
     color: #fff
 }
@@ -9400,7 +9400,7 @@ a.panel-block:hover, label.panel-block:hover {
 }
 
 .hero.is-white .navbar-item, .hero.is-white .navbar-link {
-    color: rgba(10, 10, 10, .7)
+    color: rgba(10, 10, 10, .7);
 }
 
 .hero.is-white .navbar-link.is-active, .hero.is-white .navbar-link:hover, .hero.is-white a.navbar-item.is-active, .hero.is-white a.navbar-item:hover {
