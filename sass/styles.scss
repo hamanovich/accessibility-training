@@ -1,4 +1,12 @@
 @charset "utf-8";
+
+// First, set your brand colors, for example:
+//$red: hsl(348, 86%, 43%);
+
+// Next, update Bulma's global variables, for example:
+// $info: $red;
+
+// Finally, import Bulma
 @import "../node_modules/bulma/bulma";
 
 .hero-bg {
@@ -70,7 +78,7 @@
   font-size: 8rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  color: #209cee;
+  color: $blue;
 }
 
 .is-shady {

@@ -4,7 +4,7 @@
   "description": "",
   "main": "sass/styles.scss",
   "scripts": {
-    "css-build": "node-sass sass/styles.scss css/styles.css",
+    "css-build": "node-sass --omit-source-map-url sass/styles.scss css/styles.css",
     "css-watch": "npm run css-build -- --watch",
     "auto-loading": "npx browser-sync start --server --files '*.html' --files 'css/*.css'",
     "start": "npm-run-all --parallel css-watch auto-loading"
