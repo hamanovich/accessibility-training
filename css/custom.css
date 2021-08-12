@@ -88,3 +88,10 @@
 .tabs.main-menu {
   overflow: visible;
 }
+
+.external-link::after {
+  content: "\f35d";
+  font-family: "Font Awesome 5 Free", serif;
+  font-weight: 900;
+  padding-left: 4px;
+}
