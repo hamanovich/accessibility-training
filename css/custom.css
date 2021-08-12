@@ -76,3 +76,15 @@
   outline: 2px solid currentColor;
   outline-offset: 1px;
 }
+
+.tabs .outlined-link:focus {
+  outline-color: black;
+}
+
+.iframe {
+  border: 0;
+}
+
+.tabs.main-menu {
+  overflow: visible;
+}
