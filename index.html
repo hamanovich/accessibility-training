@@ -103,7 +103,9 @@
                 <input class="input" type="text" />
               </label>
 
-              <button class="control button is-info">Notify Me</button>
+              <button class="control button is-info" type="submit">
+                Notify Me
+              </button>
             </fieldset>
           </div>
         </form>
@@ -238,30 +240,37 @@
           </p>
 
           <table>
-            <tr>
-              <th scope="col">Header</th>
-              <th scope="col">Header</th>
-            </tr>
-            <tr>
-              <td>cell</td>
-              <td>cell</td>
-            </tr>
-            <tr>
-              <td>cell</td>
-              <td>cell</td>
-            </tr>
-            <tr>
-              <td>cell</td>
-              <td>cell</td>
-            </tr>
-            <tr>
-              <td>cell</td>
-              <td>cell</td>
-            </tr>
-            <tr>
-              <td>cell</td>
-              <td>cell</td>
-            </tr>
+            <caption>
+              Table for condimentum
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Header</th>
+                <th scope="col">Header</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>cell</td>
+                <td>cell</td>
+              </tr>
+              <tr>
+                <td>cell</td>
+                <td>cell</td>
+              </tr>
+              <tr>
+                <td>cell</td>
+                <td>cell</td>
+              </tr>
+              <tr>
+                <td>cell</td>
+                <td>cell</td>
+              </tr>
+              <tr>
+                <td>cell</td>
+                <td>cell</td>
+              </tr>
+            </tbody>
           </table>
 
           <p>
@@ -446,6 +455,7 @@
                       <button
                         class="button is-link modal-button"
                         data-target="modal-image1"
+                        type="button"
                       >
                         Image modal
                       </button>
@@ -473,6 +483,7 @@
                       <button
                         class="button is-link modal-button"
                         data-target="modal-card"
+                        type="button"
                       >
                         Modal Card
                       </button>
@@ -504,6 +515,7 @@
                       <button
                         class="button is-link modal-button"
                         data-target="modal-image2"
+                        type="button"
                       >
                         Image modal
                       </button>
@@ -625,7 +637,7 @@
                 </div>
                 <p class="title">New York</p>
                 <p class="subtitle">Fri 27 Nov 2016</p>
-                <button class="button">Buy Tickets</button>
+                <button class="button" type="button">Buy Tickets</button>
               </div>
             </div>
             <div class="tile is-parent">
@@ -635,7 +647,7 @@
                 </div>
                 <p class="title">Los Angeles</p>
                 <p class="subtitle">Fri 27 Nov 2016</p>
-                <button class="button">Buy Tickets</button>
+                <button class="button" type="button">Buy Tickets</button>
               </div>
             </div>
             <div class="tile is-parent">
@@ -645,7 +657,7 @@
                 </div>
                 <p class="title">Mexico</p>
                 <p class="subtitle">Fri 27 Nov 2016</p>
-                <button class="button">Buy Tickets</button>
+                <button class="button" type="button">Buy Tickets</button>
               </div>
             </div>
           </div>
@@ -658,7 +670,7 @@
                 </div>
                 <p class="title">Paris</p>
                 <p class="subtitle">Fri 27 Nov 2016</p>
-                <button class="button">Buy Tickets</button>
+                <button class="button" type="button">Buy Tickets</button>
               </div>
             </div>
             <div class="tile is-parent">
@@ -671,7 +683,7 @@
                 </div>
                 <p class="title">Minsk</p>
                 <p class="subtitle">Fri 27 Nov 2016</p>
-                <button class="button">Buy Tickets</button>
+                <button class="button" type="button">Buy Tickets</button>
               </div>
             </div>
             <div class="tile is-parent">
@@ -681,7 +693,7 @@
                 </div>
                 <p class="title">London</p>
                 <p class="subtitle">Fri 27 Nov 2016</p>
-                <button class="button">Buy Tickets</button>
+                <button class="button" type="button">Buy Tickets</button>
               </div>
             </div>
           </div>
@@ -914,7 +926,10 @@
 
           <div class="columns">
             <aside class="column is-3">
-              <button class="button is-primary is-block is-alt is-large">
+              <button
+                class="button is-primary is-block is-alt is-large"
+                type="button"
+              >
                 New Post
               </button>
               <div class="menu">
@@ -1221,10 +1236,10 @@
 
             <div class="field is-grouped">
               <div class="control">
-                <button class="button is-link">Submit</button>
+                <button class="button is-link" type="submit">Submit</button>
               </div>
               <div class="control">
-                <button class="button is-text">Cancel</button>
+                <button class="button is-text" type="button">Cancel</button>
               </div>
             </div>
           </form>
@@ -1481,7 +1496,7 @@
           </div>
         </div>
       </div>
-      <button class="modal-close is-large"></button>
+      <button class="modal-close is-large" type="button"></button>
     </div>
 
     <div id="modal-image1" class="modal modal-fx-3dSlit">
@@ -1492,7 +1507,7 @@
           alt="random image"
         />
       </div>
-      <button class="modal-close is-large"></button>
+      <button class="modal-close is-large" type="button"></button>
     </div>
 
     <div id="modal-image2" class="modal modal-fx-superScaled">
@@ -1503,7 +1518,7 @@
           alt="random image"
         />
       </div>
-      <button class="modal-close is-large"></button>
+      <button class="modal-close is-large" type="button"></button>
     </div>
 
     <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
