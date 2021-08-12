@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "sass/styles.scss",
-  "scripts": {
-    "css-build": "node-sass --omit-source-map-url sass/styles.scss css/styles.css",
-    "css-watch": "npm run css-build -- --watch",
-    "auto-loading": "npx browser-sync start --server --files '*.html' --files 'css/*.css'",
-    "start": "npm-run-all --parallel css-watch auto-loading"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/IanaStepanova/accessibility-training.git"
@@ -20,12 +14,13 @@
   },
   "homepage": "https://github.com/IanaStepanova/accessibility-training#readme",
   "devDependencies": {
-    "bulma": "^0.9.3",
-    "node-sass": "^6.0.1",
-    "npm-run-all": "^4.1.5"
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "node-sass": "^6.0.1"
   },
   "dependencies": {
-    "browser-sync": "^2.27.5",
-    "npx": "^10.2.2"
+    "bulma": "^0.9.3",
+    "bulma-start": "0.0.4"
   }
 }

@@ -1,18 +1,70 @@
 @charset "utf-8";
 
 // First, set your brand colors, for example:
-//$red: hsl(348, 86%, 43%);
+$cyan: hsl(203, 100, 28);
+$cyan--hovered: hsl(196, 75, 35);
+//$blue: hsl(240,100, 47);
 
 // Next, update Bulma's global variables, for example:
-// $info: $red;
+$danger: hsl(348, 71, 48);
+$grey-light: hsl(0, 0, 80);
+$info: $cyan;
+$link: hsl(240,100, 47);
+$link-hover: hsl(240,100, 47);
+$primary: hsl(173, 86, 26);
+$success: hsl(148, 43, 34);
 
 // Finally, import Bulma
 @import "../node_modules/bulma/bulma";
+
+li {
+  list-style: none;
+}
+
+a {
+  &:hover {
+    text-decoration-line: underline;
+  }
+}
+
+.navbar-burger.is-white {
+  color: $white;
+}
+
+.button {
+  border: 2px solid transparent;
+}
+
+.button.is-info {
+  &:hover {
+    background-color: $cyan--hovered !important;
+    border: 2px solid $cyan;
+  }
+}
+
+.button.is-primary.is-alt {
+  background: linear-gradient(to bottom, #0072ff, #00c6ff);
+  font-weight: 700;
+  font-size: 14px;
+  height: 3rem;
+  line-height: 2.8;
+  margin-bottom: 1rem;
+}
 
 .hero-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
   url("../img/accessibility-hero-banner.jpg") no-repeat center center fixed;
   background-size: cover;
+}
+
+.input {
+  &::placeholder {
+    color: hsl(0, 0%, 29%);
+  }
+
+  &:focus {
+    border: 2px;
+  }
 }
 
 .tabs {
@@ -118,22 +170,15 @@
   padding: 0 .75rem;
 }
 
-.button.is-primary.is-alt {
-  background: linear-gradient(to bottom, #0072ff, #00c6ff);
-  font-weight: 700;
-  font-size: 14px;
-  height: 3rem;
-  line-height: 2.8;
-  margin-bottom: 1rem;
-}
 .post {
   margin: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #E6EAEE;
-}
-.post:last-child {
-  padding-bottom: 0;
-  border-bottom: none;
+
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }
 
 .forum-list li {
@@ -142,22 +187,18 @@
 
 
 @media screen and (max-width: 1087px) {
-  .navbar-menu {
-    background-color: #888;
-  }
+  //.navbar-menu {
+  //  background-color: #888;
+  //}
 }
 
 .logo-link {
   height: 70px;
   width: 250px;
-}
 
-.logo-link img {
-  width: 100%;
-}
-
-li {
-  list-style: none;
+  img {
+    width: 100%;
+  }
 }
 
 .hero.is-fullheight {
