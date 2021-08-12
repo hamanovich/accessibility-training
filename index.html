@@ -12,6 +12,20 @@
 </head>
 
 <body>
+  <div id="skipToMenu" title="Skip To Keyboard Navigation" class="dropMenu">
+  <a accesskey="0" tabindex="0" data-wrap="false" class="dropMenu-toggle skipTo onFocus" id="drop4" aria-haspopup="true" aria-expanded="false" data-toggle="dropMenu" href="#" data-target="menu1">
+    "Skip To..."
+    <b class="caret"></b>
+  </a>
+    <ul id="menu1" class="dropMenu-menu" role="menu" aria-label="Skip To and Page Outline" style="top: 3%; text-align: left">
+      <li role="separator" style="list-style:none outside none">
+        Skip To
+      </li>
+      <li role="presentation" style="list-style:none outside none">
+        <a tabindex="-1" role="menuitem" href="#ui-skip-32">Main</a>
+      </li>
+    </ul>
+  </div>
   <div class="hero hero-bg is-fullheight">
     <div class="hero-head">
       <div class="navbar">
@@ -67,7 +81,7 @@
       </div>
     </div>
 
-    <div role="main" class="hero-body">
+    <div role="main" id="ui-skip-32" class="hero-body">
       <div class="container has-text-centered">
         <div class="column is-6 is-offset-3">
           <h1 class="title has-text-white">We have web accessibility in mind</h1>
