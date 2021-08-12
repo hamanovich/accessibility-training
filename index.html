@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Web Accessibility 2019 Q1 BY</title>
   <link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.0.10/css/all.css'>
@@ -70,14 +70,14 @@
     <div class="hero-body">
       <div class="container has-text-centered">
         <div class="column is-6 is-offset-3">
-          <div class="title has-text-white">We have web accessibility in mind</div>
-          <div class="subtitle has-text-white">
+          <h1 class="title has-text-white">We have web accessibility in mind</h1>
+          <label for="email-notification" class="subtitle has-text-white">
             Would you like to get the latest news?
-          </div>
+          </label>
           <div class="box">
             <div class="field is-grouped">
               <p class="control is-expanded">
-                <input class="input">
+                <input type="email" id="email-notification" class="input">
               </p>
               <p class="control">
                 <a class="button is-info">Notify Me</a>
@@ -91,8 +91,8 @@
 
   <div class="section" id="about">
     <div class="section-heading has-text-centered">
-      <div class="title is-2">About Us</div>
-      <div class="subtitle is-5">We of all trades, master of "some"</div>
+      <h2 class="title is-2">About Us</h2>
+      <h5 class="subtitle is-5">We of all trades, master of "some"</h5>
       <div class="container">
         <p>Web developers with more than <b>4 years</b> of well-rounded experience with a degree in the
           field of
@@ -104,7 +104,7 @@
     </div>
 
     <div class="content container">
-      <div class="is-1 title">Hello World</div>
+      <h1 class="is-1 title">Hello World</h1>
       <p>Lorem ipsum<sup><a>[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
       <div class="is-2 title">Second level</div>
       <p>Curabitur accumsan turpis pharetra <b>augue tincidunt</b> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
@@ -114,7 +114,7 @@
         <li>- Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
         <li>- Ut non enim metus.</li>
       </ul>
-      <div class="is-3 title">Third level</div>
+      <h3 class="is-3 title">Third level</h3>
       <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a>non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
       <ol class="ol-list">
         <li>Donec blandit a lorem id convallis.</li>
@@ -137,7 +137,7 @@
         <dd>A technology to make HTML look better</dd>
       </dl>
       <p>Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.</p>
-      <div class="is-4 title">Fourth level</div>
+      <h4 class="is-4 title">Fourth level</h4>
       <p>Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac. Mauris euismod metus a tellus laoreet, at elementum ex efficitur.</p>
       <pre>
           &lt;!DOCTYPE html&gt;
@@ -179,7 +179,7 @@
         </tr>
       </table>
       <p>Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus laoreet metus, at cursus leo est vel tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae ultricies ex sodales quis. Aliquam eu nibh in libero accumsan pulvinar. Nullam nec nisl placerat, pretium metus vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam pharetra varius metus non pellentesque.</p>
-      <div class="is-5 title">Fifth level</div>
+      <h5 class="is-5 title">Fifth level</h5>
       <p>Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt ligula. Vestibulum at nunc elit. Praesent aliquet ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel nisi sodales, a eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.</p>
       <figure>
         <img alt="fir forest as seen from the train window" src="img/photo-1572958731731-2b7fdb0a9818.jpg">
@@ -189,7 +189,7 @@
           Figure 1: Some beautiful placeholders
         </figcaption>
       </figure>
-      <div class="is-6 title">Sixth level</div>
+      <h6 class="is-6 title">Sixth level</h6>
       <p>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.</p>
     </div>
   </div>
@@ -197,8 +197,8 @@
   <div class="hero has-background-grey-light">
     <div class="container features">
       <div class="section-heading has-text-centered">
-        <div class="title is-2">Three key features</div>
-        <div class="subtitle is-5">We don't hide what we do</div>
+        <h2 class="title is-2">Three key features</h2>
+        <h5 class="subtitle is-5">We don't hide what we do</h5>
       </div>
 
       <div class="columns">
@@ -254,7 +254,7 @@
   <div class="hero is-info">
     <div class="hero-body">
       <div class="container">
-        <div class="title">List of topics</div>
+        <h1 class="title">List of topics</h1>
         <div class="subtitle">We are always in touch we the outside world</div>
       </div>
     </div>
@@ -283,7 +283,7 @@
   </div>
 
   <div class="tab-content container">
-    <div class="tab-pane is-active" id="pane-1" class="level">
+    <div class="tab-pane is-active level" id="pane-1">
       <div class="container">
         <div class="columns features">
           <div class="column is-4">
@@ -412,10 +412,11 @@
     </div>
   </div>
 
-  <div class="section has-background-grey-lighter">
+
+  <div class="has-background-grey-lighter">
     <div class="container has-text-centered">
         <div class="section-heading has-text-centered">
-          <div class="title is-2">Upcoming events</div>
+          <h2 class="title is-2">Upcoming events</h2>
           <div class="subtitle is-5">Outcoming dates for the best options</div>
         </div>
 
@@ -870,16 +871,16 @@
 
       <form class="column is-half is-offset-one-quarter box">
         <div class="field">
-          <label class="label">Name</label>
+          <label for="name" class="label">Name</label>
           <div class="control">
-            <input class="input" type="text" placeholder="Text input">
+            <input id="name" class="input" type="text" placeholder="John Doe">
           </div>
         </div>
 
         <div class="field">
-          <label class="label">Username</label>
+          <label for="username" class="label">Username</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input is-success" type="text">
+            <input id="username" class="input is-success" type="text">
             <span class="icon is-small is-left">
               <i class="fas fa-user"></i>
             </span>
@@ -891,9 +892,9 @@
         </div>
 
         <div class="field">
-          <label class="label">Email</label>
+          <label for="email" class="label">Email</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+            <input id="email" class="input is-danger" type="email" placeholder="Email input" value="hello@">
             <span class="icon is-small is-left">
               <i class="fas fa-envelope"></i>
             </span>
@@ -905,10 +906,10 @@
         </div>
 
         <div class="field">
-          <label class="label">Subject</label>
+          <label for="subject" class="label">Subject</label>
           <div class="control">
             <div class="select">
-              <select>
+              <select id="subject">
                 <option>Select dropdown</option>
                 <option>With options</option>
               </select>
@@ -917,9 +918,9 @@
         </div>
 
         <div class="field">
-          <label class="label">Message</label>
+          <label for="message" class="label">Message</label>
           <div class="control">
-            <textarea class="textarea" placeholder="Textarea"></textarea>
+            <textarea id="message" class="textarea" placeholder="Textarea"></textarea>
           </div>
         </div>
 
@@ -1070,7 +1071,7 @@
     <div class="container">
       <div class="columns">
         <div class="column is-3 is-offset-2">
-          <div class="is-3 title"><b>Lessons</b></div>
+          <h3 class="is-3 title"><b>Lessons</b></h3>
           <ul>
             <li><a>Lorem ipsum dolor sit amet</a></li>
             <li><a>Vestibulum errato isse</a></li>
@@ -1082,7 +1083,7 @@
           </ul>
         </div>
         <div class="column is-3">
-          <div class="is-3 title"><b>News</b></div>
+          <h3 class="is-3 title"><b>News</b></h3>
           <ul>
             <li><a>Labore et dolore magna aliqua</a></li>
             <li><a>Kanban airis sum eschelor</a></li>
@@ -1094,7 +1095,7 @@
           </ul>
         </div>
         <div class="column is-4">
-          <div class="is-3 title"><b>Help</b></div>
+          <h3 class="is-3 title"><b>Help</b></h3>
           <ul>
             <li><a>Objects in space</a></li>
             <li><a>Playing cards with coyote</a></li>
@@ -1123,19 +1124,19 @@
       <div class="card">
         <div class="card-image">
           <div class="image is-4by3">
-            <img src="https://source.unsplash.com/random/?sig=2">
+            <img alt="" src="https://source.unsplash.com/random/?sig=2">
           </div>
         </div>
         <div class="card-content">
           <div class="media">
             <div class="media-left">
               <div class="image is-48x48">
-                <img src="http://www.radfaces.com/images/avatars/linda-barret.jpg">
+                <img alt="" src="http://www.radfaces.com/images/avatars/linda-barret.jpg">
               </div>
             </div>
             <div class="media-content">
-              <div class="title is-4">Jane Doe</div>
-              <div class="subtitle is-6">@jane_doe</div>
+              <h4 class="title is-4">Jane Doe</h4>
+              <h6 class="subtitle is-6">@jane_doe</h6>
             </div>
           </div>
           <div class="content">
@@ -1158,7 +1159,7 @@
   <div id="modal-image1" class="modal modal-fx-3dSlit">
     <div class="modal-background"></div>
     <div class="modal-content is-huge is-image">
-      <img src="https://source.unsplash.com/random/?sig=1">
+      <img alt="" src="https://source.unsplash.com/random/?sig=1">
     </div>
     <button class="modal-close is-large"></button>
   </div>
