@@ -26,7 +26,7 @@
                 aria-haspopup="true"
                 class="button"
                 id="skip-to-button"
-                role="button">
+                type="button">
                 skip to
               </button>
             </div>
@@ -45,7 +45,7 @@
           <a class="navbar-item logo-link focus-visible" href="/">
             <img alt="EPAM logo" src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg">
           </a>
-          <button class="navbar-burger burger" data-target="navbarMenu">
+          <button aria-label="navigation menu" class="navbar-burger burger" data-target="navbarMenu">
             <span></span>
             <span></span>
             <span></span>
@@ -126,7 +126,7 @@
       <li><a aria-current="page" href="">Breadcrumb three</a></li>
     </ol>
   </nav>
-  <header aria-labelledby="about-us" class="section" id="about">
+  <section aria-labelledby="about-us" class="section" id="about">
     <div class="section-heading has-text-centered">
       <h1 class="title is-2" id="about-us">About Us</h1>
       <h2 class="subtitle is-5">We of all trades, master of "some"</h2>
@@ -140,7 +140,7 @@
         </p>
       </div>
     </div>
-  </header>
+  </section>
 
   <section aria-labelledby="hello-world" class="content container">
     <h1 class="is-1 title" id="hello-world">Hello World</h1>
@@ -371,7 +371,7 @@
                     enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat
                     semper
                     viverra nam.</p>
-                  <button class="button is-link modal-button" data-target="modal-image1">Image modal</button>
+                  <button class="button is-link modal-button" data-target="modal-image1">Image modal<span class="visually-hidden">. opens dialog</span></button>
                 </div>
               </div>
             </div>
@@ -390,7 +390,7 @@
                     non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu
                     songue. Phasellus vestibulum lorem
                     sed risus.</p>
-                  <button class="button is-link modal-button" data-target="modal-card">Modal Card</button>
+                  <button class="button is-link modal-button" data-target="modal-card">Modal Card <span class="visually-hidden">. opens dialog</span></button>
                 </div>
               </div>
             </div>
@@ -409,7 +409,7 @@
                   <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque
                     dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan
                     lacus vel facilisis.</p>
-                  <button class="button is-link modal-button" data-target="modal-image2">Image modal</button>
+                  <button class="button is-link modal-button" data-target="modal-image2">Image modal <span class="visually-hidden">. opens dialog</span></button>
                 </div>
               </div>
             </div>
@@ -496,7 +496,7 @@
     </div>
   </div>
 
-  <div aria-labelledby="upcoming-events" class="section has-background-grey-lighter">
+  <section aria-labelledby="upcoming-events" class="section has-background-grey-lighter">
     <div class="container has-text-centered">
       <div class="section-heading has-text-centered">
         <h1 class="title is-2" id="upcoming-events">Upcoming events</h1>
@@ -511,7 +511,7 @@
             </div>
             <h3 class="title">New York</h3>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a href="/">Buy Tickets <span class="visually-hidden">to new york event. opens in new tab</span></a>
+            <a target="_blank" href="/">Buy Tickets <span class="visually-hidden">to new york event. opens in new tab</span></a>
           </div>
         </div>
         <div class="tile is-parent">
@@ -521,7 +521,7 @@
             </div>
             <h3 class="title">Los Angeles</h3>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a href="/">Buy Tickets <span class="visually-hidden">to los angeles event. opens in new tab</span></a>
+            <a target="_blank" href="/">Buy Tickets <span class="visually-hidden">to los angeles event. opens in new tab</span></a>
           </div>
         </div>
         <div class="tile is-parent">
@@ -531,7 +531,7 @@
             </div>
             <h3 class="title">Mexico</h3>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a href="/">Buy Tickets <span class="visually-hidden">to mexico event. opens in new tab</span></a>
+            <a target="_blank" href="/">Buy Tickets <span class="visually-hidden">to mexico event. opens in new tab</span></a>
           </div>
         </div>
       </div>
@@ -554,7 +554,7 @@
             </div>
             <h3 class="title">Minsk</h3>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a href="/">Buy Tickets <span class="visually-hidden">to minsk. opens in new tab</span></a>
+            <a target="_blank" href="/">Buy Tickets <span class="visually-hidden">to minsk. opens in new tab</span></a>
           </div>
         </div>
         <div class="tile is-parent">
@@ -564,12 +564,12 @@
             </div>
             <h3 class="title">London</h3>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a href="/">Buy Tickets <span class="visually-hidden">to london event. opens in new tab</span></a>
+            <a target="_blank" href="/">Buy Tickets <span class="visually-hidden">to london event. opens in new tab</span></a>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <section aria-labelledby="services" class="section">
     <div class="section-heading has-text-centered">
@@ -581,7 +581,7 @@
         <div class="column">
           <div class="box">
             <div class="content">
-              <div class="title is-5">Front End Web Development</div>
+              <h3 class="title is-5">Front End Web Development</h3>
               <a href='/'>Develop Front End</a> using latest standards with HTML5/CSS3 with added functionality using
               JavaScript and
               Vue.js.
@@ -591,7 +591,7 @@
         <div class="column">
           <div class="box">
             <div class="content">
-              <div class="title is-5">Back End Web Development</div>
+              <h3 class="title is-5">Back End Web Development</h3>
               <a href='/'>Develop Back End</a> application/service using Node.js or ASP .NET and SQL server or Mongo
               DB databases.
             </div>
@@ -603,7 +603,7 @@
         <div class="column">
           <div class="box">
             <div class="content">
-              <h5 class="title is-5">Front End Web Development</h5>
+              <h3 class="title is-5">Front End Web Development</h3>
               <a href='/'>Develop Front End</a> using latest standards with HTML5/CSS3 with added functionality using
               JavaScript and
               Vue.js.
@@ -613,7 +613,7 @@
         <div class="column">
           <div class="box">
             <div class="content">
-              <div class="title is-5">Back End Web Development</div>
+              <h3 class="title is-5">Back End Web Development</h3>
               <a href='/'>Develop Back End</a> application/service using Node.js or ASP .NET and SQL server or Mongo
               DB databases.
             </div>
@@ -649,8 +649,8 @@
                 </div>
               </div>
               <div class="card-footer">
-                <a class="card-footer-item external" href="https://example.com">Preview <span class="visually-hidden">for admin light. opens in new tab</span></a>
-                <a class="card-footer-item external" href=https://"github.com">Source Code <span
+                <a target="_blank" class="card-footer-item external" href="https://example.com">Preview <span class="visually-hidden">for admin light. opens in new tab</span></a>
+                <a target="_blank" class="card-footer-item external" href=https://"github.com">Source Code <span
                   class="visually-hidden">for admin light. opens in new tab</span></a>
               </div>
             </div>
@@ -673,9 +673,9 @@
                 </div>
               </div>
               <div class="card-footer">
-                <a class="card-footer-item external" href="https://example.com">Preview <span
+                <a target="_blank" class="card-footer-item external" href="https://example.com">Preview <span
                   class="visually-hidden">for cards. opens in new tab</span></a>
-                <a class="card-footer-item external" href="https://github.com">Source Code <span
+                <a target="_blank" class="card-footer-item external" href="https://github.com">Source Code <span
                   class="visually-hidden">for cards. opens in new tab</span></a>
               </div>
             </div>
@@ -698,9 +698,9 @@
                 </div>
               </div>
               <div class="card-footer">
-                <a class="card-footer-item external" href="https://example.com">Preview <span
+                <a target="_blank" class="card-footer-item external" href="https://example.com">Preview <span
                   class="visually-hidden">for forum. opens in new tab</span></a>
-                <a class="card-footer-item external" href="https://github.com">Source Code <span
+                <a target="_blank" class="card-footer-item external" href="https://github.com">Source Code <span
                   class="visually-hidden">for forum. opens in new tab</span></a>
               </div>
             </div>
@@ -725,8 +725,8 @@
                 </div>
               </div>
               <div class="card-footer">
-                <a class="card-footer-item external" href="https://example.com">Preview <span class="visually-hidden">for insta album. opens in new tab</span></a>
-                <a class="card-footer-item external" href="https://github.com">Source Code <span
+                <a target="_blank" class="card-footer-item external" href="https://example.com">Preview <span class="visually-hidden">for insta album. opens in new tab</span></a>
+                <a target="_blank" class="card-footer-item external" href="https://github.com">Source Code <span
                   class="visually-hidden">for insta album. opens in new tab</span></a>
               </div>
             </div>
@@ -750,9 +750,9 @@
                 </div>
               </div>
               <div class="card-footer">
-                <a class="card-footer-item external" href="https://example.com">Preview <span
+                <a target="_blank" class="card-footer-item external" href="https://example.com">Preview <span
                   class="visually-hidden">for landing. opens in new tab</span></a>
-                <a class="card-footer-item external" href="https://github.com">Source Code <span
+                <a target="_blank" class="card-footer-item external" href="https://github.com">Source Code <span
                   class="visually-hidden">for landing. opens in new tab</span></a>
               </div>
             </div>
@@ -775,8 +775,8 @@
                 </div>
               </div>
               <div class="card-footer">
-                <a class="card-footer-item external" href="https://example.com">Preview <span class="visually-hidden">for marketing. opens in new tab</span></a>
-                <a class="card-footer-item external" href="https://github.com">Source Code <span
+                <a target="_blank" class="card-footer-item external" href="https://example.com">Preview <span class="visually-hidden">for marketing. opens in new tab</span></a>
+                <a target="_blank" class="card-footer-item external" href="https://github.com">Source Code <span
                   class="visually-hidden">for marketing. opens in new tab</span></a>
               </div>
             </div>
@@ -790,7 +790,7 @@
     <div class="container">
       <div class="section-heading has-text-centered">
         <h1 class="title is-2" id="forum">Forum</h1>
-        <h3 class="subtitle is-5">Discuss any topic with no leaving this page</h3>
+        <h2 class="subtitle is-5">Discuss any topic with no leaving this page</h2>
       </div>
 
       <div class="columns">
@@ -1018,7 +1018,8 @@
           </div>
         </div>
 
-        <div class="field">
+        <fieldset class="field">
+          <legend>Subscribe to newsletter?</legend>
           <div class="control">
             <label class="radio">
               <input name="question" type="radio">
@@ -1029,7 +1030,7 @@
               No
             </label>
           </div>
-        </div>
+        </fieldset>
 
         <div class="field is-grouped">
           <div class="control">
@@ -1157,7 +1158,7 @@
   <div class="container">
     <div class="columns">
       <div class="column is-3 is-offset-2">
-        <h3 class="is-3 title"><b>Lessons</b></h3>
+        <h1 class="is-3 title"><b>Lessons</b></h1>
         <ul>
           <li><a href="/">Lorem ipsum dolor sit amet</a></li>
           <li><a href="/">Vestibulum errato isse</a></li>
@@ -1169,7 +1170,7 @@
         </ul>
       </div>
       <div class="column is-3">
-        <h3 class="is-3 title"><b>News</b></h3>
+        <h1 class="is-3 title"><b>News</b></h1>
         <ul>
           <li><a href="/">Labore et dolore magna aliqua</a></li>
           <li><a href="/">Kanban airis sum eschelor</a></li>
@@ -1181,7 +1182,7 @@
         </ul>
       </div>
       <div class="column is-4">
-        <h3 class="is-3 title"><b>Help</b></h3>
+        <h1 class="is-3 title"><b>Help</b></h1>
         <ul>
           <li><a href="/">Objects in space</a></li>
           <li><a href="/">Playing cards with coyote</a></li>
@@ -1194,13 +1195,13 @@
 
     <div class="content has-text-centered">
       <div class="soc">
-        <a href="https://github.com"><span class="visually-hidden">github. opens in new tab</span><i
+        <a target="_blank" href="https://github.com"><span class="visually-hidden">github. opens in new tab</span><i
           class="fab fa-github-alt fa-2x"></i></a>
-        <a href="https://youtube.com"><span class="visually-hidden">youtube. opens in new tab</span><i
+        <a target="_blank" href="https://youtube.com"><span class="visually-hidden">youtube. opens in new tab</span><i
           class="fab fa-youtube fa-2x"></i></a>
-        <a href="https://facebook.com"><span class="visually-hidden">facebook. opens in new tab</span><i
+        <a target="_blank" href="https://facebook.com"><span class="visually-hidden">facebook. opens in new tab</span><i
           class="fab fa-facebook fa-2x"></i></a>
-        <a href="https://twitter.com"><span class="visually-hidden">twitter. opens in new tab</span><i
+        <a target="_blank" href="https://twitter.com"><span class="visually-hidden">twitter. opens in new tab</span><i
           class="fab fa-twitter fa-2x"></i></a>
       </div>
       <p>The source code is licensed <a class="external" href="http://opensource.org/licenses/mit-license.php">MIT</a>.
@@ -1209,7 +1210,7 @@
   </div>
 </footer>
 
-<div class="modal modal-fx-3dSlit" id="modal-card">
+<div role="dialog" aria-labelledby="dialog-name" class="modal modal-fx-3dSlit" id="modal-card">
   <div class="modal-background"></div>
   <div class="modal-content is-tiny">
     <div class="card">
@@ -1226,8 +1227,8 @@
             </div>
           </div>
           <div class="media-content">
-            <div class="title is-4">Jane Doe</div>
-            <div class="subtitle is-6">@jane_doe</div>
+            <h1 id="dialog-name" class="title is-4">Jane Doe</h1>
+            <h2 class="subtitle is-6">@jane_doe</h2>
           </div>
         </div>
         <div class="content">
@@ -1251,23 +1252,23 @@
       </div>
     </div>
   </div>
-  <button class="modal-close is-large"></button>
+  <button type="button" aria-label="close dialog" class="modal-close is-large"></button>
 </div>
 
-<div class="modal modal-fx-3dSlit" id="modal-image1">
+<div role="dialog" aria-label="random image dialog" class="modal modal-fx-3dSlit" id="modal-image1">
   <div class="modal-background"></div>
   <div class="modal-content is-huge is-image">
     <img alt="random image" src="https://source.unsplash.com/random/?sig=1">
   </div>
-  <button class="modal-close is-large"></button>
+  <button type="button" aria-label="close dialog" class="modal-close is-large"></button>
 </div>
 
-<div class="modal modal-fx-superScaled" id="modal-image2">
+<div role="dialog" aria-label="random image dialog" class="modal modal-fx-superScaled" id="modal-image2">
   <div class="modal-background"></div>
   <div class="modal-content  is-image">
     <img alt="random image" src="https://source.unsplash.com/random/?sig=3">
   </div>
-  <button class="modal-close is-large"></button>
+  <button type="button" aria-label="close dialog" class="modal-close is-large"></button>
 </div>
 
 <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>

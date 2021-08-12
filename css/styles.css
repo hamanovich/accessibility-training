@@ -1,9 +1,9 @@
 :root {
-    --dark-blue: #3273dc;
+    --dark-blue: #2555a7;
 }
 
 .hero-bg {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../img/accessibility-hero-banner.jpg") no-repeat center center fixed;
     background-size: cover;
 }
@@ -12,6 +12,12 @@
     background-color: transparent;
     border: none;
     display: inline-block;
+}
+
+@media (min-width: 1088px) {
+    .burger {
+        display: none;
+    }
 }
 
 .tabs {
@@ -208,7 +214,7 @@ a:hover {
 a:focus-visible,
 button:focus-visible,
 input:focus-visible {
-    box-shadow: 0 0 0 2px white, 0 0 0 4px var(--dark-blue), 0 0 4px 6px white !important;
+    box-shadow: 0 0 0 2px white, 0 0 0 4px black, 0 0 4px 6px white !important;
     outline: none;
 }
 
@@ -299,4 +305,21 @@ input::-moz-placeholder {
     position: fixed;
     left: 40px;
     z-index: 10;
+}
+
+.hero.is-link, .button.is-link, .tag.is-link {
+    background-color: var(--dark-blue) !important;
+}
+
+a {
+    color: var(--dark-blue) !important;
+}
+
+fieldset {
+    padding: 0 6px 6px 6px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 4px;
 }
