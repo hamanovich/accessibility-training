@@ -28,7 +28,7 @@
               <a class="navbar-item logo-link" href="#">
                 <img
                   src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg"
-                  alt="EPAM Logo"
+                  alt="EPAM home page"
                 />
               </a>
               <span class="navbar-burger burger" data-target="navbarMenu">
@@ -40,8 +40,11 @@
 
             <div id="navbarMenu" class="navbar-menu">
               <div class="navbar-end">
-                <span class="navbar-item visually-hidden">
-                  <a class="button is-white is-outlined" href="#">
+                <span class="navbar-item">
+                  <a
+                    class="button is-white is-outlined visually-hidden"
+                    href="#"
+                  >
                     <span class="icon">
                       <i class="fa fa-home"></i>
                     </span>
@@ -133,7 +136,7 @@
           <h1 class="is-1 title">Hello World</h1>
           <p>
             Lorem ipsum<sup
-              ><a href="#" target="_blank"
+              ><a href="#" target="_blank" class="outlined-link"
                 >[1]<span class="visually-hidden"
                   >will open in a new tab</span
                 ></a
@@ -167,8 +170,9 @@
           <div class="is-3 title">Third level</div>
           <p>
             Quisque ante lacus, malesuada ac auctor vitae, congue
-            <a href="#">non ante</a>. Phasellus lacus ex, semper ac tortor nec,
-            fringilla condimentum orci. Fusce eu rutrum tellus.
+            <a href="#" class="outlined-link">non ante</a>. Phasellus lacus ex,
+            semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum
+            tellus.
           </p>
           <ol class="ol-list">
             <li>Donec blandit a lorem id convallis.</li>
@@ -330,7 +334,7 @@
                       volutpat ac tincidunt vitae semper quis. Accumsan tortor
                       posuere ac ut consequat semper viverra nam.
                     </p>
-                    <p><a href="#">Learn more</a></p>
+                    <p><a href="#" class="outlined-link">Learn more</a></p>
                   </div>
                 </div>
               </div>
@@ -351,7 +355,7 @@
                       neque egestas cmonsu songue. Phasellus vestibulum lorem
                       sed risus.
                     </p>
-                    <p><a href="#">Learn more</a></p>
+                    <p><a href="#" class="outlined-link">Learn more</a></p>
                   </div>
                 </div>
               </div>
@@ -371,7 +375,7 @@
                       Libero id faucibus nisl tincidunt eget nullam. Commodo
                       viverra maecenas accumsan lacus vel facilisis.
                     </p>
-                    <p><a href="#">Learn more</a></p>
+                    <p><a href="#" class="outlined-link">Learn more</a></p>
                   </div>
                 </div>
               </div>
@@ -392,13 +396,13 @@
         <div class="tabs is-boxed is-centered main-menu" id="nav">
           <ul>
             <li data-target="pane-1" id="1" class="is-active">
-              <a href="#">
+              <a href="#" class="outlined-link">
                 <span class="icon is-small"><i class="fa fa-image"></i></span>
                 <span>Pictures</span>
               </a>
             </li>
             <li data-target="pane-3" id="3">
-              <a href="#">
+              <a href="#" class="outlined-link">
                 <span class="icon is-small"
                   ><i class="fab fa-superpowers"></i
                 ></span>
@@ -406,7 +410,7 @@
               </a>
             </li>
             <li data-target="pane-4" id="4">
-              <a href="#">
+              <a href="#" class="outlined-link">
                 <span class="icon is-small"><i class="fa fa-film"></i></span>
                 <span>Video</span>
               </a>
@@ -416,7 +420,7 @@
       </section>
 
       <section class="tab-content container">
-        <div class="tab-pane is-active level" id="pane-1" >
+        <div class="tab-pane is-active level" id="pane-1">
           <div class="container">
             <div class="columns features">
               <div class="column is-4">
@@ -522,7 +526,7 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <a href="#"><b>Dominic Ipsum</b></a>
+                      <a href="#" class="outlined-link"><b>Dominic Ipsum</b></a>
                       <br />
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Aenean efficitur sit amet massa fringilla egestas. Nullam
@@ -538,7 +542,7 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <a href="#"><b>Cassie Ipsum</b></a>
+                      <a href="#" class="outlined-link"><b>Cassie Ipsum</b></a>
                       <br />
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Aenean efficitur sit amet massa fringilla egestas. Nullam
@@ -556,7 +560,7 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <a href="#"><b>Avery Ipsum</b></a>
+                      <a href="#" class="outlined-link"><b>Avery Ipsum</b></a>
                       <br />
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Aenean efficitur sit amet massa fringilla egestas. Nullam
@@ -572,7 +576,7 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <a href="#"><b>io Ipsum</b></a>
+                      <a href="#" class="outlined-link"><b>io Ipsum</b></a>
                       <br />
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Aenean efficitur sit amet massa fringilla egestas. Nullam
@@ -675,7 +679,7 @@
             <div class="tile is-parent">
               <div class="tile is-child box">
                 <div class="image">
-                  <img src="./img/access.jpg"  alt=""/>
+                  <img src="./img/access.jpg" alt="" />
                 </div>
                 <p class="title">London</p>
                 <p class="subtitle">Fri 27 Nov 2016</p>
@@ -750,7 +754,7 @@
                     <p class="card-header-title">
                       <span>Admin <small>(Light)</small></span>
                       <span class="is-pulled-right">
-                        <a href="#">
+                        <a href="#" class="outlined-link">
                           <span class="tag is-default">v0.7.2</span>
                         </a>
                         <span class="tag is-default">Desktop</span>
@@ -775,7 +779,7 @@
                     <p class="card-header-title">
                       <span>Cards</span>
                       <span class="is-pulled-right">
-                        <a href="#">
+                        <a href="#" class="outlined-link">
                           <span class="tag is-default">v0.7.2</span>
                         </a>
                         <span class="tag is-default">Desktop</span>
@@ -800,7 +804,7 @@
                     <p class="card-header-title">
                       <span>Forum</span>
                       <span class="is-pulled-right">
-                        <a href="#">
+                        <a href="#" class="outlined-link">
                           <span class="tag is-default">v0.7.2</span>
                         </a>
                         <span class="tag is-default">Desktop</span>
@@ -827,7 +831,7 @@
                     <p class="card-header-title">
                       <span>InstaAlbum</span>
                       <span class="is-pulled-right">
-                        <a href="#">
+                        <a href="#" class="outlined-link">
                           <span class="tag is-default">v0.7.2</span>
                         </a>
                         <span class="tag is-default">Desktop</span>
@@ -852,7 +856,7 @@
                     <p class="card-header-title">
                       <span>Landing</span>
                       <span class="is-pulled-right">
-                        <a href="#">
+                        <a href="#" class="outlined-link">
                           <span class="tag is-default">v0.7.2</span>
                         </a>
                         <span class="tag is-default">Desktop</span>
@@ -877,7 +881,7 @@
                     <p class="card-header-title">
                       <span>Marketing</span>
                       <span class="is-pulled-right">
-                        <a href="#">
+                        <a href="#" class="outlined-link">
                           <span class="tag is-default">v0.7.2</span>
                         </a>
                         <span class="tag is-default">Desktop</span>
@@ -951,7 +955,8 @@
                     <div class="media-content">
                       <div class="content">
                         <p>
-                          <a href="#">@jsmith</a> replied 34 minutes ago &nbsp;
+                          <a href="#" class="outlined-link">@jsmith</a> replied
+                          34 minutes ago &nbsp;
                           <span class="tag">Question</span>
                         </p>
                       </div>
@@ -978,7 +983,8 @@
                     <div class="media-content">
                       <div class="content">
                         <p>
-                          <a href="#">@red</a> replied 40 minutes ago &nbsp;
+                          <a href="#" class="outlined-link">@red</a> replied 40
+                          minutes ago &nbsp;
                           <span class="tag">Question</span>
                         </p>
                       </div>
@@ -1008,7 +1014,8 @@
                     <div class="media-content">
                       <div class="content">
                         <p>
-                          <a href="#">@jsmith</a> replied 53 minutes ago &nbsp;
+                          <a href="#" class="outlined-link">@jsmith</a> replied
+                          53 minutes ago &nbsp;
                           <span class="tag">Question</span>
                         </p>
                       </div>
@@ -1035,7 +1042,8 @@
                     <div class="media-content">
                       <div class="content">
                         <p>
-                          <a href="#">@brown</a> replied 3 hours ago &nbsp;
+                          <a href="#" class="outlined-link">@brown</a> replied 3
+                          hours ago &nbsp;
                           <span class="tag">Question</span>
                         </p>
                       </div>
@@ -1065,7 +1073,8 @@
                     <div class="media-content">
                       <div class="content">
                         <p>
-                          <a href="#">@hamburgler</a> replied 5 hours ago &nbsp;
+                          <a href="#" class="outlined-link">@hamburgler</a>
+                          replied 5 hours ago &nbsp;
                           <span class="tag">Question</span>
                         </p>
                       </div>
@@ -1092,7 +1101,8 @@
                     <div class="media-content">
                       <div class="content">
                         <p>
-                          <a href="#">@rapper</a> replied 3 hours ago &nbsp;
+                          <a href="#" class="outlined-link">@rapper</a> replied
+                          3 hours ago &nbsp;
                           <span class="tag">Question</span>
                         </p>
                       </div>
@@ -1121,14 +1131,19 @@
             <div class="field">
               <label for="name" class="label">Name</label>
               <div class="control">
-                <input class="input" type="text" placeholder="Text input" id="name"/>
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Text input"
+                  id="name"
+                />
               </div>
             </div>
 
             <div class="field">
               <label for="user-name" class="label">Username</label>
               <div class="control has-icons-left has-icons-right">
-                <input class="input is-success" type="text" id="user-name"/>
+                <input class="input is-success" type="text" id="user-name" />
                 <span class="icon is-small is-left">
                   <i class="fas fa-user"></i>
                 </span>
@@ -1174,7 +1189,11 @@
             <div class="field">
               <label for="message" class="label">Message</label>
               <div class="control">
-                <textarea id="message" class="textarea" placeholder="Textarea"></textarea>
+                <textarea
+                  id="message"
+                  class="textarea"
+                  placeholder="Textarea"
+                ></textarea>
               </div>
             </div>
 
@@ -1182,7 +1201,8 @@
               <div class="control">
                 <label class="checkbox">
                   <input type="checkbox" />
-                  I agree to the <a href="#">terms and conditions</a>
+                  I agree to the
+                  <a href="#" class="outlined-link">terms and conditions</a>
                 </label>
               </div>
             </div>
@@ -1331,45 +1351,77 @@
           <div class="column is-3 is-offset-2">
             <h3 class="is-3 title"><b>Lessons</b></h3>
             <ul>
-              <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-              <li><a href="#">Vestibulum errato isse</a></li>
-              <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-              <li><a href="#">Aisia caisia</a></li>
-              <li><a href="#">Murphy's law</a></li>
-              <li><a href="#">Flimsy Lavenrock</a></li>
-              <li><a href="#">Maven Mousie Lavender</a></li>
+              <li>
+                <a href="#" class="outlined-link">Lorem ipsum dolor sit amet</a>
+              </li>
+              <li>
+                <a href="#" class="outlined-link">Vestibulum errato isse</a>
+              </li>
+              <li>
+                <a href="#" class="outlined-link">Lorem ipsum dolor sit amet</a>
+              </li>
+              <li><a href="#" class="outlined-link">Aisia caisia</a></li>
+              <li><a href="#" class="outlined-link">Murphy's law</a></li>
+              <li><a href="#" class="outlined-link">Flimsy Lavenrock</a></li>
+              <li>
+                <a href="#" class="outlined-link">Maven Mousie Lavender</a>
+              </li>
             </ul>
           </div>
           <div class="column is-3">
             <h3 class="is-3 title"><b>News</b></h3>
             <ul>
-              <li><a href="#">Labore et dolore magna aliqua</a></li>
-              <li><a href="#">Kanban airis sum eschelor</a></li>
-              <li><a href="#">Modular modern free</a></li>
-              <li><a href="#">The king of clubs</a></li>
-              <li><a href="#">The Discovery Dissipation</a></li>
-              <li><a href="#">Course Correction</a></li>
-              <li><a href="#">Better Angels</a></li>
+              <li>
+                <a href="#" class="outlined-link"
+                  >Labore et dolore magna aliqua</a
+                >
+              </li>
+              <li>
+                <a href="#" class="outlined-link">Kanban airis sum eschelor</a>
+              </li>
+              <li><a href="#" class="outlined-link">Modular modern free</a></li>
+              <li><a href="#" class="outlined-link">The king of clubs</a></li>
+              <li>
+                <a href="#" class="outlined-link">The Discovery Dissipation</a>
+              </li>
+              <li><a href="#" class="outlined-link">Course Correction</a></li>
+              <li><a href="#" class="outlined-link">Better Angels</a></li>
             </ul>
           </div>
           <div class="column is-4">
             <h3 class="is-3 title"><b>Help</b></h3>
             <ul>
-              <li><a href="#">Objects in space</a></li>
-              <li><a href="#">Playing cards with coyote</a></li>
-              <li><a href="#">Goodbye Yellow Brick Road</a></li>
-              <li><a href="#">The Garden of Forking Paths</a></li>
-              <li><a href="#">Future Shock</a></li>
+              <li><a href="#" class="outlined-link">Objects in space</a></li>
+              <li>
+                <a href="#" class="outlined-link">Playing cards with coyote</a>
+              </li>
+              <li>
+                <a href="#" class="outlined-link">Goodbye Yellow Brick Road</a>
+              </li>
+              <li>
+                <a href="#" class="outlined-link"
+                  >The Garden of Forking Paths</a
+                >
+              </li>
+              <li><a href="#" class="outlined-link">Future Shock</a></li>
             </ul>
           </div>
         </div>
 
         <div class="content has-text-centered">
           <h3 class="soc">
-            <a href="#"><i class="fab fa-github-alt fa-2x"></i></a>
-            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
-            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#" class="outlined-link"
+              ><i class="fab fa-github-alt fa-2x"></i
+            ></a>
+            <a href="#" class="outlined-link"
+              ><i class="fab fa-youtube fa-2x"></i
+            ></a>
+            <a href="#" class="outlined-link"
+              ><i class="fab fa-facebook fa-2x"></i
+            ></a>
+            <a href="#" class="outlined-link"
+              ><i class="fab fa-twitter fa-2x"></i
+            ></a>
           </h3>
           <p>
             The source code is licensed
@@ -1421,9 +1473,9 @@
               cehye. Zhro y'hah nogoth phlegeth stell'bsna orr'e ph'Hastur
               gnaiih throd, uln ya lw'nafh mg nar'luh li'hee wgah'n, sgn'wahl mg
               nakadishtu chlirgh hupadgh tharanak h'gnaiih.
-              <a href="#">@testio</a>.
-              <a href="#">#css</a>
-              <a href="#">#responsive</a>
+              <a href="#" class="outlined-link">@testio</a>.
+              <a href="#" class="outlined-link">#css</a>
+              <a href="#" class="outlined-link">#responsive</a>
               <br />
               <time datetime="2018-02-02">12:45 AM - 20 June 2018</time>
             </div>

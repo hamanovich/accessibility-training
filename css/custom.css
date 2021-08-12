@@ -39,6 +39,7 @@
 .textarea:active,
 .textarea:focus {
   outline: 2px solid blue;
+  outline-offset: 3px;
 }
 
 .visually-hidden {
@@ -52,11 +53,26 @@
 }
 
 .visually-hidden:focus {
+  position: static;
   height: auto;
   width: auto;
   clip: auto;
 }
 
-.button.is-info{
-    background-color: #163a52;
+.button.is-info {
+  background-color: #163a52;
+  outline-color: #163a52;
+}
+
+.button.visually-hidden {
+  padding: inherit;
+}
+
+.navbar .button:focus {
+  outline-color: white;
+}
+
+.outlined-link:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 1px;
 }
