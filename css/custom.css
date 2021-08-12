@@ -103,3 +103,7 @@
   padding: 5px;
   z-index: 35;
 }
+
+fieldset.field {
+  border: 0;
+}
