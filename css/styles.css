@@ -1,3 +1,13 @@
+*:focus {
+  border-color: unset !important;
+  box-shadow: unset !important;
+  outline: black solid 2px !important;
+}
+
+.button.is-info {
+  background-color: #116fe4 !important;
+}
+
 .hero-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/accessibility-hero-banner.jpg") no-repeat center center fixed;
@@ -108,7 +118,7 @@
 }
 
 .button.is-primary.is-alt {
-  background: linear-gradient(to bottom, #0072ff, #00c6ff);
+  background: #0175E4;
   font-weight: 700;
   font-size: 14px;
   height: 3rem;
@@ -175,4 +185,64 @@ li {
   width: 40px;
   height: 40px;
   background-size: contain;
+}
+
+.dropMenu .dropMenu-toggle {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.dropMenu-menu {
+  position: relative;
+  display: none;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.open-in-new-window::after {
+  content: '>>';
+}
+
+.breadcrumbs {
+  background-color: white;
+  padding: 10px;
+}
+
+.common-contairer-with-aside {
+  display: flex;
+}
+
+.breadcrumbs ul {
+  display: flex;
+}
+
+.breadcrumbs ul a {
+  color: black;
+  font-weight: bold;
+}
+
+.breadcrumbs ul a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs ul a:first-child {
+  margin-right: 10px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+}
+
+.visually-hidden:focus {
+  height: auto;
+  width: auto;
+  clip: auto;
 }
