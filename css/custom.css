@@ -72,6 +72,10 @@
   outline-color: white;
 }
 
+.outlined-link {
+  color: #003b93;
+}
+
 .outlined-link:focus {
   outline: 2px solid currentColor;
   outline-offset: 1px;
@@ -106,4 +110,17 @@
 
 fieldset.field {
   border: 0;
+}
+
+.has-background-grey-light {
+  background-color: #b5b5b559 !important;
+}
+
+.hero.is-info {
+  background-color: rgb(20 101 153);
+  color: #fff;
+}
+
+.hero.is-info .tabs.is-boxed .is-active .outlined-link {
+  color: rgb(20 101 153);
 }

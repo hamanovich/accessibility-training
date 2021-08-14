@@ -7,10 +7,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"
-    />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/bulma.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
@@ -93,13 +91,15 @@
             <h2 class="title has-text-white">
               We have web accessibility in mind
             </h2>
-            <h2 class="subtitle has-text-white">
+            <h3 class="subtitle has-text-white">
               Would you like to get the latest news?
-            </h2>
+            </h3>
 
             <fieldset class="box field is-grouped">
               <label class="control is-expanded">
-                <span class="visually-hidden"></span>
+                <span class="visually-hidden">
+                  Email address to receive notifications
+                </span>
                 <input class="input" type="text" />
               </label>
 
@@ -919,9 +919,9 @@
         <div class="container">
           <div class="section-heading has-text-centered">
             <h2 class="title is-2">Forum</h2>
-            <h5 class="subtitle is-5">
+            <h3 class="subtitle is-5">
               Discuss any topic with no leaving this page
-            </h5>
+            </h3>
           </div>
 
           <div class="columns">
@@ -975,7 +975,7 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"
+                      <span class="has-text-grey-dark"
                         ><i class="fa fa-comments"></i> 1</span
                       >
                     </div>
@@ -1003,7 +1003,7 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"
+                      <span class="has-text-grey-dark"
                         ><i class="fa fa-comments"></i> 0</span
                       >
                     </div>
@@ -1034,7 +1034,7 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"
+                      <span class="has-text-grey-dark"
                         ><i class="fa fa-comments"></i> 13</span
                       >
                     </div>
@@ -1062,7 +1062,7 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"
+                      <span class="has-text-grey-dark"
                         ><i class="fa fa-comments"></i> 2</span
                       >
                     </div>
@@ -1093,7 +1093,7 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"
+                      <span class="has-text-grey-dark"
                         ><i class="fa fa-comments"></i> 2</span
                       >
                     </div>
@@ -1121,7 +1121,7 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"
+                      <span class="has-text-grey-dark"
                         ><i class="fa fa-comments"></i> 2</span
                       >
                     </div>
@@ -1304,7 +1304,7 @@
             <div class="column is-one-third">
               <div class="notification has-background-white media">
                 <div class="media-left">
-                  <span class="icon has-text-grey">
+                  <span class="icon has-text-grey-dark">
                     <i class="fas fa-lg fa-cogs"></i>
                   </span>
                 </div>
@@ -1363,7 +1363,7 @@
       <div class="container">
         <div class="columns">
           <div class="column is-3 is-offset-2">
-            <h3 class="is-3 title"><b>Lessons</b></h3>
+            <h2 class="is-3 title"><b>Lessons</b></h2>
             <ul>
               <li>
                 <a href="#" class="outlined-link">Lorem ipsum dolor sit amet</a>
@@ -1383,7 +1383,7 @@
             </ul>
           </div>
           <div class="column is-3">
-            <h3 class="is-3 title"><b>News</b></h3>
+            <h2 class="is-3 title"><b>News</b></h2>
             <ul>
               <li>
                 <a href="#" class="outlined-link"
@@ -1403,7 +1403,7 @@
             </ul>
           </div>
           <div class="column is-4">
-            <h3 class="is-3 title"><b>Help</b></h3>
+            <h2 class="is-3 title"><b>Help</b></h2>
             <ul>
               <li><a href="#" class="outlined-link">Objects in space</a></li>
               <li>
@@ -1423,7 +1423,7 @@
         </div>
 
         <div class="content has-text-centered">
-          <h3 class="soc">
+          <h2 class="soc">
             <a href="#" class="outlined-link" title="Github"
               ><i class="fab fa-github-alt fa-2x"></i
             ></a>
@@ -1436,10 +1436,16 @@
             <a href="#" class="outlined-link" title="Twitter"
               ><i class="fab fa-twitter fa-2x"></i
             ></a>
-          </h3>
+          </h2>
           <p>
             The source code is licensed
-            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+            <a
+              target="_blank"
+              class="outlined-link external-link"
+              href="https://opensource.org/licenses/mit-license.php"
+              >MIT
+              <span class="visually-hidden">will open in a new tab</span> </a
+            >.
           </p>
         </div>
       </div>
