@@ -275,20 +275,20 @@
         </div>
       </div>
       <nav class="tabs is-boxed is-centered main-menu" id="nav" role="navigation">
-        <ul role="tablist">
-          <li data-target="pane-1" id="1" class="is-active" role="tab" aria-controls="panel-1">
+        <ul role="tablist" aria-activedescendant="1">
+          <li role="tab" aria-controls="panel-1" data-target="pane-1" id="1" class="is-active">
             <a href="" aria-current="page" class="link">
               <span class="icon is-small" aria-hidden="true"><i class="fa fa-image"></i></span>
               <span>Pictures</span>
             </a>
           </li>
-          <li data-target="pane-3" id="3" role="tab" aria-controls="panel-3">
+          <li role="tab" aria-controls="panel-3" data-target="pane-3" id="3" >
             <a href="" aria-current="page" class="link">
               <span class="icon is-small" aria-hidden="true"><i class="fab fa-superpowers"></i></span>
               <span>Team</span>
             </a>
           </li>
-          <li data-target="pane-4" id="4" role="tab" aria-controls="panel-4">
+          <li role="tab" aria-controls="panel-4" data-target="pane-4" id="4" >
             <a href="" aria-current="page" class="link">
               <span class="icon is-small" aria-hidden="true"><i class="fa fa-film"></i></span>
               <span>Video</span>
@@ -299,7 +299,7 @@
     </section>
 
     <section class="tab-content container" aria-labelledby="tabsTitle" aria-describedby="tabsSubtitle">
-      <div class="tab-pane is-active" id="pane-1" class="level" role="tabpanel" aria-labelledby="tab-1">
+      <div id="pane-1" class="tab-pane is-active" class="level" role="tabpanel" aria-labelledby="tab-1">
         <div class="container">
           <div class="columns features">
             <div class="column is-4">
@@ -355,7 +355,7 @@
         </div>
       </div>
 
-      <div class="tab-pane" id="pane-3" role="tabpanel" aria-labelledby="tab-3">
+      <div id="pane-3" class="tab-pane" role="tabpanel" aria-labelledby="tab-3">
         <div class="columns medias">
           <div class="column">
             <div class="media">
@@ -416,7 +416,7 @@
         </div>
       </div>
 
-      <div class="tab-pane" id="pane-4" role="tabpanel" aria-labelledby="tab-4">
+      <div id="pane-4" class="tab-pane" role="tabpanel" aria-labelledby="tab-4">
         <div class="columns is-centered">
           <div class="column is-three-quarters">
             <div class="title has-text-centered">Inspired video</div>
@@ -503,7 +503,7 @@
       </div>
     </section>
 
-    <section class="section" id="services" aria-labelledby="servicesTitle" aria-describedby="servicesSubtitle">
+    <section class="section" id="services" aria-labelledby="servicesTitle" aria-describedby="servicesSubtitle" aria-flowto="service1 service3 service2 service4">
       <div class="section-heading has-text-centered">
         <h2 class="title is-2" id="servicesTitle">Services</h2>
         <h5 class="subtitle is-5" id="servicesSubtitle">What can I do for you?</h5>
@@ -511,7 +511,7 @@
       <div class="container">
         <div class="columns">
           <div class="column">
-            <a href="#" aria-current="page" class="link box">
+            <a href="#" aria-current="page" class="link box" id="service1" role="link">
               <div class="content">
                 <h5 class="title is-5">Front End Web Development</h5>
                 Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
@@ -520,7 +520,7 @@
             </a>
           </div>
           <div class="column">
-            <a href="#" aria-current="page" class="link box">
+            <a href="#" aria-current="page" class="link box" id="service2" role="link">
               <div class="content">
                 <h5 class="title is-5">Back End Web Development</h5>
                 Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
@@ -531,7 +531,7 @@
 
         <div class="columns">
           <div class="column">
-            <a href="#" aria-current="page" class="link box">
+            <a href="#" aria-current="page" class="link box" id="service3" role="link">
               <div class="content">
                 <h5 class="title is-5">Front End Web Development</h5>
                 Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
@@ -540,7 +540,7 @@
             </a>
           </div>
           <div class="column">
-            <a href="#" aria-current="page" class="link box">
+            <a href="#" aria-current="page" class="link box" id="service4" role="link">
               <div class="content">
                 <h5 class="title is-5">Back End Web Development</h5>
                 Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
