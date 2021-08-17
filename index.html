@@ -31,17 +31,17 @@
       <div class="navbar">
         <div class="container">
           <div class="navbar-brand">
-            <a href="#" aria-current="page" class="navbar-item logo-link">
+            <a href="#" aria-current="page" class="navbar-item logo-link" aria-label="Link to EPAM website">
               <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" alt="epam logo">
             </a>
-            <span class="navbar-burger burger" data-target="navbarMenu">
+            <span class="navbar-burger burger" data-target="navbarMenu" aria-label="Mobile menu">
               <span></span>
               <span></span>
               <span></span>
             </span>
           </div>
 
-          <nav id="navbarMenu" class="navbar-menu" role="navigation">
+          <nav id="navbarMenu" class="navbar-menu" role="navigation" aria-label="Menu">
             <ul class="navbar-end">
               <li class="navbar-item">
                 <button class="button is-white is-outlined">
@@ -218,7 +218,7 @@
         </div>
 
         <div class="columns">
-          <div class="column is-4">
+          <div class="column is-4" aria-label="First feature">
             <div class="card is-shady">
               <div class="card-image has-text-centered">
                 <i class="fa fa-paw"></i>
@@ -233,7 +233,7 @@
             </div>
           </div>
 
-          <div class="column is-4">
+          <div class="column is-4" aria-label="Second feature">
             <div class="card is-shady">
               <div class="card-image has-text-centered">
                 <i class="fab fa-empire"></i>
@@ -249,7 +249,7 @@
             </div>
           </div>
 
-          <div class="column is-4">
+          <div class="column is-4" aria-label="Third feature">
             <div class="card is-shady">
               <div class="card-image has-text-centered">
                 <i class="fab fa-apple"></i>
@@ -511,7 +511,7 @@
       <div class="container">
         <div class="columns">
           <div class="column">
-            <a href="#" aria-current="page" class="link box" id="service1" role="link">
+            <a href="#" aria-current="page" class="link box" id="service1">
               <div class="content">
                 <h5 class="title is-5">Front End Web Development</h5>
                 Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
@@ -520,7 +520,7 @@
             </a>
           </div>
           <div class="column">
-            <a href="#" aria-current="page" class="link box" id="service2" role="link">
+            <a href="#" aria-current="page" class="link box" id="service2">
               <div class="content">
                 <h5 class="title is-5">Back End Web Development</h5>
                 Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
@@ -531,7 +531,7 @@
 
         <div class="columns">
           <div class="column">
-            <a href="#" aria-current="page" class="link box" id="service3" role="link">
+            <a href="#" aria-current="page" class="link box" id="service3">
               <div class="content">
                 <h5 class="title is-5">Front End Web Development</h5>
                 Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
@@ -540,7 +540,7 @@
             </a>
           </div>
           <div class="column">
-            <a href="#" aria-current="page" class="link box" id="service4" role="link">
+            <a href="#" aria-current="page" class="link box" id="service4">
               <div class="content">
                 <h5 class="title is-5">Back End Web Development</h5>
                 Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
@@ -748,19 +748,19 @@
         </div>
 
         <div class="columns">
-          <div class="column is-3">
+          <div class="column is-3" >
             <button class="button is-primary is-block is-alt is-large">New Post</button>
-            <div class="menu">
-              <ul class="menu-list forum-list">
-                <li><a href="#" aria-current="page" class="link tag is-primary is-medium">Dashboard</a></li>
-                <li><a href="#" aria-current="page" class="link tag is-link is-medium">Customers</a></li>
-                <li><a href="#" aria-current="page" class="link tag is-light is-danger is-medium">Authentication</a></li>
-                <li><a href="#" aria-current="page" class="link tag is-dark is-medium">Payments</a></li>
-                <li><a href="#" aria-current="page" class="link tag is-success is-medium">Transfers</a></li>
-                <li><a href="#" aria-current="page" class="link tag is-warning is-medium">Balance</a></li>
-                <li><a href="#" aria-current="page" class="link tag is-medium ">Question</a></li>
+            <nav class="menu" role="navigation">
+              <ul class="menu-list forum-list" role="menu">
+                <li><a href="#" role="menuitem" aria-current="page" class="link tag is-primary is-medium">Dashboard</a></li>
+                <li><a href="#" role="menuitem" aria-current="page" class="link tag is-link is-medium">Customers</a></li>
+                <li><a href="#" role="menuitem" aria-current="page" class="link tag is-light is-danger is-medium">Authentication</a></li>
+                <li><a href="#" role="menuitem" aria-current="page" class="link tag is-dark is-medium">Payments</a></li>
+                <li><a href="#" role="menuitem" aria-current="page" class="link tag is-success is-medium">Transfers</a></li>
+                <li><a href="#" role="menuitem" aria-current="page" class="link tag is-warning is-medium">Balance</a></li>
+                <li><a href="#" role="menuitem" aria-current="page" class="link tag is-medium ">Question</a></li>
               </ul>
-            </div>
+            </nav>
           </div>
           <div class="column is-9">
             <div class="box content">
@@ -773,8 +773,8 @@
                     </p>
                   </div>
                   <div class="media-content">
-                    <div class="content" role="comment" data-author="jsmith">
-                      <p>
+                    <div class="content">
+                      <p role="comment" data-author="jsmith">
                         <a href="#" aria-current="page" class="link">@jsmith</a> replied 34 minutes ago &nbsp;
                         <a href="#" aria-current="page" class="link">
                           <span class="tag">Question</span>
@@ -936,7 +936,7 @@
           <div class="field">
             <label class="label" for="usernameInput">Username</label>
             <div class="control has-icons-left has-icons-right">
-              <input class="input is-success" type="text" id="usernameInput">
+              <input class="input is-success" type="text" id="usernameInput" aria-invalid="false">
               <span class="icon is-small is-left" aria-hidden="true">
                 <i class="fas fa-user"></i>
               </span>
@@ -962,10 +962,10 @@
           </div>
 
           <div class="field">
-            <label class="label">Subject</label>
+            <label class="label" for="formSelection">Subject</label>
             <div class="control">
               <div class="select">
-                <select>
+                <select id="formSelection">
                   <option>Select dropdown</option>
                   <option>With options</option>
                 </select>
@@ -989,7 +989,7 @@
             </div>
           </div>
 
-          <div class="field">
+          <div class="field" aria-label="Answer the question">
             <div class="control">
               <label class="radio">
                 <input type="radio" name="question">
@@ -1124,7 +1124,7 @@
     </div> -->
   </main>
 
-  <div class="footer" role="contentinfo">
+  <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="columns">
         <div class="column is-3 is-offset-2">
@@ -1200,7 +1200,7 @@
         <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php" target="_blank" class="link">MIT</a><sup><i class="fas fa-external-link-alt"></i></sup>.</p>
       </div>
     </div>
-  </div>
+  </footer>
 
   <div id="modal-card" class="modal modal-fx-3dSlit" role="dialog">
     <div class="modal-background"></div>
@@ -1237,7 +1237,7 @@
         </div>
       </div>
     </div>
-    <button class="modal-close is-large" role="button"><span class="visually-hidden">Close button</span></button>
+    <button class="modal-close is-large"><span class="visually-hidden">Close button</span></button>
   </div>
 
   <div id="modal-image1" class="modal modal-fx-3dSlit" role="dialog">
@@ -1245,7 +1245,7 @@
     <div class="modal-content is-huge is-image">
       <img src="https://source.unsplash.com/random/?sig=1" alt="">
     </div>
-    <button class="modal-close is-large" role="button"><span class="visually-hidden">Close button</span></button>
+    <button class="modal-close is-large"><span class="visually-hidden">Close button</span></button>
   </div>
 
   <div id="modal-image2" class="modal modal-fx-superScaled" role="dialog">
@@ -1253,7 +1253,7 @@
     <div class="modal-content  is-image">
       <img src="https://source.unsplash.com/random/?sig=3" alt="">
     </div>
-    <button class="modal-close is-large" role="button"><span class="visually-hidden">Close button</span></button>
+    <button class="modal-close is-large"><span class="visually-hidden">Close button</span></button>
   </div>
 
   <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
