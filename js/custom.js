@@ -12,8 +12,10 @@
   skipLink.addEventListener("click", function() {
     if (skipLink.className.includes("visible")) {
       skipLink.classList.remove("visible");
+      skipLink.ariaExpanded = false;
     } else {
       skipLink.classList.add("visible");
+      skipLink.ariaExpanded = true;
     }
 
     if (skipButtonMenu.className.includes("visible")) {

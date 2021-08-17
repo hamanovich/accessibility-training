@@ -13,16 +13,16 @@
 <body>
   <header class="hero hero-bg is-fullheight">
     <div class="skip-container">
-      <button class="button skip-button" id="skipLink">Skip to:</button>
-      <nav class="skip-navigation" id="skipButtonMenu">
-        <ul>
-          <li><a href="#about" class="link" aria-current="page">About us</a></li>
-          <li><a href="#features" class="link" aria-current="page">Key features</a></li>
-          <li><a href="#events" class="link" aria-current="page">Upcoming events</a></li>
-          <li><a href="#services" class="link" aria-current="page">Services</a></li>
-          <li><a href="#photos" class="link" aria-current="page">Photos</a></li>
-          <li><a href="#forum" class="link" aria-current="page">Forum</a></li>
-          <li><a href="#contactUs" class="link" aria-current="page">Contact us</a></li>
+      <button class="button skip-button" id="skipLink" aria-haspopup="true" aria-expanded="false">Skip to:</button>
+      <nav class="skip-navigation" id="skipButtonMenu" role="navigation">
+        <ul role="menu" aria-labelledby="skipLink">
+          <li role="none"><a href="#about" class="link" aria-current="page" role="menuitem">About us</a></li>
+          <li role="none"><a href="#features" class="link" aria-current="page" role="menuitem">Key features</a></li>
+          <li role="none"><a href="#events" class="link" aria-current="page" role="menuitem">Upcoming events</a></li>
+          <li role="none"><a href="#services" class="link" aria-current="page" role="menuitem">Services</a></li>
+          <li role="none"><a href="#photos" class="link" aria-current="page" role="menuitem">Photos</a></li>
+          <li role="none"><a href="#forum" class="link" aria-current="page" role="menuitem">Forum</a></li>
+          <li role="none"><a href="#contactUs" class="link" aria-current="page" role="menuitem">Contact us</a></li>
         </ul>
       </nav>
     </div>
@@ -31,21 +31,21 @@
       <div class="navbar">
         <div class="container">
           <div class="navbar-brand">
-            <a href="#" aria-current="page" class="navbar-item logo-link">
+            <a href="#" aria-current="page" class="navbar-item logo-link" aria-label="Link to EPAM website">
               <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" alt="epam logo">
             </a>
-            <span class="navbar-burger burger" data-target="navbarMenu">
+            <span class="navbar-burger burger" data-target="navbarMenu" aria-label="Mobile menu">
               <span></span>
               <span></span>
               <span></span>
             </span>
           </div>
 
-          <nav id="navbarMenu" class="navbar-menu" role="navigation">
+          <nav id="navbarMenu" class="navbar-menu" role="navigation" aria-label="Menu">
             <ul class="navbar-end">
               <li class="navbar-item">
                 <button class="button is-white is-outlined">
-                  <span class="icon">
+                  <span class="icon" aria-hidden="true">
                     <i class="fa fa-home"></i>
                   </span>
                   <span>Home</span>
@@ -53,7 +53,7 @@
               </li>
               <li class="navbar-item">
                 <button class="button is-white is-outlined">
-                  <span class="icon">
+                  <span class="icon" aria-hidden="true">
                     <i class="fab fa-superpowers"></i>
                   </span>
                   <span>Examples</span>
@@ -61,7 +61,7 @@
               </li>
               <li class="navbar-item">
                 <button class="button is-white is-outlined">
-                  <span class="icon">
+                  <span class="icon" aria-hidden="true">
                     <i class="fa fa-book"></i>
                   </span>
                   <span>Documentation</span>
@@ -69,7 +69,7 @@
               </li>
               <li class="navbar-item">
                 <button class="button is-white is-outlined">
-                  <span class="icon">
+                  <span class="icon" aria-hidden="true">
                     <i class="fab fa-github"></i>
                   </span>
                   <span>View Source</span>
@@ -81,7 +81,7 @@
       </div>
     </div>
 
-    <div class="hero-body">
+    <div class="hero-body" role="banner">
       <div class="container has-text-centered">
         <div class="column is-6 is-offset-3">
           <div class="title has-text-white">We have web accessibility in mind</div>
@@ -105,10 +105,10 @@
   </header>
 
   <main>
-    <section class="section" id="about">
+    <section class="section" id="about" aria-labelledby="aboutTitle" aria-describedby="aboutSubtitle">
       <div class="section-heading has-text-centered">
-        <h2 class="title is-2">About Us</h2>
-        <h5 class="subtitle is-5">We of all trades, master of "some"</h5>
+        <h2 class="title is-2" id="aboutTitle">About Us</h2>
+        <h5 class="subtitle is-5" id="aboutSubtitle">We of all trades, master of "some"</h5>
         <div class="container">
           <p>Web developers with more than <b>4 years</b> of well-rounded experience with a degree in the
             field of
@@ -119,7 +119,7 @@
         </div>
       </div>
 
-      <div class="content container">
+      <div class="content container" role="article">
         <h1 class="is-1 title">Hello World</h1>
         <p>Lorem ipsum<sup><a href="#" aria-current="page" class="link visually-hidden">[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
         <h2 class="is-2 title">Second level</h2>
@@ -210,15 +210,15 @@
       </div>
     </section>
 
-    <section class="hero has-background-grey-light" id="features">
+    <section class="hero has-background-grey-light" id="features" aria-labelledby="featuresTitle" aria-describedby="featuresSubtitle">
       <div class="container features">
         <div class="section-heading has-text-centered">
-          <h2 class="title is-2">Three key features</h2>
-          <h5 class="subtitle is-5">We don't hide what we do</h5>
+          <h2 class="title is-2" id="featuresTitle">Three key features</h2>
+          <h5 class="subtitle is-5" id="featuresSubtitle">We don't hide what we do</h5>
         </div>
 
         <div class="columns">
-          <div class="column is-4">
+          <div class="column is-4" aria-label="First feature">
             <div class="card is-shady">
               <div class="card-image has-text-centered">
                 <i class="fa fa-paw"></i>
@@ -233,7 +233,7 @@
             </div>
           </div>
 
-          <div class="column is-4">
+          <div class="column is-4" aria-label="Second feature">
             <div class="card is-shady">
               <div class="card-image has-text-centered">
                 <i class="fab fa-empire"></i>
@@ -249,7 +249,7 @@
             </div>
           </div>
 
-          <div class="column is-4">
+          <div class="column is-4" aria-label="Third feature">
             <div class="card is-shady">
               <div class="card-image has-text-centered">
                 <i class="fab fa-apple"></i>
@@ -267,30 +267,30 @@
       </div>
     </section>
 
-    <section class="hero is-info">
+    <section class="hero is-info" aria-labelledby="topicsTitle" aria-describedby="topicsSubtitle">
       <div class="hero-body">
         <div class="container">
-          <div class="title">List of topics</div>
-          <div class="subtitle">We are always in touch we the outside world</div>
+          <div class="title" id="topicsTitle">List of topics</div>
+          <div class="subtitle" id="topicsSubtitle">We are always in touch we the outside world</div>
         </div>
       </div>
       <nav class="tabs is-boxed is-centered main-menu" id="nav" role="navigation">
-        <ul>
-          <li data-target="pane-1" id="1" class="is-active">
+        <ul role="tablist" aria-activedescendant="1">
+          <li role="tab" aria-controls="panel-1" data-target="pane-1" id="1" class="is-active">
             <a href="" aria-current="page" class="link">
-              <span class="icon is-small"><i class="fa fa-image"></i></span>
+              <span class="icon is-small" aria-hidden="true"><i class="fa fa-image"></i></span>
               <span>Pictures</span>
             </a>
           </li>
-          <li data-target="pane-3" id="3">
+          <li role="tab" aria-controls="panel-3" data-target="pane-3" id="3" >
             <a href="" aria-current="page" class="link">
-              <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
+              <span class="icon is-small" aria-hidden="true"><i class="fab fa-superpowers"></i></span>
               <span>Team</span>
             </a>
           </li>
-          <li data-target="pane-4" id="4">
+          <li role="tab" aria-controls="panel-4" data-target="pane-4" id="4" >
             <a href="" aria-current="page" class="link">
-              <span class="icon is-small"><i class="fa fa-film"></i></span>
+              <span class="icon is-small" aria-hidden="true"><i class="fa fa-film"></i></span>
               <span>Video</span>
             </a>
           </li>
@@ -298,8 +298,8 @@
       </nav>
     </section>
 
-    <section class="tab-content container">
-      <div class="tab-pane is-active" id="pane-1" class="level">
+    <section class="tab-content container" aria-labelledby="tabsTitle" aria-describedby="tabsSubtitle">
+      <div id="pane-1" class="tab-pane is-active" class="level" role="tabpanel" aria-labelledby="tab-1">
         <div class="container">
           <div class="columns features">
             <div class="column is-4">
@@ -355,7 +355,7 @@
         </div>
       </div>
 
-      <div class="tab-pane" id="pane-3">
+      <div id="pane-3" class="tab-pane" role="tabpanel" aria-labelledby="tab-3">
         <div class="columns medias">
           <div class="column">
             <div class="media">
@@ -416,7 +416,7 @@
         </div>
       </div>
 
-      <div class="tab-pane" id="pane-4">
+      <div id="pane-4" class="tab-pane" role="tabpanel" aria-labelledby="tab-4">
         <div class="columns is-centered">
           <div class="column is-three-quarters">
             <div class="title has-text-centered">Inspired video</div>
@@ -428,11 +428,11 @@
       </div>
     </section>
 
-    <section class="section has-background-grey-lighter" id="events">
+    <section class="section has-background-grey-lighter" id="events" aria-labelledby="eventsTitle" aria-describedby="eventsSubtitle">
       <div class="container has-text-centered">
           <div class="section-heading has-text-centered">
-            <h2 class="title is-2">Upcoming events</h2>
-            <h5 class="subtitle is-5">Outcoming dates for the best options</h5>
+            <h2 class="title is-2" id="eventsTitle">Upcoming events</h2>
+            <h5 class="subtitle is-5" id="eventsSubtitle">Outcoming dates for the best options</h5>
           </div>
 
         <div class="tile is-ancestor">
@@ -503,15 +503,15 @@
       </div>
     </section>
 
-    <section class="section" id="services">
+    <section class="section" id="services" aria-labelledby="servicesTitle" aria-describedby="servicesSubtitle" aria-flowto="service1 service3 service2 service4">
       <div class="section-heading has-text-centered">
-        <h2 class="title is-2">Services</h2>
-        <h5 class="subtitle is-5">What can I do for you?</h5>
+        <h2 class="title is-2" id="servicesTitle">Services</h2>
+        <h5 class="subtitle is-5" id="servicesSubtitle">What can I do for you?</h5>
       </div>
       <div class="container">
         <div class="columns">
           <div class="column">
-            <a href="#" aria-current="page" class="link box">
+            <a href="#" aria-current="page" class="link box" id="service1">
               <div class="content">
                 <h5 class="title is-5">Front End Web Development</h5>
                 Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
@@ -520,7 +520,7 @@
             </a>
           </div>
           <div class="column">
-            <a href="#" aria-current="page" class="link box">
+            <a href="#" aria-current="page" class="link box" id="service2">
               <div class="content">
                 <h5 class="title is-5">Back End Web Development</h5>
                 Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
@@ -531,7 +531,7 @@
 
         <div class="columns">
           <div class="column">
-            <a href="#" aria-current="page" class="link box">
+            <a href="#" aria-current="page" class="link box" id="service3">
               <div class="content">
                 <h5 class="title is-5">Front End Web Development</h5>
                 Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
@@ -540,7 +540,7 @@
             </a>
           </div>
           <div class="column">
-            <a href="#" aria-current="page" class="link box">
+            <a href="#" aria-current="page" class="link box" id="service4">
               <div class="content">
                 <h5 class="title is-5">Back End Web Development</h5>
                 Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
@@ -551,10 +551,10 @@
       </div>
     </section>
 
-    <section class="section has-background-grey-lighter" id="photos">
+    <section class="section has-background-grey-lighter" id="photos" aria-labelledby="photosTitle">
       <div class="container">
         <div class="section-heading has-text-centered">
-          <h2 class="title is-2">Photos from past events</h2>
+          <h2 class="title is-2" id="photosTitle">Photos from past events</h2>
         </div>
 
         <div class="container portfolio-container">
@@ -740,32 +740,32 @@
       </div>
       </section>
 
-    <section class="section" id="forum">
+    <section class="section" id="forum" aria-labelledby="forumTitle" aria-describedby="forumSubtitle">
       <div class="container">
         <div class="section-heading has-text-centered">
-          <h2 class="title is-2">Forum</h2>
-          <h5 class="subtitle is-5">Discuss any topic with no leaving this page</h5>
+          <h2 class="title is-2" id="forumTitle">Forum</h2>
+          <h5 class="subtitle is-5" id="forumSubtitle">Discuss any topic with no leaving this page</h5>
         </div>
 
         <div class="columns">
-          <div class="column is-3">
+          <div class="column is-3" >
             <button class="button is-primary is-block is-alt is-large">New Post</button>
-            <div class="menu">
-              <ul class="menu-list forum-list">
-                <li><a href="#" aria-current="page" class="link tag is-primary is-medium">Dashboard</a></li>
-                <li><a href="#" aria-current="page" class="link tag is-link is-medium">Customers</a></li>
-                <li><a href="#" aria-current="page" class="link tag is-light is-danger is-medium">Authentication</a></li>
-                <li><a href="#" aria-current="page" class="link tag is-dark is-medium">Payments</a></li>
-                <li><a href="#" aria-current="page" class="link tag is-success is-medium">Transfers</a></li>
-                <li><a href="#" aria-current="page" class="link tag is-warning is-medium">Balance</a></li>
-                <li><a href="#" aria-current="page" class="link tag is-medium ">Question</a></li>
+            <nav class="menu" role="navigation">
+              <ul class="menu-list forum-list" role="menu">
+                <li><a href="#" role="menuitem" aria-current="page" class="link tag is-primary is-medium">Dashboard</a></li>
+                <li><a href="#" role="menuitem" aria-current="page" class="link tag is-link is-medium">Customers</a></li>
+                <li><a href="#" role="menuitem" aria-current="page" class="link tag is-light is-danger is-medium">Authentication</a></li>
+                <li><a href="#" role="menuitem" aria-current="page" class="link tag is-dark is-medium">Payments</a></li>
+                <li><a href="#" role="menuitem" aria-current="page" class="link tag is-success is-medium">Transfers</a></li>
+                <li><a href="#" role="menuitem" aria-current="page" class="link tag is-warning is-medium">Balance</a></li>
+                <li><a href="#" role="menuitem" aria-current="page" class="link tag is-medium ">Question</a></li>
               </ul>
-            </div>
+            </nav>
           </div>
           <div class="column is-9">
             <div class="box content">
               <div class="post">
-                <h4>How do you center a button in a box?</h4>
+                <h4 role="mark">How do you center a button in a box?</h4>
                 <div class="media">
                   <div class="media-left">
                     <p class="image is-32x32">
@@ -774,7 +774,7 @@
                   </div>
                   <div class="media-content">
                     <div class="content">
-                      <p>
+                      <p role="comment" data-author="jsmith">
                         <a href="#" aria-current="page" class="link">@jsmith</a> replied 34 minutes ago &nbsp;
                         <a href="#" aria-current="page" class="link">
                           <span class="tag">Question</span>
@@ -783,13 +783,14 @@
                     </div>
                   </div>
                   <div class="media-right">
-                    <span class="has-text-grey-light"><i class="fa fa-comments"></i> 1</span>
+                    <span class="has-text-grey-light"><i class="fa fa-comments" aria-hidden="true"></i> 1</span>
+                    <span class="visually-hidden">Comments</span>
                   </div>
                 </div>
               </div>
 
               <div class="post">
-                <h4>How can I make a button go full width?</h4>
+                <h4 role="mark">How can I make a button go full width?</h4>
                 <div class="media">
                   <div class="media-left">
                     <p class="image is-32x32">
@@ -798,7 +799,7 @@
                   </div>
                   <div class="media-content">
                     <div class="content">
-                      <p>
+                      <p role="comment" data-author="red">
                         <a href="#" aria-current="page" class="link">@red</a> replied 40 minutes ago &nbsp;
                         <a href="#" aria-current="page" class="link">
                           <span class="tag">Question</span>
@@ -807,13 +808,14 @@
                     </div>
                   </div>
                   <div class="media-right">
-                    <span class="has-text-grey-light"><i class="fa fa-comments"></i> 0</span>
+                    <span class="has-text-grey-light"><i class="fa fa-comments" aria-hidden="true"></i> 0</span>
+                    <span class="visually-hidden">Comments</span>
                   </div>
                 </div>
               </div>
 
               <div class="post">
-                <h4>TypeError: Data must be a string or a buffer when trying touse tabs</h4>
+                <h4 role="mark">TypeError: Data must be a string or a buffer when trying touse tabs</h4>
                 <div class="media">
                   <div class="media-left">
                     <p class="image is-32x32">
@@ -822,7 +824,7 @@
                   </div>
                   <div class="media-content">
                     <div class="content">
-                      <p>
+                      <p role="comment" data-author="jsmith">
                         <a href="#" aria-current="page" class="link">@jsmith</a> replied 53 minutes ago &nbsp;
                         <a href="#" aria-current="page" class="link">
                           <span class="tag">Question</span>
@@ -831,13 +833,14 @@
                     </div>
                   </div>
                   <div class="media-right">
-                    <span class="has-text-grey-light"><i class="fa fa-comments"></i> 13</span>
+                    <span class="has-text-grey-light"><i class="fa fa-comments" aria-hidden="true"></i> 13</span>
+                    <span class="visually-hidden">Comments</span>
                   </div>
                 </div>
               </div>
 
               <div class="post">
-                <h4>How to vertically center elements?</h4>
+                <h4 role="mark">How to vertically center elements?</h4>
                 <div class="media">
                   <div class="media-left">
                     <p class="image is-32x32">
@@ -846,7 +849,7 @@
                   </div>
                   <div class="media-content">
                     <div class="content">
-                      <p>
+                      <p role="comment" data-author="brown">
                         <a href="#" aria-current="page" class="link">@brown</a> replied 3 hours ago &nbsp;
                         <a href="#" aria-current="page" class="link">
                           <span class="tag">Question</span>
@@ -855,13 +858,14 @@
                     </div>
                   </div>
                   <div class="media-right">
-                    <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                    <span class="has-text-grey-light"><i class="fa fa-comments" aria-hidden="true"></i> 2</span>
+                    <span class="visually-hidden">Comments</span>
                   </div>
                 </div>
               </div>
 
               <div class="post">
-                <h4>I'm trying to use hamburger menu on css, but it doesn't work. What is wrong?</h4>
+                <h4 role="mark">I'm trying to use hamburger menu on css, but it doesn't work. What is wrong?</h4>
                 <div class="media">
                   <div class="media-left">
                     <p class="image is-32x32">
@@ -870,7 +874,7 @@
                   </div>
                   <div class="media-content">
                     <div class="content">
-                      <p>
+                      <p role="comment" data-author="hamburgler">
                         <a href="#" aria-current="page" class="link">@hamburgler</a> replied 5 hours ago &nbsp;
                         <a href="#" aria-current="page" class="link">
                           <span class="tag">Question</span>
@@ -879,13 +883,14 @@
                     </div>
                   </div>
                   <div class="media-right">
-                    <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                    <span class="has-text-grey-light"><i class="fa fa-comments" aria-hidden="true"></i> 2</span>
+                    <span class="visually-hidden">Comments</span>
                   </div>
                 </div>
               </div>
 
               <div class="post">
-                <h4>How to make tiles wrap with CSS?</h4>
+                <h4 role="mark">How to make tiles wrap with CSS?</h4>
                 <div class="media">
                   <div class="media-left">
                     <p class="image is-32x32">
@@ -894,7 +899,7 @@
                   </div>
                   <div class="media-content">
                     <div class="content">
-                      <p>
+                      <p role="comment" data-author="rapper">
                         <a href="#" aria-current="page" class="link">@rapper</a> replied 3 hours ago &nbsp;
                         <a href="#" aria-current="page" class="link">
                           <span class="tag">Question</span>
@@ -913,11 +918,11 @@
       </div>
     </section>
 
-    <section class="section has-background-light" id="contactUs">
+    <section class="section has-background-light" id="contactUs" aria-labelledby="contactUsTitle" aria-describedby="contactUsSubtitle">
       <div class="container">
         <div class="section-heading has-text-centered">
-          <h2 class="title is-2">Contact us</h2>
-          <h5 class="subtitle is-5">Don't hesitate, ask anything</h5>
+          <h2 class="title is-2" id="contactUsTitle">Contact us</h2>
+          <h5 class="subtitle is-5" id="contactUsSubtitle">Don't hesitate, ask anything</h5>
         </div>
 
         <form class="column is-half is-offset-one-quarter box">
@@ -931,11 +936,11 @@
           <div class="field">
             <label class="label" for="usernameInput">Username</label>
             <div class="control has-icons-left has-icons-right">
-              <input class="input is-success" type="text" id="usernameInput">
-              <span class="icon is-small is-left">
+              <input class="input is-success" type="text" id="usernameInput" aria-invalid="false">
+              <span class="icon is-small is-left" aria-hidden="true">
                 <i class="fas fa-user"></i>
               </span>
-              <span class="icon is-small is-right">
+              <span class="icon is-small is-right" aria-hidden="true">
                 <i class="fas fa-check"></i>
               </span>
             </div>
@@ -945,11 +950,11 @@
           <div class="field">
             <label class="label" for="emailInput">Email</label>
             <div class="control has-icons-left has-icons-right">
-              <input class="input is-danger" type="email" placeholder="Email input" value="hello@" id="emailInput">
-              <span class="icon is-small is-left">
+              <input class="input is-danger" type="email" placeholder="Email input" value="hello@" id="emailInput" aria-invalid="true">
+              <span class="icon is-small is-left" aria-hidden="true">
                 <i class="fas fa-envelope"></i>
               </span>
-              <span class="icon is-small is-right">
+              <span class="icon is-small is-right" aria-hidden="true">
                 <i class="fas fa-exclamation-triangle"></i>
               </span>
             </div>
@@ -957,10 +962,10 @@
           </div>
 
           <div class="field">
-            <label class="label">Subject</label>
+            <label class="label" for="formSelection">Subject</label>
             <div class="control">
               <div class="select">
-                <select>
+                <select id="formSelection">
                   <option>Select dropdown</option>
                   <option>With options</option>
                 </select>
@@ -978,13 +983,13 @@
           <div class="field">
             <div class="control">
               <label class="checkbox">
-                <input type="checkbox">
+                <input type="checkbox" aria-checked="false">
                 I agree to the <a href="#" aria-current="page" class="link">terms and conditions</a>
               </label>
             </div>
           </div>
 
-          <div class="field">
+          <div class="field" aria-label="Answer the question">
             <div class="control">
               <label class="radio">
                 <input type="radio" name="question">
@@ -1119,7 +1124,7 @@
     </div> -->
   </main>
 
-  <div class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="columns">
         <div class="column is-3 is-offset-2">
@@ -1195,9 +1200,9 @@
         <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php" target="_blank" class="link">MIT</a><sup><i class="fas fa-external-link-alt"></i></sup>.</p>
       </div>
     </div>
-  </div>
+  </footer>
 
-  <div id="modal-card" class="modal modal-fx-3dSlit">
+  <div id="modal-card" class="modal modal-fx-3dSlit" role="dialog">
     <div class="modal-background"></div>
     <div class="modal-content is-tiny">
       <div class="card">
@@ -1218,7 +1223,7 @@
               <h6 class="subtitle is-6">@jane_doe</h6>
             </div>
           </div>
-          <div class="content">
+          <div class="content" role="document">
             Laum Ipsum junkah potatoes bookin' it. Moosetown rig up I'm tellin' you way up north bookin' it can't get theyah from heeyah native bean suppah whawf Powrtland Museum of Aht, back woods hawsun around the pit mummah Yessah, mummah muckle riyht on'ta her
             Bean's dinnahbucket bub geez bud sumpin' fierce ayuhpawt Bangah naw, Powrtland Museum of Aht down cellah sumpin' fierce hoppa bub If you can't stand the wintah you don't deserve the summah slower than molasses going uphill in January.
             Sgn'wahl shoggor hrii uaaah R'lyeh uh'e k'yarnak Hastur hupadgh li'hee, hai f'nilgh'ri nilgh'ri n'ghftor ngftaghu vulgtlagln h'hrii throd Nyarlathotep lloig, naflsll'ha nnnsll'ha athg y-ebunma goka chtenff ehyeog cehye. Zhro y'hah
@@ -1235,7 +1240,7 @@
     <button class="modal-close is-large"><span class="visually-hidden">Close button</span></button>
   </div>
 
-  <div id="modal-image1" class="modal modal-fx-3dSlit">
+  <div id="modal-image1" class="modal modal-fx-3dSlit" role="dialog">
     <div class="modal-background"></div>
     <div class="modal-content is-huge is-image">
       <img src="https://source.unsplash.com/random/?sig=1" alt="">
@@ -1243,7 +1248,7 @@
     <button class="modal-close is-large"><span class="visually-hidden">Close button</span></button>
   </div>
 
-  <div id="modal-image2" class="modal modal-fx-superScaled">
+  <div id="modal-image2" class="modal modal-fx-superScaled" role="dialog">
     <div class="modal-background"></div>
     <div class="modal-content  is-image">
       <img src="https://source.unsplash.com/random/?sig=3" alt="">
