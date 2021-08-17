@@ -13,16 +13,16 @@
 <body>
   <header class="hero hero-bg is-fullheight">
     <div class="skip-container">
-      <button class="button skip-button" id="skipLink">Skip to:</button>
-      <nav class="skip-navigation" id="skipButtonMenu">
-        <ul>
-          <li><a href="#about" class="link" aria-current="page">About us</a></li>
-          <li><a href="#features" class="link" aria-current="page">Key features</a></li>
-          <li><a href="#events" class="link" aria-current="page">Upcoming events</a></li>
-          <li><a href="#services" class="link" aria-current="page">Services</a></li>
-          <li><a href="#photos" class="link" aria-current="page">Photos</a></li>
-          <li><a href="#forum" class="link" aria-current="page">Forum</a></li>
-          <li><a href="#contactUs" class="link" aria-current="page">Contact us</a></li>
+      <button class="button skip-button" id="skipLink" aria-haspopup="true" aria-expanded="false">Skip to:</button>
+      <nav class="skip-navigation" id="skipButtonMenu" role="navigation">
+        <ul role="menu" aria-labelledby="skipLink">
+          <li role="none"><a href="#about" class="link" aria-current="page" role="menuitem">About us</a></li>
+          <li role="none"><a href="#features" class="link" aria-current="page" role="menuitem">Key features</a></li>
+          <li role="none"><a href="#events" class="link" aria-current="page" role="menuitem">Upcoming events</a></li>
+          <li role="none"><a href="#services" class="link" aria-current="page" role="menuitem">Services</a></li>
+          <li role="none"><a href="#photos" class="link" aria-current="page" role="menuitem">Photos</a></li>
+          <li role="none"><a href="#forum" class="link" aria-current="page" role="menuitem">Forum</a></li>
+          <li role="none"><a href="#contactUs" class="link" aria-current="page" role="menuitem">Contact us</a></li>
         </ul>
       </nav>
     </div>
