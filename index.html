@@ -275,20 +275,20 @@
         </div>
       </div>
       <nav class="tabs is-boxed is-centered main-menu" id="nav" role="navigation">
-        <ul>
-          <li data-target="pane-1" id="1" class="is-active">
+        <ul role="tablist">
+          <li data-target="pane-1" id="1" class="is-active" role="tab" aria-controls="panel-1">
             <a href="" aria-current="page" class="link">
               <span class="icon is-small"><i class="fa fa-image"></i></span>
               <span>Pictures</span>
             </a>
           </li>
-          <li data-target="pane-3" id="3">
+          <li data-target="pane-3" id="3" role="tab" aria-controls="panel-3">
             <a href="" aria-current="page" class="link">
               <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
               <span>Team</span>
             </a>
           </li>
-          <li data-target="pane-4" id="4">
+          <li data-target="pane-4" id="4" role="tab" aria-controls="panel-4">
             <a href="" aria-current="page" class="link">
               <span class="icon is-small"><i class="fa fa-film"></i></span>
               <span>Video</span>
@@ -299,7 +299,7 @@
     </section>
 
     <section class="tab-content container">
-      <div class="tab-pane is-active" id="pane-1" class="level">
+      <div class="tab-pane is-active" id="pane-1" class="level" role="tabpanel" aria-labelledby="tab-1">
         <div class="container">
           <div class="columns features">
             <div class="column is-4">
@@ -355,7 +355,7 @@
         </div>
       </div>
 
-      <div class="tab-pane" id="pane-3">
+      <div class="tab-pane" id="pane-3" role="tabpanel" aria-labelledby="tab-3">
         <div class="columns medias">
           <div class="column">
             <div class="media">
@@ -416,7 +416,7 @@
         </div>
       </div>
 
-      <div class="tab-pane" id="pane-4">
+      <div class="tab-pane" id="pane-4" role="tabpanel" aria-labelledby="tab-4">
         <div class="columns is-centered">
           <div class="column is-three-quarters">
             <div class="title has-text-centered">Inspired video</div>
