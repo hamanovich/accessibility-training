@@ -21,24 +21,22 @@ function switchTab(event) {
     const prevTab = tabList.querySelector(".is-active");
     prevTab.classList.remove("is-active");
     prevTab.ariaSelected = false;
-    prevTab.tabIndex = -1;
     tab.classList.add("is-active");
     tab.ariaSelected = true;
-    prevTab.tabIndex = 0;
     tabPanels.forEach((panel) => {
       if (panel.classList.contains("is-active")) {
         panel.classList.remove("is-active");
-        panel.tabIndex = -1;
       }
       if (
         panel.id ===
         tab.attributes.getNamedItem("aria-controls").value
       ) {
         panel.classList.add("is-active");
-        panel.tabIndex = 0;
       }
     });
   }
 }
 
 tabs.forEach((tab) => tab.addEventListener("click", switchTab));
+
+
