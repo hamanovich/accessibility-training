@@ -1,38 +1,42 @@
-(function() {
-  var burger = document.querySelector(".burger");
-  var menu = document.querySelector("#" + burger.dataset.target);
-  burger.addEventListener("click", function() {
+(function () {
+  const burger = document.querySelector(".burger");
+  const menu = document.querySelector("#" + burger.dataset.target);
+  burger.addEventListener("click", function () {
     burger.classList.toggle("is-active");
     menu.classList.toggle("is-active");
   });
 })();
 
-document.querySelectorAll("#nav li").forEach(function(navEl) {
-  navEl.onclick = function() {
-    toggleTab(this.id, this.dataset.target);
-  };
-});
+const live = document.getElementById("live");
 
-function toggleTab(selectedNav, targetId) {
-  var navEls = document.querySelectorAll("#nav li");
+setInterval(() => live.innerText = "Current number: " + Math.floor(Math.random() * 100), 10000)
 
-  navEls.forEach(function(navEl) {
-    if (navEl.id == selectedNav) {
-      navEl.classList.add("is-active");
-    } else {
-      if (navEl.classList.contains("is-active")) {
-        navEl.classList.remove("is-active");
+const tabList = document.querySelector("[role=tablist]");
+const tabs = document.querySelectorAll("[role=tab]");
+const tabPanels = document.querySelectorAll("[role=tabpanel]");
+
+function switchTab(event) {
+  const tab = event.currentTarget;
+  if (!tab.classList.contains("is-active")) {
+    const prevTab = tabList.querySelector(".is-active");
+    prevTab.classList.remove("is-active");
+    prevTab.ariaSelected = false;
+    tab.classList.add("is-active");
+    tab.ariaSelected = true;
+    tabPanels.forEach((panel) => {
+      if (panel.classList.contains("is-active")) {
+        panel.classList.remove("is-active");
       }
-    }
-  });
-
-  var tabs = document.querySelectorAll(".tab-pane");
-
-  tabs.forEach(function(tab) {
-    if (tab.id == targetId) {
-      tab.style.display = "block";
-    } else {
-      tab.style.display = "none";
-    }
-  });
+      if (
+        panel.id ===
+        tab.attributes.getNamedItem("aria-controls").value
+      ) {
+        panel.classList.add("is-active");
+      }
+    });
+  }
 }
+
+tabs.forEach((tab) => tab.addEventListener("click", switchTab));
+
+
