@@ -11,10 +11,10 @@
 .tab-content {
   padding: 2rem;
 }
-.tab-pane {
+.tab-panel {
   display: none;
 }
-.tab-pane.is-active {
+.tab-panel.is-active {
   display: block;
   position: relative;
 }
@@ -313,4 +313,28 @@ textarea:focus {
   border: none;
   padding: 10px;
   border-radius: 0;
+}
+
+.tabs .tab-button {
+  align-items: center;
+  color: #4a4a4a;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1px;
+  padding: .5em 1em;
+  vertical-align: top;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  color: #fff;
+  opacity: .9;
+  font-size: 1rem;
+  background-color: #209cee;
+  cursor: pointer;
+}
+
+.tabs .tab-button.is-active {
+  background-color: #fff;
+  border-color: #fff;
+  color: #209cee;
+  opacity: 1;
 }

@@ -274,32 +274,30 @@
           <div class="subtitle" id="topicsSubtitle">We are always in touch we the outside world</div>
         </div>
       </div>
-      <nav class="tabs is-boxed is-centered main-menu" id="nav" role="navigation">
+      <div class="tabs is-boxed is-centered main-menu" id="nav" role="tablist" aria-label="List of topics">
         <ul role="tablist" aria-activedescendant="tab-1">
-          <li role="tab" aria-controls="panel-1" data-target="pane-1" id="tab-1" class="is-active">
-            <a href="" aria-current="page" class="link">
-              <span class="icon is-small" aria-hidden="true"><i class="fa fa-image"></i></span>
-              <span>Pictures</span>
-            </a>
-          </li>
-          <li role="tab" aria-controls="panel-3" data-target="pane-3" id="tab-3" >
-            <a href="" aria-current="page" class="link">
-              <span class="icon is-small" aria-hidden="true"><i class="fab fa-superpowers"></i></span>
-              <span>Team</span>
-            </a>
-          </li>
-          <li role="tab" aria-controls="panel-4" data-target="pane-4" id="tab-4" >
-            <a href="" aria-current="page" class="link">
-              <span class="icon is-small" aria-hidden="true"><i class="fa fa-film"></i></span>
-              <span>Video</span>
-            </a>
-          </li>
+          <button role="tab" aria-controls="panel-1" data-target="panel-1" id="tab-1" class="tab-button is-active">
+            <span class="icon is-small" aria-hidden="true"><i class="fa fa-image"></i></span>
+            <span>Pictures</span>
+          </button>
+          <button role="tab" tabindex="-1" aria-controls="panel-2" data-target="panel-2" id="tab-2" class="tab-button">
+            <span class="icon is-small" aria-hidden="true"><i class="fab fa-empire"></i></span>
+            <span>Article</span>
+          </button>
+          <button role="tab" tabindex="-1" aria-controls="panel-3" data-target="panel-3" id="tab-3" class="tab-button">
+            <span class="icon is-small" aria-hidden="true"><i class="fab fa-superpowers"></i></span>
+            <span>Team</span>
+          </button>
+          <button role="tab" tabindex="-1" aria-controls="panel-4" data-target="panel-4" id="tab-4" class="tab-button">
+            <span class="icon is-small" aria-hidden="true"><i class="fa fa-film"></i></span>
+            <span>Video</span>
+          </button>
         </ul>
-      </nav>
+      </div>
     </section>
 
     <section class="tab-content container" aria-label="Tabs content">
-      <div id="pane-1" class="tab-pane is-active" class="level" role="tabpanel" aria-labelledby="tab-1">
+      <div id="panel-1" class="tab-panel is-active link" role="tabpanel" aria-labelledby="tab-1">
         <div class="container">
           <div class="columns features">
             <div class="column is-4">
@@ -355,7 +353,45 @@
         </div>
       </div>
 
-      <div id="pane-3" class="tab-pane" role="tabpanel" aria-labelledby="tab-3">
+      <div id="panel-2" class="tab-panel" role="tabpanel" aria-labelledby="tab-2">
+        <div class="container">
+          <div class="columns features">
+            <div class="column is-4">
+              <div class="card">
+                <div class="card-content">
+                  <div class="content">
+                    <div>Article 1</div>
+                    <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-4">
+              <div class="card">
+                <div class="card-content">
+                  <div class="content">
+                    <div>Article 2</div>
+                    <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
+                      sed risus.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-4 modal-button" data-target="modal-image">
+              <div class="card">
+                <div class="card-content">
+                  <div class="content">
+                    <div>Article 3</div>
+                    <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="panel-3" class="tab-panel" role="tabpanel" aria-labelledby="tab-3">
         <div class="columns medias">
           <div class="column">
             <div class="media">
@@ -416,7 +452,7 @@
         </div>
       </div>
 
-      <div id="pane-4" class="tab-pane" role="tabpanel" aria-labelledby="tab-4">
+      <div id="panel-4" class="tab-panel" role="tabpanel" aria-labelledby="tab-4">
         <div class="columns is-centered">
           <div class="column is-three-quarters">
             <div class="title has-text-centered">Inspired video</div>
