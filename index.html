@@ -52,7 +52,7 @@
         </div>
 
         <nav class="navbar-menu" id="navbarMenu">
-          <ul class="navbar-end">
+          <ul role="menubar" class="navbar-end">
             <li class="navbar-item">
               <a class="has-text-white" href="/">
                   <span class="icon">
@@ -62,12 +62,32 @@
               </a>
             </li>
             <li class="navbar-item">
-              <a class="has-text-white" href="/">
-                  <span class="icon">
-                    <i aria-hidden="true" class="fab fa-superpowers"></i>
-                  </span>
-                <span>Examples</span>
-              </a>
+              <div class="dropdown" id="admin-dropdown">
+                <div class="dropdown-trigger">
+                  <a
+                    role="menuitem"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    href="#"
+                    id="admin-button"
+                  >
+                    <span class="icon"><i aria-hidden="true" class="fab fa-superpowers"></i></span>
+                    <span>Administration</span>
+                    <span class="icon"><i aria-hidden="true" class="fas fa-chevron-down"></i></span>
+                  </a>
+                </div>
+                <div class="dropdown-menu">
+                  <ol aria-label="skip to" class="dropdown-content" id="admin-menu" role="menu">
+                    <li ><a role="menuitem" class="dropdown-item" href="/" tabindex="-1">Administration</a></li>
+                    <li><a role="menuitem" class="dropdown-item" href="/" tabindex="-1">Team Settings</a></li>
+                    <li><a role="menuitem" class="dropdown-item" href="/" tabindex="-1">Manage Your Team</a></li>
+                    <li><a role="menuitem" class="dropdown-item" href="/" tabindex="-1">Invitations</a></li>
+                    <li class="dropdown-divider" role="separator"></li>
+                    <li><a role="menuitem" class="dropdown-item" href="/" tabindex="-1">Authentication</a></li>
+                  </ol>
+                </div>
+              </div>
+
             </li>
             <li class="navbar-item">
               <a class="has-text-white" href="/">
@@ -333,11 +353,11 @@
         <span class="icon is-small"><i aria-hidden="true" class="fa fa-image"></i></span>
         <span>Pictures</span>
       </button>
-      <button tabindex="-1" aria-controls="pane-2" aria-selected="false" class="tab" role="tab" type="button">
+      <button aria-controls="pane-2" aria-selected="false" class="tab" role="tab" tabindex="-1" type="button">
         <span class="icon is-small"><i aria-hidden="true" class="fab fa-superpowers"></i></span>
         <span>Team</span>
       </button>
-      <button tabindex="-1" aria-controls="pane-3" aria-selected="false" class="tab" role="tab" type="button">
+      <button aria-controls="pane-3" aria-selected="false" class="tab" role="tab" tabindex="-1" type="button">
         <span class="icon is-small"><i aria-hidden="true" class="fa fa-film"></i></span>
         <span>Video</span>
       </button>
@@ -393,7 +413,8 @@
               </div>
             </div>
           </div>
-          <div aria-label="click anywhere on card. opens dialog" class="column is-4" id="modal-image2-clickable" role="button" tabindex="0">
+          <div aria-label="click anywhere on card. opens dialog" class="column is-4" id="modal-image2-clickable"
+               role="button" tabindex="0">
             <div class="card">
               <div class="card-image">
                 <div class="image is-4by3">
@@ -1182,6 +1203,7 @@
 <script async src="js/custom.js"></script>
 <script async src="js/extended-skip-navigation.js"></script>
 <script async src="js/modal.js"></script>
+<script async src="js/nav-menu.js"></script>
 </body>
 
 </html>
