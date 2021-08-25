@@ -333,11 +333,11 @@
         <span class="icon is-small"><i aria-hidden="true" class="fa fa-image"></i></span>
         <span>Pictures</span>
       </button>
-      <button aria-controls="pane-2" aria-selected="false" class="tab" role="tab" type="button">
+      <button tabindex="-1" aria-controls="pane-2" aria-selected="false" class="tab" role="tab" type="button">
         <span class="icon is-small"><i aria-hidden="true" class="fab fa-superpowers"></i></span>
         <span>Team</span>
       </button>
-      <button aria-controls="pane-3" aria-selected="false" class="tab" role="tab" type="button">
+      <button tabindex="-1" aria-controls="pane-3" aria-selected="false" class="tab" role="tab" type="button">
         <span class="icon is-small"><i aria-hidden="true" class="fa fa-film"></i></span>
         <span>Video</span>
       </button>
@@ -393,7 +393,7 @@
               </div>
             </div>
           </div>
-          <div class="column is-4" id="modal-image2-clickable" role="button" tabindex="0">
+          <div aria-label="click anywhere on card. opens dialog" class="column is-4" id="modal-image2-clickable" role="button" tabindex="0">
             <div class="card">
               <div class="card-image">
                 <div class="image is-4by3">
@@ -407,8 +407,8 @@
                   <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque
                     dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan
                     lacus vel facilisis.</p>
-                  <button class="button is-link" id="modal-image2-button">Image
-                    modal <span class="visually-hidden">. opens dialog</span></button>
+                  <div class="button is-link" id="modal-image2-button">Image
+                    modal <span class="visually-hidden">. opens dialog</span></div>
                 </div>
               </div>
             </div>

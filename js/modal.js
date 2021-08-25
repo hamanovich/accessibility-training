@@ -7,7 +7,6 @@ const modalImageOneButton = document.getElementById("modal-image1-button");
 const modalImageOneClickable = document.getElementById(
   "modal-image1-clickable"
 );
-const modalImageTwoButton = document.getElementById("modal-image2-button");
 const modalImageTwoClickable = document.getElementById(
   "modal-image2-clickable"
 );
@@ -28,7 +27,6 @@ modalImageOneButton.addEventListener("click", () => openModal(modalImageOne));
 modalImageOneClickable.addEventListener("click", () =>
   openModal(modalImageOne)
 );
-modalImageTwoButton.addEventListener("click", () => openModal(modalImageTwo));
 modalImageTwoClickable.addEventListener("click", () =>
   openModal(modalImageTwo)
 );
