@@ -12,20 +12,24 @@
 </head>
 
 <body>
-  <div id="skipToMenu" title="Skip To Keyboard Navigation" class="dropMenu">
-  <a accesskey="0" tabindex="0" data-wrap="false" class="dropMenu-toggle skipTo onFocus" id="drop4" aria-haspopup="true" aria-expanded="false" data-toggle="dropMenu" href="#" data-target="menu1">
-    "Skip To..."
-    <b class="caret"></b>
-  </a>
-    <ul id="menu1" class="dropMenu-menu" role="menu" aria-label="Skip To and Page Outline" style="top: 3%; text-align: left">
-      <li role="separator" style="list-style:none outside none">
-        Skip To
-      </li>
-      <li role="presentation" style="list-style:none outside none">
-        <a tabindex="-1" role="menuitem" href="#ui-skip-32">Main</a>
-      </li>
-    </ul>
-  </div>
+<ul class="skip-links">
+  <li>
+    <a href="#navbarMenu">Skip to Navigation</a>
+  </li>
+  <li>
+    <a href="#main">Skip to the main content</a>
+  </li>
+  <li>
+    <a href="#web-accessibility">Skip to "We have web accessibility in mind"</a>
+  </li>
+  <li>
+    <a href="#hello-world">Skip to "Hello World"</a>
+  </li>
+  <li>
+    <a href="#list-of-topics">Skip to "List of topics"</a>
+  </li>
+</ul>
+
   <div class="hero hero-bg is-fullheight">
     <div class="hero-head">
       <div class="navbar">
@@ -41,7 +45,7 @@
             </span>
           </div>
 
-          <div role="navigation" id="navbarMenu" class="navbar-menu">
+          <nav role="navigation" id="navbarMenu" class="navbar-menu">
             <div class="navbar-end">
               <span class="navbar-item">
                 <a class="button is-white is-outlined" href="#">
@@ -76,15 +80,15 @@
                 </a>
               </span>
             </div>
-          </div>
+          </nav>
         </div>
       </div>
     </div>
 
-    <div role="main" id="ui-skip-32" class="hero-body">
+    <main role="main" id="main" class="hero-body">
       <div class="container has-text-centered">
         <div class="column is-6 is-offset-3">
-          <h1 class="title has-text-white">We have web accessibility in mind</h1>
+          <h1 id="web-accessibility" class="title has-text-white">We have web accessibility in mind</h1>
           <label for="email-notification" class="subtitle has-text-white">
             Would you like to get the latest news?
           </label>
@@ -100,7 +104,7 @@
           </form>
         </div>
       </div>
-    </div>
+    </main>
   </div>
 
   <div role="contentinfo" class="section" id="about">
@@ -118,7 +122,7 @@
     </div>
 
     <div class="content container">
-      <h1 class="is-1 title">Hello World</h1>
+      <h1 id="hello-world" class="is-1 title">Hello World</h1>
       <p>Lorem ipsum<sup><a href="#">[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
       <div class="is-2 title">Second level</div>
       <p>Curabitur accumsan turpis pharetra <b>augue tincidunt</b> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
@@ -268,7 +272,7 @@
   <div role="list" class="hero is-info">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title">List of topics</h1>
+        <h1 id="list-of-topics" class="title">List of topics</h1>
         <div class="subtitle">We are always in touch we the outside world</div>
       </div>
     </div>
@@ -1122,10 +1126,14 @@
 
       <div class="content has-text-centered">
         <div class="soc">
-          <a href="#"><i class="fab fa-github-alt fa-2x"></i></a>
-          <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
-          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-describedby="new-window"><i class="fab fa-github-alt fa-2x"></i>
+            <span id="new-window" class="visually-hidden">, opens in a new window</span></a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-describedby="new-window"><i class="fab fa-youtube fa-2x"></i>
+            <span id="new-window" class="visually-hidden">, opens in a new window</span></a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-describedby="new-window"><i class="fab fa-facebook fa-2x"></i>
+            <span id="new-window" class="visually-hidden">, opens in a new window</span></a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" aria-describedby="new-window"><i class="fab fa-twitter fa-2x"></i>
+            <span id="new-window" class="visually-hidden">, opens in a new window</span></a>
         </div>
         <p>The source code is licensed
           <a href="http://opensource.org/licenses/mit-license.php" target="_blank" rel="noopener" aria-describedby="new-window">MIT
