@@ -8,32 +8,38 @@
 })();
 
 document.querySelectorAll("#nav li").forEach(function(navEl) {
-  navEl.onclick = function() {
+  navEl.onclick = function(e) {
+    e.preventDefault();
     toggleTab(this.id, this.dataset.target);
   };
 });
 
 function toggleTab(selectedNav, targetId) {
-  var navEls = document.querySelectorAll("#nav li");
+  const navEls = document.querySelectorAll("#nav li");
 
   navEls.forEach(function(navEl) {
-    if (navEl.id == selectedNav) {
+    if (navEl.id === selectedNav) {
       navEl.classList.add("is-active");
+      navEl.children[0].setAttribute("aria-selected", "true");
+      navEl.children[0].setAttribute("aria-hidden", "false");
     } else {
-      if (navEl.classList.contains("is-active")) {
+      if (navEl.children[0].getAttribute("aria-selected")) {
         navEl.classList.remove("is-active");
+        navEl.children[0].setAttribute("aria-selected", "false");
+        navEl.children[0].setAttribute("aria-hidden", "true");
       }
     }
   });
 
-  var tabs = document.querySelectorAll(".tab-pane");
+  const tabs = document.querySelectorAll(".tab-pane");
 
   tabs.forEach(function(tab) {
-    if (tab.id == targetId) {
+    if (tab.id === targetId) {
       tab.style.display = "block";
     } else {
       tab.style.display = "none";
     }
   });
 }
+
 //# sourceMappingURL=custom.js.map

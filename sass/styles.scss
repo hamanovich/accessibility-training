@@ -105,11 +105,21 @@ a {
 }
 .tab-pane {
   display: none;
+
+  &: [aria-hidden="false"] {
+    display:block;
+  }
+
+  &: [aria-selected="true"] {
+    background-color:red;
+  }
 }
+
 .tab-pane.is-active {
   display: block;
   position: relative;
 }
+
 .is-active {
   display: initial;
 }
