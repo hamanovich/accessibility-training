@@ -107,6 +107,10 @@
     </main>
   </div>
 
+  <div>The following text will be dynamically updated each 60 seconds:
+   <span id="live-region" role="region" aria-live="polite">0.30216649152124675</span>
+  </div>
+
   <div role="contentinfo" class="section" id="about">
     <section aria-labelledby="about-us" class="section-heading has-text-centered">
       <h2 id="about-us" class="title is-2">About Us</h2>
@@ -1200,5 +1204,11 @@
 
   <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
   <script async src="dist/custom.js"></script>
+  <script>
+    const region = document.getElementById("live-region")
+   setInterval(()=> {
+     region.innerText = String(Math.random())
+   }, 60000)
+  </script>
 </body>
 </html>
