@@ -114,7 +114,7 @@
   <div role="contentinfo" class="section" id="about">
     <section aria-labelledby="about-us" class="section-heading has-text-centered">
       <h2 id="about-us" class="title is-2">About Us</h2>
-      <h5 class="subtitle is-5">We of all trades, master of "some"</h5>
+      <h2 class="subtitle is-5">We of all trades, master of "some"</h2>
       <div class="container">
         <p>Web developers with more than <b>4 years</b> of well-rounded experience with a degree in the
           field of
@@ -136,7 +136,7 @@
         <li>- Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
         <li>- Ut non enim metus.</li>
       </ul>
-      <h3 class="is-3 title">Third level</h3>
+      <h2 class="is-3 title">Third level</h2>
       <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a href="#">non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
       <ol class="ol-list">
         <li>Donec blandit a lorem id convallis.</li>
@@ -159,7 +159,7 @@
         <dd>A technology to make HTML look better</dd>
       </dl>
       <p>Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.</p>
-      <h4 class="is-4 title">Fourth level</h4>
+      <h3 class="is-4 title">Fourth level</h3>
       <p>Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac. Mauris euismod metus a tellus laoreet, at elementum ex efficitur.</p>
       <pre>
           &lt;!DOCTYPE html&gt;
@@ -201,7 +201,7 @@
         </tr>
       </table>
       <p>Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus laoreet metus, at cursus leo est vel tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae ultricies ex sodales quis. Aliquam eu nibh in libero accumsan pulvinar. Nullam nec nisl placerat, pretium metus vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam pharetra varius metus non pellentesque.</p>
-      <h5 class="is-5 title">Fifth level</h5>
+      <h4 class="is-5 title">Fifth level</h4>
       <p>Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt ligula. Vestibulum at nunc elit. Praesent aliquet ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel nisi sodales, a eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.</p>
       <figure>
         <img alt="fir forest as seen from the train window" src="img/photo-1572958731731-2b7fdb0a9818.jpg">
@@ -216,12 +216,12 @@
     </div>
   </div>
 
-  <div role="list" class="hero has-background-grey-light">
+  <section aria-labelledby="key-features" class="hero has-background-grey-light">
     <div class="container features">
-      <section aria-labelledby="key-features" class="section-heading has-text-centered">
+      <div class="section-heading has-text-centered">
         <h2 id="key-features" class="title is-2">Three key features</h2>
-        <h5 class="subtitle is-5">We don't hide what we do</h5>
-      </section>
+        <h3 class="subtitle is-5">We don't hide what we do</h3>
+      </div>
 
       <div class="columns">
         <div class="column is-4">
@@ -271,9 +271,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div role="list" class="hero is-info">
+  <section aria-labelledby="list-of-topics" class="hero is-info">
     <div class="hero-body">
       <div class="container">
         <h1 id="list-of-topics" class="title">List of topics</h1>
@@ -283,26 +283,26 @@
     <div class="tabs is-boxed is-centered main-menu" id="nav">
       <ul>
         <li data-target="pane-1" id="1" class="is-active">
-          <a aria-labelledby="id11" role="tab" aria-controls="pane-1">
+          <a role="tab"  aria-labelledby="id11" aria-controls="pane-1">
             <span aria-hidden="true" class="icon is-small"><i class="fa fa-image"></i></span>
             <span id="id11">Pictures</span>
           </a>
         </li>
         <li data-target="pane-3" id="3">
-          <a aria-labelledby="id12" role="tab" aria-controls="pane-3">
+          <a role="tab"  aria-labelledby="id12" aria-controls="pane-3">
             <span aria-hidden="true" class="icon is-small"><i class="fab fa-superpowers"></i></span>
             <span id="id12">Team</span>
           </a>
         </li>
         <li data-target="pane-4" id="4">
-          <a aria-labelledby="id13" role="tab" aria-controls="pane-4">
+          <a role="tab" aria-labelledby="id13" aria-controls="pane-4">
             <span aria-hidden="true" class="icon is-small"><i class="fa fa-film"></i></span>
             <span id="id13">Video</span>
           </a>
         </li>
       </ul>
     </div>
-  </div>
+  </section>
 
   <div class="tab-content container">
     <div role="tabpanel" class="tab-pane is-active level" id="pane-1">
@@ -572,7 +572,7 @@
                 <p class="card-header-title">
                   <span>Admin <small>(Light)</small></span>
                   <span class="is-pulled-right">
-                    <a aria-labelledby="id5">
+                    <a href="#" aria-labelledby="id5">
                       <span id="id5" class="tag is-default">v0.7.2</span>
                     </a>
                     <span class="tag is-default">Desktop</span>
@@ -597,7 +597,7 @@
                 <p class="card-header-title">
                   <span>Cards</span>
                   <span class="is-pulled-right">
-                    <a aria-labelledby="id6">
+                    <a href="#" aria-labelledby="id6">
                       <span id="id6" class="tag is-default">v0.7.2</span>
                     </a>
                     <span class="tag is-default">Desktop</span>
@@ -622,7 +622,7 @@
                 <p class="card-header-title">
                   <span>Forum</span>
                   <span class="is-pulled-right">
-                    <a aria-labelledby="id7">
+                    <a href="#" aria-labelledby="id7">
                       <span id="id7" class="tag is-default">v0.7.2</span>
                     </a>
                     <span class="tag is-default">Desktop</span>
@@ -1130,14 +1130,14 @@
 
       <div class="content has-text-centered">
         <div class="soc">
-          <a href="https://github.com/" target="_blank" rel="noopener" aria-describedby="new-window"><i class="fab fa-github-alt fa-2x"></i>
-            <span id="new-window" class="visually-hidden">, opens in a new window</span></a>
-          <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-describedby="new-window"><i class="fab fa-youtube fa-2x"></i>
-            <span id="new-window" class="visually-hidden">, opens in a new window</span></a>
-          <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-describedby="new-window"><i class="fab fa-facebook fa-2x"></i>
-            <span id="new-window" class="visually-hidden">, opens in a new window</span></a>
-          <a href="https://twitter.com" target="_blank" rel="noopener" aria-describedby="new-window"><i class="fab fa-twitter fa-2x"></i>
-            <span id="new-window" class="visually-hidden">, opens in a new window</span></a>
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-describedby="new-window1"><i class="fab fa-github-alt fa-2x"></i>
+            <span id="new-window1" class="visually-hidden">, opens in a new window</span></a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-describedby="new-window2"><i class="fab fa-youtube fa-2x"></i>
+            <span id="new-window2" class="visually-hidden">, opens in a new window</span></a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-describedby="new-window3"><i class="fab fa-facebook fa-2x"></i>
+            <span id="new-window3" class="visually-hidden">, opens in a new window</span></a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" aria-describedby="new-window4"><i class="fab fa-twitter fa-2x"></i>
+            <span id="new-window4" class="visually-hidden">, opens in a new window</span></a>
         </div>
         <p>The source code is licensed
           <a href="http://opensource.org/licenses/mit-license.php" target="_blank" rel="noopener" aria-describedby="new-window">MIT
@@ -1166,7 +1166,7 @@
             </div>
             <div class="media-content">
               <h4 class="title is-4">Jane Doe</h4>
-              <h6 class="subtitle is-6">@jane_doe</h6>
+              <h5 class="subtitle is-6">@jane_doe</h5>
             </div>
           </div>
           <div class="content">
