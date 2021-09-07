@@ -106,11 +106,11 @@ a {
 .tab-pane {
   display: none;
 
-  &: [aria-hidden="false"] {
+  [aria-hidden="false"] {
     display:block;
   }
 
-  &: [aria-selected="true"] {
+  [aria-selected="true"] {
     background-color:red;
   }
 }
