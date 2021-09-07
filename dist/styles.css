@@ -7912,6 +7912,10 @@ a:hover {
 
 .tab-pane {
   display: none; }
+  .tab-pane [aria-hidden="false"] {
+    display: block; }
+  .tab-pane [aria-selected="true"] {
+    background-color: red; }
 
 .tab-pane.is-active {
   display: block;
