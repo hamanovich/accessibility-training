@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta name="viewport" content="width=device-width, initialscale=1.0, user-scalable=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Web Accessibility 2019 Q1 BY</title>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css'>
@@ -25,12 +26,12 @@
             </span>
           </div>
 
-          <div id="navbarMenu" class="navbar-menu">
+          <nav id="navbarMenu" class="navbar-menu">
             <div class="navbar-end">
               <span class="navbar-item">
                 <a class="button is-white is-outlined">
                   <span class="icon">
-                    <i class="fa fa-home"></i>
+                    <i aria-hidden="true" class="fa fa-home"></i>
                   </span>
                   <span>Home</span>
                 </a>
@@ -38,7 +39,7 @@
               <span class="navbar-item">
                 <a class="button is-white is-outlined">
                   <span class="icon">
-                    <i class="fab fa-superpowers"></i>
+                    <i aria-hidden="true" class="fab fa-superpowers"></i>
                   </span>
                   <span>Examples</span>
                 </a>
@@ -46,7 +47,7 @@
               <span class="navbar-item">
                 <a class="button is-white is-outlined">
                   <span class="icon">
-                    <i class="fa fa-book"></i>
+                    <i aria-hidden="true" class="fa fa-book"></i>
                   </span>
                   <span>Documentation</span>
                 </a>
@@ -54,13 +55,13 @@
               <span class="navbar-item">
                 <a class="button is-white is-outlined">
                   <span class="icon">
-                    <i class="fab fa-github"></i>
+                    <i aria-hidden="true" class="fab fa-github"></i>
                   </span>
                   <span>View Source</span>
                 </a>
               </span>
             </div>
-          </div>
+          </nav>
         </div>
       </div>
     </div>
@@ -68,14 +69,16 @@
     <div class="hero-body">
       <div class="container has-text-centered">
         <div class="column is-6 is-offset-3">
-          <div class="title has-text-white">We have web accessibility in mind</div>
+          <div class="title has-text-white"><h1>We have web accessibility in mind</h1></div>
           <div class="subtitle has-text-white">
             Would you like to get the latest news?
           </div>
           <div class="box">
             <div class="field is-grouped">
               <p class="control is-expanded">
-                <input class="input">
+				<label for="notifyInput" class="visually-hidden">Please, enter your email</label>
+                <input class="input" id="notifyInput" aria-describedby="notifyNote">
+				<span id="notifyNote" class="visually-hidden">Please enter your email to allow us to notify you</span>
               </p>
               <p class="control">
                 <a class="button is-info">Notify Me</a>
@@ -87,7 +90,7 @@
     </div>
   </div>
 
-  <div class="section" id="about">
+  <section class="section" id="about">
     <div class="section-heading has-text-centered">
       <div class="title is-2">About Us</div>
       <div class="subtitle is-5">We of all trades, master of "some"</div>
@@ -179,10 +182,10 @@
       <p>Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus laoreet metus, at cursus leo est vel tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae ultricies ex sodales quis. Aliquam eu nibh in libero accumsan pulvinar. Nullam nec nisl placerat, pretium metus vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam pharetra varius metus non pellentesque.</p>
       <div class="is-5 title">Fifth level</div>
       <p>Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt ligula. Vestibulum at nunc elit. Praesent aliquet ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel nisi sodales, a eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.</p>
-      <figure>
-        <img src="./img/photo-1572958731731-2b7fdb0a9818.jpg">
-        <img src="./img/photo-1574281852611-b2f04c86a520.jpg">
-        <img src="./img/photo-1575023615386-1554d895d09d.jpg">
+      <figure aria-labelledby="caption">
+        <img src="./img/photo-1572958731731-2b7fdb0a9818.jpg" alt="full alternative image description">
+        <img src="./img/photo-1574281852611-b2f04c86a520.jpg" alt="full alternative image description">
+        <img src="./img/photo-1575023615386-1554d895d09d.jpg" alt="full alternative image description">
         <figcaption>
           Figure 1: Some beautiful placeholders
         </figcaption>
@@ -190,7 +193,7 @@
       <div class="is-6 title">Sixth level</div>
       <p>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.</p>
     </div>
-  </div>
+  </section>
 
   <div class="hero has-background-grey-light">
     <div class="container features">
@@ -410,7 +413,7 @@
     </div>
   </div>
 
-  <div class="section has-background-grey-lighter">
+  <section class="section has-background-grey-lighter">
     <div class="container has-text-centered">
         <div class="section-heading has-text-centered">
           <div class="title is-2">Upcoming events</div>
@@ -421,7 +424,7 @@
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/web-access-summit-eventbrite.jpg">
+              <img src="./img/web-access-summit-eventbrite.jpg" alt="full alternative image description">
             </div>
             <p class="title">New York</p>
             <p class="subtitle">Fri 27 Nov 2016</p>
@@ -431,7 +434,7 @@
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/access.jpg">
+              <img src="./img/access.jpg" alt="full alternative image description">
             </div>
             <p class="title">Los Angeles</p>
             <p class="subtitle">Fri 27 Nov 2016</p>
@@ -441,7 +444,7 @@
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/dotcss-2019.jpg">
+              <img src="./img/dotcss-2019.jpg" alt="full alternative image description">
             </div>
             <p class="title">Mexico</p>
             <p class="subtitle">Fri 27 Nov 2016</p>
@@ -454,7 +457,7 @@
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/images.jpg">
+              <img src="./img/images.jpg" alt="full alternative image description">
             </div>
             <p class="title">Paris</p>
             <p class="subtitle">Fri 27 Nov 2016</p>
@@ -464,7 +467,7 @@
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/mid_300_33455472_313632022502906_5761920685983137792_n.png">
+              <img src="./img/mid_300_33455472_313632022502906_5761920685983137792_n.png" alt="full alternative image description">
             </div>
             <p class="title">Minsk</p>
             <p class="subtitle">Fri 27 Nov 2016</p>
@@ -474,7 +477,7 @@
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/access.jpg">
+              <img src="./img/access.jpg" alt="full alternative image description">
             </div>
             <p class="title">London</p>
             <p class="subtitle">Fri 27 Nov 2016</p>
@@ -483,9 +486,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="section">
+  <section class="section">
     <div class="section-heading has-text-centered">
       <div class="title is-2">Services</div>
       <div class="subtitle is-5">What can I do for you?</div>
@@ -531,9 +534,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="section has-background-grey-lighter">
+  <section class="section has-background-grey-lighter">
     <div class="container">
       <div class="section-heading has-text-centered">
         <div class="title is-2">Photos from past events</div>
@@ -557,7 +560,7 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-1.jpeg">
+                  <img src="./img/ev-1.jpeg" alt="full alternative image description">
                 </div>
               </div>
               <div class="card-footer">
@@ -582,7 +585,7 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-2.jpeg">
+                  <img src="./img/ev-2.jpeg" alt="full alternative image description">
                 </div>
               </div>
               <div class="card-footer">
@@ -607,7 +610,7 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-3.jpeg">
+                  <img src="./img/ev-3.jpeg" alt="full alternative image description">
                 </div>
               </div>
               <div class="card-footer">
@@ -634,7 +637,7 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-4.jpeg">
+                  <img src="./img/ev-4.jpeg" alt="full alternative image description" >
                 </div>
               </div>
               <div class="card-footer">
@@ -659,7 +662,7 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-5.jpeg">
+                  <img src="./img/ev-5.jpeg" alt="full alternative image description">
                 </div>
               </div>
               <div class="card-footer">
@@ -684,7 +687,7 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-6.jpeg">
+                  <img src="./img/ev-6.jpeg" alt="full alternative image description">
                 </div>
               </div>
               <div class="card-footer">
@@ -696,10 +699,9 @@
         </div>
       </div>
     </div>
-    </div>
-  </div>
-
-  <div class="section">
+    </section>
+ 
+  <section class="section">
     <div class="container">
       <div class="section-heading has-text-centered">
         <div class="title is-2">Forum</div>
@@ -728,7 +730,7 @@
               <div class="media">
                 <div class="media-left">
                   <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=300">
+                    <img src="https://source.unsplash.com/random/64x64/?sig=300" alt="full alternative image description">
                   </p>
                 </div>
                 <div class="media-content">
@@ -750,7 +752,7 @@
               <div class="media">
                 <div class="media-left">
                   <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=301">
+                    <img src="https://source.unsplash.com/random/64x64/?sig=301" alt="full alternative image description">
                   </p>
                 </div>
                 <div class="media-content">
@@ -772,7 +774,7 @@
               <div class="media">
                 <div class="media-left">
                   <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=302">
+                    <img src="https://source.unsplash.com/random/64x64/?sig=302" alt="full alternative image description">
                   </p>
                 </div>
                 <div class="media-content">
@@ -794,7 +796,7 @@
               <div class="media">
                 <div class="media-left">
                   <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=303">
+                    <img src="https://source.unsplash.com/random/64x64/?sig=303" alt="full alternative image description">
                   </p>
                 </div>
                 <div class="media-content">
@@ -816,7 +818,7 @@
               <div class="media">
                 <div class="media-left">
                   <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=304">
+                    <img src="https://source.unsplash.com/random/64x64/?sig=304" alt="full alternative image description">
                   </p>
                 </div>
                 <div class="media-content">
@@ -838,7 +840,7 @@
               <div class="media">
                 <div class="media-left">
                   <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=305">
+                    <img src="https://source.unsplash.com/random/64x64/?sig=305" alt="full alternative image description">
                   </p>
                 </div>
                 <div class="media-content">
@@ -858,9 +860,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="section has-background-light">
+  <section class="section has-background-light">
     <div class="container">
       <div class="section-heading has-text-centered">
         <div class="title is-2">Contact us</div>
@@ -954,7 +956,7 @@
         </div>
       </form>
     </div>
-  </div>
+  </section>
 
   <!-- <div class="section">
     <div class="container">
@@ -1065,7 +1067,7 @@
     </div>
   </div> -->
 
-  <div class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="columns">
         <div class="column is-3 is-offset-2">
@@ -1114,7 +1116,7 @@
         <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</p>
       </div>
     </div>
-  </div>
+  </footer>
 
   <div id="modal-card" class="modal modal-fx-3dSlit">
     <div class="modal-background"></div>
@@ -1122,14 +1124,14 @@
       <div class="card">
         <div class="card-image">
           <div class="image is-4by3">
-            <img src="https://source.unsplash.com/random/?sig=2">
+            <img src="https://source.unsplash.com/random/?sig=2" alt="image" alt="full alternative image description"/>
           </div>
         </div>
         <div class="card-content">
           <div class="media">
             <div class="media-left">
               <div class="image is-48x48">
-                <img src="http://www.radfaces.com/images/avatars/linda-barret.jpg">
+                <img src="http://www.radfaces.com/images/avatars/linda-barret.jpg" alt="full alternative image description">
               </div>
             </div>
             <div class="media-content">
@@ -1157,7 +1159,7 @@
   <div id="modal-image1" class="modal modal-fx-3dSlit">
     <div class="modal-background"></div>
     <div class="modal-content is-huge is-image">
-      <img src="https://source.unsplash.com/random/?sig=1">
+      <img src="https://source.unsplash.com/random/?sig=1" alt="full alternative image description">
     </div>
     <button class="modal-close is-large"></button>
   </div>
@@ -1165,7 +1167,7 @@
   <div id="modal-image2" class="modal modal-fx-superScaled">
     <div class="modal-background"></div>
     <div class="modal-content  is-image">
-      <img src="https://source.unsplash.com/random/?sig=3">
+      <img src="https://source.unsplash.com/random/?sig=3" alt="full alternative image description">
     </div>
     <button class="modal-close is-large"></button>
   </div>
