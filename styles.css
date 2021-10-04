@@ -231,3 +231,7 @@ li {
   height: 40px;
   background-size: contain;
 }
+
+.footer a {
+  color: #153C7A;
+}
