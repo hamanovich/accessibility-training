@@ -176,3 +176,46 @@ li {
   height: 40px;
   background-size: contain;
 }
+
+/* New styles for contrast */
+
+a {
+  color: #1C51A6;
+}
+
+.button.is-info, .hero.is-info {
+  background-color: #094E7B;
+}
+.subtitle {
+  color: #262626; 
+}
+.hero.is-info .tabs.is-boxed li.is-active a, .hero.is-info .tabs.is-boxed li.is-active a:hover {
+  color: #094E7B;
+}
+.tag:not(body).is-danger {
+  background-color: #B30024;
+}
+.tag:not(body).is-primary {
+  background-color: #006152;
+}
+.tag:not(body).is-success {
+  background-color: #0F612C;
+}
+.has-text-grey-light {
+  color: #575757!important;
+}
+input.is-success, .textarea.is-success {
+  border-color: #0F612C;
+}
+.help.is-success {
+  color: #0F612C;
+}
+.help.is-danger {
+  color: #B30024;
+}
+
+
+
+
+
+
