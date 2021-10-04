@@ -1,3 +1,58 @@
+a:focus {
+  background-color: #000000;
+  color: #FFFFFF; 
+}
+a {
+ color:#1B4FA1;
+}
+/* Focus */
+
+.input:focus,
+.navbar-item.logo-link:focus,
+.button.is-white.is-outlined:focus,
+.button.is-info:focus,
+sup a:focus,
+.is-3.title + p a:focus,
+.content p a:focus,
+.tabs li a:focus,
+.content p a b:focus,
+.tile.is-child.box .button:focus,
+a.box:focus,
+.is-pulled-right a:focus,
+.card-footer a:focus,
+.button.is-primary.is-block:focus,
+.menu-list.forum-list .tag:focus,
+.control a:focus,
+.column.is-3 ul li a:focus,
+.column.is-4 ul li a:focus,
+.soc a:focus,
+.soc + p a:focus,
+.input.is-success:focus,
+.input.is-danger:focus,
+.select select:focus,
+.control textarea:focus,
+.control input[type='checkbox']:focus,
+.control input[type='radio']:focus,
+.control .button.is-link:focus,
+.control .button.is-text:focus {
+  outline: 0;
+  border-radius: 2px;
+  box-shadow: 0 0 2px 1.5px #bc6e6e, 0 0 3px 3px #f279dd;
+}
+.button.is-info.is-active, .button.is-info:active {
+    background-color: #0D4A87;
+    border-color: transparent;
+    color: #fff;
+}
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 .hero-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/accessibility-hero-banner.jpg") no-repeat center center fixed;
@@ -175,4 +230,8 @@ li {
   width: 40px;
   height: 40px;
   background-size: contain;
+}
+
+.footer a {
+  color: #153C7A;
 }
