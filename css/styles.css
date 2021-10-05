@@ -13,17 +13,25 @@ a {
 .hero.is-info .tabs.is-boxed li.is-active a {
   color: #0A5485;
 }
-.tag.is-danger {
+.tag:not(body).is-danger {
   background-color: #B30024;
 }
 .tag.is-primary.is-medium {
   background-color: #006152;
 }
-.tag.is-success {
+.tag:not(body).is-success {
   background-color: #10602C;
 }
+.help.is-success {
+  color: #0E5326;
+}
+.help.is-danger {
+  color: #A30021;
+}
 /* Focus */
-
+fieldset {
+  border: none;
+}
 .input:focus,
 .navbar-item.logo-link:focus,
 .button.is-white.is-outlined:focus,

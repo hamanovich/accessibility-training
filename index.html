@@ -182,7 +182,7 @@
       <p>Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus laoreet metus, at cursus leo est vel tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae ultricies ex sodales quis. Aliquam eu nibh in libero accumsan pulvinar. Nullam nec nisl placerat, pretium metus vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam pharetra varius metus non pellentesque.</p>
       <h5 class="is-5 title">Fifth level</h5>
       <p>Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt ligula. Vestibulum at nunc elit. Praesent aliquet ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel nisi sodales, a eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.</p>
-      <figure aria-labelledby="caption">
+      <figure>
         <img src="./img/photo-1572958731731-2b7fdb0a9818.jpg" alt="full alternative image description 1">
         <img src="./img/photo-1574281852611-b2f04c86a520.jpg" alt="full alternative image description 2">
         <img src="./img/photo-1575023615386-1554d895d09d.jpg" alt="full alternative image description 3">
@@ -870,6 +870,8 @@
       </div>
 
       <form class="column is-half is-offset-one-quarter box">
+        <fieldset>
+          <legend>Nain fields</legend>
         <div class="field">
           <label class="label" for="name">Name</label>
           <div class="control">
@@ -893,7 +895,7 @@
           <p class="help is-success">This username is available</p>
         </div>
 
-        <fieldset class="field">
+        <div class="field">
           <label class="label" for='email'>Email</label>
           <div class="control has-icons-left has-icons-right">
             <input class="input is-danger" type="email" placeholder="Email input" value="hello@" id='email' aria-describedby="emailNote">
@@ -906,9 +908,9 @@
             <span id="emailNote" class='visually-hidden'>Enter here your email</span>
           </div>
           <p class="help is-danger">This email is invalid</p>
-        </fieldset>
+        </div>
 
-        <fieldset class="field">
+        <div class="field">
           <label class="label" for='subject'>Subject</label>
           <div class="control">
             <div class="select" id='subject'>
@@ -918,13 +920,14 @@
               </select>
             </div>
           </div>
-        </fieldset>
+        </div>
 
-        <fieldset class="field">
+        <div class="field">
           <label class="label" for='message'>Message</label>
           <div class="control">
             <textarea class="textarea" placeholder="Textarea" id='message'></textarea>
           </div>
+        </div>
         </fieldset>
 
         <fieldset class="field">
