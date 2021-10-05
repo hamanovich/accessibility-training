@@ -242,6 +242,9 @@ li {
   display: flex;
   align-items: center;
 }
+fieldset {
+  border: none;
+}
 
 .ol-list li::before {
   content: "";
