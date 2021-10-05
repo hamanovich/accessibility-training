@@ -796,7 +796,7 @@
               <div class="media">
                 <div class="media-left">
                   <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=303" alt="full alternative image description">
+                    <img src="https://source.unsplash.com/random/64x64/?sig=303" alt="full alternative image description 33">
                   </p>
                 </div>
                 <div class="media-content">
@@ -913,8 +913,8 @@
         <div class="field">
           <label class="label" for='subject'>Subject</label>
           <div class="control">
-            <div class="select" id='subject'>
-              <select>
+            <div class="select">
+              <select id='subject'>
                 <option>Select dropdown</option>
                 <option>With options</option>
               </select>
@@ -928,16 +928,19 @@
             <textarea class="textarea" placeholder="Textarea" id='message'></textarea>
           </div>
         </div>
+        <div class="control">
+          <div class="field">
+          <label class="checkbox" for='agree'>
+            <input type="checkbox" id='agree'>
+            I agree to the <a>terms and conditions</a>
+          </label>
+        </div>
+      </div>
         </fieldset>
 
-        <fieldset class="field">
-          <div class="control">
-            <label class="checkbox" for='agree'>
-              <input type="checkbox" id='agree'>
-              I agree to the <a>terms and conditions</a>
-            </label>
-          </div>
-        </fieldset>
+        
+          
+          
 
         <fieldset class="field">
           <legend>Output format</legend>
