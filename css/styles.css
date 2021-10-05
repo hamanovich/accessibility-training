@@ -5,6 +5,23 @@ a:focus {
 a {
  color:#1B4FA1;
 }
+.hero.is-info {
+  background-color: #0E598B;
+}
+
+
+.hero.is-info .tabs.is-boxed li.is-active a {
+  color: #0A5485;
+}
+.tag.is-danger {
+  background-color: #B30024;
+}
+.tag.is-primary.is-medium {
+  background-color: #006152;
+}
+.tag.is-success {
+  background-color: #10602C;
+}
 /* Focus */
 
 .input:focus,
@@ -38,6 +55,9 @@ a.box:focus,
   outline: 0;
   border-radius: 2px;
   box-shadow: 0 0 2px 1.5px #bc6e6e, 0 0 3px 3px #f279dd;
+}
+.button.is-info {
+  background-color: #0D4A87;
 }
 .button.is-info.is-active, .button.is-info:active {
     background-color: #0D4A87;
@@ -115,6 +135,9 @@ a.box:focus,
 .features,
 .medias {
   padding: 3rem 0;
+}
+.features h5 {
+  color: #080808;
 }
 
 .features .fa,
