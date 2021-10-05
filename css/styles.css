@@ -2,13 +2,54 @@ a:focus {
   background-color: #000000;
   color: #FFFFFF; 
 }
+p {
+  line-height: 1.5;
+}
 a {
  color:#1B4FA1;
 }
 .hero.is-info {
   background-color: #0E598B;
 }
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
 
+
+/* skip links */
+
+#skipToMenu a {
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    color: white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-bottom-right-radius: 8px;
+    background: #BF1722;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 100;
+}
+
+#skipToMenu a:focus {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    outline-color: transparent;
+    transition: top .1s ease-in;
+}
+.navbar-burger {
+  color: white;
+}
 
 .hero.is-info .tabs.is-boxed li.is-active a {
   color: #0A5485;
