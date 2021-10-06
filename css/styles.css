@@ -18,8 +18,17 @@
   display: block;
   position: relative;
 }
+
 .is-active {
   display: initial;
+  color: #07578D !important;
+}
+
+.hero.is-info .tabs.is-boxed li.is-active a, 
+.hero.is-info .tabs.is-boxed li.is-active a:hover, 
+.hero.is-info .tabs.is-toggle li.is-active a, 
+.hero.is-info .tabs.is-toggle li.is-active a:hover {
+  color: #07578D;
 }
 
 .cent {
@@ -67,7 +76,7 @@
   font-size: 8rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  color: #209cee;
+  color: #035087;
 }
 
 .is-shady {
@@ -127,6 +136,59 @@
 
 .forum-list li {
   margin-bottom: .5rem;
+}
+
+.is-info {
+  background-color: #035087 !important;
+}
+
+.subtitle {
+  color: #242424;
+}
+
+a:focus, input:focus, button:focus {
+  border-radius: 2px;
+  outline: 0;
+  box-shadow: 0 0 2px 1.5px #fff, 
+              0 0 3px 3px #000;
+}
+
+.tag:not(body).is-danger {
+  background-color: #A30021;
+}
+
+.tag:not(body).is-primary {
+  background-color: #006151;
+}
+
+.tag:not(body).is-success {
+  background-color: #0E5D2A;
+}
+
+.has-text-grey-light {
+  color: #4D4D4D !important;
+}
+
+.help.is-success {
+  color: #0C4620;
+}
+
+.help.is-danger {
+  color: #AD0023;
+}
+
+a {
+  color: #1D4F9F;
+}
+
+.visuallyhidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
 }
 
 
