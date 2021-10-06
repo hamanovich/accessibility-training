@@ -47,6 +47,9 @@ a {
     outline-color: transparent;
     transition: top .1s ease-in;
 }
+#breadcrumbs {
+  margin-top: 2em;
+}
 .navbar-burger {
   color: white;
 }
