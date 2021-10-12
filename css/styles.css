@@ -68,7 +68,7 @@
   font-size: 8rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  color: #0000FF;
+  color: #209cee;
 }
 
 .is-shady {
@@ -245,7 +245,44 @@ textarea:focus {
   box-shadow: 0 0 2px 1.5px #fff,
               0 0 3px 3px #000;
 }
+.media > .media-right > .has-text-grey-light {
+  color: #595959 !important;
+ }
 
 fieldset {
   border: none;
+}
+
+.is-success.is-medium.tag {
+  background-color: #10652E;
+}
+
+.media > .media-right > .has-text-grey-light {
+ color: #595959 !important;
+}
+
+.help.is-success {
+  color: #10652E;
+}
+
+.help.is-danger {
+  color: #B30024;
+}
+
+.tabs-list {
+  background-color: #0A578A;
+}
+
+.tag.is-success.is-medium{
+  background:#15C151 ;
+}
+
+.tag.is-primary.is-medium{
+  background: #00473C;
+}
+
+.footer-links-list a,
+.license-link,
+.soc a {
+  color: #1D53AA;
 }
