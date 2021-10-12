@@ -36,3 +36,61 @@ function toggleTab(selectedNav, targetId) {
     }
   });
 }
+
+const inputEl = document.getElementById('enterSomethingInput');
+
+const message = ' something entered here'.split('');
+let letterIdx = 0;
+
+const getLetter = (letterIdx) => {
+  setLetter(message[letterIdx])
+};
+
+const setLetter = (letter) => {
+  inputEl.value += letter;
+}
+
+document.addEventListener('click', () => {
+  const interval = setInterval(() => {
+    if (letterIdx < message.length - 1) {
+      getLetter(letterIdx += 1);
+    } else {
+      clearInterval(interval);
+    }
+  }, 1000)
+  
+})
+
+const navBar = document.getElementById('navbarMenu');
+const skipNavBtn = document.querySelector('.skip-nav-link');
+const skipNavList = document.getElementById('skip-nav-list');
+
+let isModalOpen = false;
+
+skipNavBtn.addEventListener('click', () => {
+  skipNavList.classList.toggle('display-none');
+  setIsModalOpen();
+});
+
+const setIsModalOpen = () => {
+  if (skipNavBtn.classList.contains('display-none')) {
+    isModalOpen = false;
+  } else {
+    isModalOpen = true
+  }
+}
+
+document.addEventListener('focusin', (event) => {
+  console.log(event)
+  if (event.target.className !== "skip-nav-item") {
+    skipNavList.classList.add('display-none');
+    setIsModalOpen();
+  }
+}, true);
+
+document.addEventListener("keydown", function(event) {
+  if (isModalOpen && event.keyCode == 27) {
+    skipNavList.classList.add('display-none');
+    setIsModalOpen();
+  }
+}, true);

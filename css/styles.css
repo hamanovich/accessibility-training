@@ -191,6 +191,50 @@ a {
   border: 0;
 }
 
+.navbar {
+  position: relative;
+}
+
+.visuallyhidden:focus {
+  height: auto;
+  width: auto;
+  clip: auto;
+}
+
+.skip-nav-link {
+  margin-top: 1rem;
+}
+
+.skip-nav-link:focus {
+  color: #fff;
+}
+
+.skip-nav-link:hover {
+  color: rgba(143, 143, 143, 0.767);
+}
+
+.skip-nav-list {
+  display: block;
+  position: absolute;
+  top: 3rem;
+}
+
+.small {
+  font-size: 0.7rem;
+}
+
+.display-none {
+  display: none;
+}
+
+.skip-nav-item {
+  color: #fff;
+}
+
+.skip-nav-item:focus {
+  color: #fff;
+}
+
 
 @media screen and (max-width: 1087px) {
   .navbar-menu {
