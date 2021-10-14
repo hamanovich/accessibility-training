@@ -11,54 +11,63 @@
 </head>
 
 <body>
-  <header class="hero hero-bg is-fullheight">
-    <div id="skipToMenu" title="Skip to Navigation" class="skip-menu">
-      <a href="#navbarMenu">Skip to main content</a>
+  <header class="hero hero-bg is-fullheight" role="banner">
+    <div id="skipToMenu" title="Skip to Keyboard Navigation" class="skip-menu">
+      <nav role="navigation" aria-labelledby="skipToMenu">
+        <ul>
+            <li><a href="#navbarMenu">Skip to navbar menu</a></li>
+            <li><a href="#hero">Skip to hero email sender input</a></li>
+            <li><a href="#about">Skip to about us section</a></li>
+            <li><a href="#three-key-features">Skip to three key features section</a></li>
+            <li><a href="#upcoming-events">Skip to upcoming events section</a></li>
+            <li><a href="#services">Skip to services section</a></li>
+            <li><a href="#photos">Skip to photos section</a></li>
+        </ul>
+    </nav>
     </div>
     <div class="hero-head">
       <div class="navbar">
         <div class="container">
           <div class="navbar-brand">
-            <a class="navbar-item logo-link" title='go to main page' >
-              <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" alt='this is a logo image'>
+            <a class="navbar-item logo-link" href="index.html">
+              <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" alt="Epam logo">
             </a>
-            <span class="navbar-burger burger" data-target="navbarMenu" tabindex="0" aria-label="Open the menu">
+            <span class="navbar-burger burger" data-target="navbarMenu" tabindex="0" aria-haspopup="true" aria-expanded="false">
               <span></span>
               <span></span>
               <span></span>
             </span>
           </div>
-
-          <nav id="navbarMenu" class="navbar-menu" aria-label="Main menu" role='navigation'>
+          <nav id="navbarMenu" role="navigation" class="navbar-menu">
             <div class="navbar-end">
               <span class="navbar-item">
-                <a class="button is-white is-outlined" href='#'>
+                <a class="button is-white is-outlined" href="#">
                   <span class="icon">
-                    <i  aria-hidden="true" tabindex="-1" class="fa fa-home"></i>
+                    <i aria-hidden="true" class="fa fa-home"></i>
                   </span>
                   <span>Home</span>
                 </a>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined" href='#'>
+                <a class="button is-white is-outlined" href="#">
                   <span class="icon">
-                    <i  aria-hidden="true" tabindex="-1" class="fab fa-superpowers"></i>
+                    <i aria-hidden="true" class="fab fa-superpowers"></i>
                   </span>
                   <span>Examples</span>
                 </a>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined" href='#'>
+                <a class="button is-white is-outlined" href="#">
                   <span class="icon">
-                    <i  aria-hidden="true" tabindex="-1" class="fa fa-book"></i>
+                    <i aria-hidden="true" class="fa fa-book"></i>
                   </span>
                   <span>Documentation</span>
                 </a>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined" href='#'>
+                <a class="button is-white is-outlined" href="#">
                   <span class="icon">
-                    <i  aria-hidden="true" tabindex="-1" class="fab fa-github"></i>
+                    <i aria-hidden="true" class="fab fa-github"></i>
                   </span>
                   <span>View Source</span>
                 </a>
@@ -68,23 +77,20 @@
         </div>
       </div>
     </div>
-
-    <div class="hero-body">
+    <div id="hero" role="hero" class="hero-body">
       <div class="container has-text-centered">
         <div class="column is-6 is-offset-3">
-          <div class="title has-text-white"><h1>We have web accessibility in mind</h1></div>
-          <div class="subtitle has-text-white">
+          <h2 class="title has-text-white">We have web accessibility in mind</h2>
+          <h5 class="subtitle has-text-white">
             Would you like to get the latest news?
-          </div>
-          <form role="form" aria-labelledby="call to action form" class="box">
+          </h5>
+          <form role="form" aria-label="call to action form" class="box">
             <div class="field is-grouped">
               <p class="control is-expanded">
-				<label for="notifyInput" class="visually-hidden">Please, enter your email</label>
-                <input class="input" id="notifyInput" aria-describedby="notifyNote">
-				<span id="notifyNote" class="visually-hidden">Please enter your email to allow us to notify you</span>
+                <input class="input">
               </p>
               <p class="control">
-                <a class="button is-info">Notify Me</a>
+                <a class="button is-info" href="#">Notify Me</a>
               </p>
             </div>
           </form>
@@ -92,27 +98,30 @@
       </div>
     </div>
   </header>
-  <!-- breadcrumbs -->
-  <div id="breadcrumbs">
-    <nav class="breadcrumb is-centered is-medium" aria-label="Breadcrumb">
-      <ol>
-        <li>
-          <a href="./">MainPage</a>
-        </li>
-        <li>
-          <a href="index.html#about">About Us</a>
-        </li>
-        <li class="is-active">
-          <a href="index.html#details" aria-current="page">Details</a>
-        </li>
-      </ol>
-    </nav>
-  </div>
-<main>
-  <section class="section" id="about">
-    <div class="section-heading has-text-centered">
-      <h2 class="title is-2">About Us</h2>
-      <h5 class="subtitle is-5">We of all trades, master of "some"</h5>
+      <div id="breadcrumbs">
+        <nav class="breadcrumb is-centered is-medium" role="breadcrumb">
+          <ol>
+            <li>
+              <a href="./">MainPage</a>
+            </li>
+            <li>
+              <a href="index.html#about">About Us</a>
+            </li>
+            <li class="is-active">
+              <a href="index.html#details" aria-current="page">We of all trades, master of &ldquo;some&rdquo;</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <div class="block notification is-info">
+        <p>This is an example of live region. </p>
+        <p> The number automatically will update every min</p>
+        <p><span class="tag is-medium is-link live-region" id="live-region" role="region" aria-live="polite">10</span></p>
+      <main role="main">
+  <section class="section" id="about" role="about" aria-labelledby="about-us">
+    <div class="section-heading has-text-centered" >
+      <h2 id="about-us" class="title is-2">About Us</h2>
+      <h5 class="subtitle is-5" id="details">We of all trades, master of "some"</div>
       <div class="container">
         <p>Web developers with more than <b>4 years</b> of well-rounded experience with a degree in the
           field of
@@ -124,7 +133,7 @@
     </div>
 
     <div class="content container">
-      <h1 class="is-1 title">Hello World</h1>
+      <h2 class="is-1 title">Hello World</h2>
       <p>Lorem ipsum<sup><a href="#" target="_blank" rel="noopener" aria-label="lorem ipsum" aria-describedby="open-a-new-window">[1]
         <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
           <i aria-hidden="true" class="fas fa-external-link-alt"></i>
@@ -151,7 +160,11 @@
         <li>Quisque aliquam cursus urna, non bibendum massa viverra eget.</li>
         <li>Vivamus maximus ultricies pulvinar.</li>
       </ol>
-      <blockquote class="blockquote">Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut blandit est tellus sit amet turpis.</blockquote>
+      <blockquote class="blockquote">
+        <p>
+          Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut blandit est tellus sit amet turpis.
+        </p>
+      </blockquote>
       <p>Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et <em>justo sodales</em> elementum. Maecenas ultrices lacus quis neque consectetur, et lobortis nisi molestie.</p>
       <p>Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis vulputate risus in luctus. Maecenas vestibulum interdum commodo.</p>
       <dl>
@@ -178,11 +191,12 @@
           &lt;/html&gt;
           </pre>
       <p>Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.</p>
-      <table>
-        <thead>
-          <th>Header</th>
-          <th>Header</th>
-        </thead>
+      <table role="table">
+        <caption>Table heading</caption>
+        <tr>
+          <th scope="col">Header</th>
+          <th scope="col">Header</th>
+        </tr>
         <tr>
           <td>cell</td>
           <td>cell</td>
@@ -208,9 +222,9 @@
       <h5 class="is-5 title">Fifth level</h5>
       <p>Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt ligula. Vestibulum at nunc elit. Praesent aliquet ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel nisi sodales, a eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.</p>
       <figure>
-        <img src="./img/photo-1572958731731-2b7fdb0a9818.jpg" alt="full alternative image description 1">
-        <img src="./img/photo-1574281852611-b2f04c86a520.jpg" alt="full alternative image description 2">
-        <img src="./img/photo-1575023615386-1554d895d09d.jpg" alt="full alternative image description 3">
+        <img src="./img/photo-1572958731731-2b7fdb0a9818.jpg" alt="autumn forest">
+        <img src="./img/photo-1574281852611-b2f04c86a520.jpg" alt="rings on the hands of a woman">
+        <img src="./img/photo-1575023615386-1554d895d09d.jpg" alt="new year present">
         <figcaption>
           Figure 1: Some beautiful placeholders
         </figcaption>
@@ -219,19 +233,19 @@
       <p>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.</p>
     </div>
   </section>
-
-  <div class="hero has-background-grey-light">
+  
+  <section id="three-key-features" role="three-key-features" class="hero has-background-grey-light" aria-labelledby="key-features">
     <div class="container features">
       <div class="section-heading has-text-centered">
-        <h2 class="title is-2">Three key features</h2>
+        <h2 id="key-features" class="title is-2">Three key features</h2>
         <h5 class="subtitle is-5">We don't hide what we do</h5>
       </div>
-
+  
       <div class="columns">
         <div class="column is-4">
           <div class="card is-shady">
             <div class="card-image has-text-centered">
-              <i class="fa fa-paw"  aria-hidden="true" tabindex="-1"></i>
+              <i aria-hidden="true" class="fa fa-paw"></i>
             </div>
             <div class="card-content">
               <div class="content">
@@ -242,11 +256,11 @@
             </div>
           </div>
         </div>
-
+  
         <div class="column is-4">
           <div class="card is-shady">
             <div class="card-image has-text-centered">
-              <i class="fab fa-empire"  aria-hidden="true" tabindex="-1"></i>
+              <i aria-hidden="true" class="fab fa-empire"></i>
             </div>
             <div class="card-content">
               <div class="content">
@@ -258,11 +272,11 @@
             </div>
           </div>
         </div>
-
+  
         <div class="column is-4">
           <div class="card is-shady">
             <div class="card-image has-text-centered">
-              <i class="fab fa-apple"  aria-hidden="true" tabindex="-1"></i>
+              <i aria-hidden="true" class="fab fa-apple"></i>
             </div>
             <div class="card-content">
               <div class="content">
@@ -275,55 +289,53 @@
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="hero is-info">
+  </section>
+  <section class="hero is-info" aria-labelledby="list-of-topics">
     <div class="hero-body">
       <div class="container">
-        <div class="title">List of topics</div>
-        <div class="subtitle">We are always in touch we the outside world</div>
+        <h2 id="list-of-topics" class="title">List of topics</h2>
+        <h5 class="subtitle">We are always in touch we the outside world</h5>
       </div>
     </div>
-    <div class="tabs is-boxed is-centered main-menu" id="nav">
+    <div class="tabs is-boxed is-centered main-menu" id="nav" role="tablist">
       <ul>
-        <li data-target="pane-1" id="1" class="is-active">
-          <a href="#">
-            <span class="icon is-small"><i class="fa fa-image"  aria-hidden="true" tabindex="-1"></i></span>
+        <li data-target="pane-1" id="1" class="is-active" role="tab" aria-selected="true" aria-controls="pane-1" >
+          <a>
+            <span class="icon is-small"><i aria-hidden="true"class="fa fa-image"></i></span>
             <span>Pictures</span>
           </a>
         </li>
-        <li data-target="pane-3" id="3">
-          <a href="#">
-            <span class="icon is-small"><i class="fab fa-superpowers"  aria-hidden="true" tabindex="-1"></i></span>
+        <li data-target="pane-3" id="3" role="tab" aria-selected="false" aria-controls="pane-3">
+          <a>
+            <span class="icon is-small"><i aria-hidden="true" class="fab fa-superpowers"></i></span>
             <span>Team</span>
           </a>
         </li>
-        <li data-target="pane-4" id="4">
-          <a href="#">
-            <span class="icon is-small"><i class="fa fa-film"  aria-hidden="true" tabindex="-1"></i></span>
+        <li data-target="pane-4" id="4" role="tab" aria-selected="false" aria-controls="pane-4">
+          <a>
+            <span class="icon is-small"><i aria-hidden="true" class="fa fa-film"></i></span>
             <span>Video</span>
           </a>
         </li>
       </ul>
     </div>
-  </div>
-
+  </section>
   <div class="tab-content container">
-    <div class="tab-pane is-active" id="pane-1" class="level">
+    <div class="tab-pane is-active level" id="pane-1" tabindex="0" role="tabpanel" aria-controls="1">
       <div class="container">
         <div class="columns features">
           <div class="column is-4">
             <div class="card">
               <div class="card-image">
                 <div class="image is-4by3">
-                  <img src="./img/tab-1.jpg" class="modal-button" data-target="modal-image1" alt='image 1 description'>
+                  <img src="./img/tab-1.jpg" class="modal-button" data-target="modal-image1" alt="boy is driving drone">
                 </div>
               </div>
               <div class="card-content">
                 <div class="content">
                   <div>Click on image above</div>
                   <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-                  <button class="button is-link modal-button" data-target="modal-image1">Image modal</button>
+                  <button aria-haspopup="true" class="button is-link modal-button" data-target="modal-image1">Image modal</button>
                 </div>
               </div>
             </div>
@@ -332,7 +344,7 @@
             <div class="card">
               <div class="card-image">
                 <div class="image is-4by3">
-                  <img src="./img/tab-2.jpg" alt='image 2 description'>
+                  <img src="./img/tab-2.jpg" alt="seaside view from drone">
                 </div>
               </div>
               <div class="card-content">
@@ -340,7 +352,7 @@
                   <div>Tempor orci dapibus ultrices in.</div>
                   <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
                     sed risus.</p>
-                  <button class="button is-link modal-button" data-target="modal-card">Modal Card</button>
+                  <button aria-haspopup="true" class="button is-link modal-button" data-target="modal-card">Modal Card</button>
                 </div>
               </div>
             </div>
@@ -349,14 +361,14 @@
             <div class="card">
               <div class="card-image">
                 <div class="image is-4by3">
-                  <img src="./img/tab-3.jpg" class="modal-button" data-target="modal-image2" alt='image 3 description'>
+                  <img src="./img/tab-3.jpg" class="modal-button" data-target="modal-image2" alt="rainbow on the coast">
                 </div>
               </div>
               <div class="card-content">
                 <div class="content">
                   <div>Click anywhere on card</div>
                   <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                  <button class="button is-link modal-button" data-target="modal-image2">Image modal</button>
+                  <button aria-haspopup="true" class="button is-link modal-button" data-target="modal-image2">Image modal</button>
                 </div>
               </div>
             </div>
@@ -364,13 +376,13 @@
         </div>
       </div>
     </div>
-
-    <div class="tab-pane" id="pane-3">
+  
+    <div class="tab-pane" id="pane-3" tabindex="0" role="tabpanel" aria-controls="3">
       <div class="columns medias">
         <div class="column">
           <div class="media">
             <div class="media-left">
-              <i class="fab fa-github-square fa-4x"  aria-hidden="true" tabindex="-1"></i>
+              <i aria-hidden="true" class="fab fa-github-square fa-4x"></i>
             </div>
             <div class="media-content">
               <div class="content">
@@ -383,7 +395,7 @@
           </div>
           <div class="media">
             <div class="media-left">
-              <i class="fab fa-empire fa-4"  aria-hidden="true" tabindex="-1"></i>
+              <i aria-hidden="true" class="fab fa-empire fa-4x"></i>
             </div>
             <div class="media-content">
               <div class="content">
@@ -398,7 +410,7 @@
         <div class="column">
           <div class="media">
             <div class="media-left">
-              <i class="fab fa-ravelry fa-4x"  aria-hidden="true" tabindex="-1"></i>
+              <i aria-hidden="true" class="fab fa-ravelry fa-4x"></i>
             </div>
             <div class="media-content">
               <div class="content">
@@ -411,7 +423,7 @@
           </div>
           <div class="media">
             <div class="media-left">
-              <i class="fab fa-github-alt fa-4x"  aria-hidden="true" tabindex="-1"></i>
+              <i aria-hidden="true" class="fab fa-github-alt fa-4x"></i>
             </div>
             <div class="media-content">
               <div class="content">
@@ -425,41 +437,41 @@
         </div>
       </div>
     </div>
-
-    <div class="tab-pane" id="pane-4">
+  
+    <div class="tab-pane" id="pane-4" tabindex="0" role="tabpanel" aria-controls="4">
       <div class="columns is-centered">
         <div class="column is-three-quarters">
-          <div class="title has-text-centered">Inspired video</div>
+          <h2 class="title has-text-centered">Inspired video</h2>
           <div class="embed-container image">
-            <iframe src="https://player.vimeo.com/video/261794608" frameborder="0" title="Vimeo video player" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            <iframe src="https://player.vimeo.com/video/261794608" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <section class="section has-background-grey-lighter">
+  
+  <section id="upcoming-events" role="upcoming-events" aria-labelledby="upcoming-events-block" class="section has-background-grey-lighter">
     <div class="container has-text-centered">
         <div class="section-heading has-text-centered">
-          <div class="title is-2">Upcoming events</div>
-          <div class="subtitle is-5">Outcoming dates for the best options</div>
+          <h2 id="upcoming-events-block" class="title is-2">Upcoming events</h2>
+          <h5 class="subtitle is-5">Outcoming dates for the best options</h5>
         </div>
-
+  
       <div class="tile is-ancestor">
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/web-access-summit-eventbrite.jpg" alt="full alternative image description">
+              <img src="./img/web-access-summit-eventbrite.jpg" alt="web accessibility summit poster">
             </div>
             <p class="title">New York</p>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a class="button" href='#'>Buy Tickets</a>
+            <a class="button" href="#">Buy Tickets</a>
           </div>
         </div>
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/access.jpg" alt="full alternative image description 2">
+              <img src="./img/access.jpg" alt="disabled people are taking part at the los angeles summit">
             </div>
             <p class="title">Los Angeles</p>
             <p class="subtitle">Fri 27 Nov 2016</p>
@@ -469,7 +481,7 @@
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/dotcss-2019.jpg" alt="full alternative image description 3">
+              <img src="./img/dotcss-2019.jpg" alt="dot css conference poster">
             </div>
             <p class="title">Mexico</p>
             <p class="subtitle">Fri 27 Nov 2016</p>
@@ -477,12 +489,12 @@
           </div>
         </div>
       </div>
-
+  
       <div class="tile is-ancestor">
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/images.jpg" alt="full alternative image description 4">
+              <img src="./img/images.jpg" alt="access a11y ad">
             </div>
             <p class="title">Paris</p>
             <p class="subtitle">Fri 27 Nov 2016</p>
@@ -492,7 +504,7 @@
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/mid_300_33455472_313632022502906_5761920685983137792_n.png" alt="full alternative image description 5">
+              <img src="./img/mid_300_33455472_313632022502906_5761920685983137792_n.png" alt="css minck js conference poster">
             </div>
             <p class="title">Minsk</p>
             <p class="subtitle">Fri 27 Nov 2016</p>
@@ -502,7 +514,7 @@
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/access.jpg" alt="full alternative image description 6">
+              <img src="./img/access.jpg" alt="disabled people are taking part at the london summit">
             </div>
             <p class="title">London</p>
             <p class="subtitle">Fri 27 Nov 2016</p>
@@ -512,16 +524,15 @@
       </div>
     </div>
   </section>
-
-  <section class="section">
+  <section id="services" role="services" class="section" aria-labelledby="services-block">
     <div class="section-heading has-text-centered">
-      <h2 class="title is-2">Services</h2>
+      <h2 id="services-block" class="title is-2">Services</h2>
       <h5 class="subtitle is-5">What can I do for you?</h5>
     </div>
     <div class="container">
       <div class="columns">
         <div class="column">
-          <a class="box">
+          <a class="box" href="#">
             <div class="content">
               <h5 class="title is-5">Front End Web Development</h5>
               Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
@@ -530,18 +541,18 @@
           </a>
         </div>
         <div class="column">
-          <a class="box">
+          <a class="box" href="#">
             <div class="content">
-              <h5 class="title is-5">Back End Web Development</h5>
+              <div class="title is-5">Back End Web Development</div>
               Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
             </div>
           </a>
         </div>
       </div>
-
+  
       <div class="columns">
         <div class="column">
-          <a class="box">
+          <a class="box" href="#">
             <div class="content">
               <h5 class="title is-5">Front End Web Development</h5>
               Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
@@ -550,7 +561,7 @@
           </a>
         </div>
         <div class="column">
-          <a class="box">
+          <a class="box" href="#">
             <div class="content">
               <h5 class="title is-5">Back End Web Development</h5>
               Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
@@ -560,13 +571,13 @@
       </div>
     </div>
   </section>
-
-  <section class="section has-background-grey-lighter">
+  
+  <section id="photos" role="photos" class="section has-background-grey-lighter" aria-labelledby="photos-block">
     <div class="container">
       <div class="section-heading has-text-centered">
-        <h2 class="title is-2">Photos from past events</h2>
+        <h2 id="photos-block" class="title is-2">Photos from past events</h2>
       </div>
-
+  
       <div class="container portfolio-container">
         <div class="columns">
           <div class="column is-4">
@@ -575,7 +586,7 @@
                 <p class="card-header-title">
                   <span>Admin <small>(Light)</small></span>
                   <span class="is-pulled-right">
-                    <a href="#">
+                    <a>
                       <span class="tag is-default">v0.7.2</span>
                     </a>
                     <span class="tag is-default">Desktop</span>
@@ -585,7 +596,7 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-1.jpeg" alt="full alternative image description 5">
+                  <img src="./img/ev-1.jpeg" alt="jsconf family conference">
                 </div>
               </div>
               <div class="card-footer">
@@ -600,7 +611,7 @@
                 <p class="card-header-title">
                   <span>Cards</span>
                   <span class="is-pulled-right">
-                    <a href="#">
+                    <a>
                       <span class="tag is-default">v0.7.2</span>
                     </a>
                     <span class="tag is-default">Desktop</span>
@@ -610,7 +621,7 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-2.jpeg" alt="full alternative image description 6">
+                  <img src="./img/ev-2.jpeg" alt="a man is working on the laptop">
                 </div>
               </div>
               <div class="card-footer">
@@ -625,7 +636,7 @@
                 <p class="card-header-title">
                   <span>Forum</span>
                   <span class="is-pulled-right">
-                    <a href="#">
+                    <a>
                       <span class="tag is-default">v0.7.2</span>
                     </a>
                     <span class="tag is-default">Desktop</span>
@@ -635,7 +646,7 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-3.jpeg" alt="full alternative image description 7">
+                  <img src="./img/ev-3.jpeg" alt="someone take a photo on the conference">
                 </div>
               </div>
               <div class="card-footer">
@@ -652,7 +663,7 @@
                 <p class="card-header-title">
                   <span>InstaAlbum</span>
                   <span class="is-pulled-right">
-                    <a href="#">
+                    <a>
                       <span class="tag is-default">v0.7.2</span>
                     </a>
                     <span class="tag is-default">Desktop</span>
@@ -662,7 +673,7 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-4.jpeg" alt="full alternative image description 8" >
+                  <img src="./img/ev-4.jpeg" alt="session qa on the summit">
                 </div>
               </div>
               <div class="card-footer">
@@ -677,7 +688,7 @@
                 <p class="card-header-title">
                   <span>Landing</span>
                   <span class="is-pulled-right">
-                    <a href="#">
+                    <a>
                       <span class="tag is-default">v0.7.2</span>
                     </a>
                     <span class="tag is-default">Desktop</span>
@@ -687,7 +698,7 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-5.jpeg" alt="full alternative image description 9">
+                  <img src="./img/ev-5.jpeg" alt="interactive event ad">
                 </div>
               </div>
               <div class="card-footer">
@@ -702,7 +713,7 @@
                 <p class="card-header-title">
                   <span>Marketing</span>
                   <span class="is-pulled-right">
-                    <a href="#">
+                    <a>
                       <span class="tag is-default">v0.7.2</span>
                     </a>
                     <span class="tag is-default">Desktop</span>
@@ -712,7 +723,7 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-6.jpeg" alt="full alternative image description 9">
+                  <img src="./img/ev-6.jpeg" alt="people at the conference are watching on the big screen">
                 </div>
               </div>
               <div class="card-footer">
@@ -725,17 +736,18 @@
       </div>
     </div>
     </section>
- 
-  <section class="section">
+  </div>
+  
+  <section class="section" aria-labelledby="forum">
     <div class="container">
       <div class="section-heading has-text-centered">
-        <h2 class="title is-2">Forum</h2>
+        <h2 id="forum" class="title is-2">Forum</h2>
         <h5 class="subtitle is-5">Discuss any topic with no leaving this page</h5>
       </div>
-
+  
       <div class="columns">
         <div class="column is-3">
-          <a class="button is-primary is-block is-alt is-large">New Post</a>
+          <button class="button is-primary is-block is-alt is-large">New Post</button>
           <div class="menu">
             <ul class="menu-list forum-list">
               <li><span class="tag is-primary is-medium">Dashboard</span></li>
@@ -755,7 +767,7 @@
               <div class="media">
                 <div class="media-left">
                   <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=300" alt="full alternative image description 11">
+                    <img src="https://source.unsplash.com/random/64x64/?sig=300" alt="">
                   </p>
                 </div>
                 <div class="media-content">
@@ -767,17 +779,17 @@
                   </div>
                 </div>
                 <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 1</span>
+                  <span class="has-text-grey-light"><i aria-hidden="true" class="fa fa-comments"></i> 1</span>
                 </div>
               </div>
             </div>
-
+  
             <div class="post">
               <h4>How can I make a button go full width?</h4>
               <div class="media">
                 <div class="media-left">
                   <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=301" alt="full alternative image description 12">
+                    <img src="https://source.unsplash.com/random/64x64/?sig=301" alt="avatar of user">
                   </p>
                 </div>
                 <div class="media-content">
@@ -789,17 +801,17 @@
                   </div>
                 </div>
                 <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 0</span>
+                  <span class="has-text-grey-light"><i aria-hidden="true" class="fa fa-comments"></i> 0</span>
                 </div>
               </div>
             </div>
-
+  
             <div class="post">
               <h4>TypeError: Data must be a string or a buffer when trying touse tabs</h4>
               <div class="media">
                 <div class="media-left">
                   <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=302" alt="full alternative image description 13">
+                    <img src="https://source.unsplash.com/random/64x64/?sig=302" alt="avatar of user">
                   </p>
                 </div>
                 <div class="media-content">
@@ -811,17 +823,17 @@
                   </div>
                 </div>
                 <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 13</span>
+                  <span class="has-text-grey-light"><i aria-hidden="true" class="fa fa-comments"></i> 13</span>
                 </div>
               </div>
             </div>
-
+  
             <div class="post">
               <h4>How to vertically center elements?</h4>
               <div class="media">
                 <div class="media-left">
                   <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=303" alt="full alternative image description 33">
+                    <img src="https://source.unsplash.com/random/64x64/?sig=303" alt="avatar of user">
                   </p>
                 </div>
                 <div class="media-content">
@@ -833,17 +845,17 @@
                   </div>
                 </div>
                 <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                  <span class="has-text-grey-light"><i aria-hidden="true" class="fa fa-comments"></i> 2</span>
                 </div>
               </div>
             </div>
-
+  
             <div class="post">
               <h4>I'm trying to use hamburger menu on css, but it doesn't work. What is wrong?</h4>
               <div class="media">
                 <div class="media-left">
                   <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=304" alt="full alternative image description">
+                    <img src="https://source.unsplash.com/random/64x64/?sig=304" alt="avatar of user">
                   </p>
                 </div>
                 <div class="media-content">
@@ -855,17 +867,17 @@
                   </div>
                 </div>
                 <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                  <span class="has-text-grey-light"><i aria-hidden="true" class="fa fa-comments"></i> 2</span>
                 </div>
               </div>
             </div>
-
+  
             <div class="post">
               <h4>How to make tiles wrap with CSS?</h4>
               <div class="media">
                 <div class="media-left">
                   <p class="image is-32x32">
-                    <img src="https://source.unsplash.com/random/64x64/?sig=305" alt="full alternative image description 22">
+                    <img src="https://source.unsplash.com/random/64x64/?sig=305" alt="avatar of user">
                   </p>
                 </div>
                 <div class="media-content">
@@ -877,7 +889,7 @@
                   </div>
                 </div>
                 <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                  <span class="has-text-grey-light"><i aria-hidden="true" class="fa fa-comments"></i> 2</span>
                 </div>
               </div>
             </div>
@@ -886,116 +898,105 @@
       </div>
     </div>
   </section>
-
-  <section class="section has-background-light">
+  
+  <section class="section has-background-light" aria-labelledby="contact-us">
     <div class="container">
       <div class="section-heading has-text-centered">
-        <h2 class="title is-2">Contact us</h2>
+        <h2 id="contact-us" class="title is-2">Contact us</h2>
         <h5 class="subtitle is-5">Don't hesitate, ask anything</h5>
       </div>
-
-      <form role='form' class="column is-half is-offset-one-quarter box">
-        <fieldset>
-          <legend>Nain fields</legend>
+  
+      <form role="form" aria-label="contact form" class="column is-half is-offset-one-quarter box">
         <div class="field">
           <label class="label" for="name">Name</label>
           <div class="control">
-            <input id='name' class="input" type="text" aria-describedby="nameNote" placeholder="Text input">
+            <input id="name" class="input" type="text" placeholder="Text input">
           </div>
-          <span id="nameNote" class='visually-hidden'>Enter here your name</span>
         </div>
-
+  
         <div class="field">
-          <label class="label" for="userName">Username</label>
+          <label class="label" for="username">Username</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input is-success" type="text" id='userName' aria-describedby="userNameNote">
+            <input id="username" class="input is-success" type="text">
             <span class="icon is-small is-left">
-              <i class="fas fa-user"  aria-hidden="true" tabindex="-1"></i>
+              <i aria-hidden="true" class="fas fa-user"></i>
             </span>
             <span class="icon is-small is-right">
-              <i class="fas fa-check"  aria-hidden="true" tabindex="-1"></i>
+              <i aria-hidden="true" class="fas fa-check"></i>
             </span>
-            <span id="userNameNote" class='visually-hidden'>Enter here your name</span>
           </div>
           <p class="help is-success">This username is available</p>
         </div>
-
+  
         <div class="field">
-          <label class="label" for='email'>Email</label>
+          <label class="label" for="email">Email</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input is-danger" type="email" placeholder="Email input" value="hello@" id='email' aria-describedby="emailNote">
+            <input id="email" class="input is-danger" type="email" placeholder="Email input" value="hello@">
             <span class="icon is-small is-left">
-              <i class="fas fa-envelope"  aria-hidden="true" tabindex="-1"></i>
+              <i aria-hidden="true" class="fas fa-envelope"></i>
             </span>
             <span class="icon is-small is-right">
-              <i class="fas fa-exclamation-triangle"  aria-hidden="true" tabindex="-1"></i>
+              <i aria-hidden="true" class="fas fa-exclamation-triangle"></i>
             </span>
-            <span id="emailNote" class='visually-hidden'>Enter here your email</span>
           </div>
           <p class="help is-danger">This email is invalid</p>
         </div>
-
+  
         <div class="field">
-          <label class="label" for='subject'>Subject</label>
+          <label class="label" for="subject">Subject</label>
           <div class="control">
             <div class="select">
-              <select id='subject'>
+              <select id="subject">
                 <option>Select dropdown</option>
                 <option>With options</option>
               </select>
             </div>
           </div>
         </div>
-
+  
         <div class="field">
-          <label class="label" for='message'>Message</label>
+          <label class="label" for="message">Message</label>
           <div class="control">
-            <textarea class="textarea" placeholder="Textarea" id='message'></textarea>
+            <textarea id="message" class="textarea" placeholder="Textarea"></textarea>
           </div>
         </div>
-        <div class="control">
-          <div class="field">
-          <label class="checkbox" for='agree'>
-            <input type="checkbox" id='agree'>
-            I agree to the <a href="#" target="_blank" rel="noopener" aria-label="terms and conditions" aria-describedby="open-a-new-window">terms and conditions
-              <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
-              <i aria-hidden="true" class="fas fa-external-link-alt" tabindex="-1"></i>
-            </a>
-          </label>
-        </div>
-      </div>
-        </fieldset>
-
-        
-          
-          
-
-        <fieldset class="field">
-          <legend>Output format</legend>
+  
+        <div class="field">
           <div class="control">
-            <label class="radio" for='yes'>
-              <input type="radio" name="question" id='yes'>
+            <label class="checkbox" for="i-agree">
+              <input type="checkbox" id="i-agree" name="suggestion">
+              I agree to the <a href="#" target="_blank" rel="noopener" aria-label="terms and conditions" aria-describedby="open-a-new-window">terms and conditions
+                <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
+                <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+              </a>
+            </label>
+          </div>
+        </div>
+  
+        <div class="field">
+          <div class="control">
+            <label class="radio" for="yes">
+              <input type="radio" id="yes" name="question">
               Yes
             </label>
-            <label class="radio" for='no'>
-              <input type="radio" name="question" id='no'>
+            <label class="radio"  for="no">
+              <input type="radio" id="no" name="question">
               No
             </label>
           </div>
-        </fieldset>
-
-        <fieldsetclass="field is-grouped">
+        </div>
+  
+        <div class="field is-grouped">
           <div class="control">
-            <button class="button is-link">Submit</button>
+            <button class="button is-link" aria-label="Click to submit" role="button">Submit</button>
           </div>
           <div class="control">
-            <button class="button is-text">Cancel</button>
+            <button class="button is-text" aria-label="Click to cancel" role="button">Cancel</button>
           </div>
-        </fieldsetclass>
+        </div>
       </form>
     </div>
   </section>
-
   <!-- <div class="section">
     <div class="container">
       <div class="columns is-multiline">
@@ -1105,6 +1106,7 @@
     </div>
   </div> -->
 </main>
+
   <footer class="footer">
     <div class="container">
       <div class="columns">
@@ -1147,19 +1149,19 @@
       <div class="content has-text-centered">
         <div class="soc">
           <a href="https://github.com/" target="_blank" rel="noopener" aria-label="Github" aria-describedby="open-a-new-window">
-            <i aria-hidden="true" focusable="false" class="fab fa-github-alt fa-2x" tabindex="-1"></i>
+            <i aria-hidden="true" focusable="false" class="fab fa-github-alt fa-2x"></i>
             <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
           </a>
           <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Youtube" aria-describedby="open-a-new-window">
-            <i aria-hidden="true" class="fab fa-youtube fa-2x" tabindex="-1"></i>
+            <i aria-hidden="true" class="fab fa-youtube fa-2x"></i>
             <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
           </a>
           <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook" aria-describedby="open-a-new-window">
-            <i aria-hidden="true" class="fab fa-facebook fa-2x" tabindex="-1"></i>
+            <i aria-hidden="true" class="fab fa-facebook fa-2x"></i>
             <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
           </a>
           <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter" aria-describedby="open-a-new-window">
-            <i aria-hidden="true" class="fab fa-twitter fa-2x" tabindex="-1"></i>
+            <i aria-hidden="true" class="fab fa-twitter fa-2x"></i>
             <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
           </a>
         </div>
@@ -1167,7 +1169,7 @@
           <a href="http://opensource.org/licenses/mit-license.php" target="_blank" rel="noopener" aria-label="License of MIT" aria-describedby="open-a-new-window">
           MIT
           <span id="open-a-new-window" class="visually-hidden">, will open in a new window</span>
-          <i aria-hidden="true" class="fas fa-external-link-alt" tabindex="-1"></i>
+          <i aria-hidden="true" class="fas fa-external-link-alt"></i>
         </a>.
       </p>
       </div>
@@ -1180,14 +1182,14 @@
       <div class="card">
         <div class="card-image">
           <div class="image is-4by3">
-            <img src="https://source.unsplash.com/random/?sig=2" alt="image" alt="full alternative image description"/>
+            <img src="https://source.unsplash.com/random/?sig=2" alt="">
           </div>
         </div>
         <div class="card-content">
           <div class="media">
             <div class="media-left">
               <div class="image is-48x48">
-                <img src="http://www.radfaces.com/images/avatars/linda-barret.jpg" alt="full alternative image description">
+                <img src="http://www.radfaces.com/images/avatars/linda-barret.jpg" alt="avatar of user">
               </div>
             </div>
             <div class="media-content">
@@ -1200,9 +1202,9 @@
             Bean's dinnahbucket bub geez bud sumpin' fierce ayuhpawt Bangah naw, Powrtland Museum of Aht down cellah sumpin' fierce hoppa bub If you can't stand the wintah you don't deserve the summah slower than molasses going uphill in January.
             Sgn'wahl shoggor hrii uaaah R'lyeh uh'e k'yarnak Hastur hupadgh li'hee, hai f'nilgh'ri nilgh'ri n'ghftor ngftaghu vulgtlagln h'hrii throd Nyarlathotep lloig, naflsll'ha nnnsll'ha athg y-ebunma goka chtenff ehyeog cehye. Zhro y'hah
             nogoth phlegeth stell'bsna orr'e ph'Hastur gnaiih throd, uln ya lw'nafh mg nar'luh li'hee wgah'n, sgn'wahl mg nakadishtu chlirgh hupadgh tharanak h'gnaiih.
-            <a href="#">@testio</a>.
-            <a href="#">#css</a>
-            <a href="#">#responsive</a>
+            <a>@testio</a>.
+            <a>#css</a>
+            <a>#responsive</a>
             <br>
             <time datetime="2018-02-02">12:45 AM - 20 June 2018</time>
           </div>
@@ -1212,23 +1214,29 @@
     <button class="modal-close is-large"></button>
   </div>
 
-  <div id="modal-image1" class="modal modal-fx-3dSlit">
+  <div id="modal-image1" class="modal modal-fx-3dSlit" role="dialog">
     <div class="modal-background"></div>
     <div class="modal-content is-huge is-image">
-      <img src="https://source.unsplash.com/random/?sig=1" alt="full alternative image description">
+      <img src="https://source.unsplash.com/random/?sig=1" alt="">
     </div>
     <button class="modal-close is-large"></button>
   </div>
 
-  <div id="modal-image2" class="modal modal-fx-superScaled">
+  <div id="modal-image2" class="modal modal-fx-superScaled" role="dialog">
     <div class="modal-background"></div>
     <div class="modal-content  is-image">
-      <img src="https://source.unsplash.com/random/?sig=3" alt="full alternative image description">
+      <img src="https://source.unsplash.com/random/?sig=3" alt="">
     </div>
     <button class="modal-close is-large"></button>
   </div>
 
   <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
   <script async src="js/custom.js"></script>
+  <script>
+        const liveRegion = document.querySelector('.live-region')
+        setInterval(()=> {
+          liveRegion.innerHTML = Math.floor(Math.random() * 10);
+        }, 60000)
+  </script>
 </body>
 </html>
