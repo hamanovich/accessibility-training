@@ -5,23 +5,70 @@
 }
 
 .tabs {
-  margin-bottom: -1px !important;
+  margin: 0 auto;
   position: relative;
+  padding: 2px 2px 0 2px;
 }
+.tab {
+  padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.down {
+  margin-top: 5px;
+}
+
 .tab-content {
   padding: 2rem;
 }
-.tab-pane {
-  display: none;
-}
-.tab-pane.is-active {
-  display: block;
-  position: relative;
+
+.separator {
+  margin: 0.5rem 0;
+  background-color: #000;
+  border-bottom: 1px solid #000;
 }
 
 .is-active {
-  display: initial;
   color: #07578D !important;
+  background-color: #fff;
+}
+
+.navbar-item {
+  position: relative;
+}
+
+.administration-list {
+  width: max-content;
+
+  position: absolute;
+  top: 4rem;
+
+  padding: 1rem;
+  
+  border: 2px solid gray;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.administration-list__item {
+  color: #000;
+  cursor: pointer;
+  line-height: 1.8rem;
+}
+
+.administration-list__item > a {
+  color: #000;
+}
+
+.administration-list__item:hover {
+  color: #006151;
+  border-bottom: 1px solid gray;
 }
 
 .hero.is-info .tabs.is-boxed li.is-active a, 
@@ -146,7 +193,7 @@
   color: #242424;
 }
 
-a:focus, input:focus, button:focus {
+a:focus, input:focus, button:focus, li:focus {
   border-radius: 2px;
   outline: 0;
   box-shadow: 0 0 2px 1.5px #fff, 
@@ -203,6 +250,7 @@ a {
 
 .skip-nav-link {
   margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 .skip-nav-link:focus {
@@ -214,9 +262,14 @@ a {
 }
 
 .skip-nav-list {
+  margin-left: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
   display: block;
   position: absolute;
   top: 3rem;
+  background-color: #c5c5c5;
+  color: rgb(0, 0, 0);
 }
 
 .small {
@@ -228,13 +281,8 @@ a {
 }
 
 .skip-nav-item {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
-
-.skip-nav-item:focus {
-  color: #fff;
-}
-
 
 @media screen and (max-width: 1087px) {
   .navbar-menu {

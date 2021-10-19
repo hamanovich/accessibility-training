@@ -14,19 +14,18 @@
     <div class="hero-head">
       <a href="#" role="button" tabindex="0" aria-expanded="false" aria-haspopup="true" class="visuallyhidden skip-nav-link">Skip to ...</a>
       <div role="dialog" tabindex="-1" id="skip-nav-list" class="display-none skip-nav-list">
-        <ul title='skip to' aria-haspopup="true" aria-modal="true" role="menu">
+        <ul title='skip to' aria-modal="true" role="menu">
           <li><a href="#about" role="menuitem" tabindex="-1" class="skip-nav-item">about us</a></li>
           <li><a href="#services" role="menuitem" tabindex="-1" class="skip-nav-item">services</a></li>
           <li><a href="#forum" role="menuitem" tabindex="-1" class="skip-nav-item">forum</a></li>
           <li><a href="#contact" role="menuitem" tabindex="-1" class="skip-nav-item">contact us</a></li>
-          <a></a>
         </ul>
       </div>
-      <nav class="navbar" role="navigation">
+      <nav class="navbar">
         <div class="container">
           <div class="navbar-brand">
             <a class="navbar-item logo-link">
-              <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" alt="epam's logo" aria-hidden="true">
+              <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" alt="epam's logo">
             </a>
             <span class="navbar-burger burger" data-target="navbarMenu">
               <span></span>
@@ -38,7 +37,7 @@
           <div id="navbarMenu" class="navbar-menu">
             <ul class="navbar-end">
               <li class="navbar-item">
-                <a href="#" class="button is-white is-outlined" title="will jump to the home" role="link">
+                <a href="#" class="button is-white is-outlined" title="will jump to the home">
                   <span class="icon" aria-hidden="true">
                     <i class="fa fa-home"></i>
                   </span>
@@ -46,15 +45,26 @@
                 </a>
               </li>
               <li class="navbar-item">
-                <a href="#" name="examples" class="button is-white is-outlined" title="will jump to the examples" role="link">
+                <a href="#" id="administration-button" class="button is-white is-outlined" role="button" aria-owns="administration-list" aria-controls="administration-list" aria-haspopup="true" aria-expanded="false">
                   <span class="icon" aria-hidden="true">
                     <i class="fab fa-superpowers"></i>
                   </span>
-                  <span>Examples</span>
+                  Administration
+                  <span class="icon down" aria-hidden="true">
+                    <i class="fas fa-chevron-down"></i>
+                  </span>
                 </a>
+                <ul id="administration-list" hidden role="menu" class="administration-list" tabindex="-1">
+                  <li class="administration-list__item"><a role="menuitem" href="#" title="will jump to the Administration" tabindex="-1">Administration</a></li>
+                  <li class="administration-list__item"><a role="menuitem" href="#" title="will jump to the Team Settings" tabindex="-1">Team Settings</a></li>
+                  <li class="administration-list__item"><a role="menuitem" href="#" title="will jump to the Manage Your Team" tabindex="-1">Manage Your Team</a></li>
+                  <li class="administration-list__item"><a role="menuitem" href="#" title="will jump to the Invitations" tabindex="-1">Invitations</a></li>
+                  <li role="separator" class="separator"/>
+                  <li class="administration-list__item"><a role="menuitem" href="#" title="will jump to the Authentication" tabindex="-1">Authentication</a></li>
+                </ul>
               </li>
               <li class="navbar-item">
-                <a href="#" class="button is-white is-outlined" title="will jump to the documentation" role="link">
+                <a href="#" class="button is-white is-outlined" title="will jump to the documentation">
                   <span class="icon" aria-hidden="true">
                     <i class="fa fa-book"></i>
                   </span>
@@ -62,7 +72,7 @@
                 </a>
               </li>
               <li class="navbar-item">
-                <a href="#" target="_blank" class="button is-white is-outlined" title="will opens in a new tab or window" role="link">
+                <a href="#" target="_blank" class="button is-white is-outlined" title="will opens in a new tab or window">
                   <span class="icon" aria-hidden="true">
                     <i class="fab fa-github"></i>
                   </span>
@@ -78,7 +88,7 @@
       </nav>
     </div>
 
-    <div class="hero-body" aria-live="assertive">
+    <div class="hero-body">
       <div class="container has-text-centered">
         <div class="column is-6 is-offset-3">
           <h1 class="title has-text-white">We have web accessibility in mind</h1>
@@ -89,7 +99,7 @@
             <div class="field is-grouped">
               <p class="control is-expanded">
                 <label for="control" id="enter-something" class="visuallyhidden">Enter something to notify about it</label>
-                <input name="control" id="enterSomethingInput" class="input" aria-describedby="enter-something" aria-placeholder="text input">
+                <input name="control" id="enterSomethingInput" class="input" aria-describedby="enter-something" aria-placeholder="text">
               </p>
               <p class="control">
                 <button class="button is-info">Notify Me</button>
@@ -101,7 +111,7 @@
     </div>
   </header>
 
-  <main id="main" role="main">
+  <main id="main">
     <section class="breadcrumbs" aria-label="breadcrumbs section">
       <nav aria-label="Breadcrumb" class="breadcrumb">
         <ol>
@@ -123,7 +133,7 @@
         </ol>
       </nav>
     </section>
-    <section class="section" id="about" aria-label="about section">
+    <section class="section" id="about" aria-label="about">
       <div class="section-heading has-text-centered">
         <h2 class="title is-2">About Us</h2>
         <h5 class="subtitle is-5">We of all trades, master of "some"</h5>
@@ -237,7 +247,7 @@
       </div>
     </section>
 
-    <section class="hero has-background-grey-light" aria-label="key features section">
+    <section class="hero has-background-grey-light" aria-label="key features">
       <div class="container features">
         <div class="section-heading has-text-centered">
           <h2 class="title is-2">Three key features</h2>
@@ -300,44 +310,38 @@
       </div>
     </section>
 
-    <section class="list-of-topics" id='topics-list' aria-label="list of topics section">
+    <section class="list-of-topics" id='topics-list' aria-label="list of topics">
       <div class="hero is-info">
         <div class="hero-body">
           <div class="container">
-            <div class="title">List of topics</div>
+            <div class="title" id="topics">List of topics</div>
             <div class="subtitle">We are always in touch we the outside world</div>
           </div>
         </div>
-        <div class="tabs is-boxed is-centered main-menu" id="nav">
-          <ul role="tablist">
-            <li data-target="pane-1" id="1" class="is-active" role="tab">
-              <a href="#" title="opens an image" role="button" aria-controls="pane-1">
-                <span class="icon is-small"><i class="fa fa-image"></i></span>
-                <span>Pictures</span>
-              </a>
-            </li>
-            <li data-target="pane-3" id="3" role="tab">
-              <a href="#" title='opens our team' role="button" aria-controls="pane-3">
-                <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
-                <span>Team</span>
-              </a>
-            </li>
-            <li data-target="pane-4" id="4" role="tab">
-              <a href="#" title='opens video' role="button" ria-controls="pane-4">
-                <span class="icon is-small"><i class="fa fa-film"></i></span>
-                <span>Video</span>
-              </a>
-            </li>
-          </ul>
+        <div class="tabs is-boxed is-centered main-menu" id="nav" >
+          <div role="tablist" aria-orientation="horizontal">
+            <button data-target="pane-1" id="1" class="is-active tab" aria-selected="true" aria-controls="pane-1" role="tab" tabindex="0">
+              <span class="icon is-small"><i class="fa fa-image"></i></span>
+              Pictures
+            </button>
+            <button data-target="pane-3" id="3" class="tab" aria-controls="pane-3" role="tab" tabindex="-1">
+              <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
+              Team
+            </button>
+            <button data-target="pane-4" id="4" class="tab" aria-controls="pane-4" role="tab" tabindex="-1">
+              <span class="icon is-small"><i class="fa fa-film"></i></span>
+              Video
+            </button>
+          </div>
         </div>
       </div>
 
-      <div class="tab-content container">
-        <div class="tab-pane is-active" id="pane-1" class="level" role="tabpanel">
+      <div class="tab-content container" aria-live="polite">
+        <div class="tab-pane is-active" id="pane-1" class="level" role="tabpanel" aria-labelledby="1">
           <div class="container">
             <div class="columns features">
               <div class="column is-4">
-                <figure class="card" role="figure">
+                <figure class="card">
                   <div class="card-image">
                     <div class="image is-4by3">
                       <img src="./img/tab-1.jpg" class="modal-button" data-target="modal-image1" aria-haspopup="true" aria-owns="modal-card" alt="controller">
@@ -353,7 +357,7 @@
                 </figure>
               </div>
               <div class="column is-4">
-                <figure class="card" role="figure">
+                <figure class="card">
                   <div class="card-image">
                     <div class="image is-4by3">
                       <img src="./img/tab-2.jpg" alt="beach" >
@@ -370,7 +374,7 @@
                 </figure>
               </div>
               <div class="column is-4 modal-button" data-target="modal-image">
-                <figure class="card" role="figure">
+                <figure class="card">
                   <div class="card-image">
                     <div class="image is-4by3">
                       <img src="./img/tab-3.jpg" class="modal-button" data-target="modal-image2" alt="rainbow" aria-haspopup="true" aria-owns="modal-card">
@@ -389,7 +393,7 @@
           </div>
         </div>
 
-        <div class="tab-pane" id="pane-3" role="tabpanel">
+        <div class="tab-pane" id="pane-3" role="tabpanel" aria-labelledby="3" hidden="">
           <div class="columns medias">
             <div class="column">
               <div class="media">
@@ -458,7 +462,7 @@
           </div>
         </div>
 
-        <div class="tab-pane" id="pane-4" role="tabpanel">
+        <div class="tab-pane" id="pane-4" role="tabpanel" aria-labelledby="4" hidden="">
           <div class="columns is-centered">
             <div class="column is-three-quarters">
               <div class="title has-text-centered">Inspired video</div>
@@ -471,7 +475,7 @@
       </div>
     </section>
 
-    <section class="section has-background-grey-lighter" aria-label="upcoming events section">
+    <section class="section has-background-grey-lighter" aria-label="upcoming events">
       <div class="container has-text-centered">
           <div class="section-heading has-text-centered">
             <h2 class="title is-2">Upcoming events</h2>
@@ -552,7 +556,7 @@
       </div>
     </section>
 
-    <section class="section" id="services" aria-label="services section">
+    <section class="section" id="services" aria-label="services">
       <div class="section-heading has-text-centered">
         <h2 class="title is-2">Services</h2>
         <h5 class="subtitle is-5">What can I do for you?</h5>
@@ -600,7 +604,7 @@
       </div>
     </section>
 
-    <section class="section has-background-grey-lighter" aria-label="photos from past events section">
+    <section class="section has-background-grey-lighter" aria-label="photos from past events">
       <div class="container">
         <div class="section-heading has-text-centered">
           <h2 class="title is-2">Photos from past events</h2>
@@ -766,7 +770,7 @@
       </div>
     </section>
 
-    <section class="section" aria-label="forum section" id="forum">
+    <section class="section" aria-label="forum" id="forum">
       <div class="container">
         <div class="section-heading has-text-centered">
           <h2 class="title is-2">Forum</h2>
@@ -927,18 +931,18 @@
       </div>
     </section>
 
-    <section class="section has-background-light" aria-label="contact us section" id="contact">
+    <section class="section has-background-light" aria-label="contact us" id="contact">
       <div class="container">
         <div class="section-heading has-text-centered">
           <h2 class="title is-2">Contact us</h2>
           <h5 class="subtitle is-5">Don't hesitate, ask anything</h5>
         </div>
 
-        <form class="column is-half is-offset-one-quarter box" aria-labelledby="contact us" id="form" role="form">
+        <form class="column is-half is-offset-one-quarter box" aria-labelledby="contact us" id="form">
           <div class="field">
             <label class="label">Name
               <div class="control">
-                <input class="input" type="text" placeholder="Text input" aria-placeholder="text input" aria-invalid="false" aria-required="true">
+                <input class="input" type="text" placeholder="Text input" aria-placeholder="text" aria-invalid="false" aria-required="true">
               </div>
             </label>
           </div>
@@ -946,7 +950,7 @@
           <div class="field">
             <label class="label">Username
               <div class="control has-icons-left has-icons-right">
-                <input class="input is-success" type="text" aria-invalid="false" aria-placeholder="text input" aria-required="true">
+                <input class="input is-success" type="text" aria-invalid="false" aria-placeholder="text" aria-required="true">
                 <span class="icon is-small is-left" aria-hidden="true">
                   <i class="fas fa-user"></i>
                 </span>
@@ -961,7 +965,7 @@
           <div class="field">
             <label class="label">Email
             <div class="control has-icons-left has-icons-right">
-              <input class="input is-danger" type="email" placeholder="Email input" value="hello@" aria-placeholder="email input" aria-invalid="true" aria-required="true">
+              <input class="input is-danger" type="email" placeholder="Email input" value="hello@" aria-placeholder="email" aria-invalid="true" aria-required="true">
               <span class="icon is-small is-left" aria-hidden="true">
                 <i class="fas fa-envelope"></i>
               </span>
@@ -997,7 +1001,7 @@
           <div class="field">
             <div class="control">
               <label class="checkbox">
-                <input type="checkbox" aria-checked="false">
+                <input type="checkbox">
                 I agree to the <a href="#" title='will jump to terms and conditions'>terms and conditions</a>
               </label>
             </div>
@@ -1006,11 +1010,11 @@
           <div class="field">
             <div class="control">
               <label class="radio">
-                <input type="radio" name="question" aria-checked="false">
+                <input type="radio" name="question">
                 Yes
               </label>
               <label class="radio">
-                <input type="radio" name="question" aria-checked="false">
+                <input type="radio" name="question">
                 No
               </label>
             </div>
@@ -1227,7 +1231,7 @@
     <button class="modal-close is-large" aria-controls="modal-card"></button>
   </div>
 
-  <div id="modal-image1" class="modal modal-fx-3dSlit" aria-modal="true">
+  <div id="modal-image1" class="modal modal-fx-3dSlit" aria-modal="true" role="dialog">
     <div class="modal-background"></div>
     <div class="modal-content is-huge is-image">
       <img src="https://source.unsplash.com/random/?sig=1" alt='random image'>
@@ -1235,7 +1239,7 @@
     <button class="modal-close is-large"></button>
   </div>
 
-  <div id="modal-image2" class="modal modal-fx-superScaled" aria-modal="true">
+  <div id="modal-image2" class="modal modal-fx-superScaled" aria-modal="true" role="dialog">
     <div class="modal-background"></div>
     <div class="modal-content  is-image">
       <img src="https://source.unsplash.com/random/?sig=3" alt='random image'>
