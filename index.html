@@ -297,31 +297,25 @@
         <h5 class="subtitle">We are always in touch we the outside world</h5>
       </div>
     </div>
-    <div class="tabs is-boxed is-centered main-menu" id="nav" role="tablist">
-      <ul>
-        <li data-target="pane-1" id="1" class="is-active" role="tab" aria-selected="true" aria-controls="pane-1" >
-          <a>
+    <div class="tabs is-boxed is-centered main-menu" id="nav">
+      <div role="tablist" class="tablist" aria-label="tablist picture, team and video">
+        <button data-target="pane-1" id="1" class="is-active" role="tab" aria-selected="true" aria-controls="pane-1" >
             <span class="icon is-small"><i aria-hidden="true"class="fa fa-image"></i></span>
             <span>Pictures</span>
-          </a>
-        </li>
-        <li data-target="pane-3" id="3" role="tab" aria-selected="false" aria-controls="pane-3">
-          <a>
+        </button>
+        <button data-target="pane-3" id="3" role="tab" aria-selected="false" tabindex="-1" aria-controls="pane-3">
             <span class="icon is-small"><i aria-hidden="true" class="fab fa-superpowers"></i></span>
             <span>Team</span>
-          </a>
-        </li>
-        <li data-target="pane-4" id="4" role="tab" aria-selected="false" aria-controls="pane-4">
-          <a>
+        </button>
+        <button data-target="pane-4" id="4" role="tab" aria-selected="false" tabindex="-1" aria-controls="pane-4" data-deletable=""> 
             <span class="icon is-small"><i aria-hidden="true" class="fa fa-film"></i></span>
             <span>Video</span>
-          </a>
-        </li>
-      </ul>
+        </button>
+      </div>
     </div>
   </section>
   <div class="tab-content container">
-    <div class="tab-pane is-active level" id="pane-1" tabindex="0" role="tabpanel" aria-controls="1">
+    <div class="tab-pane" id="pane-1" tabindex="0" role="tabpanel" aria-labelledby="1">
       <div class="container">
         <div class="columns features">
           <div class="column is-4">
@@ -377,7 +371,7 @@
       </div>
     </div>
   
-    <div class="tab-pane" id="pane-3" tabindex="0" role="tabpanel" aria-controls="3">
+    <div class="tab-pane" id="pane-3" tabindex="0" role="tabpanel" aria-labelledby="3" hidden="">
       <div class="columns medias">
         <div class="column">
           <div class="media">
@@ -387,7 +381,7 @@
             <div class="media-content">
               <div class="content">
                 <p>
-                  <a href="#"><b>Dominic Ipsum</b></a>
+                  <a href="#"><strong>Dominic Ipsum</strong></a>
                   <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
                 </p>
               </div>
@@ -400,7 +394,7 @@
             <div class="media-content">
               <div class="content">
                 <p>
-                  <a href="#"><b>Cassie Ipsum</b></a>
+                  <a href="#"><strong>Cassie Ipsum</strong></a>
                   <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
                 </p>
               </div>
@@ -415,7 +409,7 @@
             <div class="media-content">
               <div class="content">
                 <p>
-                  <a href="#"><b>Avery Ipsum</b></a>
+                  <a href="#"><strong>Avery Ipsum</strong></a>
                   <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
                 </p>
               </div>
@@ -428,7 +422,7 @@
             <div class="media-content">
               <div class="content">
                 <p>
-                  <a href="#"><b>io Ipsum</b></a>
+                  <a href="#"><strong>io Ipsum</strong></a>
                   <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
                 </p>
               </div>
@@ -438,7 +432,7 @@
       </div>
     </div>
   
-    <div class="tab-pane" id="pane-4" tabindex="0" role="tabpanel" aria-controls="4">
+    <div class="tab-pane" id="pane-4" tabindex="0" role="tabpanel" aria-labelledby="4" hidden="">
       <div class="columns is-centered">
         <div class="column is-three-quarters">
           <h2 class="title has-text-centered">Inspired video</h2>
@@ -448,8 +442,7 @@
         </div>
       </div>
     </div>
-  </div>
-  
+  </div>  
   <section id="upcoming-events" aria-labelledby="upcoming-events-block" class="section has-background-grey-lighter">
     <div class="container has-text-centered">
         <div class="section-heading has-text-centered">

@@ -139,14 +139,47 @@ a.box:focus,
   padding: 2rem;
 }
 .tab-pane {
-  display: none;
-}
-.tab-pane.is-active {
   display: block;
   position: relative;
 }
 .is-active {
   display: initial;
+}
+.tab-pane[hidden] {
+  display: none;
+}
+
+.tabs.is-centered .tablist {
+  justify-content: center;
+}
+.hero .tabs .tablist {
+  border-bottom: none;
+  display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.hero.is-info .tabs.is-boxed button {
+  color: white;
+  background: transparent;
+  border: none;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -1px;
+  padding: 1em 2em;
+  vertical-align: top;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.hero.is-info .tabs.is-boxed button.is-active, .hero.is-info .tabs.is-boxed button.is-active:hover, .hero.is-info .tabs.is-toggle li.is-active button, .hero.is-info .tabs.is-toggle li.is-active button:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #094E7B;
+  border: 1px solid transparent;
+
 }
 
 .cent {
