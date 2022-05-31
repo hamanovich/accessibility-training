@@ -1,7 +1,12 @@
 .hero-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/accessibility-hero-banner.jpg") no-repeat center center fixed;
+    url('../img/accessibility-hero-banner.jpg') no-repeat center center fixed;
   background-size: cover;
+}
+
+.hero.is-info {
+  background-color: #3273dc;
+  color: #fff;
 }
 
 .tabs {
@@ -84,14 +89,13 @@
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.19);
 }
 
-
 .has-same-height .card {
   height: 350px;
   overflow: hidden;
 }
 
 .skills-content .media + .media {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .skills-content .progress {
@@ -103,12 +107,12 @@
 }
 
 .info-tiles {
-  margin: .75rem auto;
-  padding: 0 .75rem;
+  margin: 0.75rem auto;
+  padding: 0 0.75rem;
 }
 
 .button.is-primary.is-alt {
-  background: linear-gradient(to bottom, #0072ff, #00c6ff);
+  background: linear-gradient(to bottom, #0072ff, #004154);
   font-weight: 700;
   font-size: 14px;
   height: 3rem;
@@ -118,7 +122,7 @@
 .post {
   margin: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #E6EAEE;
+  border-bottom: 1px solid #e6eaee;
 }
 .post:last-child {
   padding-bottom: 0;
@@ -126,9 +130,8 @@
 }
 
 .forum-list li {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
-
 
 @media screen and (max-width: 1087px) {
   .navbar-menu {
@@ -166,7 +169,7 @@ li {
 }
 
 .ol-list li::before {
-  content: "";
+  content: '';
   background: url(../img/arrow_sans_right-512.png) no-repeat;
   display: inline-block;
   text-align: center;
@@ -175,4 +178,173 @@ li {
   width: 40px;
   height: 40px;
   background-size: contain;
+}
+
+a:focus,
+a:active {
+  border-color: #3273dc;
+  border-radius: 3px;
+  box-shadow: 0 0 0 0.125em rgb(50 115 220 / 25%);
+}
+
+input:focus,
+input:active {
+  border-color: #3273dc;
+  border-radius: 3px;
+  box-shadow: 0 0 0 0.125em rgb(50 115 220 / 25%);
+}
+
+.navbar-burger {
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  height: 3.25rem;
+  position: relative;
+  width: 3.25rem;
+  margin-left: auto;
+}
+
+.button.is-info {
+  background-color: #005892;
+  border-color: transparent;
+  color: #fff;
+}
+
+a {
+  color: #0055bd;
+}
+
+.tag:not(body).is-primary {
+  background-color: #00816d;
+  color: #fff;
+}
+
+.tag:not(body).is-danger {
+  background-color: #b00000;
+  color: #fff;
+}
+
+.tag:not(body).is-success {
+  background-color: #007a2b;
+  color: #fff;
+}
+
+.tag:not(body).is-warning {
+  background-color: #e8b791c4;
+  color: rgb(0 0 0);
+}
+
+.has-text-grey-light {
+  color: #47515c !important;
+}
+
+.tag:not(body) {
+  align-items: center;
+  background-color: #eae7e7;
+  border-radius: 4px;
+  color: #000000;
+  display: inline-flex;
+  font-size: 0.75rem;
+  height: 2em;
+  justify-content: center;
+  line-height: 1.5;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  white-space: nowrap;
+}
+
+.has-background-grey-light {
+  background-color: #e4e3e3 !important;
+}
+
+.subtitle.is-5 {
+  color: #000000;
+}
+
+.hero.is-info .tabs.is-boxed li.is-active a,
+.hero.is-info .tabs.is-boxed li.is-active a:hover,
+.hero.is-info .tabs.is-toggle li.is-active a,
+.hero.is-info .tabs.is-toggle li.is-active a:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #3273dc;
+}
+
+.help.is-success {
+  color: #007b2b;
+}
+
+.help.is-danger {
+  color: #96001e;
+}
+
+h1.title-1 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.125;
+}
+
+.skip-links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.skip-links a {
+  position: absolute;
+  top: -5em;
+  background-color: #fff;
+  color: #000;
+  padding: 0.5em 0.75em;
+  text-decoration: none;
+  font-size: medium;
+}
+
+.skip-links a:focus {
+  top: 0;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+.breadcrumb {
+  position: sticky;
+  top: 0;
+  height: 40px;
+  z-index: 1000;
+  display: flex;
+  background: white;
+  font-size: 1rem;
+  white-space: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  opacity: 0.95;
+  box-shadow: 0 0 6px 0px #000000ba;
+}
+
+.breadcrumb ul {
+  display: flex;
+}
+
+.breadcrumb li::before {
+  content: '→';
+}
+
+.breadcrumb li:first-child::before {
+  content: '';
+}
+
+.breadcrumb li:first-child a {
+  padding-left: 25px;
 }
