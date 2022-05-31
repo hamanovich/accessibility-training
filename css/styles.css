@@ -260,3 +260,28 @@ fieldset {
   padding: 0.75rem;
   border-right: 1px solid #dbdbdb;
 }
+
+.burger-hidden {
+  border: 0;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  color: transparent;
+  background-color: transparent;
+}
+
+.breadcrumb {
+  display: flex;
+  padding: 20px;
+}
+.breadcrumb a {
+  color: #1b4fa1;
+}
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+.breadcrumb a.current {
+  text-decoration: none;
+  pointer-events: none;
+  color: #000000;
+}
