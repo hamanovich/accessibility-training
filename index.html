@@ -70,7 +70,7 @@
       </div>
     </div>
 
-    <div class="hero-body">
+    <div class="hero-body" role="banner">
       <div class="container has-text-centered">
         <div class="column is-6 is-offset-3">
           <div class="title has-text-white">We have web accessibility in mind</div>
@@ -168,11 +168,11 @@
           &lt;/html&gt;
           </pre>
       <p>Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.</p>
-      <table>
+      <table role="table">
         <caption class="visually-hidden">Lorem ipsum dolor.</caption>
         <tr>
-          <th scope="col">Header</th>
-          <th scope="col">Header</th>
+          <th scope="col" role="columnheader">Header</th>
+          <th scope="col" role="columnheader">Header</th>
         </tr>
         <tr>
           <td>cell</td>
@@ -221,7 +221,7 @@
       <div class="columns">
         <div class="column is-4">
           <div class="card is-shady">
-            <div class="card-image has-text-centered">
+            <div class="card-image has-text-centered" aria-hidden="true">
               <i class="fa fa-paw"></i>
             </div>
             <div class="card-content">
@@ -236,7 +236,7 @@
 
         <div class="column is-4">
           <div class="card is-shady">
-            <div class="card-image has-text-centered">
+            <div class="card-image has-text-centered" aria-hidden="true">
               <i class="fab fa-empire"></i>
             </div>
             <div class="card-content">
@@ -252,7 +252,7 @@
 
         <div class="column is-4">
           <div class="card is-shady">
-            <div class="card-image has-text-centered">
+            <div class="card-image has-text-centered" aria-hidden="true">
               <i class="fab fa-apple"></i>
             </div>
             <div class="card-content">
@@ -277,19 +277,19 @@
     </div>
     <div class="tabs is-boxed is-centered main-menu" id="nav">
       <ul role="tablist">
-        <li data-target="pane-1" id="1" class="is-active" tabindex="0" role="tab">
+        <li data-target="pane-1" id="1" class="is-active" tabindex="0" role="tab" aria-controls="pane-1">
           <a>
             <span class="icon is-small" aria-hidden="true"><i class="fa fa-image"></i></span>
             <span>Pictures</span>
           </a>
         </li>
-        <li data-target="pane-3" id="3" tabindex="0" role="tab">
+        <li data-target="pane-3" id="3" tabindex="0" role="tab" aria-controls="pane-3">
           <a>
             <span class="icon is-small" aria-hidden="true"><i class="fab fa-superpowers"></i></span>
             <span>Team</span>
           </a>
         </li>
-        <li data-target="pane-4" id="4" tabindex="0" role="tab">
+        <li data-target="pane-4" id="4" tabindex="0" role="tab" aria-controls="pane-4">
           <a>
             <span class="icon is-small" aria-hidden="true"><i class="fa fa-film"></i></span>
             <span>Video</span>
@@ -314,7 +314,7 @@
                 <div class="content">
                   <div>Click on image above</div>
                   <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-                  <button class="button is-link modal-button" data-target="modal-image1">Image modal</button>
+                  <button class="button is-link modal-button" aria-haspopup="true" data-target="modal-image1">Image modal</button>
                 </div>
               </div>
             </div>
@@ -331,7 +331,7 @@
                   <div>Tempor orci dapibus ultrices in.</div>
                   <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
                     sed risus.</p>
-                  <button class="button is-link modal-button" data-target="modal-card">Modal Card</button>
+                  <button class="button is-link modal-button" aria-haspopup="true" data-target="modal-card">Modal Card</button>
                 </div>
               </div>
             </div>
@@ -347,7 +347,7 @@
                 <div class="content">
                   <div>Click anywhere on card</div>
                   <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                  <button class="button is-link modal-button" data-target="modal-image2">Image modal</button>
+                  <button class="button is-link modal-button" aria-haspopup="true" data-target="modal-image2">Image modal</button>
                 </div>
               </div>
             </div>
@@ -360,7 +360,7 @@
       <div class="columns medias">
         <div class="column">
           <div class="media">
-            <div class="media-left">
+            <div class="media-left" aria-hidden="true">
               <i class="fab fa-github-square fa-4x"></i>
             </div>
             <div class="media-content">
@@ -373,7 +373,7 @@
             </div>
           </div>
           <div class="media">
-            <div class="media-left">
+            <div class="media-left" aria-hidden="true">
               <i class="fab fa-empire fa-4x"></i>
             </div>
             <div class="media-content">
@@ -388,7 +388,7 @@
         </div>
         <div class="column">
           <div class="media">
-            <div class="media-left">
+            <div class="media-left" aria-hidden="true">
               <i class="fab fa-ravelry fa-4x"></i>
             </div>
             <div class="media-content">
@@ -401,7 +401,7 @@
             </div>
           </div>
           <div class="media">
-            <div class="media-left">
+            <div class="media-left" aria-hidden="true">
               <i class="fab fa-github-alt fa-4x"></i>
             </div>
             <div class="media-content">
@@ -960,13 +960,13 @@
           </div>
 
           <div class="field">
-            <div class="control">
+            <div class="control" role="radiogroup">
               <label for="yes-radio" class="radio">
-                <input id="yes-radio" type="radio" name="question" aria-checked="false">
+                <input id="yes-radio" type="radio" name="question" role="radio" aria-checked="false">
                 Yes
               </label>
               <label for="no-radio" class="radio">
-                <input id="no-radio" type="radio" name="question" aria-checked="false">
+                <input id="no-radio" type="radio" name="question" role="radio" aria-checked="false">
                 No
               </label>
             </div>
@@ -1147,7 +1147,7 @@
     </div>
   </footer>
 
-  <div id="modal-card" class="modal modal-fx-3dSlit" aria-modal="true">
+  <div id="modal-card" class="modal modal-fx-3dSlit" aria-modal="true" role="dialog" >
     <div class="modal-background"></div>
     <div class="modal-content is-tiny">
       <div class="card">
@@ -1185,7 +1185,7 @@
     <button class="modal-close is-large"><span class="visually-hidden">close modal</span></button>
   </div>
 
-  <div id="modal-image1" class="modal modal-fx-3dSlit" aria-modal="true">
+  <div id="modal-image1" class="modal modal-fx-3dSlit" aria-modal="true" role="dialog">
     <div class="modal-background"></div>
     <div class="modal-content is-huge is-image">
       <img src="https://source.unsplash.com/random/?sig=1" alt="random image">
@@ -1193,7 +1193,7 @@
     <button class="modal-close is-large"><span class="visually-hidden">close modal</span></button>
   </div>
 
-  <div id="modal-image2" class="modal modal-fx-superScaled" aria-modal="true">
+  <div id="modal-image2" class="modal modal-fx-superScaled" aria-modal="true" role="dialog">
     <div class="modal-background"></div>
     <div class="modal-content  is-image">
       <img src="https://source.unsplash.com/random/?sig=3" alt="random image">
