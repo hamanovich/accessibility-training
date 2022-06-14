@@ -211,6 +211,7 @@ fieldset {
 
 *:focus {
   outline: 2px solid blue !important;
+  border: 2px solid blue !important;
 }
 
 .visually-hidden {
@@ -284,4 +285,40 @@ fieldset {
   text-decoration: none;
   pointer-events: none;
   color: #000000;
+}
+
+.tabs.is-centered .tablist {
+  justify-content: center;
+}
+
+.hero .tabs .tablist {
+  border-bottom: none;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+.tablist .tab-button {
+  background-color: #fff;
+  margin-bottom: -1px;
+  padding: 0.5em 0.9em;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.tablist .tab-button.is-active {
+  background-color: #fff;
+}
+.tablist .tab-button.is-active:hover {
+  background-color: #fff;
+}
+
+.tablist .tab-button:hover {
+  background-color: rgba(10, 10, 10, 0.1);
 }

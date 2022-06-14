@@ -275,7 +275,10 @@
         <h5 class="subtitle">We are always in touch we the outside world</h5>
       </div>
     </div>
-    <div class="tabs is-boxed is-centered main-menu" id="nav">
+
+    <!-- <<<<<<< -->
+
+    <!-- <div class="tabs is-boxed is-centered main-menu" id="nav">
       <ul role="tablist">
         <li data-target="pane-1" id="1" class="is-active" tabindex="0" role="tab" aria-controls="pane-1">
           <a>
@@ -296,11 +299,30 @@
           </a>
         </li>
       </ul>
+    </div> -->
+
+    <!-- >>>>>>>>> -->
+
+    <div class="tabs is-boxed is-centered main-menu" id="nav">
+      <div role="tablist" class="tablist" aria-label="tablist picture, team and video">
+        <button data-target="pane-1" id="1" class="is-active tab-button" role="tab" aria-selected="true" tabindex="0" aria-controls="pane-1" >
+            <span class="icon is-small"><i aria-hidden="true"class="fa fa-image"></i></span>
+            <span>Pictures</span>
+        </button>
+        <button data-target="pane-3" id="3" class="tab-button" role="tab" aria-selected="false" tabindex="-1" aria-controls="pane-3">
+            <span class="icon is-small"><i aria-hidden="true" class="fab fa-superpowers"></i></span>
+            <span>Team</span>
+        </button>
+        <button data-target="pane-4" id="4" class="tab-button" role="tab" aria-selected="false" tabindex="-1" aria-controls="pane-4" data-deletable=""> 
+            <span class="icon is-small"><i aria-hidden="true" class="fa fa-film"></i></span>
+            <span>Video</span>
+        </button>
+      </div>
     </div>
   </div>
 
   <div class="tab-content container">
-    <div class="tab-pane is-active" id="pane-1" class="level">
+    <div class="tab-pane is-active" id="pane-1" class="level" role="tabpanel" aria-labelledby="1" >
       <div class="container">
         <div class="columns features">
           <div class="column is-4">
@@ -356,7 +378,7 @@
       </div>
     </div>
 
-    <div class="tab-pane" id="pane-3">
+    <div class="tab-pane" id="pane-3" role="tabpanel" aria-hidden="true" aria-labelledby="3">
       <div class="columns medias">
         <div class="column">
           <div class="media">
@@ -417,7 +439,7 @@
       </div>
     </div>
 
-    <div class="tab-pane" id="pane-4">
+    <div class="tab-pane" id="pane-4" role="tabpanel" aria-hidden="true" aria-labelledby="4">
       <div class="columns is-centered">
         <div class="column is-three-quarters">
           <h2 class="title has-text-centered">Inspired video</h2>
@@ -758,8 +780,8 @@
                     </p>
                   </div>
                 </div>
-                <div class="media-right">
-                  <span class="has-text-grey-dark"><i class="fa fa-comments"></i> 1</span>
+                <div class="media-right" >
+                  <span class="has-text-grey-dark"><i class="fa fa-comments" aria-hidden="true"></i> 1</span>
                 </div>
               </div>
             </div>
@@ -781,7 +803,7 @@
                   </div>
                 </div>
                 <div class="media-right">
-                  <span class="has-text-grey-dark"><i class="fa fa-comments"></i> 0</span>
+                  <span class="has-text-grey-dark"><i class="fa fa-comments" aria-hidden="true"></i> 0</span>
                 </div>
               </div>
             </div>
@@ -803,7 +825,7 @@
                   </div>
                 </div>
                 <div class="media-right">
-                  <span class="has-text-grey-dark"><i class="fa fa-comments"></i> 13</span>
+                  <span class="has-text-grey-dark"><i class="fa fa-comments" aria-hidden="true"></i> 13</span>
                 </div>
               </div>
             </div>
@@ -825,7 +847,7 @@
                   </div>
                 </div>
                 <div class="media-right">
-                  <span class="has-text-grey-dark"><i class="fa fa-comments"></i> 2</span>
+                  <span class="has-text-grey-dark"><i class="fa fa-comments" aria-hidden="true"></i> 2</span>
                 </div>
               </div>
             </div>
@@ -847,7 +869,7 @@
                   </div>
                 </div>
                 <div class="media-right">
-                  <span class="has-text-grey-dark"><i class="fa fa-comments"></i> 2</span>
+                  <span class="has-text-grey-dark"><i class="fa fa-comments" aria-hidden="true"></i> 2</span>
                 </div>
               </div>
             </div>
@@ -869,7 +891,7 @@
                   </div>
                 </div>
                 <div class="media-right">
-                  <span class="has-text-grey-dark"><i class="fa fa-comments"></i> 2</span>
+                  <span class="has-text-grey-dark"><i class="fa fa-comments" aria-hidden="true"></i> 2</span>
                 </div>
               </div>
             </div>
@@ -900,10 +922,10 @@
             <label for="username-input" class="label">Username</label>
             <div class="control has-icons-left has-icons-right">
               <input id="username-input" class="input is-success" type="text" aria-required="true" aria-invalid="false">
-              <span class="icon is-small is-left">
+              <span class="icon is-small is-left" aria-hidden="true">
                 <i class="fas fa-user"></i>
               </span>
-              <span class="icon is-small is-right">
+              <span class="icon is-small is-right" aria-hidden="true">
                 <i class="fas fa-check"></i>
               </span>
             </div>
@@ -914,10 +936,10 @@
             <label for="email-input" class="label">Email</label>
             <div class="control has-icons-left has-icons-right">
               <input id="email-input" class="input is-danger" type="email" placeholder="Email input" value="hello@" aria-required="true" aria-invalid="true">
-              <span class="icon is-small is-left">
+              <span class="icon is-small is-left" aria-hidden="true">
                 <i class="fas fa-envelope"></i>
               </span>
-              <span class="icon is-small is-right">
+              <span class="icon is-small is-right" aria-hidden="true">
                 <i class="fas fa-exclamation-triangle"></i>
               </span>
             </div>
@@ -1142,7 +1164,7 @@
           <a href="#"><i class="fab fa-facebook fa-2x"><span class="visually-hidden">to facebook</span></i></a>
           <a href="#"><i class="fab fa-twitter fa-2x"><span class="visually-hidden">to twitter</span></i></a>
         </div>
-        <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php" target="_blank" rel="noopener noreferre">MIT <sup><i class="fa fa-external-link-alt"></i></sup></a>.</p>
+        <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php" target="_blank" rel="noopener noreferre">MIT <sup aria-hidden="true"><i class="fa fa-external-link-alt"></i></sup></a>.</p>
       </div>
     </div>
   </footer>
@@ -1203,5 +1225,6 @@
 
   <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
   <script async src="js/custom.js"></script>
+  <script defer src="js/my-custom.js"></script>
 </body>
 </html>
