@@ -1,6 +1,26 @@
 window.addEventListener("DOMContentLoaded", () => {
   const tabs = document.querySelectorAll(".tab-button");
   const tabList = document.querySelector('[role="tablist"]');
+  const navBarButtons = document.querySelectorAll(".navbar-end button");
+
+  navBarButtons.forEach((button) => {
+    const ulMenu = button.nextElementSibling;
+    const ulMenuList = document.querySelectorAll('[aria-label="examples"]');
+
+    button.addEventListener("focus", (event) => {
+      ulMenuList.forEach((ul) => {
+        ul.style.display = "none";
+      });
+      navBarButtons.forEach((button) => {
+        button.setAttribute("aria-expanded", false);
+        button.classList.remove("angle-down");
+      });
+
+      event.currentTarget.setAttribute("aria-expanded", true);
+      event.currentTarget.classList.add("angle-down");
+      ulMenu.style.display = "block";
+    });
+  });
 
   tabs.forEach((tab) => {
     tab.addEventListener("click", changeTabs);

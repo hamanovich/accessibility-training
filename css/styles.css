@@ -211,7 +211,6 @@ fieldset {
 
 *:focus {
   outline: 2px solid blue !important;
-  border: 2px solid blue !important;
 }
 
 .visually-hidden {
@@ -321,4 +320,43 @@ fieldset {
 
 .tablist .tab-button:hover {
   background-color: rgba(10, 10, 10, 0.1);
+}
+
+#navbarMenu.navbar-item {
+  position: relative;
+}
+
+.navbar-item [aria-label="examples"] {
+  position: absolute;
+  display: none;
+  background-color: #fff;
+  padding: 0.7rem;
+  top: 3.5rem;
+  border-radius: 0.2rem;
+  line-height: 1.7;
+  white-space: nowrap;
+}
+
+.navbar-item [aria-label="examples"] li {
+  width: 100%;
+}
+
+.navbar-item [aria-label="examples"] [role="separator"] {
+  width: 100%;
+  height: 2px;
+  background-color: #0000003a;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.navbar-item [aria-label="examples"] a {
+  padding: 5px;
+}
+
+.navbar-item [aria-label="examples"] li:hover {
+  background-color: #f3f3f3;
+}
+
+.button.angle-down > .angle {
+  transform: rotate(90deg);
 }

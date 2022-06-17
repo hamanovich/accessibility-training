@@ -31,40 +31,61 @@
           </div>
 
           <nav aria-label="navigation bar" id="navbarMenu" class="navbar-menu" role="menu">
-            <div class="navbar-end">
-              <span class="navbar-item" role="menuitem">
-                <a href="#" class="button is-white is-outlined">
+            <ul class="navbar-end">
+              <li class="navbar-item" role="menuitem">
+                <button class="button is-white is-outlined">
                   <span class="icon" aria-hidden="true">
                     <i class="fa fa-home"></i>
                   </span>
                   <span>Home</span>
-                </a>
-              </span>
-              <span class="navbar-item" role="menuitem">
-                <a href="#" class="button is-white is-outlined">
+                </button>
+              </li>
+              <li class="navbar-item" role="menuitem">
+                <button class="button is-white is-outlined " aria-expanded="false" aria-haspopup="true">
                   <span class="icon" aria-hidden="true">
                     <i class="fab fa-superpowers"></i>
                   </span>
                   <span>Examples</span>
-                </a>
-              </span>
-              <span  role="menuitem" class="navbar-item">
-                <a href="#" class="button is-white is-outlined">
+                  <span class="icon angle" aria-hidden="true">
+                    <i class="fas fa-angle-right"></i>
+                  </span>
+                </button>
+                <ul aria-label="examples">
+                  <li >
+                    <a href="#" >Administration</a>
+                  </li>
+                  <li >
+                    <a href="#" >Team Settings</a>
+                  </li>
+                  <li >
+                    <a href="#" >Manage Your Team</a>
+                  </li>
+                  <li >
+                    <a href="#" >Invitations</a>
+                  </li>
+                  <li role="separator"></li>
+                  <li >
+                    <a href="#" >Authentication</a>
+                  </li>
+                </ul>
+              </li>
+              <li  role="menuitem" class="navbar-item">
+                <button class="button is-white is-outlined">
                   <span class="icon" aria-hidden="true">
                     <i class="fa fa-book"></i>
                   </span>
                   <span>Documentation</span>
-                </a>
-              </span>
-              <span role="menuitem" class="navbar-item">
-                <a href="#" class="button is-white is-outlined">
+                </button>
+              </li>
+              <li role="menuitem" class="navbar-item">
+                <button class="button is-white is-outlined">
                   <span class="icon" aria-hidden="true">
                     <i class="fab fa-github"></i>
                   </span>
                   <span>View Source</span>
-                </a>
-              </span>
-            </div>
+                </button>
+              </li>
+            </ul>
           </nav>
         </div>
       </div>
