@@ -410,12 +410,15 @@
           <h3 class="subtitle">We are always in touch we the outside world</h3>
         </div>
       </div>
-      <div class="tabs is-boxed is-centered main-menu" id="nav">
+      <div id="nav" class="tabs is-boxed is-centered main-menu">
         <ul role="tablist">
-          <li data-target="pane-1" id="1" class="is-active" role="tab">
+          <li id="tab1" class="is-active" role="tab">
             <a
-              href="#1"
+              data-id="1"
+              data-target="pane-1"
+              href="#tab1"
               tabindex="0"
+              aria-selected="true"
               aria-controls="pane-1"
               aria-labelledby="pane-id-1"
             >
@@ -425,10 +428,13 @@
               <span id="pane-id-1">Pictures</span>
             </a>
           </li>
-          <li data-target="pane-2" id="2" role="tab">
+          <li id="tab2" role="tab">
             <a
-              href="#2"
+              data-target="pane-2"
+              data-id="2"
+              href="#tab2"
               tabindex="0"
+              aria-selected="false"
               aria-controls="pane-2"
               aria-labelledby="pane-id-2"
             >
@@ -438,10 +444,13 @@
               <span id="pane-id-2">Team</span>
             </a>
           </li>
-          <li data-target="pane-3" id="3" role="tab">
+          <li id="tab3" role="tab">
             <a
-              href="#3"
+              data-target="pane-3"
+              data-id="3"
+              href="#tab3"
               tabindex="0"
+              aria-selected="false"
               aria-controls="pane-2"
               aria-labelledby="pane-id-3"
             >
