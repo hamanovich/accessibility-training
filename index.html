@@ -39,11 +39,11 @@
             <a href="#about" class="visually-hidden" tabindex="0">
               Skip navigation Link
             </a>
-            <nav id="navbarMenu" class="navbar-menu">
+            <nav id="navbarMenu" class="navbar-menu" role="navigation">
               <ul class="navbar-end">
                 <li class="navbar-item">
                   <button class="button is-white is-outlined">
-                    <span class="icon">
+                    <span class="icon" aria-hidden="true">
                       <i class="fa fa-home"></i>
                     </span>
                     <span>Home</span>
@@ -51,7 +51,7 @@
                 </li>
                 <li class="navbar-item">
                   <button class="button is-white is-outlined">
-                    <span class="icon">
+                    <span class="icon" aria-hidden="true">
                       <i class="fab fa-superpowers"></i>
                     </span>
                     <span>Examples</span>
@@ -59,7 +59,7 @@
                 </li>
                 <li class="navbar-item">
                   <button class="button is-white is-outlined">
-                    <span class="icon">
+                    <span class="icon" aria-hidden="true">
                       <i class="fa fa-book"></i>
                     </span>
                     <span>Documentation</span>
@@ -67,7 +67,7 @@
                 </li>
                 <li class="navbar-item">
                   <button class="button is-white is-outlined">
-                    <span class="icon">
+                    <span class="icon" aria-hidden="true">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>View Source</span>
@@ -112,8 +112,7 @@
         </div>
       </div>
     </header>
-
-    <main class="section" id="about">
+    <section aria-label="BreadCrumbs">
       <nav class="breadcrumb" aria-label="breadcrumbs">
         <ul>
           <li><a href="#">Home</a></li>
@@ -122,11 +121,19 @@
           </li>
         </ul>
       </nav>
+    </section>
+
+    <main
+      role="main"
+      class="section"
+      id="about"
+      aria-labelledby="section-1-title"
+    >
       <a href="#keyFeatures" class="visually-hidden" tabindex="0">
         Skip Section About
       </a>
       <div class="section-heading has-text-centered">
-        <h2 class="title is-2">About Us</h2>
+        <h2 id="section-1-title" class="title is-2">About Us</h2>
         <h3 class="subtitle is-5">We of all trades, master of "some"</h3>
         <div class="container">
           <p>
@@ -309,13 +316,17 @@
       </div>
     </main>
 
-    <section class="hero has-background-grey-light" id="keyFeatures">
+    <section
+      class="hero has-background-grey-light"
+      id="keyFeatures"
+      aria-labelledby="section-2-title"
+    >
       <a href="#topics" class="visually-hidden" tabindex="0">
         Skip Section Key Features
       </a>
       <div class="container features">
         <div class="section-heading has-text-centered">
-          <h2 class="title is-2">Three key features</h2>
+          <h2 id="section-2-title" class="title is-2">Three key features</h2>
           <h3 class="subtitle is-5">We don't hide what we do</h3>
         </div>
 
@@ -384,40 +395,63 @@
       </div>
     </section>
 
-    <section class="hero is-info" id="topics">
+    <section class="hero is-info" id="topics" aria-labelledby="section-3-title">
       <div class="hero-body">
         <div class="container">
-          <h2 class="title">List of topics</h2>
+          <h2 class="title" id="section-3-title">List of topics</h2>
           <h3 class="subtitle">We are always in touch we the outside world</h3>
         </div>
       </div>
       <div class="tabs is-boxed is-centered main-menu" id="nav">
-        <ul>
-          <li data-target="pane-1" id="1" class="is-active">
-            <a href="#1" tabindex="0">
-              <span class="icon is-small"><i class="fa fa-image"></i></span>
-              <span>Pictures</span>
+        <ul role="tablist">
+          <li data-target="pane-1" id="1" class="is-active" role="tab">
+            <a
+              href="#1"
+              tabindex="0"
+              aria-controls="pane-1"
+              aria-labelledby="pane-id-1"
+            >
+              <span aria-hidden="true" class="icon is-small">
+                <i class="fa fa-image"></i>
+              </span>
+              <span id="pane-id-1">Pictures</span>
             </a>
           </li>
-          <li data-target="pane-2" id="2">
-            <a href="#2" tabindex="0">
-              <span class="icon is-small"
-                ><i class="fab fa-superpowers"></i
-              ></span>
-              <span>Team</span>
+          <li data-target="pane-2" id="2" role="tab">
+            <a
+              href="#2"
+              tabindex="0"
+              aria-controls="pane-2"
+              aria-labelledby="pane-id-2"
+            >
+              <span aria-hidden="true" class="icon is-small">
+                <i class="fab fa-superpowers"> </i>
+              </span>
+              <span id="pane-id-2">Team</span>
             </a>
           </li>
-          <li data-target="pane-3" id="3">
-            <a href="#3" tabindex="0">
-              <span class="icon is-small"><i class="fa fa-film"></i></span>
-              <span>Video</span>
+          <li data-target="pane-3" id="3" role="tab">
+            <a
+              href="#3"
+              tabindex="0"
+              aria-controls="pane-2"
+              aria-labelledby="pane-id-3"
+            >
+              <span aria-hidden="true" class="icon is-small">
+                <i class="fa fa-film"></i>
+              </span>
+              <span id="pane-id-3">Video</span>
             </a>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="tab-content container">
+    <section
+      class="tab-content container"
+      role="tabpanel"
+      aria-label="Topics tab panel"
+    >
       <div class="level tab-pane is-active" id="pane-1">
         <div class="container">
           <div class="columns features">
@@ -442,11 +476,13 @@
                       volutpat ac tincidunt vitae semper quis. Accumsan tortor
                       posuere ac ut consequat semper viverra nam.
                     </p>
-                    <span
+                    <button
+                      aria-haspopup="true"
                       class="button is-link modal-button"
                       data-target="modal-image1"
-                      >Image modal</span
                     >
+                      Image modal
+                    </button>
                   </div>
                 </div>
               </div>
@@ -468,11 +504,13 @@
                       neque egestas cmonsu songue. Phasellus vestibulum lorem
                       sed risus.
                     </p>
-                    <span
+                    <button
+                      aria-haspopup="true"
                       class="button is-link modal-button"
                       data-target="modal-card"
-                      >Modal Card</span
                     >
+                      Modal Card
+                    </button>
                   </div>
                 </div>
               </div>
@@ -498,11 +536,13 @@
                       Libero id faucibus nisl tincidunt eget nullam. Commodo
                       viverra maecenas accumsan lacus vel facilisis.
                     </p>
-                    <span
+                    <button
+                      aria-haspopup="true"
                       class="button is-link modal-button"
                       data-target="modal-image2"
-                      >Image modal</span
                     >
+                      Image modal
+                    </button>
                   </div>
                 </div>
               </div>
@@ -599,10 +639,13 @@
       </div>
     </section>
 
-    <section class="section has-background-grey-lighter">
+    <section
+      class="section has-background-grey-lighter"
+      aria-labelledby="section-4-title"
+    >
       <div class="container has-text-centered">
         <div class="section-heading has-text-centered">
-          <h2 class="title is-2">Upcoming events</h2>
+          <h2 id="section-4-title" class="title is-2">Upcoming events</h2>
           <h3 class="subtitle is-5">Outcoming dates for the best options</h3>
         </div>
 
@@ -680,9 +723,9 @@
       </div>
     </section>
 
-    <section class="section" id="services">
+    <section class="section" id="services" aria-labelledby="section-5-title">
       <div class="section-heading has-text-centered">
-        <h2 class="title is-2">Services</h2>
+        <h2 id="section-5-title" class="title is-2">Services</h2>
         <h3 class="subtitle is-5">What can I do for you?</h3>
       </div>
       <div class="container">
@@ -734,10 +777,15 @@
       </div>
     </section>
 
-    <section class="section has-background-grey-lighter">
+    <section
+      class="section has-background-grey-lighter"
+      aria-labelledby="section-6-title"
+    >
       <div class="container">
         <div class="section-heading has-text-centered">
-          <h2 class="title is-2">Photos from past events</h2>
+          <h2 id="section-6-title" class="title is-2">
+            Photos from past events
+          </h2>
         </div>
 
         <div class="container portfolio-container">
@@ -899,10 +947,10 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" aria-labelledby="section-7-title">
       <div class="container">
         <div class="section-heading has-text-centered">
-          <h2 class="title is-2">Forum</h2>
+          <h2 id="section-7-title" class="title is-2">Forum</h2>
           <h3 class="subtitle is-5">
             Discuss any topic with no leaving this page
           </h3>
@@ -1108,10 +1156,13 @@
       </div>
     </section>
 
-    <section class="section has-background-light">
+    <section
+      class="section has-background-light"
+      aria-labelledby="section-8-title"
+    >
       <div class="container">
         <div class="section-heading has-text-centered">
-          <h2 class="title is-2">Contact us</h2>
+          <h2 id="section-8-title" class="title is-2">Contact us</h2>
           <h3 class="subtitle is-5">Don't hesitate, ask anything</h3>
         </div>
 
@@ -1138,10 +1189,10 @@
                 class="input is-success"
                 type="text"
               />
-              <span class="icon is-small is-left">
+              <span aria-hidden="true" class="icon is-small is-left">
                 <i class="fas fa-user"></i>
               </span>
-              <span class="icon is-small is-right">
+              <span aria-hidden="true" class="icon is-small is-right">
                 <i class="fas fa-check"></i>
               </span>
             </div>
@@ -1159,10 +1210,10 @@
                 placeholder="Email input"
                 value="hello@"
               />
-              <span class="icon is-small is-left">
+              <span aria-hidden="true" class="icon is-small is-left">
                 <i class="fas fa-envelope"></i>
               </span>
-              <span class="icon is-small is-right">
+              <span aria-hidden="true" class="icon is-small is-right">
                 <i class="fas fa-exclamation-triangle"></i>
               </span>
             </div>
@@ -1203,24 +1254,26 @@
           </div>
 
           <div class="field">
-            <div class="control">
-              <label class="radio">
-                <input type="radio" name="question" value="Yes" />
-                Yes
-              </label>
-              <label class="radio">
-                <input type="radio" name="question" value="No" />
-                No
-              </label>
-            </div>
+            <fieldset>
+              <div class="control">
+                <label class="radio">
+                  <input type="radio" name="question" value="Yes" />
+                  Yes
+                </label>
+                <label class="radio">
+                  <input type="radio" name="question" value="No" />
+                  No
+                </label>
+              </div>
+            </fieldset>
           </div>
 
           <div class="field is-grouped">
             <div class="control">
-              <button class="button is-link">Submit</button>
+              <button type="submit" class="button is-link">Submit</button>
             </div>
             <div class="control">
-              <button class="button is-text">Cancel</button>
+              <button type="reset" class="button is-text">Cancel</button>
             </div>
           </div>
         </form>
@@ -1380,16 +1433,16 @@
         <div class="content has-text-centered">
           <div class="soc">
             <a href="#" tabindex="0" aria-label="Github">
-              <i class="fab fa-github-alt fa-2x"></i>
+              <i aria-hidden="true" class="fab fa-github-alt fa-2x"></i>
             </a>
             <a href="#" tabindex="0" aria-label="Youtube">
-              <i class="fab fa-youtube fa-2x"></i>
+              <i aria-hidden="true" class="fab fa-youtube fa-2x"></i>
             </a>
             <a href="#" tabindex="0" aria-label="Facebook">
-              <i class="fab fa-facebook fa-2x"></i>
+              <i aria-hidden="true" class="fab fa-facebook fa-2x"></i>
             </a>
             <a href="#" tabindex="0" aria-label="Twitter">
-              <i class="fab fa-twitter fa-2x"></i>
+              <i aria-hidden="true" class="fab fa-twitter fa-2x"></i>
             </a>
           </div>
           <p>
@@ -1400,7 +1453,7 @@
       </div>
     </footer>
 
-    <div id="modal-card" class="modal modal-fx-3dSlit">
+    <div role="dialog" id="modal-card" class="modal modal-fx-3dSlit">
       <div class="modal-background"></div>
       <div class="modal-content is-tiny">
         <div class="card">
@@ -1454,7 +1507,7 @@
       <button class="modal-close is-large">X</button>
     </div>
 
-    <div id="modal-image1" class="modal modal-fx-3dSlit">
+    <div role="dialog" id="modal-image1" class="modal modal-fx-3dSlit">
       <div class="modal-background"></div>
       <div class="modal-content is-huge is-image">
         <img
@@ -1465,7 +1518,7 @@
       <button class="modal-close is-large">X</button>
     </div>
 
-    <div id="modal-image2" class="modal modal-fx-superScaled">
+    <div role="dialog" id="modal-image2" class="modal modal-fx-superScaled">
       <div class="modal-background"></div>
       <div class="modal-content is-image">
         <img

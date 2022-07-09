@@ -139,7 +139,6 @@
 .logo-link {
   height: 70px;
   width: 250px;
-  background: transparent;
 }
 
 .logo-link img {
@@ -248,7 +247,7 @@ li {
   margin: 0 auto;
   display: flex;
 }
-a {
+p a {
   text-decoration: none;
   color: hsl(232, 50%, 25%);
   background-color: white;
