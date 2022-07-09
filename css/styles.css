@@ -139,6 +139,7 @@
 .logo-link {
   height: 70px;
   width: 250px;
+  background: transparent;
 }
 
 .logo-link img {
@@ -246,4 +247,16 @@ li {
   max-width: 1344px;
   margin: 0 auto;
   display: flex;
+}
+a {
+  text-decoration: none;
+  color: hsl(232, 50%, 25%);
+  background-color: white;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+.button.is-primary.is-block.is-alt.is-large {
+  color: black;
 }
