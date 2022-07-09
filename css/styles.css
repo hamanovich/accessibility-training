@@ -241,3 +241,9 @@ li {
 .footer .soc + p a {
   color: #1A4A99;
 }
+
+.breadcrumb {
+  max-width: 1344px;
+  margin: 0 auto;
+  display: flex;
+}
