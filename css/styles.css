@@ -259,3 +259,14 @@ a:focus {
 .button.is-primary.is-block.is-alt.is-large {
   color: black;
 }
+#notification {
+  margin: 10px;
+  background: rgb(22, 87, 0);
+  padding: 5px 20px;
+  border-radius: 10px;
+  z-index: 31;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
