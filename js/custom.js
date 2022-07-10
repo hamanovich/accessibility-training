@@ -1,21 +1,21 @@
-function toggleTab(selectedNav, targetId) {
-  const navEls = document.querySelectorAll("#nav li a");
-  navEls.forEach(function (navEl) {
-    const id = navEl.dataset.id;
-    if (id === selectedNav) {
-      navEl.parentElement.classList.add("is-active");
-      navEl.setAttribute("aria-selected", "true");
-    } else {
-      if (navEl.parentElement.classList.contains("is-active")) {
-        navEl.parentElement.classList.remove("is-active");
-        navEl.setAttribute("aria-selected", "false");
-      }
-    }
+function changeTabs(e) {
+  e.stopPropagation();
+  const target = e.currentTarget;
+  const parent = target.parentNode;
+  const grandparent = parent.parentNode;
+  grandparent.querySelectorAll('[aria-selected="true"]').forEach((t) => {
+    t.setAttribute("aria-selected", false);
+    t.classList.remove("is-active");
   });
+
+  // Set this tab as selected
+  target.setAttribute("aria-selected", true);
+  target.classList.add("is-active");
 
   const tabs = document.querySelectorAll(".tab-pane");
   tabs.forEach(function (tab) {
-    tab.style.display = tab.id === targetId ? "block" : "none";
+    tab.style.display =
+      tab.id === e.currentTarget.dataset.target ? "block" : "none";
   });
 }
 
@@ -34,31 +34,31 @@ function toggleTab(selectedNav, targetId) {
     region.innerText = `Notification count ${notificationCount}`;
   }, 60000);
 
-  document.querySelectorAll("#nav li a").forEach(function (navEl) {
-    navEl.onclick = function () {
-      toggleTab(this.dataset.id, this.dataset.target);
-    };
-  });
+  const tabs = document.querySelectorAll('[role="tab"]');
+  const tabList = document.querySelector('[role="tablist"]');
 
-  const items = document.querySelectorAll("#nav li a");
-  items.forEach(function (navEl) {
-    navEl.addEventListener("keydown", function (event) {
-      const num = Number(event.target.dataset.id);
-      if (event.keyCode === 39) {
-        event.preventDefault();
-        console.log(num);
-        if (items[num]) {
-          items[num].click();
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", changeTabs);
+  });
+  let tabFocus = 0;
+
+  tabList.addEventListener("keydown", (e) => {
+    if (e.keyCode === 39 || e.keyCode === 37) {
+      tabs[tabFocus].setAttribute("tabindex", -1);
+      if (e.keyCode === 39) {
+        tabFocus++;
+        if (tabFocus >= tabs.length) {
+          tabFocus = 0;
         }
-      } else if (event.keyCode === 37) {
-        event.preventDefault();
-        if (items[num - 2]) {
-          items[num - 2].click();
+      } else if (e.keyCode === 37) {
+        tabFocus--;
+        if (tabFocus < 0) {
+          tabFocus = tabs.length - 1;
         }
-      } else if (event.keyCode === 13 || event.keyCode === 32) {
-        event.preventDefault();
-        items[num - 1].click();
       }
-    });
+      tabs[tabFocus].setAttribute("tabindex", 0);
+      tabs[tabFocus].focus();
+      tabs[tabFocus].click();
+    }
   });
 })();

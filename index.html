@@ -411,49 +411,50 @@
         </div>
       </div>
       <div id="nav" class="tabs is-boxed is-centered main-menu">
-        <ul role="tablist">
-          <li id="tab1" class="is-active" role="tab">
-            <a
-              data-id="1"
-              data-target="pane-1"
-              href="#tab1"
-              tabindex="0"
-              aria-selected="true"
-              aria-controls="pane-1"
-              aria-labelledby="pane-id-1"
-            >
+        <ul role="tablist" aria-label="Tabs">
+          <li
+            id="tab1"
+            class="is-active"
+            role="tab"
+            aria-selected="true"
+            aria-controls="pane-1"
+            aria-labelledby="pane-id-1"
+            data-target="pane-1"
+            tabindex="0"
+          >
+            <a href="#tab1">
               <span aria-hidden="true" class="icon is-small">
                 <i class="fa fa-image"></i>
               </span>
               <span id="pane-id-1">Pictures</span>
             </a>
           </li>
-          <li id="tab2" role="tab">
-            <a
-              data-target="pane-2"
-              data-id="2"
-              href="#tab2"
-              tabindex="0"
-              aria-selected="false"
-              aria-controls="pane-2"
-              aria-labelledby="pane-id-2"
-            >
+          <li
+            id="tab2"
+            role="tab"
+            aria-selected="false"
+            aria-controls="pane-2"
+            aria-labelledby="pane-id-2"
+            data-target="pane-2"
+            tabindex="-1"
+          >
+            <a href="#tab2">
               <span aria-hidden="true" class="icon is-small">
                 <i class="fab fa-superpowers"> </i>
               </span>
               <span id="pane-id-2">Team</span>
             </a>
           </li>
-          <li id="tab3" role="tab">
-            <a
-              data-target="pane-3"
-              data-id="3"
-              href="#tab3"
-              tabindex="0"
-              aria-selected="false"
-              aria-controls="pane-2"
-              aria-labelledby="pane-id-3"
-            >
+          <li
+            id="tab3"
+            role="tab"
+            aria-selected="false"
+            aria-controls="pane-2"
+            aria-labelledby="pane-id-3"
+            data-target="pane-3"
+            tabindex="-1"
+          >
+            <a href="#tab3">
               <span aria-hidden="true" class="icon is-small">
                 <i class="fa fa-film"></i>
               </span>
@@ -464,12 +465,8 @@
       </div>
     </section>
 
-    <section
-      class="tab-content container"
-      role="tabpanel"
-      aria-label="Topics tab panel"
-    >
-      <div class="level tab-pane is-active" id="pane-1">
+    <section class="tab-content container" aria-label="Topics tab panel">
+      <div role="tabpanel" class="level tab-pane is-active" id="pane-1">
         <div class="container">
           <div class="columns features">
             <div class="column is-4">
@@ -570,7 +567,7 @@
         </div>
       </div>
 
-      <div class="tab-pane" id="pane-2">
+      <div role="tabpanel" class="tab-pane" id="pane-2">
         <div class="columns medias">
           <div class="column">
             <div class="media">
@@ -643,7 +640,7 @@
         </div>
       </div>
 
-      <div class="tab-pane" id="pane-3">
+      <div role="tabpanel" class="tab-pane" id="pane-3">
         <div class="columns is-centered">
           <div class="column is-three-quarters">
             <h2 class="title has-text-centered">Inspired video</h2>
