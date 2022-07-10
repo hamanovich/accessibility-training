@@ -89,4 +89,37 @@ function menuItemHandler(e) {
       item.addEventListener("click", menuItemHandler);
     }
   });
+
+  document.querySelectorAll("#navbarMenu .sub-menu").forEach((item) => {
+    const validChildren = Object.values(item.children).filter(
+      (ch) => ch.role !== "separator"
+    );
+
+    let menuItemFocus = 0;
+
+    item.addEventListener("keydown", (e) => {
+      if (e.keyCode === 38 || e.keyCode === 40) {
+        e.preventDefault();
+        validChildren[menuItemFocus].setAttribute("tabindex", -1);
+        if (e.keyCode === 40) {
+          menuItemFocus++;
+          if (menuItemFocus >= validChildren.length) {
+            menuItemFocus = 0;
+          }
+        } else if (e.keyCode === 38) {
+          menuItemFocus--;
+          if (menuItemFocus < 0) {
+            menuItemFocus = validChildren.length - 1;
+          }
+        }
+        validChildren[menuItemFocus].setAttribute("tabindex", 0);
+        validChildren[menuItemFocus].focus();
+      }
+      if (e.keyCode === 13 || e.keyCode === 32) {
+        e.preventDefault();
+        console.log(validChildren[menuItemFocus].firstElementChild);
+        validChildren[menuItemFocus].firstElementChild.click();
+      }
+    });
+  });
 })();
