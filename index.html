@@ -40,8 +40,8 @@
               Skip navigation Link
             </a>
             <nav id="navbarMenu" class="navbar-menu" role="navigation">
-              <ul class="navbar-end">
-                <li class="navbar-item">
+              <ul class="navbar-end" role="menu">
+                <li class="navbar-item" role="menuitem">
                   <button class="button is-white is-outlined">
                     <span class="icon" aria-hidden="true">
                       <i class="fa fa-home"></i>
@@ -49,23 +49,78 @@
                     <span>Home</span>
                   </button>
                 </li>
-                <li class="navbar-item">
-                  <button class="button is-white is-outlined">
+                <li class="navbar-item with-menu" role="menuitem">
+                  <button
+                    class="button is-white is-outlined"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                  >
                     <span class="icon" aria-hidden="true">
                       <i class="fab fa-superpowers"></i>
                     </span>
-                    <span>Examples</span>
+                    <span>Administration</span>
+                    <span class="icon angle" aria-hidden="true">
+                      <i class="fas fa-angle-down"></i>
+                    </span>
                   </button>
+                  <ul
+                    class="sub-menu"
+                    title="Style"
+                    tabindex="-1"
+                    role="menu"
+                    aria-label="Administration"
+                  >
+                    <li role="menuitem" tabindex="-1">
+                      <a href="#">Administration</a>
+                    </li>
+                    <li role="menuitem" tabindex="-1">
+                      <a href="#">Team Settings</a>
+                    </li>
+                    <li role="menuitem" tabindex="-1">
+                      <a href="#">Manage Your Team</a>
+                    </li>
+                    <li role="menuitem" tabindex="-1">
+                      <a href="#">Invitations</a>
+                    </li>
+                    <li role="separator"></li>
+                    <li role="menuitem" tabindex="-1">
+                      <a href="#">Authentication</a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="navbar-item">
+                <li class="navbar-item with-menu" role="menuitem">
                   <button class="button is-white is-outlined">
                     <span class="icon" aria-hidden="true">
                       <i class="fa fa-book"></i>
                     </span>
                     <span>Documentation</span>
+                    <span class="icon angle" aria-hidden="true">
+                      <i class="fas fa-angle-down"></i>
+                    </span>
                   </button>
+                  <ul
+                    class="sub-menu"
+                    title="Style"
+                    tabindex="-1"
+                    role="menu"
+                    aria-label="Documentation"
+                  >
+                    <li role="menuitem" tabindex="-1">
+                      <a href="#">Documentation</a>
+                    </li>
+                    <li role="menuitem" tabindex="-1">
+                      <a href="#">Team Settings</a>
+                    </li>
+                    <li role="menuitem" tabindex="-1">
+                      <a href="#">Invitations</a>
+                    </li>
+                    <li role="separator"></li>
+                    <li role="menuitem" tabindex="-1">
+                      <a href="#">Authentication</a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="navbar-item">
+                <li class="navbar-item" role="menuitem">
                   <button class="button is-white is-outlined">
                     <span class="icon" aria-hidden="true">
                       <i class="fab fa-github"></i>

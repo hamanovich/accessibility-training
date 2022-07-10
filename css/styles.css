@@ -270,3 +270,40 @@ a:focus {
   justify-content: center;
   align-items: center;
 }
+
+
+
+#navbarMenu.navbar-menu {
+  position: relative;
+}
+
+.navbar-item .sub-menu{
+  position: absolute;
+  display: none;
+  background-color: #fff;
+  padding: 0.7rem;
+  top: 3.5rem;
+  border-radius: 0.2rem;
+  line-height: 1.7;
+  white-space: nowrap;
+}
+
+.navbar-item .sub-menu li {
+  width: 100%;
+}
+
+.navbar-item .sub-menu [role="separator"] {
+  width: 100%;
+  height: 2px;
+  background-color: #0000003a;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.navbar-item .sub-menu a {
+  padding: 5px;
+}
+
+.navbar-item .sub-menu li:hover {
+  background-color: #f3f3f3;
+}
