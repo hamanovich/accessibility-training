@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Web Accessibility 2019 Q1 BY</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Accessibility 2022 Q4 BY</title>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css'>
   <link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.0.10/css/all.css'>
   <link rel="stylesheet prefetch" href="css/styles.css">
@@ -12,11 +13,12 @@
 <body>
   <div class="hero hero-bg is-fullheight">
     <div class="hero-head">
-      <div class="navbar">
+      <nav class="navbar">
+        <a href="#maincontent" class="skip-to-main-content-link" tabindex="0">Skip to main content</a>
         <div class="container">
           <div class="navbar-brand">
-            <a class="navbar-item logo-link">
-              <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg">
+            <a class="navbar-item logo-link" tabindex="0">
+              <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" alt="EPAM logo">
             </a>
             <span class="navbar-burger burger" data-target="navbarMenu">
               <span></span>
@@ -28,41 +30,41 @@
           <div id="navbarMenu" class="navbar-menu">
             <div class="navbar-end">
               <span class="navbar-item">
-                <a class="button is-white is-outlined">
+                <button class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fa fa-home"></i>
                   </span>
                   <span>Home</span>
-                </a>
+                </button>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined">
+                <button class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fab fa-superpowers"></i>
                   </span>
                   <span>Examples</span>
-                </a>
+                </button>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined">
+                <button class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fa fa-book"></i>
                   </span>
                   <span>Documentation</span>
-                </a>
+                </button>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined">
+                <button class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
                   <span>View Source</span>
-                </a>
+                </button>
               </span>
             </div>
           </div>
         </div>
-      </div>
+      </nav>
     </div>
 
     <div class="hero-body">
@@ -74,11 +76,12 @@
           </div>
           <div class="box">
             <div class="field is-grouped">
+              <label for="email for subscription" class="visually-hidden">Email:</label>
               <p class="control is-expanded">
-                <input class="input">
+                <input class="input" name="email for subscription" id="email for subscription">
               </p>
               <p class="control">
-                <a class="button is-info">Notify Me</a>
+                <button class="button is-info">Notify Me</button>
               </p>
             </div>
           </div>
@@ -87,10 +90,21 @@
     </div>
   </div>
 
+  <main id="maincontent">
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+      <ul class="breadcrumb">
+        <li><a href="#hello-world">Hello World</a></li>
+        <li><a href="#second-level">Second level</a></li>
+        <li><a href="#third-level">Third level</a></li>
+        <li><a href="#fourth-level">Fourth level</a></li>
+        <li><a href="#fifth-level">Fifth level</a></li>
+        <li><a href="#sixth-level">Sixth level</a></li>
+      </ul>
+    </nav>
   <div class="section" id="about">
     <div class="section-heading has-text-centered">
-      <div class="title is-2">About Us</div>
-      <div class="subtitle is-5">We of all trades, master of "some"</div>
+      <h2 class="title is-2">About Us</h2>
+      <h5 class="subtitle is-5">We of all trades, master of "some"</h5>
       <div class="container">
         <p>Web developers with more than <b>4 years</b> of well-rounded experience with a degree in the
           field of
@@ -102,9 +116,9 @@
     </div>
 
     <div class="content container">
-      <div class="is-1 title">Hello World</div>
-      <p>Lorem ipsum<sup><a>[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
-      <div class="is-2 title">Second level</div>
+      <div class="is-1 title" id="hello-world">Hello World</div>
+      <p>Lorem ipsum<sup><a tabindex="0">[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
+      <h2 class="is-2 title" id="second-level">Second level</h2>
       <p>Curabitur accumsan turpis pharetra <b>augue tincidunt</b> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
       <ul>
         <li>- In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
@@ -112,8 +126,8 @@
         <li>- Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
         <li>- Ut non enim metus.</li>
       </ul>
-      <div class="is-3 title">Third level</div>
-      <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a>non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
+      <h3 class="is-3 title" id="third-level">Third level</h3>
+      <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a tabindex="0">non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
       <ol class="ol-list">
         <li>Donec blandit a lorem id convallis.</li>
         <li>Cras gravida arcu at diam gravida gravida.</li>
@@ -135,7 +149,7 @@
         <dd>A technology to make HTML look better</dd>
       </dl>
       <p>Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.</p>
-      <div class="is-4 title">Fourth level</div>
+      <h4 class="is-4 title" id="fourth-level">Fourth level</h4>
       <p>Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac. Mauris euismod metus a tellus laoreet, at elementum ex efficitur.</p>
       <pre>
           &lt;!DOCTYPE html&gt;
@@ -177,17 +191,17 @@
         </tr>
       </table>
       <p>Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus laoreet metus, at cursus leo est vel tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae ultricies ex sodales quis. Aliquam eu nibh in libero accumsan pulvinar. Nullam nec nisl placerat, pretium metus vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam pharetra varius metus non pellentesque.</p>
-      <div class="is-5 title">Fifth level</div>
+      <h5 class="is-5 title" id="fifth-level">Fifth level</h5>
       <p>Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt ligula. Vestibulum at nunc elit. Praesent aliquet ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel nisi sodales, a eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.</p>
       <figure>
-        <img src="./img/photo-1572958731731-2b7fdb0a9818.jpg">
-        <img src="./img/photo-1574281852611-b2f04c86a520.jpg">
-        <img src="./img/photo-1575023615386-1554d895d09d.jpg">
+        <img src="./img/photo-1572958731731-2b7fdb0a9818.jpg" alt="forest">
+        <img src="./img/photo-1574281852611-b2f04c86a520.jpg" alt="human's arms">
+        <img src="./img/photo-1575023615386-1554d895d09d.jpg" alt="wrapped christmas gift">
         <figcaption>
           Figure 1: Some beautiful placeholders
         </figcaption>
       </figure>
-      <div class="is-6 title">Sixth level</div>
+      <h6 class="is-6 title" id="sixth-level">Sixth level</h6>
       <p>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.</p>
     </div>
   </div>
@@ -195,8 +209,8 @@
   <div class="hero has-background-grey-light">
     <div class="container features">
       <div class="section-heading has-text-centered">
-        <div class="title is-2">Three key features</div>
-        <div class="subtitle is-5">We don't hide what we do</div>
+        <h2 class="title is-2">Three key features</h2>
+        <h5 class="subtitle is-5">We don't hide what we do</h5>
       </div>
 
       <div class="columns">
@@ -209,7 +223,7 @@
               <div class="content">
                 <div>Tristique senectus et netus et.</div>
                 <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-                <p><a>Learn more</a></p>
+                <p><a tabindex="0">Learn more</a></p>
               </div>
             </div>
           </div>
@@ -225,7 +239,7 @@
                 <div>Tempor orci dapibus ultrices in.</div>
                 <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
                   sed risus.</p>
-                <p><a>Learn more</a></p>
+                <p><a tabindex="0">Learn more</a></p>
               </div>
             </div>
           </div>
@@ -240,7 +254,7 @@
               <div class="content">
                 <div> Leo integer malesuada nunc vel risus. </div>
                 <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                <p><a>Learn more</a></p>
+                <p><a tabindex="0">Learn more</a></p>
               </div>
             </div>
           </div>
@@ -252,26 +266,26 @@
   <div class="hero is-info">
     <div class="hero-body">
       <div class="container">
-        <div class="title">List of topics</div>
+        <h2 class="title">List of topics</h2>
         <div class="subtitle">We are always in touch we the outside world</div>
       </div>
     </div>
     <div class="tabs is-boxed is-centered main-menu" id="nav">
       <ul>
         <li data-target="pane-1" id="1" class="is-active">
-          <a>
+          <a tabindex="0">
             <span class="icon is-small"><i class="fa fa-image"></i></span>
             <span>Pictures</span>
           </a>
         </li>
-        <li data-target="pane-3" id="3">
-          <a>
+        <li data-target="pane-3" id="2">
+          <a tabindex="0">
             <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
             <span>Team</span>
           </a>
         </li>
-        <li data-target="pane-4" id="4">
-          <a>
+        <li data-target="pane-4" id="3">
+          <a tabindex="0">
             <span class="icon is-small"><i class="fa fa-film"></i></span>
             <span>Video</span>
           </a>
@@ -288,14 +302,14 @@
             <div class="card">
               <div class="card-image">
                 <div class="image is-4by3">
-                  <img src="./img/tab-1.jpg" class="modal-button" data-target="modal-image1">
+                  <img src="./img/tab-1.jpg" class="modal-button" data-target="modal-image1" alt="a man controls a drone">
                 </div>
               </div>
               <div class="card-content">
                 <div class="content">
                   <div>Click on image above</div>
                   <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-                  <span class="button is-link modal-button" data-target="modal-image1">Image modal</span>
+                  <button class="button is-link modal-button" data-target="modal-image1">Image modal</button>
                 </div>
               </div>
             </div>
@@ -304,7 +318,7 @@
             <div class="card">
               <div class="card-image">
                 <div class="image is-4by3">
-                  <img src="./img/tab-2.jpg">
+                  <img src="./img/tab-2.jpg" alt="paradise beach">
                 </div>
               </div>
               <div class="card-content">
@@ -312,7 +326,7 @@
                   <div>Tempor orci dapibus ultrices in.</div>
                   <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
                     sed risus.</p>
-                  <span class="button is-link modal-button" data-target="modal-card">Modal Card</span>
+                  <button class="button is-link modal-button" data-target="modal-card">Modal Card</button>
                 </div>
               </div>
             </div>
@@ -321,14 +335,14 @@
             <div class="card">
               <div class="card-image">
                 <div class="image is-4by3">
-                  <img src="./img/tab-3.jpg" class="modal-button" data-target="modal-image2">
+                  <img src="./img/tab-3.jpg" class="modal-button" data-target="modal-image2" alt="rainbow on the beach">
                 </div>
               </div>
               <div class="card-content">
                 <div class="content">
                   <div>Click anywhere on card</div>
                   <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                  <span class="button is-link modal-button" data-target="modal-image2">Image modal</span>
+                  <button class="button is-link modal-button" data-target="modal-image2">Image modal</button>
                 </div>
               </div>
             </div>
@@ -347,7 +361,7 @@
             <div class="media-content">
               <div class="content">
                 <p>
-                  <a><b>Dominic Ipsum</b></a>
+                  <a tabindex="0" title="will open in a new window"><b>Dominic Ipsum</b></a>
                   <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
                 </p>
               </div>
@@ -360,7 +374,7 @@
             <div class="media-content">
               <div class="content">
                 <p>
-                  <a><b>Cassie Ipsum</b></a>
+                  <a tabindex="0" title="will open in a new window"><b>Cassie Ipsum</b></a>
                   <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
                 </p>
               </div>
@@ -375,7 +389,7 @@
             <div class="media-content">
               <div class="content">
                 <p>
-                  <a><b>Avery Ipsum</b></a>
+                  <a tabindex="0" title="will open in a new window"><b>Avery Ipsum</b></a>
                   <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
                 </p>
               </div>
@@ -388,7 +402,7 @@
             <div class="media-content">
               <div class="content">
                 <p>
-                  <a><b>io Ipsum</b></a>
+                  <a tabindex="0" title="will open in a new window"><b>io Ipsum</b></a>
                   <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
                 </p>
               </div>
@@ -421,31 +435,31 @@
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/web-access-summit-eventbrite.jpg">
+              <img src="./img/web-access-summit-eventbrite.jpg" alt="label of web accessibility summit">
             </div>
-            <p class="title">New York</p>
+            <h2 class="title">New York</h2>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a class="button">Buy Tickets</a>
+            <button class="button">Buy Tickets</button>
           </div>
         </div>
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/access.jpg">
+              <img src="./img/access.jpg" alt="wheelchair man at the summit">
             </div>
-            <p class="title">Los Angeles</p>
+            <h2 class="title">Los Angeles</h2>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a class="button">Buy Tickets</a>
+            <button class="button">Buy Tickets</button>
           </div>
         </div>
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/dotcss-2019.jpg">
+              <img src="./img/dotcss-2019.jpg" alt="banner of CSS conference">
             </div>
-            <p class="title">Mexico</p>
+            <h2 class="title">Mexico</h2>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a class="button">Buy Tickets</a>
+            <button class="button">Buy Tickets</button>
           </div>
         </div>
       </div>
@@ -454,31 +468,31 @@
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/images.jpg">
+              <img src="./img/images.jpg" alt="banner of accessibility conference">
             </div>
-            <p class="title">Paris</p>
+            <h2 class="title">Paris</h2>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a class="button">Buy Tickets</a>
+            <button class="button">Buy Tickets</button>
           </div>
         </div>
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/mid_300_33455472_313632022502906_5761920685983137792_n.png">
+              <img src="./img/mid_300_33455472_313632022502906_5761920685983137792_n.png" alt="banner of javascript conference in minsk">
             </div>
-            <p class="title">Minsk</p>
+            <h2 class="title">Minsk</h2>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a class="button">Buy Tickets</a>
+            <button class="button">Buy Tickets</button>
           </div>
         </div>
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="./img/access.jpg">
+              <img src="./img/access.jpg" alt="wheelchair man at the summit">
             </div>
-            <p class="title">London</p>
+            <h2 class="title">London</h2>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a class="button">Buy Tickets</a>
+            <button class="button">Buy Tickets</button>
           </div>
         </div>
       </div>
@@ -487,8 +501,8 @@
 
   <div class="section">
     <div class="section-heading has-text-centered">
-      <div class="title is-2">Services</div>
-      <div class="subtitle is-5">What can I do for you?</div>
+      <h2 class="title is-2">Services</h2>
+      <h5 class="subtitle is-5">What can I do for you?</h5>
     </div>
     <div class="container">
       <div class="columns">
@@ -536,7 +550,7 @@
   <div class="section has-background-grey-lighter">
     <div class="container">
       <div class="section-heading has-text-centered">
-        <div class="title is-2">Photos from past events</div>
+        <h2 class="title is-2">Photos from past events</h2>
       </div>
 
       <div class="container portfolio-container">
@@ -547,7 +561,7 @@
                 <p class="card-header-title">
                   <span>Admin <small>(Light)</small></span>
                   <span class="is-pulled-right">
-                    <a>
+                    <a tabindex="0">
                       <span class="tag is-default">v0.7.2</span>
                     </a>
                     <span class="tag is-default">Desktop</span>
@@ -557,12 +571,12 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-1.jpeg">
+                  <img src="./img/ev-1.jpeg" alt="man speaks at a javascript conference">
                 </div>
               </div>
               <div class="card-footer">
-                <a class="card-footer-item">Preview</a>
-                <a class="card-footer-item">Source Code</a>
+                <button class="card-footer-item card-footer-button">Preview</button>
+                <button class="card-footer-item card-footer-button">Source Code</button>
               </div>
             </div>
           </div>
@@ -572,7 +586,7 @@
                 <p class="card-header-title">
                   <span>Cards</span>
                   <span class="is-pulled-right">
-                    <a>
+                    <a tabindex="0">
                       <span class="tag is-default">v0.7.2</span>
                     </a>
                     <span class="tag is-default">Desktop</span>
@@ -582,12 +596,12 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-2.jpeg">
+                  <img src="./img/ev-2.jpeg" alt="man works on a laptop">
                 </div>
               </div>
               <div class="card-footer">
-                <a class="card-footer-item">Preview</a>
-                <a class="card-footer-item">Source Code</a>
+                <button class="card-footer-item card-footer-button">Preview</button>
+                <button class="card-footer-item card-footer-button">Source Code</button>
                 </div>
             </div>
           </div>
@@ -597,7 +611,7 @@
                 <p class="card-header-title">
                   <span>Forum</span>
                   <span class="is-pulled-right">
-                    <a>
+                    <a tabindex="0">
                       <span class="tag is-default">v0.7.2</span>
                     </a>
                     <span class="tag is-default">Desktop</span>
@@ -607,12 +621,12 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-3.jpeg">
+                  <img src="./img/ev-3.jpeg" alt="man taking pictures of the scene with a mobile phone">
                 </div>
               </div>
               <div class="card-footer">
-                <a class="card-footer-item">Preview</a>
-                <a class="card-footer-item">Source Code</a>
+                <button class="card-footer-item card-footer-button">Preview</button>
+                <button class="card-footer-item card-footer-button">Source Code</button>
               </div>
             </div>
           </div>
@@ -624,7 +638,7 @@
                 <p class="card-header-title">
                   <span>InstaAlbum</span>
                   <span class="is-pulled-right">
-                    <a>
+                    <a tabindex="0">
                       <span class="tag is-default">v0.7.2</span>
                     </a>
                     <span class="tag is-default">Desktop</span>
@@ -634,12 +648,12 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-4.jpeg">
+                  <img src="./img/ev-4.jpeg" alt="conference participants listen to the speaker">
                 </div>
               </div>
               <div class="card-footer">
-                <a class="card-footer-item">Preview</a>
-                <a class="card-footer-item">Source Code</a>
+                <button class="card-footer-item card-footer-button">Preview</button>
+                <button class="card-footer-item card-footer-button">Source Code</button>
               </div>
             </div>
           </div>
@@ -649,7 +663,7 @@
                 <p class="card-header-title">
                   <span>Landing</span>
                   <span class="is-pulled-right">
-                    <a>
+                    <a tabindex="0">
                       <span class="tag is-default">v0.7.2</span>
                     </a>
                     <span class="tag is-default">Desktop</span>
@@ -659,12 +673,12 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-5.jpeg">
+                  <img src="./img/ev-5.jpeg" alt="banner of key 05 conference">
                 </div>
               </div>
               <div class="card-footer">
-                <a class="card-footer-item">Preview</a>
-                <a class="card-footer-item">Source Code</a>
+                <button class="card-footer-item card-footer-button">Preview</button>
+                <button class="card-footer-item card-footer-button">Source Code</button>
               </div>
             </div>
           </div>
@@ -674,7 +688,7 @@
                 <p class="card-header-title">
                   <span>Marketing</span>
                   <span class="is-pulled-right">
-                    <a>
+                    <a tabindex="0">
                       <span class="tag is-default">v0.7.2</span>
                     </a>
                     <span class="tag is-default">Desktop</span>
@@ -684,12 +698,12 @@
               </div>
               <div class="card-content">
                 <div class="image">
-                  <img src="./img/ev-6.jpeg">
+                  <img src="./img/ev-6.jpeg" alt="people in the hall raised hands to the speaker's question">
                 </div>
               </div>
               <div class="card-footer">
-                <a class="card-footer-item">Preview</a>
-                <a class="card-footer-item">Source Code</a>
+                <button class="card-footer-item card-footer-button">Preview</button>
+                <button class="card-footer-item card-footer-button">Source Code</button>
               </div>
             </div>
           </div>
@@ -702,13 +716,13 @@
   <div class="section">
     <div class="container">
       <div class="section-heading has-text-centered">
-        <div class="title is-2">Forum</div>
-        <div class="subtitle is-5">Discuss any topic with no leaving this page</div>
+        <h2 class="title is-2">Forum</h2>
+        <h5 class="subtitle is-5">Discuss any topic with no leaving this page</h5>
       </div>
 
       <div class="columns">
         <div class="column is-3">
-          <a class="button is-primary is-block is-alt is-large">New Post</a>
+          <button class="button is-primary is-block is-alt is-large is-wide">New Post</button>
           <div class="menu">
             <ul class="menu-list forum-list">
               <li><span class="tag is-primary is-medium">Dashboard</span></li>
@@ -734,13 +748,13 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <a>@jsmith</a> replied 34 minutes ago &nbsp;
+                      <a tabindex="0">@jsmith</a> replied 34 minutes ago &nbsp;
                       <span class="tag">Question</span>
                     </p>
                   </div>
                 </div>
                 <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 1</span>
+                  <span class="has-text-grey35"><i class="fa fa-comments"></i> 1</span>
                 </div>
               </div>
             </div>
@@ -756,13 +770,13 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <a>@red</a> replied 40 minutes ago &nbsp;
+                      <a tabindex="0">@red</a> replied 40 minutes ago &nbsp;
                       <span class="tag">Question</span>
                     </p>
                   </div>
                 </div>
                 <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 0</span>
+                  <span class="has-text-grey35"><i class="fa fa-comments"></i> 0</span>
                 </div>
               </div>
             </div>
@@ -778,13 +792,13 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <a>@jsmith</a> replied 53 minutes ago &nbsp;
+                      <a tabindex="0">@jsmith</a> replied 53 minutes ago &nbsp;
                       <span class="tag">Question</span>
                     </p>
                   </div>
                 </div>
                 <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 13</span>
+                  <span class="has-text-grey35"><i class="fa fa-comments"></i> 13</span>
                 </div>
               </div>
             </div>
@@ -800,13 +814,13 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <a>@brown</a> replied 3 hours ago &nbsp;
+                      <a tabindex="0">@brown</a> replied 3 hours ago &nbsp;
                       <span class="tag">Question</span>
                     </p>
                   </div>
                 </div>
                 <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                  <span class="has-text-grey35"><i class="fa fa-comments"></i> 2</span>
                 </div>
               </div>
             </div>
@@ -822,13 +836,13 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <a>@hamburgler</a> replied 5 hours ago &nbsp;
+                      <a tabindex="0">@hamburgler</a> replied 5 hours ago &nbsp;
                       <span class="tag">Question</span>
                     </p>
                   </div>
                 </div>
                 <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                  <span class="has-text-grey35"><i class="fa fa-comments"></i> 2</span>
                 </div>
               </div>
             </div>
@@ -844,13 +858,13 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <a>@rapper</a> replied 3 hours ago &nbsp;
+                      <a tabindex="0">@rapper</a> replied 3 hours ago &nbsp;
                       <span class="tag">Question</span>
                     </p>
                   </div>
                 </div>
                 <div class="media-right">
-                  <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                  <span class="has-text-grey35"><i class="fa fa-comments"></i> 2</span>
                 </div>
               </div>
             </div>
@@ -863,22 +877,22 @@
   <div class="section has-background-light">
     <div class="container">
       <div class="section-heading has-text-centered">
-        <div class="title is-2">Contact us</div>
-        <div class="subtitle is-5">Don't hesitate, ask anything</div>
+        <h2 class="title is-2">Contact us</h2>
+        <h5 class="subtitle is-5">Don't hesitate, ask anything</h5>
       </div>
 
       <form class="column is-half is-offset-one-quarter box">
         <div class="field">
-          <label class="label">Name</label>
+          <label class="label" for="name">Name</label>
           <div class="control">
-            <input class="input" type="text" placeholder="Text input">
+            <input class="input" type="text" placeholder="Text input" name="name" id="name">
           </div>
         </div>
 
         <div class="field">
-          <label class="label">Username</label>
+          <label class="label" for="username">Username</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input is-success" type="text">
+            <input class="input is-success" type="text" name="username" id="username">
             <span class="icon is-small is-left">
               <i class="fas fa-user"></i>
             </span>
@@ -890,9 +904,9 @@
         </div>
 
         <div class="field">
-          <label class="label">Email</label>
+          <label class="label" for="email">Email</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+            <input class="input is-danger" type="email" placeholder="Email input" value="hello@" name="email" id="email">
             <span class="icon is-small is-left">
               <i class="fas fa-envelope"></i>
             </span>
@@ -904,10 +918,10 @@
         </div>
 
         <div class="field">
-          <label class="label">Subject</label>
+          <label class="label" for="subject">Subject</label>
           <div class="control">
             <div class="select">
-              <select>
+              <select name="subject" id="subject">
                 <option>Select dropdown</option>
                 <option>With options</option>
               </select>
@@ -916,9 +930,9 @@
         </div>
 
         <div class="field">
-          <label class="label">Message</label>
+          <label class="label" for="message">Message</label>
           <div class="control">
-            <textarea class="textarea" placeholder="Textarea"></textarea>
+            <textarea class="textarea" placeholder="Textarea" name="message" id="message"></textarea>
           </div>
         </div>
 
@@ -926,23 +940,24 @@
           <div class="control">
             <label class="checkbox">
               <input type="checkbox">
-              I agree to the <a>terms and conditions</a>
+              I agree to the <a tabindex="0">terms and conditions</a>
             </label>
           </div>
         </div>
 
-        <div class="field">
+        <fieldset class="field fieldset">
+          <legend>Forgotten legend</legend>
           <div class="control">
-            <label class="radio">
-              <input type="radio" name="question">
+            <label class="radio" for="yes">
+              <input type="radio" name="yes" id="yes">
               Yes
             </label>
-            <label class="radio">
-              <input type="radio" name="question">
+            <label class="radio" for="no">
+              <input type="radio" name="no" id="no">
               No
             </label>
           </div>
-        </div>
+        </fieldset>
 
         <div class="field is-grouped">
           <div class="control">
@@ -955,6 +970,7 @@
       </form>
     </div>
   </div>
+</main>
 
   <!-- <div class="section">
     <div class="container">
@@ -1065,56 +1081,56 @@
     </div>
   </div> -->
 
-  <div class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="columns">
         <div class="column is-3 is-offset-2">
           <div class="is-3 title"><b>Lessons</b></div>
           <ul>
-            <li><a>Lorem ipsum dolor sit amet</a></li>
-            <li><a>Vestibulum errato isse</a></li>
-            <li><a>Lorem ipsum dolor sit amet</a></li>
-            <li><a>Aisia caisia</a></li>
-            <li><a>Murphy's law</a></li>
-            <li><a>Flimsy Lavenrock</a></li>
-            <li><a>Maven Mousie Lavender</a></li>
+            <li><a tabindex="0">Lorem ipsum dolor sit amet</a></li>
+            <li><a tabindex="0">Vestibulum errato isse</a></li>
+            <li><a tabindex="0">Lorem ipsum dolor sit amet</a></li>
+            <li><a tabindex="0">Aisia caisia</a></li>
+            <li><a tabindex="0">Murphy's law</a></li>
+            <li><a tabindex="0">Flimsy Lavenrock</a></li>
+            <li><a tabindex="0">Maven Mousie Lavender</a></li>
           </ul>
         </div>
         <div class="column is-3">
           <div class="is-3 title"><b>News</b></div>
           <ul>
-            <li><a>Labore et dolore magna aliqua</a></li>
-            <li><a>Kanban airis sum eschelor</a></li>
-            <li><a>Modular modern free</a></li>
-            <li><a>The king of clubs</a></li>
-            <li><a>The Discovery Dissipation</a></li>
-            <li><a>Course Correction</a></li>
-            <li><a>Better Angels</a></li>
+            <li><a tabindex="0">Labore et dolore magna aliqua</a></li>
+            <li><a tabindex="0">Kanban airis sum eschelor</a></li>
+            <li><a tabindex="0">Modular modern free</a></li>
+            <li><a tabindex="0">The king of clubs</a></li>
+            <li><a tabindex="0">The Discovery Dissipation</a></li>
+            <li><a tabindex="0">Course Correction</a></li>
+            <li><a tabindex="0">Better Angels</a></li>
           </ul>
         </div>
         <div class="column is-4">
           <div class="is-3 title"><b>Help</b></div>
           <ul>
-            <li><a>Objects in space</a></li>
-            <li><a>Playing cards with coyote</a></li>
-            <li><a>Goodbye Yellow Brick Road</a></li>
-            <li><a>The Garden of Forking Paths</a></li>
-            <li><a>Future Shock</a></li>
+            <li><a tabindex="0">Objects in space</a></li>
+            <li><a tabindex="0">Playing cards with coyote</a></li>
+            <li><a tabindex="0">Goodbye Yellow Brick Road</a></li>
+            <li><a tabindex="0">The Garden of Forking Paths</a></li>
+            <li><a tabindex="0">Future Shock</a></li>
           </ul>
         </div>
       </div>
 
       <div class="content has-text-centered">
         <div class="soc">
-          <a><i class="fab fa-github-alt fa-2x"></i></a>
-          <a><i class="fab fa-youtube fa-2x"></i></a>
-          <a><i class="fab fa-facebook fa-2x"></i></a>
-          <a><i class="fab fa-twitter fa-2x"></i></a>
+          <a tabindex="0" title="will open in a new window" target="_blank"><i class="fab fa-github-alt fa-2x"></i></a>
+          <a tabindex="0" title="will open in a new window" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+          <a tabindex="0" title="will open in a new window" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+          <a tabindex="0" title="will open in a new window" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
         </div>
-        <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</p>
+        <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php" title="will open in a new window" target="_blank"><i class="fa fa-flask"></i>MIT</a>.</p>
       </div>
     </div>
-  </div>
+  </footer>
 
   <div id="modal-card" class="modal modal-fx-3dSlit">
     <div class="modal-background"></div>
@@ -1142,9 +1158,9 @@
             Bean's dinnahbucket bub geez bud sumpin' fierce ayuhpawt Bangah naw, Powrtland Museum of Aht down cellah sumpin' fierce hoppa bub If you can't stand the wintah you don't deserve the summah slower than molasses going uphill in January.
             Sgn'wahl shoggor hrii uaaah R'lyeh uh'e k'yarnak Hastur hupadgh li'hee, hai f'nilgh'ri nilgh'ri n'ghftor ngftaghu vulgtlagln h'hrii throd Nyarlathotep lloig, naflsll'ha nnnsll'ha athg y-ebunma goka chtenff ehyeog cehye. Zhro y'hah
             nogoth phlegeth stell'bsna orr'e ph'Hastur gnaiih throd, uln ya lw'nafh mg nar'luh li'hee wgah'n, sgn'wahl mg nakadishtu chlirgh hupadgh tharanak h'gnaiih.
-            <a>@testio</a>.
-            <a>#css</a>
-            <a>#responsive</a>
+            <a tabindex="0">@testio</a>.
+            <a tabindex="0">#css</a>
+            <a tabindex="0">#responsive</a>
             <br>
             <time datetime="2018-02-02">12:45 AM - 20 June 2018</time>
           </div>

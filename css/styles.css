@@ -67,7 +67,7 @@
   font-size: 8rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  color: #209cee;
+  color: #005c99;
 }
 
 .is-shady {
@@ -84,14 +84,13 @@
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.19);
 }
 
-
 .has-same-height .card {
   height: 350px;
   overflow: hidden;
 }
 
 .skills-content .media + .media {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .skills-content .progress {
@@ -103,8 +102,8 @@
 }
 
 .info-tiles {
-  margin: .75rem auto;
-  padding: 0 .75rem;
+  margin: 0.75rem auto;
+  padding: 0 0.75rem;
 }
 
 .button.is-primary.is-alt {
@@ -115,20 +114,34 @@
   line-height: 2.8;
   margin-bottom: 1rem;
 }
+
+.button.is-wide {
+  width: 100%;
+}
+
+.button.is-info {
+  background: #005c99;
+}
+
+.button.is-info:focus-visible {
+  outline: 2px solid #262626;
+  outline-offset: 1px;
+}
+
 .post {
   margin: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #E6EAEE;
+  border-bottom: 1px solid #e6eaee;
 }
+
 .post:last-child {
   padding-bottom: 0;
   border-bottom: none;
 }
 
 .forum-list li {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
-
 
 @media screen and (max-width: 1087px) {
   .navbar-menu {
@@ -156,7 +169,7 @@ li {
 .blockquote {
   background-color: #f5f5f5;
   border-left: 5px solid #dbdbdb;
-  padding: 1.25em 1.5em;
+  padding: 1.25rem 1.5rem;
 }
 
 .ol-list li {
@@ -175,4 +188,94 @@ li {
   width: 40px;
   height: 40px;
   background-size: contain;
+}
+
+a:focus-visible {
+  outline-offset: 2px;
+  outline: black 2px solid;
+}
+
+a,
+.hero.is-info .tabs.is-boxed li.is-active a {
+  color: #005c99;
+}
+
+.hero.is-info .title,
+.hero.is-info .subtitle,
+.subtitle {
+  color: #262626;
+}
+
+.tag:not(body).is-danger {
+  background-color: #b30024;
+}
+
+.tag:not(body).is-primary {
+  background-color: #006152;
+}
+
+.tag:not(body).is-success {
+  background-color: #17873e;
+}
+
+.has-text-grey35 {
+  color: #595959;
+}
+
+.help.is-success {
+  color: #17873e;
+}
+
+.help.is-danger {
+  color: #b30024;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.card-footer-button {
+  cursor: pointer;
+  text-decoration: none;
+  color: #005c99;
+  background-color: white;
+  border: 0;
+  font-size: 1rem;
+}
+
+.fieldset {
+  border-width: 0;
+}
+
+.skip-to-main-content-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  opacity: 0;
+}
+.skip-to-main-content-link:focus, .skip-to-main-content-link:active {
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
+.breadcrumb {
+  padding: .25rem .5rem;
+}
+
+.breadcrumb ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
