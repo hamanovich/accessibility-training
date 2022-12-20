@@ -1,3 +1,7 @@
+body, a {
+  color: #000 !important;
+}
+
 .hero-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/accessibility-hero-banner.jpg") no-repeat center center fixed;
@@ -176,3 +180,96 @@ li {
   height: 40px;
   background-size: contain;
 }
+
+a:focus,
+button:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+label:focus,
+select:focus,
+textarea:focus {
+  -webkit-box-shadow: 0 0 2px 2px #fff,
+                      0 0 3px 3px #000 !important;
+  box-shadow:  0 0 2px 2px #fff,
+               0 0 3px 3px #000 !important;
+  -webkit-appearance: none !important;
+}
+
+input[type=checkbox]:focus {
+  outline: 2px solid grey !important;
+  outline-offset: 2px !important;
+}
+
+.hero.is-info {
+  background-color: #000  !important;
+  color: #fff;
+}
+
+.button.is-info {
+  background-color: #000  !important;
+  border-color: transparent;
+  color: #fff;
+}
+
+.subtitle {
+  color: #000 !important;
+}
+
+.input.is-active, .input.is-focused, .input:active, .input, .textarea.is-active, .textarea.is-focused, .textarea, .textarea {
+  border-color: #000 !important;
+  color: #000 !important;
+}
+
+.tag:not(body) {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.box {
+  box-shadow: 0 2px 3px #000, 0 0 0 2px #fff;
+  color: #000 !important;
+}
+
+.button.is-primary.is-alt {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+.has-text-grey-light {
+  color:  #000 !important;
+}
+
+.has-text-info {
+  color: #000 !important;
+}
+
+.input.is-info,.textarea.is-info {
+  border-color: #000 !important;
+}
+.help.is-info {
+  color: #000 !important;
+}
+.hero.is-info .tabs.is-boxed li.is-active a,.hero.is-info .tabs.is-boxed li.is-active a:hover,.hero.is-info .tabs.is-toggle li.is-active a,.hero.is-info .tabs.is-toggle li.is-active a:hover {
+  color: #000 !important;
+}
+
+.help.is-success {
+  color: #000 !important;
+}
+
+.help.is-danger {
+  color: #000 !important;
+}
+
+/*The HTML <form> element can contain one or more of the following form elements:*/
+/*<input>*/
+/* <label>*/
+/* <select>*/
+/* <textarea>*/
+/* <button>*/
+/* <fieldset>*/
+/* <legend>*/
+/* <datalist>*/
+/* <output>*/
+/* <option>*/
+/* <optgroup>*/
